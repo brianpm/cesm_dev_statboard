@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CESM Development Status Board</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>CESM Development Status Board</h1>
+            <p class="subtitle">Tracking simulation cases from <a href="https://github.com/NCAR/cesm_dev" target="_blank">NCAR/cesm_dev</a></p>
+            <div class="last-update" id="lastUpdate">Last updated: Loading...</div>
+        </header>
+
+        <!-- Dashboard Summary Cards -->
+        <section class="dashboard" id="dashboard">
+            <div class="card">
+                <div class="card-value" id="totalCases">-</div>
+                <div class="card-label">Total Cases</div>
+            </div>
+            <div class="card">
+                <div class="card-value" id="withDiagnostics">-</div>
+                <div class="card-label">With Diagnostics</div>
+            </div>
+            <div class="card">
+                <div class="card-value" id="diagnosticCoverage">-</div>
+                <div class="card-label">Coverage</div>
+            </div>
+            <div class="card">
+                <div class="card-value" id="uniqueCompsets">-</div>
+                <div class="card-label">Compsets</div>
+            </div>
+        </section>
+
+        <!-- Search and Filter -->
+        <section class="filters">
+            <div class="filter-group">
+                <label for="searchInput">Search:</label>
+                <input type="text" id="searchInput" placeholder="Search case name, purpose, description..." />
+            </div>
+
+            <div class="filter-group">
+                <label for="compsetFilter">Compset:</label>
+                <select id="compsetFilter">
+                    <option value="">All Compsets</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="resolutionFilter">Resolution:</label>
+                <select id="resolutionFilter">
+                    <option value="">All Resolutions</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="diagnosticsFilter">Diagnostics:</label>
+                <select id="diagnosticsFilter">
+                    <option value="">All Cases</option>
+                    <option value="true">Has Diagnostics</option>
+                    <option value="false">No Diagnostics</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <button id="clearFilters" class="btn-secondary">Clear Filters</button>
+            </div>
+        </section>
+
+        <!-- Comparison Mode Toggle -->
+        <section class="comparison-controls" id="comparisonControls" style="display: none;">
+            <div class="comparison-header">
+                <span id="selectedCount">0 cases selected</span>
+                <button id="compareBtn" class="btn-primary" disabled>Compare Selected</button>
+                <button id="exitCompareMode" class="btn-secondary">Exit Compare Mode</button>
+            </div>
+        </section>
+
+        <!-- Case Table -->
+        <section class="table-section">
+            <div class="table-controls">
+                <h2>Simulation Cases <span id="caseCount" class="count">(0)</span></h2>
+                <button id="toggleCompareMode" class="btn-primary">Compare Mode</button>
+            </div>
+
+            <div class="loading" id="loading">Loading data...</div>
+
+            <div class="table-container">
+                <table class="case-table" id="caseTable">
+                    <thead>
+                        <tr>
+                            <th class="checkbox-col"></th>
+                            <th class="sortable" data-sort="case_name">Case Name</th>
+                            <th class="sortable" data-sort="compset">Compset</th>
+                            <th class="sortable" data-sort="resolution">Resolution</th>
+                            <th class="sortable" data-sort="issue_state">Status</th>
+                            <th>Diagnostics</th>
+                            <th>Purpose</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="caseTableBody">
+                        <!-- Populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pagination" id="pagination">
+                <button id="prevPage" class="btn-secondary" disabled>Previous</button>
+                <span id="pageInfo">Page 1 of 1</span>
+                <button id="nextPage" class="btn-secondary" disabled>Next</button>
+            </div>
+        </section>
+
+        <!-- Case Detail Modal -->
+        <div class="modal" id="caseModal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="caseDetail">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Comparison Modal -->
+        <div class="modal" id="comparisonModal">
+            <div class="modal-content comparison-modal-content">
+                <span class="close">&times;</span>
+                <div id="comparisonDetail">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Built with data from <a href="https://github.com/NCAR/cesm_dev" target="_blank">NCAR/cesm_dev</a> &bull;
+               AMWG Diagnostics from <a href="https://github.com/NCAR/ADF" target="_blank">NCAR/ADF</a></p>
+            <p>Data last collected: <span id="footerLastUpdate">-</span></p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/compare.js"></script>
+    <script>
+        // Initialize application
+        const app = new CESMStatusBoard();
+        app.init();
+    </script>
+</body>
+</html>
