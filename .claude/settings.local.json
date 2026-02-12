@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:justin-richling.github.io)",
+      "WebFetch(domain:api.github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:ncar.github.io)",
+      "WebFetch(domain:docs.github.com)",
+      "WebFetch(domain:www2.cesm.ucar.edu)",
+      "WebFetch(domain:docs.e3sm.org)",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}

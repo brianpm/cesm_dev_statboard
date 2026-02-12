@@ -1,0 +1,14 @@
+*.pyc
+__pycache__/
+data/cesm_dev.db
+data/cache/
+web/data/*.json
+logs/
+.env
+*.log
+.DS_Store
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
