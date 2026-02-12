@@ -10,7 +10,8 @@
       "WebFetch(domain:www2.cesm.ucar.edu)",
       "WebFetch(domain:docs.e3sm.org)",
       "Bash(git init:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ]
   }
 }
