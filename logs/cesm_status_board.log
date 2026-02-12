@@ -1,0 +1,1085 @@
+2026-02-12 15:25:54 - cesm_status_board - INFO - ================================================================================
+2026-02-12 15:25:54 - cesm_status_board - INFO - CESM Development Status Board - Data Collection
+2026-02-12 15:25:54 - cesm_status_board - INFO - ================================================================================
+2026-02-12 15:25:54 - cesm_status_board - INFO - Mode: test
+2026-02-12 15:25:54 - cesm_status_board - INFO - Database: /glade/u/home/brianpm/Code/cesm_dev_statboard/data/cesm_dev.db
+2026-02-12 15:25:54 - cesm_status_board - INFO - GitHub repo: NCAR/cesm_dev
+2026-02-12 15:25:54 - cesm_status_board - INFO - 
+================================================================================
+2026-02-12 15:25:54 - cesm_status_board - INFO - 1. Initializing Database
+2026-02-12 15:25:54 - cesm_status_board - INFO - ================================================================================
+2026-02-12 15:25:54 - cesm_status_board - INFO - 
+================================================================================
+2026-02-12 15:25:54 - cesm_status_board - INFO - 2. Setting Up GitHub API Cache
+2026-02-12 15:25:54 - cesm_status_board - INFO - ================================================================================
+2026-02-12 15:25:54 - cesm_status_board - INFO - 
+================================================================================
+2026-02-12 15:25:54 - cesm_status_board - INFO - 3. Initializing Collectors and Parsers
+2026-02-12 15:25:54 - cesm_status_board - INFO - ================================================================================
+2026-02-12 15:25:54 - cesm_status_board - INFO - 
+================================================================================
+2026-02-12 15:25:54 - cesm_status_board - INFO - 4. Fetching Issues from GitHub
+2026-02-12 15:25:54 - cesm_status_board - INFO - ================================================================================
+2026-02-12 15:25:56 - cesm_status_board - INFO - Test mode: limiting to first 10 issues
+2026-02-12 15:25:56 - cesm_status_board - INFO - Fetched 10 issues
+2026-02-12 15:25:56 - cesm_status_board - INFO - 
+================================================================================
+2026-02-12 15:25:56 - cesm_status_board - INFO - 5. Processing Issues
+2026-02-12 15:25:56 - cesm_status_board - INFO - ================================================================================
+2026-02-12 15:25:56 - cesm_status_board - INFO - 
+Processing issue #290 (1/10): b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.308
+2026-02-12 15:25:56 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.308
+2026-02-12 15:25:56 - cesm_status_board - INFO - 
+Processing issue #289 (2/10): b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.307
+2026-02-12 15:25:56 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.307
+2026-02-12 15:25:56 - cesm_status_board - INFO - 
+Processing issue #288 (3/10): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.306
+2026-02-12 15:25:56 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:25:56 - cesm_status_board - INFO - 
+Processing issue #287 (4/10): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.305
+2026-02-12 15:25:56 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:25:56 - cesm_status_board - INFO - 
+Processing issue #286 (5/10): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.304
+2026-02-12 15:25:56 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:25:56 - cesm_status_board - INFO - 
+Processing issue #285 (6/10): b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.303
+2026-02-12 15:25:56 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.303
+2026-02-12 15:25:56 - cesm_status_board - INFO - 
+Processing issue #284 (7/10): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.298
+2026-02-12 15:25:56 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:25:56 - cesm_status_board - INFO - 
+Processing issue #283 (8/10): b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.302
+2026-02-12 15:25:56 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.302
+2026-02-12 15:25:56 - cesm_status_board - INFO - 
+Processing issue #282 (9/10): b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.301
+2026-02-12 15:25:56 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.301
+2026-02-12 15:25:56 - cesm_status_board - INFO - 
+Processing issue #281 (10/10): b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.300
+2026-02-12 15:25:56 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.300
+2026-02-12 15:25:56 - cesm_status_board - INFO - 
+================================================================================
+2026-02-12 15:25:56 - cesm_status_board - INFO - 6. Collection Summary
+2026-02-12 15:25:56 - cesm_status_board - INFO - ================================================================================
+2026-02-12 15:25:56 - cesm_status_board - INFO - Issues processed: 10/10
+2026-02-12 15:25:56 - cesm_status_board - INFO - Cases created: 10
+2026-02-12 15:25:56 - cesm_status_board - INFO - Diagnostics found: 6
+2026-02-12 15:25:56 - cesm_status_board - INFO - Statistics extracted: 0
+2026-02-12 15:25:56 - cesm_status_board - INFO - Errors: 0
+2026-02-12 15:25:56 - cesm_status_board - INFO - 
+================================================================================
+2026-02-12 15:25:56 - cesm_status_board - INFO - 7. Database Summary
+2026-02-12 15:25:56 - cesm_status_board - INFO - ================================================================================
+2026-02-12 15:25:56 - cesm_status_board - INFO - Total cases in database: 10
+2026-02-12 15:25:56 - cesm_status_board - INFO - Cases with diagnostics: 6
+2026-02-12 15:25:56 - cesm_status_board - INFO - Diagnostic coverage: 60.0%
+2026-02-12 15:25:56 - cesm_status_board - INFO - 
+Top compsets:
+2026-02-12 15:25:56 - cesm_status_board - INFO - 
+Top resolutions:
+2026-02-12 15:25:56 - cesm_status_board - INFO -   e30_alpha08b: 6 cases (6 with diagnostics)
+2026-02-12 15:25:56 - cesm_status_board - INFO -   e30_alpha07g: 4 cases (0 with diagnostics)
+2026-02-12 15:25:56 - cesm_status_board - INFO - 
+================================================================================
+2026-02-12 15:25:56 - cesm_status_board - INFO - Data collection completed successfully!
+2026-02-12 15:25:56 - cesm_status_board - INFO - ================================================================================
+2026-02-12 15:27:13 - cesm_status_board - INFO - ================================================================================
+2026-02-12 15:27:13 - cesm_status_board - INFO - CESM Development Status Board - Data Collection
+2026-02-12 15:27:13 - cesm_status_board - INFO - ================================================================================
+2026-02-12 15:27:13 - cesm_status_board - INFO - Mode: full
+2026-02-12 15:27:13 - cesm_status_board - INFO - Database: /glade/u/home/brianpm/Code/cesm_dev_statboard/data/cesm_dev.db
+2026-02-12 15:27:13 - cesm_status_board - INFO - GitHub repo: NCAR/cesm_dev
+2026-02-12 15:27:13 - cesm_status_board - INFO - 
+================================================================================
+2026-02-12 15:27:13 - cesm_status_board - INFO - 1. Initializing Database
+2026-02-12 15:27:13 - cesm_status_board - INFO - ================================================================================
+2026-02-12 15:27:13 - cesm_status_board - INFO - 
+================================================================================
+2026-02-12 15:27:13 - cesm_status_board - INFO - 2. Setting Up GitHub API Cache
+2026-02-12 15:27:13 - cesm_status_board - INFO - ================================================================================
+2026-02-12 15:27:13 - cesm_status_board - INFO - 
+================================================================================
+2026-02-12 15:27:13 - cesm_status_board - INFO - 3. Initializing Collectors and Parsers
+2026-02-12 15:27:13 - cesm_status_board - INFO - ================================================================================
+2026-02-12 15:27:13 - cesm_status_board - INFO - 
+================================================================================
+2026-02-12 15:27:13 - cesm_status_board - INFO - 4. Fetching Issues from GitHub
+2026-02-12 15:27:13 - cesm_status_board - INFO - ================================================================================
+2026-02-12 15:27:13 - cesm_status_board - INFO - Fetched 253 issues
+2026-02-12 15:27:13 - cesm_status_board - INFO - 
+================================================================================
+2026-02-12 15:27:13 - cesm_status_board - INFO - 5. Processing Issues
+2026-02-12 15:27:13 - cesm_status_board - INFO - ================================================================================
+2026-02-12 15:27:13 - cesm_status_board - INFO - 
+Processing issue #290 (1/253): b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.308
+2026-02-12 15:27:13 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.308
+2026-02-12 15:27:13 - cesm_status_board - INFO - 
+Processing issue #289 (2/253): b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.307
+2026-02-12 15:27:13 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.307
+2026-02-12 15:27:13 - cesm_status_board - INFO - 
+Processing issue #288 (3/253): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.306
+2026-02-12 15:27:13 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:13 - cesm_status_board - INFO - 
+Processing issue #287 (4/253): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.305
+2026-02-12 15:27:13 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:13 - cesm_status_board - INFO - 
+Processing issue #286 (5/253): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.304
+2026-02-12 15:27:13 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:13 - cesm_status_board - INFO - 
+Processing issue #285 (6/253): b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.303
+2026-02-12 15:27:14 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.303
+2026-02-12 15:27:14 - cesm_status_board - INFO - 
+Processing issue #284 (7/253): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.298
+2026-02-12 15:27:14 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:14 - cesm_status_board - INFO - 
+Processing issue #283 (8/253): b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.302
+2026-02-12 15:27:14 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.302
+2026-02-12 15:27:14 - cesm_status_board - INFO - 
+Processing issue #282 (9/253): b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.301
+2026-02-12 15:27:14 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.301
+2026-02-12 15:27:14 - cesm_status_board - INFO - 
+Processing issue #281 (10/253): b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.300
+2026-02-12 15:27:14 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.300
+2026-02-12 15:27:14 - cesm_status_board - INFO - 
+Processing issue #280 (11/253): Casename (b.e30_alpha08a_cesm.B1850C_LTso.ne30_t232_wgx3_gris4.280_gris_v2_accel/)
+2026-02-12 15:27:14 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:14 - cesm_status_board - INFO - 
+Processing issue #279 (12/253): b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.299
+2026-02-12 15:27:14 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.299
+2026-02-12 15:27:14 - cesm_status_board - INFO - 
+Processing issue #278 (13/253): b.e30_alpha08a.B1850C_MTso.ne30_t232_wgx3.280.mcsp
+2026-02-12 15:27:14 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:14 - cesm_status_board - INFO - 
+Processing issue #277 (14/253): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.297
+2026-02-12 15:27:14 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:14 - cesm_status_board - INFO - 
+Processing issue #276 (15/253): b.e30_alpha08a.B1850C_LTso.ne30_t232_wgx3.280.ivoc
+2026-02-12 15:27:14 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:14 - cesm_status_board - INFO - 
+Processing issue #275 (16/253): b.e30_alpha08a.B1850C_LTso.ne30_t232_wgx3.280.nohygro
+2026-02-12 15:27:14 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha08a.B1850C_LTso.ne30_t232_wgx3.280.nohygro
+2026-02-12 15:27:14 - cesm_status_board - INFO - 
+Processing issue #274 (17/253): b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.296
+2026-02-12 15:27:14 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.296
+2026-02-12 15:27:14 - cesm_status_board - INFO - 
+Processing issue #273 (18/253): b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.295
+2026-02-12 15:27:15 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.295
+2026-02-12 15:27:15 - cesm_status_board - INFO - 
+Processing issue #272 (19/253): Antarctic topography and ACC
+2026-02-12 15:27:15 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:15 - cesm_status_board - INFO - 
+Processing issue #270 (20/253): b.e30_alpha07g.BHISTC_LTso.ne30_t232_wgx3.276b
+2026-02-12 15:27:15 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:15 - cesm_status_board - INFO - 
+Processing issue #269 (21/253): b.e30_alpha07g.BHISTC_LTso.ne30_t232_wgx3.271b
+2026-02-12 15:27:15 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:15 - cesm_status_board - INFO - 
+Processing issue #268 (22/253): b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.290
+2026-02-12 15:27:15 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:15 - cesm_status_board - INFO - 
+Processing issue #267 (23/253): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.294
+2026-02-12 15:27:15 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:15 - cesm_status_board - INFO - 
+Processing issue #266 (24/253): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.293
+2026-02-12 15:27:15 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:15 - cesm_status_board - INFO - 
+Processing issue #265 (25/253): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.292
+2026-02-12 15:27:15 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:15 - cesm_status_board - INFO - 
+Processing issue #264 (26/253): b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.289
+2026-02-12 15:27:15 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.289
+2026-02-12 15:27:15 - cesm_status_board - INFO - 
+Processing issue #263 (27/253): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.291
+2026-02-12 15:27:15 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:15 - cesm_status_board - INFO - 
+Processing issue #262 (28/253): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.287 (287_07g)
+2026-02-12 15:27:15 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:15 - cesm_status_board - INFO - 
+Processing issue #261 (29/253): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.286
+2026-02-12 15:27:15 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:15 - cesm_status_board - INFO - 
+Processing issue #260 (30/253): b.e30_alpha08a.B1850C_LTso.ne30_t232_wgx3.287 (287_08a)
+2026-02-12 15:27:15 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:15 - cesm_status_board - INFO - 
+Processing issue #259 (31/253): b.e30_alpha08a.B1850C_MTso.ne30_t232_wgx3.280
+2026-02-12 15:27:15 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha08a.B1850C_MTso.ne30_t232_wgx3.280
+2026-02-12 15:27:15 - cesm_status_board - INFO - 
+Processing issue #258 (32/253): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.285
+2026-02-12 15:27:15 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:15 - cesm_status_board - INFO - 
+Processing issue #257 (33/253): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.284
+2026-02-12 15:27:15 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:15 - cesm_status_board - INFO - 
+Processing issue #256 (34/253): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.275.wav
+2026-02-12 15:27:15 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:15 - cesm_status_board - INFO - 
+Processing issue #255 (35/253): alpha07g_qt3 (quadtune test)
+2026-02-12 15:27:15 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:15 - cesm_status_board - INFO - 
+Processing issue #252 (36/253): b.e30_alpha08a.B1850C_LTso.ne30_t232_wgx3.283
+2026-02-12 15:27:15 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:15 - cesm_status_board - INFO - 
+Processing issue #251 (37/253): b.e30_alpha08a.B1850C_LTso.ne30_t232_wgx3.282
+2026-02-12 15:27:15 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:15 - cesm_status_board - INFO - 
+Processing issue #250 (38/253): b.e30_alpha08a.B1850C_LTso.ne30_t232_wgx3.281
+2026-02-12 15:27:15 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:15 - cesm_status_board - INFO - 
+Processing issue #249 (39/253): b.e30_alpha08a.B1850C_LTso.ne30_t232_wgx3.280
+2026-02-12 15:27:16 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha08a.B1850C_LTso.ne30_t232_wgx3.280
+2026-02-12 15:27:16 - cesm_status_board - INFO - 
+Processing issue #248 (40/253): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.278
+2026-02-12 15:27:16 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.278
+2026-02-12 15:27:16 - cesm_status_board - INFO - 
+Processing issue #247 (41/253): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.277
+2026-02-12 15:27:16 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.277
+2026-02-12 15:27:16 - cesm_status_board - INFO - 
+Processing issue #246 (42/253): b.e30_alpha07g.BHISTC_LTso.ne30_t232_wgx3.276_4xco2
+2026-02-12 15:27:16 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:16 - cesm_status_board - INFO - 
+Processing issue #245 (43/253): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.271_4xco2
+2026-02-12 15:27:16 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:16 - cesm_status_board - INFO - 
+Processing issue #244 (44/253): b.e30_alpha07g.BHISTC_LTso.ne30_t232_wgx3.276
+2026-02-12 15:27:16 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:16 - cesm_status_board - INFO - 
+Processing issue #243 (45/253): b.e30_alpha07g.BHISTC_LTso.ne30_t232_wgx3.271sturm
+2026-02-12 15:27:16 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:16 - cesm_status_board - INFO - 
+Processing issue #242 (46/253): b.e30_alpha07g.BHISTC_LTso.ne30_t232_wgx3.271
+2026-02-12 15:27:16 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:16 - cesm_status_board - INFO - 
+Processing issue #241 (47/253): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.276
+2026-02-12 15:27:16 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.276
+2026-02-12 15:27:16 - cesm_status_board - INFO - 
+Processing issue #240 (48/253): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.275
+2026-02-12 15:27:16 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.275
+2026-02-12 15:27:16 - cesm_status_board - INFO - 
+Processing issue #239 (49/253): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.274
+2026-02-12 15:27:16 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.274
+2026-02-12 15:27:16 - cesm_status_board - INFO - 
+Processing issue #238 (50/253): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.273
+2026-02-12 15:27:16 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.273
+2026-02-12 15:27:16 - cesm_status_board - INFO - 
+Processing issue #237 (51/253): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.272
+2026-02-12 15:27:16 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:16 - cesm_status_board - INFO - 
+Processing issue #236 (52/253): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.271
+2026-02-12 15:27:16 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.271
+2026-02-12 15:27:16 - cesm_status_board - INFO - 
+Processing issue #235 (53/253): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.261.t4sforcings
+2026-02-12 15:27:16 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:16 - cesm_status_board - INFO - 
+Processing issue #234 (54/253): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.270
+2026-02-12 15:27:16 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.270
+2026-02-12 15:27:16 - cesm_status_board - INFO - 
+Processing issue #233 (55/253): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.269
+2026-02-12 15:27:16 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:16 - cesm_status_board - INFO - 
+Processing issue #232 (56/253): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.268
+2026-02-12 15:27:16 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.268
+2026-02-12 15:27:16 - cesm_status_board - INFO - 
+Processing issue #231 (57/253): Casename (enter the name of the run here)
+2026-02-12 15:27:17 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:17 - cesm_status_board - INFO - 
+Processing issue #230 (58/253): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.267
+2026-02-12 15:27:17 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.267
+2026-02-12 15:27:17 - cesm_status_board - INFO - 
+Processing issue #229 (59/253): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.266
+2026-02-12 15:27:17 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:17 - cesm_status_board - INFO - 
+Processing issue #227 (60/253): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.265
+2026-02-12 15:27:17 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:17 - cesm_status_board - INFO - 
+Processing issue #226 (61/253): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.264
+2026-02-12 15:27:17 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:17 - cesm_status_board - INFO - 
+Processing issue #225 (62/253): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.263
+2026-02-12 15:27:17 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:17 - cesm_status_board - INFO - 
+Processing issue #224 (63/253): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.262
+2026-02-12 15:27:17 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:17 - cesm_status_board - INFO - 
+Processing issue #223 (64/253): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.261
+2026-02-12 15:27:17 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:17 - cesm_status_board - INFO - 
+Processing issue #222 (65/253): b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.259
+2026-02-12 15:27:17 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:17 - cesm_status_board - INFO - 
+Processing issue #221 (66/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.258
+2026-02-12 15:27:17 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:17 - cesm_status_board - INFO - 
+Processing issue #220 (67/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.257
+2026-02-12 15:27:17 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:17 - cesm_status_board - INFO - 
+Processing issue #219 (68/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.256
+2026-02-12 15:27:17 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:17 - cesm_status_board - INFO - 
+Processing issue #218 (69/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.255
+2026-02-12 15:27:17 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:17 - cesm_status_board - INFO - 
+Processing issue #217 (70/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.254
+2026-02-12 15:27:17 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:17 - cesm_status_board - INFO - 
+Processing issue #216 (71/253): b.e30_alpha07c_cesm.B1850C_MTt4s.ne30_t232_wgx3.251.001
+2026-02-12 15:27:17 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:17 - cesm_status_board - INFO - 
+Processing issue #214 (72/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.253
+2026-02-12 15:27:17 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:17 - cesm_status_board - INFO - 
+Processing issue #213 (73/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.252
+2026-02-12 15:27:17 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:17 - cesm_status_board - INFO - 
+Processing issue #212 (74/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.251
+2026-02-12 15:27:17 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:17 - cesm_status_board - INFO - 
+Processing issue #211 (75/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.250
+2026-02-12 15:27:17 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:17 - cesm_status_board - INFO - 
+Processing issue #210 (76/253): Increase the ZM convection Parcel Temperature Perturbation
+2026-02-12 15:27:17 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:17 - cesm_status_board - INFO - 
+Processing issue #209 (77/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.249
+2026-02-12 15:27:17 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.249
+2026-02-12 15:27:17 - cesm_status_board - INFO - 
+Processing issue #208 (78/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.248
+2026-02-12 15:27:17 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.248
+2026-02-12 15:27:17 - cesm_status_board - INFO - 
+Processing issue #207 (79/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.247
+2026-02-12 15:27:17 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.247
+2026-02-12 15:27:17 - cesm_status_board - INFO - 
+Processing issue #206 (80/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.245
+2026-02-12 15:27:17 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.245
+2026-02-12 15:27:17 - cesm_status_board - INFO - 
+Processing issue #205 (81/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.246
+2026-02-12 15:27:17 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:17 - cesm_status_board - INFO - 
+Processing issue #204 (82/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.244
+2026-02-12 15:27:17 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.244
+2026-02-12 15:27:17 - cesm_status_board - INFO - 
+Processing issue #203 (83/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.243
+2026-02-12 15:27:17 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.243
+2026-02-12 15:27:17 - cesm_status_board - INFO - 
+Processing issue #202 (84/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.242
+2026-02-12 15:27:17 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.242
+2026-02-12 15:27:17 - cesm_status_board - INFO - 
+Processing issue #201 (85/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.241
+2026-02-12 15:27:17 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.241
+2026-02-12 15:27:17 - cesm_status_board - INFO - 
+Processing issue #200 (86/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.240
+2026-02-12 15:27:17 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.240
+2026-02-12 15:27:17 - cesm_status_board - INFO - 
+Processing issue #199 (87/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.239
+2026-02-12 15:27:17 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:17 - cesm_status_board - INFO - 
+Processing issue #198 (88/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.238
+2026-02-12 15:27:18 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.238
+2026-02-12 15:27:18 - cesm_status_board - INFO - 
+Processing issue #197 (89/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.237
+2026-02-12 15:27:18 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.237
+2026-02-12 15:27:18 - cesm_status_board - INFO - 
+Processing issue #196 (90/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.236.002
+2026-02-12 15:27:18 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.236.002
+2026-02-12 15:27:18 - cesm_status_board - INFO - 
+Processing issue #195 (91/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.216_fsd
+2026-02-12 15:27:18 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:18 - cesm_status_board - INFO - 
+Processing issue #194 (92/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.235
+2026-02-12 15:27:18 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.235
+2026-02-12 15:27:18 - cesm_status_board - INFO - 
+Processing issue #193 (93/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.234
+2026-02-12 15:27:18 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.234
+2026-02-12 15:27:18 - cesm_status_board - INFO - 
+Processing issue #192 (94/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.233
+2026-02-12 15:27:18 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:18 - cesm_status_board - INFO - 
+Processing issue #191 (95/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.232
+2026-02-12 15:27:18 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:18 - cesm_status_board - INFO - 
+Processing issue #190 (96/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.231
+2026-02-12 15:27:18 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:18 - cesm_status_board - INFO - 
+Processing issue #189 (97/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.230
+2026-02-12 15:27:18 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:18 - cesm_status_board - INFO - 
+Processing issue #188 (98/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.229
+2026-02-12 15:27:18 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:18 - cesm_status_board - INFO - 
+Processing issue #187 (99/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.228
+2026-02-12 15:27:18 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:18 - cesm_status_board - INFO - 
+Processing issue #186 (100/253): b.e30_alpha07c_cesm3_v2.B1850C_LTso.ne30_t232_wgx3.227
+2026-02-12 15:27:18 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:18 - cesm_status_board - INFO - 
+Processing issue #185 (101/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.226
+2026-02-12 15:27:18 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:18 - cesm_status_board - INFO - 
+Processing issue #183 (102/253): b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.225
+2026-02-12 15:27:18 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.225
+2026-02-12 15:27:18 - cesm_status_board - INFO - 
+Processing issue #182 (103/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.222
+2026-02-12 15:27:18 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.222
+2026-02-12 15:27:18 - cesm_status_board - INFO - 
+Processing issue #181 (104/253): b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.224
+2026-02-12 15:27:18 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.224
+2026-02-12 15:27:18 - cesm_status_board - INFO - 
+Processing issue #180 (105/253): b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.223
+2026-02-12 15:27:18 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.223
+2026-02-12 15:27:18 - cesm_status_board - INFO - 
+Processing issue #179 (106/253): b.e30_alpha07b_dev.B1850C_MTt4s.ne30_t232_wgx3.213
+2026-02-12 15:27:18 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:18 - cesm_status_board - INFO - 
+Processing issue #178 (107/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.220
+2026-02-12 15:27:18 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:18 - cesm_status_board - INFO - 
+Processing issue #177 (108/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.221
+2026-02-12 15:27:18 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:18 - cesm_status_board - INFO - 
+Processing issue #176 (109/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.219
+2026-02-12 15:27:18 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:18 - cesm_status_board - INFO - 
+Processing issue #175 (110/253): b.e30_alpha07b_dev.B1850C_MTt4s.ne30_t232_wgx3.214
+2026-02-12 15:27:18 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:18 - cesm_status_board - INFO - 
+Processing issue #174 (111/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.218
+2026-02-12 15:27:18 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:18 - cesm_status_board - INFO - 
+Processing issue #173 (112/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.217
+2026-02-12 15:27:18 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:18 - cesm_status_board - INFO - 
+Processing issue #172 (113/253): b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.216
+2026-02-12 15:27:18 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.216
+2026-02-12 15:27:18 - cesm_status_board - INFO - 
+Processing issue #171 (114/253): b.e30_alpha07b_dev.BHISTC_LTso.ne30_t232_wgx3.215
+2026-02-12 15:27:18 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:18 - cesm_status_board - INFO - 
+Processing issue #170 (115/253): b.e30_alpha07b_dev.BHISTC_LTso.ne30_t232_wgx3.214
+2026-02-12 15:27:18 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:18 - cesm_status_board - INFO - 
+Processing issue #169 (116/253): b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.214
+2026-02-12 15:27:18 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.214
+2026-02-12 15:27:19 - cesm_status_board - INFO - 
+Processing issue #166 (117/253): b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.213
+2026-02-12 15:27:19 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.213
+2026-02-12 15:27:19 - cesm_status_board - INFO - 
+Processing issue #165 (118/253): b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.212
+2026-02-12 15:27:19 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.212
+2026-02-12 15:27:19 - cesm_status_board - INFO - 
+Processing issue #164 (119/253): b.e30_beta06.BHISTC_LTso.ne30_t232_wgx3_fixed_emission.200
+2026-02-12 15:27:19 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:19 - cesm_status_board - INFO - 
+Processing issue #163 (120/253): b.e30_beta06.BHISTC_LTso.ne30_t232_wgx3.200
+2026-02-12 15:27:19 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:19 - cesm_status_board - INFO - 
+Processing issue #161 (121/253): b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.211
+2026-02-12 15:27:19 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.211
+2026-02-12 15:27:19 - cesm_status_board - INFO - 
+Processing issue #160 (122/253): b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.210
+2026-02-12 15:27:19 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.210
+2026-02-12 15:27:19 - cesm_status_board - INFO - 
+Processing issue #159 (123/253): b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.209
+2026-02-12 15:27:19 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.209
+2026-02-12 15:27:19 - cesm_status_board - INFO - 
+Processing issue #158 (124/253): b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.207
+2026-02-12 15:27:19 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.207
+2026-02-12 15:27:19 - cesm_status_board - INFO - 
+Processing issue #157 (125/253): b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.206
+2026-02-12 15:27:19 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.206
+2026-02-12 15:27:19 - cesm_status_board - INFO - 
+Processing issue #156 (126/253): b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.205
+2026-02-12 15:27:19 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.205
+2026-02-12 15:27:19 - cesm_status_board - INFO - 
+Processing issue #155 (127/253): b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.204
+2026-02-12 15:27:19 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.204
+2026-02-12 15:27:19 - cesm_status_board - INFO - 
+Processing issue #154 (128/253): b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.203
+2026-02-12 15:27:19 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.203
+2026-02-12 15:27:19 - cesm_status_board - INFO - 
+Processing issue #153 (129/253): b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.202
+2026-02-12 15:27:19 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.202
+2026-02-12 15:27:19 - cesm_status_board - INFO - 
+Processing issue #152 (130/253): updated CLM surface data & parameter file
+2026-02-12 15:27:19 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:19 - cesm_status_board - INFO - 
+Processing issue #151 (131/253): b.e30_alpha07b.B1850C_LTso.ne30_t232_wgx3.201
+2026-02-12 15:27:19 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:19 - cesm_status_board - INFO - 
+Processing issue #150 (132/253): b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.200
+2026-02-12 15:27:19 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.200
+2026-02-12 15:27:20 - cesm_status_board - INFO - 
+Processing issue #149 (133/253): b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.198
+2026-02-12 15:27:20 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.198
+2026-02-12 15:27:20 - cesm_status_board - INFO - 
+Processing issue #148 (134/253): b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.199
+2026-02-12 15:27:20 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.199
+2026-02-12 15:27:20 - cesm_status_board - INFO - 
+Processing issue #147 (135/253): b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.197
+2026-02-12 15:27:20 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.197
+2026-02-12 15:27:20 - cesm_status_board - INFO - 
+Processing issue #146 (136/253): b.e30_beta06.BHISTC_LTso.ne30_t232_wgx3.192
+2026-02-12 15:27:20 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta06.BHISTC_LTso.ne30_t232_wgx3.192
+2026-02-12 15:27:20 - cesm_status_board - INFO - 
+Processing issue #145 (137/253): New expldiff=F tuning
+2026-02-12 15:27:20 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:20 - cesm_status_board - INFO - 
+Processing issue #144 (138/253): b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.196
+2026-02-12 15:27:20 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.196
+2026-02-12 15:27:20 - cesm_status_board - INFO - 
+Processing issue #143 (139/253): b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.195
+2026-02-12 15:27:20 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.195
+2026-02-12 15:27:20 - cesm_status_board - INFO - 
+Processing issue #142 (140/253): b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.194
+2026-02-12 15:27:20 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.194
+2026-02-12 15:27:20 - cesm_status_board - INFO - 
+Processing issue #141 (141/253): b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.193
+2026-02-12 15:27:20 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.193
+2026-02-12 15:27:20 - cesm_status_board - INFO - 
+Processing issue #140 (142/253): b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.192
+2026-02-12 15:27:20 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.192
+2026-02-12 15:27:20 - cesm_status_board - INFO - 
+Processing issue #139 (143/253): b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.191
+2026-02-12 15:27:20 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.191
+2026-02-12 15:27:20 - cesm_status_board - INFO - 
+Processing issue #138 (144/253): b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.190
+2026-02-12 15:27:20 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.190
+2026-02-12 15:27:20 - cesm_status_board - INFO - 
+Processing issue #137 (145/253): b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.189
+2026-02-12 15:27:20 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:20 - cesm_status_board - INFO - 
+Processing issue #136 (146/253): b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.188
+2026-02-12 15:27:20 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.188
+2026-02-12 15:27:20 - cesm_status_board - INFO - 
+Processing issue #135 (147/253): b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.187
+2026-02-12 15:27:20 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.187
+2026-02-12 15:27:20 - cesm_status_board - INFO - 
+Processing issue #133 (148/253): b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.186
+2026-02-12 15:27:20 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:20 - cesm_status_board - INFO - 
+Processing issue #132 (149/253): b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.185
+2026-02-12 15:27:21 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.185
+2026-02-12 15:27:21 - cesm_status_board - INFO - 
+Processing issue #131 (150/253): Run name here
+2026-02-12 15:27:21 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:21 - cesm_status_board - INFO - 
+Processing issue #130 (151/253): F-case with corrected SE emissions to explore aerosol burdens in present day and their budgets
+2026-02-12 15:27:21 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:21 - cesm_status_board - INFO - 
+Processing issue #129 (152/253): b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.184
+2026-02-12 15:27:21 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.184
+2026-02-12 15:27:21 - cesm_status_board - INFO - 
+Processing issue #128 (153/253): b.e30_beta06_megan.B1850C_MTt4s.ne30.001
+2026-02-12 15:27:21 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:21 - cesm_status_board - INFO - 
+Processing issue #127 (154/253): b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.183
+2026-02-12 15:27:21 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.183
+2026-02-12 15:27:21 - cesm_status_board - INFO - 
+Processing issue #125 (155/253): b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.182
+2026-02-12 15:27:21 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.182
+2026-02-12 15:27:21 - cesm_status_board - INFO - 
+Processing issue #124 (156/253): b.e30_beta06.BHISTC_LTso.ne30_t232_wgx3.166b
+2026-02-12 15:27:21 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:21 - cesm_status_board - INFO - 
+Processing issue #123 (157/253): b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.181
+2026-02-12 15:27:21 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.181
+2026-02-12 15:27:21 - cesm_status_board - INFO - 
+Processing issue #122 (158/253): b.e30_beta06.BHISTC_LTso.ne30_t232_wgx3.180
+2026-02-12 15:27:21 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:21 - cesm_status_board - INFO - 
+Processing issue #121 (159/253): b.e30_beta06.BHISTC_LTso.ne30_t232_wgx3.166
+2026-02-12 15:27:21 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta06.BHISTC_LTso.ne30_t232_wgx3.166
+2026-02-12 15:27:21 - cesm_status_board - INFO - 
+Processing issue #120 (160/253): b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.179wave
+2026-02-12 15:27:21 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.179wave
+2026-02-12 15:27:21 - cesm_status_board - INFO - 
+Processing issue #119 (161/253): b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.179
+2026-02-12 15:27:21 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.179
+2026-02-12 15:27:21 - cesm_status_board - INFO - 
+Processing issue #118 (162/253): B case with Vince's QuadTune parameters
+2026-02-12 15:27:21 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:21 - cesm_status_board - INFO - 
+Processing issue #117 (163/253): b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.budget.156g
+2026-02-12 15:27:21 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:21 - cesm_status_board - INFO - 
+Processing issue #116 (164/253): b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.budget.156f
+2026-02-12 15:27:21 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:21 - cesm_status_board - INFO - 
+Processing issue #115 (165/253): b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.budget.156e
+2026-02-12 15:27:21 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:21 - cesm_status_board - INFO - 
+Processing issue #114 (166/253): SMB 166 <-> 156
+2026-02-12 15:27:22 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:22 - cesm_status_board - INFO - 
+Processing issue #113 (167/253): b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.budget.156d
+2026-02-12 15:27:22 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:22 - cesm_status_board - INFO - 
+Processing issue #112 (168/253): b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.budget.156c
+2026-02-12 15:27:22 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:22 - cesm_status_board - INFO - 
+Processing issue #111 (169/253): MT run with 166 configuration
+2026-02-12 15:27:22 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:22 - cesm_status_board - INFO - 
+Processing issue #110 (170/253): b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.budget.156b
+2026-02-12 15:27:22 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:22 - cesm_status_board - INFO - 
+Processing issue #109 (171/253): b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.178
+2026-02-12 15:27:22 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.178
+2026-02-12 15:27:22 - cesm_status_board - INFO - 
+Processing issue #108 (172/253): b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.170b
+2026-02-12 15:27:22 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.170b
+2026-02-12 15:27:22 - cesm_status_board - INFO - 
+Processing issue #107 (173/253): b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.156wave
+2026-02-12 15:27:22 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.156wave
+2026-02-12 15:27:22 - cesm_status_board - INFO - 
+Processing issue #105 (174/253): b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.177
+2026-02-12 15:27:22 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.177
+2026-02-12 15:27:22 - cesm_status_board - INFO - 
+Processing issue #104 (175/253): b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.176
+2026-02-12 15:27:22 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.176
+2026-02-12 15:27:22 - cesm_status_board - INFO - 
+Processing issue #103 (176/253): b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.175
+2026-02-12 15:27:22 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.175
+2026-02-12 15:27:22 - cesm_status_board - INFO - 
+Processing issue #102 (177/253): b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.174
+2026-02-12 15:27:22 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.174
+2026-02-12 15:27:22 - cesm_status_board - INFO - 
+Processing issue #101 (178/253): b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.173
+2026-02-12 15:27:22 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.173
+2026-02-12 15:27:22 - cesm_status_board - INFO - 
+Processing issue #100 (179/253): b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.172
+2026-02-12 15:27:22 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.172
+2026-02-12 15:27:22 - cesm_status_board - INFO - 
+Processing issue #99 (180/253): b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.171
+2026-02-12 15:27:22 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.171
+2026-02-12 15:27:23 - cesm_status_board - INFO - 
+Processing issue #98 (181/253): b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.170
+2026-02-12 15:27:23 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.170
+2026-02-12 15:27:23 - cesm_status_board - INFO - 
+Processing issue #97 (182/253): b.e30_beta06.B1850C_MTso.ne30_t232_wgx3.165
+2026-02-12 15:27:23 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta06.B1850C_MTso.ne30_t232_wgx3.165
+2026-02-12 15:27:23 - cesm_status_board - INFO - 
+Processing issue #96 (183/253): b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.168
+2026-02-12 15:27:23 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:23 - cesm_status_board - INFO - 
+Processing issue #95 (184/253): b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.169
+2026-02-12 15:27:23 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.169
+2026-02-12 15:27:23 - cesm_status_board - INFO - 
+Processing issue #94 (185/253): b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.167
+2026-02-12 15:27:23 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.167
+2026-02-12 15:27:23 - cesm_status_board - INFO - 
+Processing issue #93 (186/253): b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.166
+2026-02-12 15:27:23 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.166
+2026-02-12 15:27:23 - cesm_status_board - INFO - 
+Processing issue #92 (187/253): b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.budget.156
+2026-02-12 15:27:23 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:23 - cesm_status_board - INFO - 
+Processing issue #90 (188/253): b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.165
+2026-02-12 15:27:23 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.165
+2026-02-12 15:27:23 - cesm_status_board - INFO - 
+Processing issue #89 (189/253): Evaluate MT
+2026-02-12 15:27:23 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:23 - cesm_status_board - INFO - 
+Processing issue #88 (190/253): b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.164
+2026-02-12 15:27:24 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.164
+2026-02-12 15:27:24 - cesm_status_board - INFO - 
+Processing issue #87 (191/253): b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.163
+2026-02-12 15:27:25 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.163
+2026-02-12 15:27:25 - cesm_status_board - INFO - 
+Processing issue #86 (192/253): b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.162
+2026-02-12 15:27:26 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.162
+2026-02-12 15:27:26 - cesm_status_board - INFO - 
+Processing issue #85 (193/253): b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.161
+2026-02-12 15:27:26 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:26 - cesm_status_board - INFO - 
+Processing issue #84 (194/253): b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.160
+2026-02-12 15:27:26 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.160
+2026-02-12 15:27:26 - cesm_status_board - INFO - 
+Processing issue #83 (195/253): b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.159 (159e)
+2026-02-12 15:27:26 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:26 - cesm_status_board - INFO - 
+Processing issue #82 (196/253): b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.159 (159b)
+2026-02-12 15:27:26 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:26 - cesm_status_board - INFO - 
+Processing issue #81 (197/253): b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.158
+2026-02-12 15:27:26 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.158
+2026-02-12 15:27:27 - cesm_status_board - INFO - 
+Processing issue #79 (198/253): b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.156
+2026-02-12 15:27:27 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.156
+2026-02-12 15:27:27 - cesm_status_board - INFO - 
+Processing issue #78 (199/253): b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.155
+2026-02-12 15:27:27 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.155
+2026-02-12 15:27:27 - cesm_status_board - INFO - 
+Processing issue #77 (200/253): PLEASE REVIEW: new coupled run with mods from F cases and starting from the end of 147
+2026-02-12 15:27:27 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cesm/development/amwg/inputdata_extra/ctsm5.3.012.Nfix_params.v13.c250221_upplim250.nc
+2026-02-12 15:27:27 - cesm_status_board - INFO - 
+Processing issue #76 (201/253): b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.154
+2026-02-12 15:27:27 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.154
+2026-02-12 15:27:27 - cesm_status_board - INFO - 
+Processing issue #75 (202/253): b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.153
+2026-02-12 15:27:27 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.153
+2026-02-12 15:27:27 - cesm_status_board - INFO - 
+Processing issue #74 (203/253): b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.152
+2026-02-12 15:27:27 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.152
+2026-02-12 15:27:27 - cesm_status_board - INFO - 
+Processing issue #73 (204/253): b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.150
+2026-02-12 15:27:27 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.150
+2026-02-12 15:27:27 - cesm_status_board - INFO - 
+Processing issue #72 (205/253): b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.149
+2026-02-12 15:27:28 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.149
+2026-02-12 15:27:28 - cesm_status_board - INFO - 
+Processing issue #71 (206/253): b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.151
+2026-02-12 15:27:28 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:28 - cesm_status_board - INFO - 
+Processing issue #70 (207/253): b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.148
+2026-02-12 15:27:28 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:28 - cesm_status_board - INFO - 
+Processing issue #69 (208/253): b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.147
+2026-02-12 15:27:28 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.147
+2026-02-12 15:27:28 - cesm_status_board - INFO - 
+Processing issue #68 (209/253): b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.146
+2026-02-12 15:27:28 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.146
+2026-02-12 15:27:28 - cesm_status_board - INFO - 
+Processing issue #67 (210/253): b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.144
+2026-02-12 15:27:28 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.144
+2026-02-12 15:27:29 - cesm_status_board - INFO - 
+Processing issue #66 (211/253): b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.145
+2026-02-12 15:27:29 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.145
+2026-02-12 15:27:29 - cesm_status_board - INFO - 
+Processing issue #65 (212/253): b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.143
+2026-02-12 15:27:30 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.143
+2026-02-12 15:27:30 - cesm_status_board - INFO - 
+Processing issue #64 (213/253): b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.142
+2026-02-12 15:27:31 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.142
+2026-02-12 15:27:31 - cesm_status_board - INFO - 
+Processing issue #63 (214/253): b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.141
+2026-02-12 15:27:31 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.141
+2026-02-12 15:27:31 - cesm_status_board - INFO - 
+Processing issue #62 (215/253): b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.140
+2026-02-12 15:27:31 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.140
+2026-02-12 15:27:31 - cesm_status_board - INFO - 
+Processing issue #61 (216/253): b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.139
+2026-02-12 15:27:31 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.139
+2026-02-12 15:27:31 - cesm_status_board - INFO - 
+Processing issue #60 (217/253): b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3_rest_yr49.137
+2026-02-12 15:27:31 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:31 - cesm_status_board - INFO - 
+Processing issue #59 (218/253): b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.138
+2026-02-12 15:27:31 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.138
+2026-02-12 15:27:31 - cesm_status_board - INFO - 
+Processing issue #57 (219/253): b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.137
+2026-02-12 15:27:31 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.137
+2026-02-12 15:27:31 - cesm_status_board - INFO - 
+Processing issue #56 (220/253): b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.135 - BUGGY
+2026-02-12 15:27:31 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:31 - cesm_status_board - INFO - 
+Processing issue #55 (221/253): b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3_NUDGED.130
+2026-02-12 15:27:31 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:31 - cesm_status_board - INFO - 
+Processing issue #54 (222/253): b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.136
+2026-02-12 15:27:31 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.136
+2026-02-12 15:27:31 - cesm_status_board - INFO - 
+Processing issue #53 (223/253): b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.134
+2026-02-12 15:27:31 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.134
+2026-02-12 15:27:31 - cesm_status_board - INFO - 
+Processing issue #52 (224/253): b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.133
+2026-02-12 15:27:31 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.133
+2026-02-12 15:27:31 - cesm_status_board - INFO - 
+Processing issue #51 (225/253): b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.132
+2026-02-12 15:27:31 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.132
+2026-02-12 15:27:31 - cesm_status_board - INFO - 
+Processing issue #50 (226/253): b.e30_beta05.BLT1850.ne30_t232_wgx3.129
+2026-02-12 15:27:32 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta05.BLT1850.ne30_t232_wgx3.129
+2026-02-12 15:27:32 - cesm_status_board - INFO - 
+Processing issue #49 (227/253): b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.131
+2026-02-12 15:27:32 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.131
+2026-02-12 15:27:32 - cesm_status_board - INFO - 
+Processing issue #48 (228/253): b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.130
+2026-02-12 15:27:32 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.130
+2026-02-12 15:27:32 - cesm_status_board - INFO - 
+Processing issue #46 (229/253): b.e30_beta05.BLT1850.ne30_t232_wgx3.128
+2026-02-12 15:27:32 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta05.BLT1850.ne30_t232_wgx3.128
+2026-02-12 15:27:32 - cesm_status_board - INFO - 
+Processing issue #45 (230/253): b.e30_beta05.BLT1850.ne30_t232_wgx3.127
+2026-02-12 15:27:32 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta05.BLT1850.ne30_t232_wgx3.127
+2026-02-12 15:27:32 - cesm_status_board - INFO - 
+Processing issue #43 (231/253): b.e30_beta05.BLT1850.ne30_t232_wgx3.126
+2026-02-12 15:27:32 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta05.BLT1850.ne30_t232_wgx3.126
+2026-02-12 15:27:32 - cesm_status_board - INFO - 
+Processing issue #41 (232/253): b.e30_beta05.BLT1850.ne30_t232_wgx3.125
+2026-02-12 15:27:33 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta05.BLT1850.ne30_t232_wgx3.125
+2026-02-12 15:27:33 - cesm_status_board - INFO - 
+Processing issue #40 (233/253): b.e30_beta05.BLT1850.ne30_t232_wgx3.124
+2026-02-12 15:27:33 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta05.BLT1850.ne30_t232_wgx3.124
+2026-02-12 15:27:33 - cesm_status_board - INFO - 
+Processing issue #39 (234/253): b.e30_beta05.BLT1850.ne30_t232_wgx3.123
+2026-02-12 15:27:33 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta05.BLT1850.ne30_t232_wgx3.123
+2026-02-12 15:27:33 - cesm_status_board - INFO - 
+Processing issue #38 (235/253): b.e30_beta05.BLT1850.ne30_t232_wgx3.122
+2026-02-12 15:27:33 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta05.BLT1850.ne30_t232_wgx3.122
+2026-02-12 15:27:33 - cesm_status_board - INFO - 
+Processing issue #37 (236/253): b.e30_beta04.BLT1850.ne30_t232_wgx3.121_1pctco2
+2026-02-12 15:27:33 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta04.BLT1850.ne30_t232_wgx3.121_1pctco2
+2026-02-12 15:27:33 - cesm_status_board - INFO - 
+Processing issue #36 (237/253): b.e30_beta04.BLT1850.ne30_t232_wgx3.121_4xco2
+2026-02-12 15:27:34 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:34 - cesm_status_board - INFO - 
+Processing issue #34 (238/253): b.e30_beta04.BLTHIST.ne30_t232_wgx3.121
+2026-02-12 15:27:34 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta04.BLTHIST.ne30_t232_wgx3.121
+2026-02-12 15:27:34 - cesm_status_board - INFO - 
+Processing issue #33 (239/253): 20th century with 121 configuration
+2026-02-12 15:27:34 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:34 - cesm_status_board - INFO - 
+Processing issue #32 (240/253): b.e30_beta04.BLT1850.ne30_t232_wgx3.121
+2026-02-12 15:27:34 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta04.BLT1850.ne30_t232_wgx3.121
+2026-02-12 15:27:34 - cesm_status_board - INFO - 
+Processing issue #25 (241/253): b.e30_beta04.BLT1850.ne30_t232_wgx3.120
+2026-02-12 15:27:35 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta04.BLT1850.ne30_t232_wgx3.120
+2026-02-12 15:27:35 - cesm_status_board - INFO - 
+Processing issue #24 (242/253): b.e30_beta04.BLT1850.ne30_t232_wgx3.119
+2026-02-12 15:27:36 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:36 - cesm_status_board - INFO - 
+Processing issue #23 (243/253): b.e30_beta04.BLT1850.ne30_t232_wgx3.118
+2026-02-12 15:27:36 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta04.BLT1850.ne30_t232_wgx3.118
+2026-02-12 15:27:36 - cesm_status_board - INFO - 
+Processing issue #21 (244/253): b.e30_beta04.BLT1850.ne30_t232_wgx3.117
+2026-02-12 15:27:36 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta04.BLT1850.ne30_t232_wgx3.117
+2026-02-12 15:27:36 - cesm_status_board - INFO - 
+Processing issue #20 (245/253): New coupled run with increased seasalt_emis_scale
+2026-02-12 15:27:36 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:36 - cesm_status_board - INFO - 
+Processing issue #19 (246/253): b.e30_beta04.BLT1850.ne30_t232_wgx3.116
+2026-02-12 15:27:36 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:36 - cesm_status_board - INFO - 
+Processing issue #18 (247/253): b.e30_beta04.BLT1850.ne30_t232_wgx3.115
+2026-02-12 15:27:37 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:37 - cesm_status_board - INFO - 
+Processing issue #17 (248/253): b.e30_beta04.BLT1850.ne30_t232_wgx3.114
+2026-02-12 15:27:37 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:37 - cesm_status_board - INFO - 
+Processing issue #16 (249/253): sanity check with beta04
+2026-02-12 15:27:37 - cesm_status_board - INFO -   No diagnostics found (will be flagged as pending)
+2026-02-12 15:27:37 - cesm_status_board - INFO - 
+Processing issue #15 (250/253): b.e30_alpha03d.BLT1850.ne30_t232_wgx3.112
+2026-02-12 15:27:38 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_alpha03d.BLT1850.ne30_t232_wgx3.112
+2026-02-12 15:27:38 - cesm_status_board - INFO - 
+Processing issue #14 (251/253): b.e30_beta02.BLT1850.ne30_t232.111
+2026-02-12 15:27:38 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta02.BLT1850.ne30_t232.111
+2026-02-12 15:27:38 - cesm_status_board - INFO - 
+Processing issue #5 (252/253): b.e30_beta02.BLT1850.ne30_t232.110
+2026-02-12 15:27:38 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e30_beta02.BLT1850.ne30_t232.110
+2026-02-12 15:27:38 - cesm_status_board - INFO - 
+Processing issue #3 (253/253): test
+2026-02-12 15:27:38 - cesm_status_board - INFO -   Found diagnostics: /glade/campaign/cgd/amp/amwg/climo/b.e21.BHIST.f09_g17.CMIP6-historical_test-var-bb.004
+2026-02-12 15:27:38 - cesm_status_board - INFO - 
+================================================================================
+2026-02-12 15:27:38 - cesm_status_board - INFO - 6. Collection Summary
+2026-02-12 15:27:38 - cesm_status_board - INFO - ================================================================================
+2026-02-12 15:27:38 - cesm_status_board - INFO - Issues processed: 253/253
+2026-02-12 15:27:38 - cesm_status_board - INFO - Cases created: 253
+2026-02-12 15:27:38 - cesm_status_board - INFO - Diagnostics found: 140
+2026-02-12 15:27:38 - cesm_status_board - INFO - Statistics extracted: 0
+2026-02-12 15:27:38 - cesm_status_board - INFO - Errors: 0
+2026-02-12 15:27:38 - cesm_status_board - INFO - 
+================================================================================
+2026-02-12 15:27:38 - cesm_status_board - INFO - 7. Database Summary
+2026-02-12 15:27:38 - cesm_status_board - INFO - ================================================================================
+2026-02-12 15:27:38 - cesm_status_board - INFO - Total cases in database: 253
+2026-02-12 15:27:38 - cesm_status_board - INFO - Cases with diagnostics: 140
+2026-02-12 15:27:38 - cesm_status_board - INFO - Diagnostic coverage: 55.3%
+2026-02-12 15:27:38 - cesm_status_board - INFO - 
+Top compsets:
+2026-02-12 15:27:38 - cesm_status_board - INFO -   BLT1850: 21 cases (16 with diagnostics)
+2026-02-12 15:27:38 - cesm_status_board - INFO -   MT: 2 cases (0 with diagnostics)
+2026-02-12 15:27:38 - cesm_status_board - INFO -   ACC: 1 cases (0 with diagnostics)
+2026-02-12 15:27:38 - cesm_status_board - INFO -   BLTHIST: 1 cases (1 with diagnostics)
+2026-02-12 15:27:38 - cesm_status_board - INFO -   BUGGY: 1 cases (0 with diagnostics)
+2026-02-12 15:27:38 - cesm_status_board - INFO - 
+Top resolutions:
+2026-02-12 15:27:38 - cesm_status_board - INFO -   e30_alpha07c_cesm: 41 cases (16 with diagnostics)
+2026-02-12 15:27:38 - cesm_status_board - INFO -   e30_alpha07g: 41 cases (10 with diagnostics)
+2026-02-12 15:27:38 - cesm_status_board - INFO -   e30_beta06: 40 cases (33 with diagnostics)
+2026-02-12 15:27:38 - cesm_status_board - INFO -   e30_alpha06b: 28 cases (22 with diagnostics)
+2026-02-12 15:27:38 - cesm_status_board - INFO -   e30_alpha07b_dev: 23 cases (19 with diagnostics)
+2026-02-12 15:27:38 - cesm_status_board - INFO - 
+================================================================================
+2026-02-12 15:27:38 - cesm_status_board - INFO - Data collection completed successfully!
+2026-02-12 15:27:38 - cesm_status_board - INFO - ================================================================================
+2026-02-12 15:28:28 - export_static - INFO - ================================================================================
+2026-02-12 15:28:28 - export_static - INFO - Exporting Database to JSON
+2026-02-12 15:28:28 - export_static - INFO - ================================================================================
+2026-02-12 15:28:28 - export_static - INFO - Output directory: web/data/
+2026-02-12 15:28:28 - export_static - INFO - 
+1. Fetching all cases from database...
+2026-02-12 15:28:28 - export_static - INFO - Found 253 cases
+2026-02-12 15:28:28 - export_static - INFO - 
+2. Fetching statistics for each case...
+2026-02-12 15:28:28 - export_static - INFO -   Processed 50/253 cases...
+2026-02-12 15:28:28 - export_static - INFO -   Processed 100/253 cases...
+2026-02-12 15:28:28 - export_static - INFO -   Processed 150/253 cases...
+2026-02-12 15:28:28 - export_static - INFO -   Processed 200/253 cases...
+2026-02-12 15:28:28 - export_static - INFO -   Processed 250/253 cases...
+2026-02-12 15:28:28 - export_static - INFO - 
+3. Computing summary statistics...
+2026-02-12 15:28:28 - export_static - INFO - 
+4. Preparing cases.json...
+2026-02-12 15:28:28 - export_static - INFO - Writing web/data/cases.json...
+2026-02-12 15:28:28 - export_static - INFO -   File size: 0.31 MB
+2026-02-12 15:28:28 - export_static - INFO - 
+5. Preparing statistics.json...
+2026-02-12 15:28:28 - export_static - INFO - Writing web/data/statistics.json...
+2026-02-12 15:28:28 - export_static - INFO -   File size: 2.17 KB
+2026-02-12 15:28:28 - export_static - INFO - 
+6. Preparing last_update.json...
+2026-02-12 15:28:28 - export_static - INFO - Writing web/data/last_update.json...
+2026-02-12 15:28:28 - export_static - INFO - 
+================================================================================
+2026-02-12 15:28:28 - export_static - INFO - Export Summary
+2026-02-12 15:28:28 - export_static - INFO - ================================================================================
+2026-02-12 15:28:28 - export_static - INFO - Cases exported: 253
+2026-02-12 15:28:28 - export_static - INFO - Output directory: web/data/
+2026-02-12 15:28:28 - export_static - INFO - Files created:
+2026-02-12 15:28:28 - export_static - INFO -   - cases.json (0.31 MB)
+2026-02-12 15:28:28 - export_static - INFO -   - statistics.json (2.17 KB)
+2026-02-12 15:28:28 - export_static - INFO -   - last_update.json
+2026-02-12 15:28:28 - export_static - INFO - 
+================================================================================
+2026-02-12 15:28:28 - export_static - INFO - Export completed successfully!
+2026-02-12 15:28:28 - export_static - INFO - ================================================================================
+2026-02-12 15:40:46 - update_data - INFO - ================================================================================
+2026-02-12 15:40:46 - update_data - INFO - CESM Status Board - Incremental Update
+2026-02-12 15:40:46 - update_data - INFO - ================================================================================
+2026-02-12 15:40:46 - update_data - INFO - Looking for updates since: 7 days ago
+2026-02-12 15:40:46 - update_data - INFO - 
+Fetching issues updated since 2026-02-05T15:40:46.875070...
+2026-02-12 15:40:47 - update_data - INFO - Found 16 updated issues
+2026-02-12 15:40:47 - update_data - INFO - Updated issue #259: b.e30_alpha08a.B1850C_MTso.ne30_t232_wgx3.280
+2026-02-12 15:40:47 - update_data - INFO - Updated issue #262: b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.287 (287_07g)
+2026-02-12 15:40:47 - update_data - INFO - Updated issue #289: b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.307
+2026-02-12 15:40:47 - update_data - INFO - Updated issue #290: b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.308
+2026-02-12 15:40:47 - update_data - INFO - Updated issue #286: b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.304
+2026-02-12 15:40:47 - update_data - INFO - Updated issue #283: b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.302
+2026-02-12 15:40:47 - update_data - INFO - Updated issue #281: b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.300
+2026-02-12 15:40:47 - update_data - INFO - Updated issue #282: b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.301
+2026-02-12 15:40:47 - update_data - INFO - Updated issue #270: b.e30_alpha07g.BHISTC_LTso.ne30_t232_wgx3.276b
+2026-02-12 15:40:47 - update_data - INFO - Updated issue #285: b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.303
+2026-02-12 15:40:47 - update_data - INFO - Updated issue #277: b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.297
+2026-02-12 15:40:47 - update_data - INFO - Updated issue #288: b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.306
+2026-02-12 15:40:47 - update_data - INFO - Updated issue #287: b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.305
+2026-02-12 15:40:47 - update_data - INFO - Updated issue #284: b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.298
+2026-02-12 15:40:47 - update_data - INFO - Updated issue #279: b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.299
+2026-02-12 15:40:47 - update_data - INFO - Updated issue #264: b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.289
+2026-02-12 15:40:47 - update_data - INFO - 
+Incremental update completed:
+2026-02-12 15:40:47 - update_data - INFO -   Issues processed: 16
+2026-02-12 15:40:47 - update_data - INFO -   Cases updated: 16
+2026-02-12 15:40:47 - update_data - INFO -   Errors: 0
+2026-02-12 15:40:47 - export_static - INFO - ================================================================================
+2026-02-12 15:40:47 - export_static - INFO - Exporting Database to JSON
+2026-02-12 15:40:47 - export_static - INFO - ================================================================================
+2026-02-12 15:40:47 - export_static - INFO - Output directory: web/data/
+2026-02-12 15:40:47 - export_static - INFO - 
+1. Fetching all cases from database...
+2026-02-12 15:40:47 - export_static - INFO - Found 253 cases
+2026-02-12 15:40:47 - export_static - INFO - 
+2. Fetching statistics for each case...
+2026-02-12 15:40:47 - export_static - INFO -   Processed 50/253 cases...
+2026-02-12 15:40:47 - export_static - INFO -   Processed 100/253 cases...
+2026-02-12 15:40:47 - export_static - INFO -   Processed 150/253 cases...
+2026-02-12 15:40:47 - export_static - INFO -   Processed 200/253 cases...
+2026-02-12 15:40:47 - export_static - INFO -   Processed 250/253 cases...
+2026-02-12 15:40:47 - export_static - INFO - 
+3. Computing summary statistics...
+2026-02-12 15:40:47 - export_static - INFO - 
+4. Preparing cases.json...
+2026-02-12 15:40:47 - export_static - INFO - Writing web/data/cases.json...
+2026-02-12 15:40:47 - export_static - INFO -   File size: 0.31 MB
+2026-02-12 15:40:47 - export_static - INFO - 
+5. Preparing statistics.json...
+2026-02-12 15:40:47 - export_static - INFO - Writing web/data/statistics.json...
+2026-02-12 15:40:47 - export_static - INFO -   File size: 2.17 KB
+2026-02-12 15:40:47 - export_static - INFO - 
+6. Preparing last_update.json...
+2026-02-12 15:40:47 - export_static - INFO - Writing web/data/last_update.json...
+2026-02-12 15:40:47 - export_static - INFO - 
+================================================================================
+2026-02-12 15:40:47 - export_static - INFO - Export Summary
+2026-02-12 15:40:47 - export_static - INFO - ================================================================================
+2026-02-12 15:40:47 - export_static - INFO - Cases exported: 253
+2026-02-12 15:40:47 - export_static - INFO - Output directory: web/data/
+2026-02-12 15:40:47 - export_static - INFO - Files created:
+2026-02-12 15:40:47 - export_static - INFO -   - cases.json (0.31 MB)
+2026-02-12 15:40:47 - export_static - INFO -   - statistics.json (2.17 KB)
+2026-02-12 15:40:47 - export_static - INFO -   - last_update.json
+2026-02-12 15:40:47 - export_static - INFO - 
+================================================================================
+2026-02-12 15:40:47 - export_static - INFO - Export completed successfully!
+2026-02-12 15:40:47 - export_static - INFO - ================================================================================
+2026-02-12 16:20:26 - update_data - INFO - ================================================================================
+2026-02-12 16:20:26 - update_data - INFO - CESM Status Board - Incremental Update
+2026-02-12 16:20:26 - update_data - INFO - ================================================================================
+2026-02-12 16:20:26 - update_data - INFO - Looking for updates since: 7 days ago
+2026-02-12 16:20:26 - update_data - INFO - 
+Fetching issues updated since 2026-02-05T16:20:26.474274...
+2026-02-12 16:20:27 - update_data - INFO - Found 18 updated issues
+2026-02-12 16:20:27 - update_data - INFO - Updated issue #293: b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.310
+2026-02-12 16:20:27 - update_data - INFO - Updated issue #287: b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.305
+2026-02-12 16:20:27 - update_data - INFO - Updated issue #292: b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.309
+2026-02-12 16:20:27 - update_data - INFO - Updated issue #259: b.e30_alpha08a.B1850C_MTso.ne30_t232_wgx3.280
+2026-02-12 16:20:27 - update_data - INFO - Updated issue #262: b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.287 (287_07g)
+2026-02-12 16:20:27 - update_data - INFO - Updated issue #289: b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.307
+2026-02-12 16:20:27 - update_data - INFO - Updated issue #290: b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.308
+2026-02-12 16:20:27 - update_data - INFO - Updated issue #286: b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.304
+2026-02-12 16:20:27 - update_data - INFO - Updated issue #283: b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.302
+2026-02-12 16:20:27 - update_data - INFO - Updated issue #281: b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.300
+2026-02-12 16:20:28 - update_data - INFO - Updated issue #282: b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.301
+2026-02-12 16:20:28 - update_data - INFO - Updated issue #270: b.e30_alpha07g.BHISTC_LTso.ne30_t232_wgx3.276b
+2026-02-12 16:20:28 - update_data - INFO - Updated issue #285: b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.303
+2026-02-12 16:20:28 - update_data - INFO - Updated issue #277: b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.297
+2026-02-12 16:20:28 - update_data - INFO - Updated issue #288: b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.306
+2026-02-12 16:20:28 - update_data - INFO - Updated issue #284: b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.298
+2026-02-12 16:20:28 - update_data - INFO - Updated issue #279: b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.299
+2026-02-12 16:20:28 - update_data - INFO - Updated issue #264: b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.289
+2026-02-12 16:20:28 - update_data - INFO - 
+Incremental update completed:
+2026-02-12 16:20:28 - update_data - INFO -   Issues processed: 18
+2026-02-12 16:20:28 - update_data - INFO -   Cases updated: 18
+2026-02-12 16:20:28 - update_data - INFO -   Errors: 0
+2026-02-12 16:20:28 - export_static - INFO - ================================================================================
+2026-02-12 16:20:28 - export_static - INFO - Exporting Database to JSON
+2026-02-12 16:20:28 - export_static - INFO - ================================================================================
+2026-02-12 16:20:28 - export_static - INFO - Output directory: web/data/
+2026-02-12 16:20:28 - export_static - INFO - 
+1. Fetching all cases from database...
+2026-02-12 16:20:28 - export_static - INFO - Found 255 cases
+2026-02-12 16:20:28 - export_static - INFO - 
+2. Fetching statistics for each case...
+2026-02-12 16:20:28 - export_static - INFO -   Processed 50/255 cases...
+2026-02-12 16:20:28 - export_static - INFO -   Processed 100/255 cases...
+2026-02-12 16:20:28 - export_static - INFO -   Processed 150/255 cases...
+2026-02-12 16:20:28 - export_static - INFO -   Processed 200/255 cases...
+2026-02-12 16:20:28 - export_static - INFO -   Processed 250/255 cases...
+2026-02-12 16:20:28 - export_static - INFO - 
+3. Computing summary statistics...
+2026-02-12 16:20:28 - export_static - INFO - 
+4. Preparing cases.json...
+2026-02-12 16:20:28 - export_static - INFO - Writing web/data/cases.json...
+2026-02-12 16:20:28 - export_static - INFO -   File size: 0.31 MB
+2026-02-12 16:20:28 - export_static - INFO - 
+5. Preparing statistics.json...
+2026-02-12 16:20:28 - export_static - INFO - Writing web/data/statistics.json...
+2026-02-12 16:20:28 - export_static - INFO -   File size: 2.17 KB
+2026-02-12 16:20:28 - export_static - INFO - 
+6. Preparing last_update.json...
+2026-02-12 16:20:28 - export_static - INFO - Writing web/data/last_update.json...
+2026-02-12 16:20:28 - export_static - INFO - 
+================================================================================
+2026-02-12 16:20:28 - export_static - INFO - Export Summary
+2026-02-12 16:20:28 - export_static - INFO - ================================================================================
+2026-02-12 16:20:28 - export_static - INFO - Cases exported: 255
+2026-02-12 16:20:28 - export_static - INFO - Output directory: web/data/
+2026-02-12 16:20:28 - export_static - INFO - Files created:
+2026-02-12 16:20:28 - export_static - INFO -   - cases.json (0.31 MB)
+2026-02-12 16:20:28 - export_static - INFO -   - statistics.json (2.17 KB)
+2026-02-12 16:20:28 - export_static - INFO -   - last_update.json
+2026-02-12 16:20:28 - export_static - INFO - 
+================================================================================
+2026-02-12 16:20:28 - export_static - INFO - Export completed successfully!
+2026-02-12 16:20:28 - export_static - INFO - ================================================================================

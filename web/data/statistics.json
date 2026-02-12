@@ -1,0 +1,121 @@
+{
+  "by_compset": {
+    "BLT1850": {
+      "count": 21,
+      "with_diagnostics": 16
+    },
+    "MT": {
+      "count": 2,
+      "with_diagnostics": 0
+    },
+    "ACC": {
+      "count": 1,
+      "with_diagnostics": 0
+    },
+    "BLTHIST": {
+      "count": 1,
+      "with_diagnostics": 1
+    },
+    "BUGGY": {
+      "count": 1,
+      "with_diagnostics": 0
+    },
+    "CLM": {
+      "count": 1,
+      "with_diagnostics": 0
+    },
+    "PLEASE": {
+      "count": 1,
+      "with_diagnostics": 1
+    },
+    "SE": {
+      "count": 1,
+      "with_diagnostics": 0
+    },
+    "SMB": {
+      "count": 1,
+      "with_diagnostics": 0
+    },
+    "ZM": {
+      "count": 1,
+      "with_diagnostics": 0
+    }
+  },
+  "by_resolution": {
+    "e30_alpha07g": {
+      "count": 43,
+      "with_diagnostics": 10
+    },
+    "e30_alpha07c_cesm": {
+      "count": 41,
+      "with_diagnostics": 16
+    },
+    "e30_beta06": {
+      "count": 40,
+      "with_diagnostics": 33
+    },
+    "e30_alpha06b": {
+      "count": 28,
+      "with_diagnostics": 22
+    },
+    "e30_alpha07b_dev": {
+      "count": 23,
+      "with_diagnostics": 19
+    },
+    "ne30_t232_wgx3": {
+      "count": 18,
+      "with_diagnostics": 14
+    },
+    "e30_alpha06e": {
+      "count": 17,
+      "with_diagnostics": 8
+    },
+    "e30_alpha08b": {
+      "count": 11,
+      "with_diagnostics": 2
+    },
+    "e30_alpha08a": {
+      "count": 9,
+      "with_diagnostics": 2
+    },
+    "e30_beta04": {
+      "count": 2,
+      "with_diagnostics": 1
+    },
+    "ne30_t232": {
+      "count": 2,
+      "with_diagnostics": 2
+    },
+    "alpha07g_qt3": {
+      "count": 1,
+      "with_diagnostics": 0
+    },
+    "e30_alpha07b": {
+      "count": 1,
+      "with_diagnostics": 0
+    },
+    "e30_alpha07c_cesm3_v2": {
+      "count": 1,
+      "with_diagnostics": 0
+    },
+    "e30_alpha08a_cesm": {
+      "count": 1,
+      "with_diagnostics": 0
+    },
+    "e30_beta06_megan": {
+      "count": 1,
+      "with_diagnostics": 0
+    },
+    "seasalt_emis_scale": {
+      "count": 1,
+      "with_diagnostics": 0
+    }
+  },
+  "diagnostic_coverage": {
+    "total_cases": 255,
+    "with_diagnostics": 131,
+    "without_diagnostics": 124,
+    "percentage": 51.4
+  },
+  "last_updated": "2026-02-12T16:20:28.304286"
+}
