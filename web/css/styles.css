@@ -74,6 +74,43 @@ a:hover {
     color: var(--text-secondary);
 }
 
+/* ===== Tab Navigation ===== */
+.tabs {
+    display: flex;
+    gap: 0.5rem;
+    border-bottom: 2px solid var(--border-color);
+    margin: 2rem 0 1rem 0;
+}
+
+.tab-btn {
+    padding: 0.75rem 1.5rem;
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1em;
+    color: var(--text-secondary);
+    transition: all 0.2s;
+}
+
+.tab-btn:hover {
+    color: var(--text-primary);
+}
+
+.tab-btn.active {
+    border-bottom-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
 /* ===== Dashboard Cards ===== */
 .dashboard {
     display: grid;
@@ -193,6 +230,20 @@ a:hover {
 .btn-secondary:disabled {
     opacity: 0.5;
     cursor: not-allowed;
+}
+
+.btn-link {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    padding: 4px 8px;
+    font-size: 0.9em;
+    text-decoration: underline;
+}
+
+.btn-link:hover {
+    color: var(--primary-hover);
 }
 
 /* ===== Comparison Controls ===== */
@@ -455,6 +506,202 @@ a:hover {
     margin: 4px 0;
 }
 
+/* ===== Statistics Page ===== */
+.statistics-header {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.statistics-header h2 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.statistics-header p {
+    color: var(--text-secondary);
+}
+
+.statistics-controls {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1.5rem;
+    background: var(--background);
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.control-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.control-group label {
+    font-weight: 600;
+    font-size: 0.9em;
+    color: var(--text-secondary);
+}
+
+.control-group select {
+    padding: 10px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1em;
+    background: var(--surface);
+    transition: border-color 0.2s;
+}
+
+.control-group select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 400;
+    font-size: 0.9em;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.toggle-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.toggle-btn {
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--border-color);
+    background: var(--surface);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.toggle-btn:hover {
+    border-color: var(--primary-color);
+}
+
+.toggle-btn.active {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.info-text {
+    font-size: 0.85em;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.period-group {
+    grid-column: span 2;
+}
+
+/* Statistics Table */
+.stats-table-container {
+    background: var(--surface);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: var(--shadow);
+    overflow-x: auto;
+}
+
+.stats-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+.stats-table th {
+    background: var(--background);
+    padding: 0.75rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.9em;
+    border-bottom: 2px solid var(--border-color);
+    cursor: pointer;
+    user-select: none;
+}
+
+.stats-table th:hover {
+    color: var(--primary-color);
+}
+
+.stats-table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.stats-table tr:hover {
+    background: var(--background);
+}
+
+.stats-table .case-name-cell {
+    font-family: monospace;
+    font-size: 0.85em;
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.stats-table .value-cell {
+    text-align: right;
+    font-family: monospace;
+    font-size: 0.9em;
+}
+
+.stats-table .value-cell.missing {
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+/* Statistics Chart */
+.stats-chart-container {
+    background: var(--surface);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: var(--shadow);
+    height: 600px;
+    position: relative;
+}
+
+.statistics-visualization {
+    margin-bottom: 2rem;
+}
+
+/* Empty State */
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-secondary);
+    background: var(--background);
+    border-radius: 8px;
+}
+
+.empty-state p {
+    font-size: 1.1em;
+}
+
 /* ===== Responsive Design ===== */
 @media (max-width: 768px) {
     .header h1 {
@@ -482,5 +729,22 @@ a:hover {
     .comparison-header {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .statistics-controls {
+        grid-template-columns: 1fr;
+    }
+
+    .period-group {
+        grid-column: span 1;
+    }
+
+    .stats-chart-container {
+        height: 400px;
+    }
+
+    .checkbox-group {
+        flex-direction: column;
+        gap: 0.5rem;
     }
 }

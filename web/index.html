@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CESM Development Status Board</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -35,6 +36,14 @@
             </div>
         </section>
 
+        <!-- Tab Navigation -->
+        <nav class="tabs">
+            <button class="tab-btn active" data-tab="cases">Cases</button>
+            <button class="tab-btn" data-tab="statistics">Statistics</button>
+        </nav>
+
+        <!-- Cases Tab Content -->
+        <div id="casesTab" class="tab-content active">
         <!-- Search and Filter -->
         <section class="filters">
             <div class="filter-group">
@@ -114,6 +123,95 @@
                 <button id="nextPage" class="btn-secondary" disabled>Next</button>
             </div>
         </section>
+        </div>
+        <!-- End Cases Tab Content -->
+
+        <!-- Statistics Tab Content -->
+        <div id="statisticsTab" class="tab-content">
+            <section class="statistics-header">
+                <h2>AMWG Statistics Visualization</h2>
+                <p>Compare diagnostic statistics across simulations</p>
+            </section>
+
+            <section class="statistics-controls">
+                <!-- Row 1: Variable and Metric -->
+                <div class="control-group">
+                    <label for="variableSelect">Variable:</label>
+                    <select id="variableSelect">
+                        <!-- Populated by JS -->
+                    </select>
+                    <span id="variableInfo" class="info-text"></span>
+                </div>
+
+                <div class="control-group">
+                    <label for="metricSelect">Metric:</label>
+                    <select id="metricSelect">
+                        <option value="global_mean">Global Mean</option>
+                        <option value="rmse">RMSE</option>
+                        <option value="bias">Bias</option>
+                        <option value="std">Std Dev</option>
+                    </select>
+                </div>
+
+                <!-- Row 2: Period selection -->
+                <div class="control-group period-group">
+                    <label>Periods:</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" class="period-checkbox" value="ANN" checked> ANN</label>
+                        <label><input type="checkbox" class="period-checkbox" value="DJF" checked> DJF</label>
+                        <label><input type="checkbox" class="period-checkbox" value="MAM" checked> MAM</label>
+                        <label><input type="checkbox" class="period-checkbox" value="JJA" checked> JJA</label>
+                        <label><input type="checkbox" class="period-checkbox" value="SON" checked> SON</label>
+                        <button id="showMonthly" class="btn-link">+ Monthly</button>
+                    </div>
+                    <div id="monthlyPeriods" class="checkbox-group" style="display:none;">
+                        <label><input type="checkbox" class="period-checkbox" value="Jan"> Jan</label>
+                        <label><input type="checkbox" class="period-checkbox" value="Feb"> Feb</label>
+                        <label><input type="checkbox" class="period-checkbox" value="Mar"> Mar</label>
+                        <label><input type="checkbox" class="period-checkbox" value="Apr"> Apr</label>
+                        <label><input type="checkbox" class="period-checkbox" value="May"> May</label>
+                        <label><input type="checkbox" class="period-checkbox" value="Jun"> Jun</label>
+                        <label><input type="checkbox" class="period-checkbox" value="Jul"> Jul</label>
+                        <label><input type="checkbox" class="period-checkbox" value="Aug"> Aug</label>
+                        <label><input type="checkbox" class="period-checkbox" value="Sep"> Sep</label>
+                        <label><input type="checkbox" class="period-checkbox" value="Oct"> Oct</label>
+                        <label><input type="checkbox" class="period-checkbox" value="Nov"> Nov</label>
+                        <label><input type="checkbox" class="period-checkbox" value="Dec"> Dec</label>
+                    </div>
+                </div>
+
+                <!-- Row 3: View mode toggle -->
+                <div class="control-group">
+                    <label>View:</label>
+                    <div class="toggle-buttons">
+                        <button id="tableViewBtn" class="toggle-btn active">Table</button>
+                        <button id="chartViewBtn" class="toggle-btn">Chart</button>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <button id="refreshStats" class="btn-primary">Update View</button>
+                </div>
+            </section>
+
+            <!-- Visualization area -->
+            <section class="statistics-visualization">
+                <div id="statisticsTableContainer" class="stats-table-container">
+                    <table id="statisticsTable" class="stats-table">
+                        <!-- Populated by JS -->
+                    </table>
+                </div>
+                <div id="statisticsChartContainer" class="stats-chart-container" style="display:none;">
+                    <canvas id="statisticsChart"></canvas>
+                </div>
+            </section>
+
+            <!-- Empty state -->
+            <div id="statsEmptyState" class="empty-state" style="display:none;">
+                <p>No statistics available for the selected variable.</p>
+            </div>
+        </div>
+        <!-- End Statistics Tab Content -->
 
         <!-- Case Detail Modal -->
         <div class="modal" id="caseModal">
@@ -147,6 +245,7 @@
     <script src="js/main.js"></script>
     <script src="js/search.js"></script>
     <script src="js/compare.js"></script>
+    <script src="js/statistics.js"></script>
     <script>
         // Initialize application
         const app = new CESMStatusBoard();

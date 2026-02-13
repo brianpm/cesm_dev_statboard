@@ -10,6 +10,8 @@ class CESMStatusBoard {
         this.itemsPerPage = 50;
         this.sortColumn = 'case_name';
         this.sortDirection = 'asc';
+        this.statisticsManager = null;
+        this.currentTab = 'cases';
     }
 
     async init() {
@@ -22,6 +24,15 @@ class CESMStatusBoard {
             this.renderFilters();
             this.renderTable();
             this.hideLoading();
+
+            // Initialize Statistics Manager
+            this.statisticsManager = new StatisticsManager(this);
+            window.statisticsManager = this.statisticsManager;
+
+            // Check if we should show statistics tab on load
+            if (window.location.hash === '#statistics') {
+                this.switchTab('statistics');
+            }
 
             console.log('Initialization complete');
         } catch (error) {
@@ -62,6 +73,13 @@ class CESMStatusBoard {
     }
 
     setupEventListeners() {
+        // Tab navigation
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                this.switchTab(btn.dataset.tab);
+            });
+        });
+
         // Sort table headers
         document.querySelectorAll('.sortable').forEach(header => {
             header.addEventListener('click', () => {
@@ -352,5 +370,54 @@ class CESMStatusBoard {
 
         document.getElementById('lastUpdate').textContent = `Last updated: ${formatted}`;
         document.getElementById('footerLastUpdate').textContent = formatted;
+    }
+
+    /**
+     * Switch between tabs
+     */
+    switchTab(tabName) {
+        console.log(`Switching to tab: ${tabName}`);
+
+        // Update current tab
+        this.currentTab = tabName;
+
+        // Update tab button states
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            if (btn.dataset.tab === tabName) {
+                btn.classList.add('active');
+            } else {
+                btn.classList.remove('active');
+            }
+        });
+
+        // Update tab content visibility
+        document.querySelectorAll('.tab-content').forEach(content => {
+            content.classList.remove('active');
+        });
+
+        const targetTab = document.getElementById(`${tabName}Tab`);
+        if (targetTab) {
+            targetTab.classList.add('active');
+        }
+
+        // Update URL hash
+        window.location.hash = `#${tabName}`;
+
+        // Initialize statistics manager when switching to statistics tab
+        if (tabName === 'statistics' && this.statisticsManager) {
+            this.statisticsManager.init();
+        }
+    }
+
+    /**
+     * Switch to statistics tab and optionally filter by case name
+     */
+    switchToStatsTab(caseName = null) {
+        this.switchTab('statistics');
+
+        if (caseName && this.statisticsManager) {
+            // Could add filtering by case name here in the future
+            console.log(`Showing statistics for case: ${caseName}`);
+        }
     }
 }
