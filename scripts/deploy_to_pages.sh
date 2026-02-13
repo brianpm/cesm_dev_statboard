@@ -37,12 +37,17 @@ if git show-ref --quiet refs/heads/gh-pages; then
     # Switch to gh-pages
     git checkout gh-pages
 
+    # Copy updated web files (HTML, CSS, JS)
+    echo "Updating web files from main branch..."
+    git checkout main -- web/
+    cp -r web/css web/js web/index.html .
+
     # Copy updated data files
     cp -r web/data/*.json data/ 2>/dev/null || mkdir -p data && cp -r web/data/*.json data/
 
     # Commit changes
-    git add data/
-    git commit -m "Update data - $(date '+%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
+    git add css/ js/ index.html data/
+    git commit -m "Update site - $(date '+%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
 
     # Push to remote
     echo ""
