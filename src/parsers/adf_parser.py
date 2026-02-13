@@ -1,5 +1,12 @@
 """
 Parse ADF (AMWG Diagnostics Framework) output files
+
+ADF CSV formats:
+  Single-case table (amwg_table_{casename}.csv):
+    variable,unit,mean,sample size,standard dev.,standard error,95% CI,trend,trend p-value
+
+  Comparison table (amwg_table_comp.csv):
+    variable,unit,test,control,diff
 """
 import pandas as pd
 import re
@@ -19,14 +26,6 @@ class ADFParser:
                                  'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
                                  'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
-        # Common metric column names
-        self.metric_columns = {
-            'global_mean': ['Global Mean', 'global_mean', 'mean', 'Mean'],
-            'rmse': ['RMSE', 'rmse', 'Root Mean Square Error'],
-            'bias': ['Bias', 'bias', 'Difference', 'difference', 'Diff'],
-            'std': ['STD', 'std', 'Standard Deviation', 'std_dev'],
-        }
-
     def parse_csv_table(self, csv_path: str) -> Optional[pd.DataFrame]:
         """
         Parse an AMWG CSV table
@@ -38,8 +37,6 @@ class ADFParser:
             DataFrame or None on error
         """
         try:
-            # Try to read CSV with different options
-            # AMWG tables may have various formats
             df = pd.read_csv(csv_path)
             logger.debug(f"Parsed CSV: {csv_path} ({len(df)} rows)")
             return df
@@ -48,12 +45,23 @@ class ADFParser:
             logger.warning(f"Error parsing CSV {csv_path}: {e}")
             return None
 
-    def extract_summary_statistics(self, df: pd.DataFrame) -> Dict[str, Dict[str, float]]:
+    def _is_comparison_table(self, csv_path: str, df: pd.DataFrame) -> bool:
+        """Check if this is a comparison table (has test/control/diff columns)"""
+        filename = Path(csv_path).name
+        if 'comp' in filename.lower():
+            return True
+        cols = set(df.columns)
+        return {'test', 'control', 'diff'}.issubset(cols)
+
+    def extract_statistics_from_csv(self, csv_path: str, df: pd.DataFrame) -> Dict[str, Dict[str, float]]:
         """
-        Extract summary statistics from AMWG table
+        Extract statistics from an ADF CSV file.
+
+        Handles both single-case tables and comparison tables.
 
         Args:
-            df: DataFrame with AMWG data
+            csv_path: Path to CSV file (used to determine table type)
+            df: DataFrame with parsed CSV data
 
         Returns:
             Dictionary mapping variable -> metric -> value
@@ -63,85 +71,70 @@ class ADFParser:
         if df is None or df.empty:
             return stats
 
-        # Try to identify the variable column
-        var_col = self._find_variable_column(df)
+        # Find the variable column (always first column, named 'variable')
+        var_col = df.columns[0] if len(df.columns) > 0 else None
         if not var_col:
-            logger.warning("Could not identify variable column")
             return stats
 
-        # Extract statistics for each variable
+        is_comp = self._is_comparison_table(csv_path, df)
+
         for idx, row in df.iterrows():
             var_name = row.get(var_col)
             if not var_name or pd.isna(var_name):
                 continue
 
             var_name = str(var_name).strip()
-            stats[var_name] = {}
+            var_stats = {}
 
-            # Extract each metric
-            for metric_name, possible_columns in self.metric_columns.items():
-                value = self._find_metric_value(row, possible_columns)
-                if value is not None:
-                    stats[var_name][metric_name] = value
+            if is_comp:
+                # Comparison table: variable,unit,test,control,diff
+                for col, metric in [('test', 'global_mean'), ('diff', 'bias')]:
+                    if col in row.index:
+                        value = row[col]
+                        if pd.notna(value):
+                            try:
+                                var_stats[metric] = float(value)
+                            except (ValueError, TypeError):
+                                pass
+            else:
+                # Single-case table: variable,unit,mean,sample size,standard dev.,...
+                col_metric_map = {
+                    'mean': 'global_mean',
+                    'standard dev.': 'std',
+                    'standard error': 'std_error',
+                    'sample size': 'sample_size',
+                }
+                for col, metric in col_metric_map.items():
+                    if col in row.index:
+                        value = row[col]
+                        if pd.notna(value):
+                            try:
+                                var_stats[metric] = float(value)
+                            except (ValueError, TypeError):
+                                pass
+
+            # Also extract unit
+            if 'unit' in row.index:
+                unit = row['unit']
+                if pd.notna(unit):
+                    var_stats['_unit'] = str(unit)
+
+            if var_stats:
+                stats[var_name] = var_stats
 
         return stats
 
-    def _find_variable_column(self, df: pd.DataFrame) -> Optional[str]:
+    def extract_summary_statistics(self, df: pd.DataFrame) -> Dict[str, Dict[str, float]]:
         """
-        Find the column containing variable names
-
-        Args:
-            df: DataFrame
-
-        Returns:
-            Column name or None
-        """
-        possible_names = ['Variable', 'variable', 'Var', 'var', 'Field', 'field']
-
-        for col_name in df.columns:
-            if col_name in possible_names:
-                return col_name
-
-        # If not found, assume first column
-        if len(df.columns) > 0:
-            return df.columns[0]
-
-        return None
-
-    def _find_metric_value(self, row: pd.Series, possible_columns: List[str]) -> Optional[float]:
-        """
-        Find a metric value from a row using possible column names
-
-        Args:
-            row: DataFrame row
-            possible_columns: List of possible column names for this metric
-
-        Returns:
-            Metric value or None
-        """
-        for col_name in possible_columns:
-            if col_name in row.index:
-                value = row[col_name]
-                if pd.notna(value):
-                    try:
-                        return float(value)
-                    except (ValueError, TypeError):
-                        pass
-        return None
-
-    def get_variable_statistics(self, df: pd.DataFrame, var_name: str) -> Dict[str, float]:
-        """
-        Get statistics for a specific variable
+        Extract summary statistics from AMWG table (legacy interface).
 
         Args:
             df: DataFrame with AMWG data
-            var_name: Variable name
 
         Returns:
-            Dictionary of metric -> value
+            Dictionary mapping variable -> metric -> value
         """
-        stats = self.extract_summary_statistics(df)
-        return stats.get(var_name, {})
+        return self.extract_statistics_from_csv('unknown.csv', df)
 
     def infer_temporal_period(self, csv_path: str) -> str:
         """
@@ -183,10 +176,11 @@ class ADFParser:
         logger.info(f"Found {len(csv_files)} CSV files in {diag_dir}")
 
         for csv_file in csv_files:
-            df = self.parse_csv_table(str(csv_file))
+            csv_path = str(csv_file)
+            df = self.parse_csv_table(csv_path)
             if df is not None:
-                period = self.infer_temporal_period(str(csv_file))
-                stats = self.extract_summary_statistics(df)
+                period = self.infer_temporal_period(csv_path)
+                stats = self.extract_statistics_from_csv(csv_path, df)
 
                 if stats:
                     if period not in all_stats:
@@ -196,7 +190,10 @@ class ADFParser:
                     for var_name, var_stats in stats.items():
                         if var_name not in all_stats[period]:
                             all_stats[period][var_name] = {}
-                        all_stats[period][var_name].update(var_stats)
+                        # Filter out internal keys like _unit for statistics
+                        for k, v in var_stats.items():
+                            if not k.startswith('_'):
+                                all_stats[period][var_name][k] = v
 
         return all_stats
 
@@ -224,7 +221,7 @@ class ADFParser:
                         'temporal_period': period,
                         'metric_name': metric_name,
                         'value': value,
-                        'units': None  # Could extract from file if available
+                        'units': None
                     })
 
         logger.info(f"Extracted {len(stats_list)} statistics from {diag_dir}")

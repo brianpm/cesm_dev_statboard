@@ -27,6 +27,12 @@ CESM_RUNS_BASE = '/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0'
 AMWG_CLIMO_BASE = '/glade/campaign/cgd/amp/amwg/climo'
 SCRATCH_BASE = '/glade/scratch'
 
+# ADF (Atmospheric Diagnostics Framework) output paths
+# ADF is run as a separate post-processing job; output lives on scratch
+ADF_OUTPUT_BASES = [
+    '/glade/derecho/scratch/hannay/ADF',
+]
+
 # Export settings
 EXPORT_DIR = os.path.join(WEB_DIR, 'data')
 

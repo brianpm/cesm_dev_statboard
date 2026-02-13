@@ -69,7 +69,8 @@ def main():
     filesystem_collector = FilesystemCollector({
         'cesm_runs': settings.CESM_RUNS_BASE,
         'amwg_climo': settings.AMWG_CLIMO_BASE,
-        'scratch': settings.SCRATCH_BASE
+        'scratch': settings.SCRATCH_BASE,
+        'adf_output_bases': settings.ADF_OUTPUT_BASES,
     })
     issue_parser = IssueParser()
     case_parser = CaseParser()

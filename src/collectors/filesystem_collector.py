@@ -40,6 +40,7 @@ class FilesystemCollector:
         self.cesm_runs_base = base_paths.get('cesm_runs')
         self.amwg_climo_base = base_paths.get('amwg_climo')
         self.scratch_base = base_paths.get('scratch', '/glade/scratch')
+        self.adf_output_bases = base_paths.get('adf_output_bases', [])
 
     def case_directory_exists(self, case_name: str) -> bool:
         """
@@ -79,14 +80,23 @@ class FilesystemCollector:
         """
         logger.debug(f"Searching for diagnostics: {case_name}")
 
-        # Strategy 1: Check standard AMWG location
+        # Strategy 1: Check ADF output directories on scratch
+        # ADF runs as a separate post-processing job, output at:
+        # {adf_base}/{case_name}/plots/yrs_{start}_{end}/{case_name}_{start}_{end}_vs_Obs/
+        for adf_base in self.adf_output_bases:
+            adf_case_dir = os.path.join(adf_base, case_name)
+            if os.path.isdir(adf_case_dir):
+                logger.info(f"Found ADF output directory: {adf_case_dir}")
+                return self._scan_diagnostics_directory(adf_case_dir)
+
+        # Strategy 2: Check standard AMWG climo location
         if self.amwg_climo_base:
             amwg_path = os.path.join(self.amwg_climo_base, case_name)
             if os.path.exists(amwg_path):
                 logger.info(f"Found diagnostics (AMWG standard location): {amwg_path}")
                 return self._scan_diagnostics_directory(amwg_path)
 
-        # Strategy 2: Check within case directory
+        # Strategy 3: Check within case directory
         if case_dir and os.path.exists(case_dir):
             # Common diagnostic subdirectories
             diag_subdirs = ['diagnostics', 'diag', 'postprocess']
@@ -96,7 +106,7 @@ class FilesystemCollector:
                     logger.info(f"Found diagnostics (case subdirectory): {diag_path}")
                     return self._scan_diagnostics_directory(diag_path)
 
-        # Strategy 3: Check additional paths provided
+        # Strategy 4: Check additional paths provided
         if additional_paths:
             for path in additional_paths:
                 if os.path.exists(path):
@@ -105,7 +115,7 @@ class FilesystemCollector:
                         logger.info(f"Found diagnostics (additional path): {path}")
                         return self._scan_diagnostics_directory(path)
 
-        # Strategy 4: Search in common patterns
+        # Strategy 5: Search in common patterns
         search_patterns = [
             os.path.join(self.amwg_climo_base, f"*{case_name}*") if self.amwg_climo_base else None,
             os.path.join(self.scratch_base, "*", "diagnostics-output", "atm", "climo", case_name),
