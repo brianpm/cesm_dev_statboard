@@ -33,37 +33,42 @@ A complete, production-ready system for tracking CESM development simulations wi
 
 ## 🚀 Next Steps: Testing & Deployment
 
-### Step 1: Install Dependencies
+### Step 1: Python Environment
 
 ```bash
 cd /glade/u/home/brianpm/Code/cesm_dev_statboard
 
-# Install Python packages
-pip install -r requirements.txt
+# Use the NPL conda environment (has pandas, requests, and all dependencies)
+export PYTHON=/glade/u/apps/opt/conda/envs/npl/bin/python
+
+# Verify
+$PYTHON -c "import pandas; import requests; print('OK')"
 ```
 
-### Step 2: Test Data Collection (Small Scale)
+### Step 2: Test Data Collection Pipeline
 
 ```bash
-# Test with first 10 issues to verify everything works
-python scripts/collect_data.py --mode=test
+# Run the diagnostic test script to verify the pipeline works
+# Test with a known case (no GitHub needed):
+$PYTHON scripts/test_data_collection.py --skip-github --case b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.234
 
-# Check results
-sqlite3 data/cesm_dev.db "SELECT COUNT(*) FROM issues;"
-sqlite3 data/cesm_dev.db "SELECT COUNT(*) FROM cases WHERE has_diagnostics=1;"
+# Or test filesystem discovery only (Phase 2):
+$PYTHON scripts/test_data_collection.py --skip-github --phase 2
+
+# Or test with a few GitHub issues:
+$PYTHON scripts/collect_data.py --mode=test
 ```
 
 **Expected Results:**
+- Test script shows pipeline health at each phase
+- Known case finds 4 CSV files, 668 statistics across 48 variables
 - Database created at `data/cesm_dev.db`
-- 10 issues fetched and parsed
-- Some cases may have diagnostics (depends on which 10 are fetched)
-- Check `logs/cesm_status_board.log` for details
 
 ### Step 3: Full Data Collection
 
 ```bash
 # Collect ALL issues from cesm_dev (will take ~10-15 minutes)
-python scripts/collect_data.py --mode=full
+$PYTHON scripts/collect_data.py --mode=full
 ```
 
 **What Happens:**
@@ -86,7 +91,7 @@ sqlite3 data/cesm_dev.db "SELECT * FROM update_log ORDER BY id DESC LIMIT 1;"
 
 ```bash
 # Generate JSON files for web interface
-python scripts/export_static.py --output=web/data/
+$PYTHON scripts/export_static.py --output=web/data/
 
 # Verify files were created
 ls -lh web/data/
@@ -160,11 +165,13 @@ bash scripts/deploy_to_pages.sh
 ### Daily/Weekly Updates (Incremental)
 
 ```bash
+PYTHON=/glade/u/apps/opt/conda/envs/npl/bin/python
+
 # Update with recent changes (last 7 days)
-python scripts/update_data.py --mode=incremental
+$PYTHON scripts/update_data.py --mode=incremental
 
 # Export and deploy
-python scripts/export_static.py
+$PYTHON scripts/export_static.py
 bash scripts/deploy_to_pages.sh
 ```
 
@@ -172,10 +179,10 @@ bash scripts/deploy_to_pages.sh
 
 ```bash
 # Re-scan filesystem for new diagnostics
-python scripts/update_data.py --mode=diagnostics
+$PYTHON scripts/update_data.py --mode=diagnostics
 
 # Export and deploy
-python scripts/export_static.py
+$PYTHON scripts/export_static.py
 bash scripts/deploy_to_pages.sh
 ```
 
@@ -183,10 +190,10 @@ bash scripts/deploy_to_pages.sh
 
 ```bash
 # Complete re-collection
-python scripts/collect_data.py --mode=full
+$PYTHON scripts/collect_data.py --mode=full
 
 # Export and deploy
-python scripts/export_static.py
+$PYTHON scripts/export_static.py
 bash scripts/deploy_to_pages.sh
 ```
 

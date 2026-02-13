@@ -9,20 +9,23 @@ The statistics visualization has been fully implemented! Here's how to test it:
 You need to collect data and export it to JSON format:
 
 ```bash
-# Activate your conda environment
-conda activate p12
+# Use the NPL conda environment
+PYTHON=/glade/u/apps/opt/conda/envs/npl/bin/python
 
 # Navigate to project directory
 cd /glade/u/home/brianpm/Code/cesm_dev_statboard
 
-# Option A: Collect data from GLADE (takes longer)
-python scripts/collect_data.py
+# Option A: Full data collection from GitHub + GLADE (takes ~10-15 minutes)
+$PYTHON scripts/collect_data.py --mode=full
 
 # Option B: Update existing data (if database exists)
-python scripts/update_data.py
+$PYTHON scripts/update_data.py
+
+# Option C: Test the pipeline first (recommended)
+$PYTHON scripts/test_data_collection.py --skip-github --case b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.234
 
 # Export data to JSON for web interface
-python scripts/export_static.py
+$PYTHON scripts/export_static.py
 ```
 
 This will create:

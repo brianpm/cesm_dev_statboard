@@ -2,6 +2,7 @@
 Configuration settings for CESM Development Status Board
 """
 import os
+import glob
 
 # Project paths
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -29,7 +30,9 @@ SCRATCH_BASE = '/glade/scratch'
 
 # ADF (Atmospheric Diagnostics Framework) output paths
 # ADF is run as a separate post-processing job; output lives on scratch
-ADF_OUTPUT_BASES = [
+# Dynamically discover all users with ADF directories on derecho scratch
+_ADF_DISCOVERED = sorted(glob.glob('/glade/derecho/scratch/*/ADF'))
+ADF_OUTPUT_BASES = _ADF_DISCOVERED if _ADF_DISCOVERED else [
     '/glade/derecho/scratch/hannay/ADF',
 ]
 

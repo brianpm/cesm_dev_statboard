@@ -242,3 +242,92 @@ class FilesystemCollector:
             True if accessible
         """
         return os.path.exists(path) and os.access(path, os.R_OK)
+
+    def find_adf_diagnostics_expanded(self, case_name: str,
+                                       adf_bases: List[str]) -> List[Dict]:
+        """
+        Search ALL ADF base directories for diagnostics matching a case name.
+
+        Searches each base for a subdirectory matching the case name
+        (or containing it) and returns all matches with metadata.
+
+        Args:
+            case_name: CESM case name to search for
+            adf_bases: List of ADF base directories to search
+
+        Returns:
+            List of dicts with keys: adf_base, path, csv_count, user
+        """
+        matches = []
+        for adf_base in adf_bases:
+            if not os.path.isdir(adf_base):
+                continue
+            # Extract username from path (e.g. /glade/derecho/scratch/hannay/ADF -> hannay)
+            parts = adf_base.rstrip('/').split('/')
+            user = parts[-2] if len(parts) >= 3 else 'unknown'
+
+            adf_case_dir = os.path.join(adf_base, case_name)
+            if os.path.isdir(adf_case_dir):
+                csv_files = self.scan_amwg_tables(adf_case_dir)
+                matches.append({
+                    'adf_base': adf_base,
+                    'path': adf_case_dir,
+                    'csv_count': len(csv_files),
+                    'csv_files': csv_files,
+                    'user': user,
+                })
+            else:
+                # Also check for partial matches (case name as substring)
+                try:
+                    for entry in os.scandir(adf_base):
+                        if entry.is_dir() and case_name in entry.name:
+                            csv_files = self.scan_amwg_tables(entry.path)
+                            matches.append({
+                                'adf_base': adf_base,
+                                'path': entry.path,
+                                'csv_count': len(csv_files),
+                                'csv_files': csv_files,
+                                'user': user,
+                            })
+                except (OSError, PermissionError) as e:
+                    logger.debug(f"Cannot scan {adf_base}: {e}")
+
+        return matches
+
+    def scan_amwg_tables_detailed(self, diagnostic_path: str) -> List[Dict]:
+        """
+        Scan for AMWG CSV table files and return detailed metadata for each.
+
+        Args:
+            diagnostic_path: Path to diagnostic directory
+
+        Returns:
+            List of dicts with keys: path, filename, size, parent_dir, modified
+        """
+        results = []
+        try:
+            for root, dirs, files in os.walk(diagnostic_path):
+                for fname in files:
+                    if fname.endswith('.csv'):
+                        file_path = os.path.join(root, fname)
+                        try:
+                            stat = os.stat(file_path)
+                            results.append({
+                                'path': file_path,
+                                'filename': fname,
+                                'size': stat.st_size,
+                                'parent_dir': root,
+                                'modified': datetime.fromtimestamp(stat.st_mtime),
+                            })
+                        except OSError:
+                            results.append({
+                                'path': file_path,
+                                'filename': fname,
+                                'size': None,
+                                'parent_dir': root,
+                                'modified': None,
+                            })
+        except (OSError, PermissionError) as e:
+            logger.warning(f"Error scanning directory {diagnostic_path}: {e}")
+
+        return results

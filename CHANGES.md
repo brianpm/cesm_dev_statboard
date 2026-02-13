@@ -1,6 +1,46 @@
-# Changes - Statistics Visualization Implementation
+# Changes
 
-## Date: February 12, 2026
+## February 13, 2026 - ADF Data Pipeline Fixes & Diagnostic Testing
+
+### Problem
+Statistics were not being found because:
+1. **ADF search too narrow** - only searched `/glade/derecho/scratch/hannay/ADF` (1 user) instead of all users
+2. **Temporal period inference broken** - looked for period in CSV filename, but ADF filenames are `amwg_table_{casename}.csv` with period encoded in directory path (`yrs_2_21`)
+3. **No diagnostic tooling** - no way to test/debug the data collection pipeline
+
+### Changes
+
+#### `config/settings.py`
+- Changed `ADF_OUTPUT_BASES` from hardcoded single path to dynamic discovery via `glob.glob('/glade/derecho/scratch/*/ADF')`
+- Now discovers 24 ADF user directories (with static fallback)
+
+#### `src/parsers/adf_parser.py`
+- Fixed `infer_temporal_period()` to check full directory path for `yrs_{start}_{end}` pattern (not just filename)
+- Added `classify_csv_file()` method returning csv_type, case_name, year_span, columns_match, row_count
+
+#### `src/collectors/filesystem_collector.py`
+- Added `find_adf_diagnostics_expanded(case_name, adf_bases)` - searches ALL ADF bases, returns list of matches with user/path/csv_count
+- Added `scan_amwg_tables_detailed(path)` - returns per-file metadata dicts (path, filename, size, parent_dir, modified)
+
+#### `scripts/test_data_collection.py` (new)
+- 5-phase diagnostic pipeline with detailed logging:
+  - Phase 1: Case Discovery (GitHub issues or `--case` flag)
+  - Phase 2: Filesystem Discovery (scan all ADF directories, match to cases)
+  - Phase 3: CSV File Discovery (classify amwg_table CSVs)
+  - Phase 4: Data Extraction (parse CSVs, validate columns, extract statistics)
+  - Phase 5: Summary Report (pipeline health assessment, per-variable table)
+- CLI flags: `--skip-github`, `--case CASENAME`, `--phase N`, `--users USER1,USER2`, `--verbose`, `--report FILE`, `--max-issues N`
+
+### Verification
+- Tested with case `b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.234`: found 4 CSVs, extracted 668 statistics across 48 variables (RESTOM, FLNT, TS, SST, etc.)
+- Dynamic ADF discovery finds 24 user directories
+
+### Python Environment
+- Use `/glade/u/apps/opt/conda/envs/npl/bin/python` (has pandas, requests, and all dependencies)
+
+---
+
+## February 12, 2026 - Statistics Visualization Implementation
 
 ## Summary
 

@@ -138,23 +138,88 @@ class ADFParser:
 
     def infer_temporal_period(self, csv_path: str) -> str:
         """
-        Infer temporal period from filename
+        Infer temporal period from filename or directory path.
+
+        ADF CSV filenames are typically `amwg_table_{casename}.csv` with no
+        period info. The temporal period is encoded in the directory path,
+        e.g. `.../yrs_2_21/...` means years 2-21.  We also check the
+        filename for season/month tokens for backwards compatibility.
 
         Args:
             csv_path: Path to CSV file
 
         Returns:
-            Temporal period (e.g., 'ANN', 'DJF')
+            Temporal period (e.g., 'ANN', 'DJF', 'yrs_2_21')
         """
-        filename = Path(csv_path).name
+        full_path = str(csv_path)
 
-        # Check for temporal period in filename
+        # Check for temporal period in filename first
+        filename = Path(csv_path).name
         for period in self.temporal_periods:
             if period in filename:
                 return period
 
+        # Check directory path for yrs_{start}_{end} pattern
+        yrs_match = re.search(r'yrs_(\d+)_(\d+)', full_path)
+        if yrs_match:
+            return f"yrs_{yrs_match.group(1)}_{yrs_match.group(2)}"
+
         # Default to annual
         return 'ANN'
+
+    def classify_csv_file(self, csv_path: str) -> Dict:
+        """
+        Classify a CSV file and return detailed metadata about it.
+
+        Args:
+            csv_path: Path to CSV file
+
+        Returns:
+            Dictionary with: csv_type, case_name, year_span, columns_match, row_count
+        """
+        result = {
+            'path': csv_path,
+            'csv_type': 'unknown',
+            'case_name': None,
+            'year_span': None,
+            'columns_match': False,
+            'row_count': 0,
+            'error': None,
+        }
+
+        filename = Path(csv_path).name
+        full_path = str(csv_path)
+
+        # Determine CSV type
+        if 'comp' in filename.lower():
+            result['csv_type'] = 'comparison'
+        elif filename.startswith('amwg_table_'):
+            result['csv_type'] = 'single_case'
+            # Extract case name from filename: amwg_table_{casename}.csv
+            case_match = re.match(r'amwg_table_(.+)\.csv', filename)
+            if case_match:
+                result['case_name'] = case_match.group(1)
+
+        # Extract year span from directory path
+        yrs_match = re.search(r'yrs_(\d+)_(\d+)', full_path)
+        if yrs_match:
+            start, end = int(yrs_match.group(1)), int(yrs_match.group(2))
+            result['year_span'] = (start, end)
+
+        # Parse the CSV to check columns and row count
+        try:
+            df = self.parse_csv_table(csv_path)
+            if df is not None:
+                result['row_count'] = len(df)
+                cols = set(df.columns)
+                if result['csv_type'] == 'comparison':
+                    result['columns_match'] = {'test', 'control', 'diff'}.issubset(cols)
+                elif result['csv_type'] == 'single_case':
+                    result['columns_match'] = 'mean' in cols and 'variable' in cols
+        except Exception as e:
+            result['error'] = str(e)
+
+        return result
 
     def parse_all_tables_in_directory(self, diag_dir: str) -> Dict[str, Dict[str, Dict[str, float]]]:
         """
