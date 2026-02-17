@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Statistics Module</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        .success { color: green; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <h1>Statistics Module Test</h1>
+    <div id="results"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="web/js/statistics.js"></script>
+    <script>
+        const results = document.getElementById('results');
+        let html = '';
+
+        // Test 1: Check if Chart.js loaded
+        if (typeof Chart !== 'undefined') {
+            html += '<p class="success">✓ Chart.js loaded successfully</p>';
+        } else {
+            html += '<p class="error">✗ Chart.js failed to load</p>';
+        }
+
+        // Test 2: Check if StatisticsManager is defined
+        if (typeof StatisticsManager !== 'undefined') {
+            html += '<p class="success">✓ StatisticsManager class defined</p>';
+        } else {
+            html += '<p class="error">✗ StatisticsManager class not found</p>';
+        }
+
+        // Test 3: Try to instantiate StatisticsManager
+        try {
+            const mockApp = {
+                cases: []
+            };
+            const statsManager = new StatisticsManager(mockApp);
+            html += '<p class="success">✓ StatisticsManager instantiated successfully</p>';
+
+            // Test 4: Check methods exist
+            const methods = ['init', 'discoverVariables', 'renderControls', 'setupEventListeners',
+                           'aggregateData', 'renderTable', 'renderChart', 'updateView'];
+            let allMethodsExist = true;
+            methods.forEach(method => {
+                if (typeof statsManager[method] !== 'function') {
+                    html += `<p class="error">✗ Method ${method} not found</p>`;
+                    allMethodsExist = false;
+                }
+            });
+            if (allMethodsExist) {
+                html += '<p class="success">✓ All required methods exist</p>';
+            }
+
+        } catch (error) {
+            html += `<p class="error">✗ Failed to instantiate: ${error.message}</p>`;
+        }
+
+        results.innerHTML = html;
+    </script>
+</body>
+</html>

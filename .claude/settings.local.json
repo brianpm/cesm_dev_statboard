@@ -11,7 +11,18 @@
       "WebFetch(domain:docs.e3sm.org)",
       "Bash(git init:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(ls:*)",
+      "Bash(# Check for more ADF output directories ls /glade/derecho/scratch/hannay/ADF/)",
+      "Bash(git -C /glade/u/home/brianpm/Code/cesm_dev_statboard branch --show-current)",
+      "Bash(while read d)",
+      "Bash(do find \"/glade/derecho/scratch/hannay/ADF/$d\" -name \"*.csv\")",
+      "Bash(done)",
+      "Bash(conda run -n p12 python3:*)",
+      "Bash(git checkout:*)",
+      "Bash(git stash:*)",
+      "Bash(gh issue list:*)",
+      "Bash(git -C /glade/u/home/brianpm/Code/cesm_dev_statboard log --oneline -10)"
     ]
   }
 }
