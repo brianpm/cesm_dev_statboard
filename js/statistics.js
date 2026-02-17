@@ -9,13 +9,14 @@ class StatisticsManager {
         this.state = {
             selectedVariable: null,
             selectedMetric: 'global_mean',
-            selectedPeriods: ['ANN', 'DJF', 'MAM', 'JJA', 'SON'],
+            selectedPeriods: [],  // Populated dynamically from data
             filterCases: [],  // Empty = all cases with diagnostics
             viewMode: 'table',  // 'table' or 'chart'
             chartType: 'bar'  // 'bar' or 'line'
         };
         this.chart = null;  // Chart.js instance
         this.availableVariables = [];
+        this.availablePeriods = [];  // All periods found in data
         this.initialized = false;
     }
 
@@ -37,27 +38,33 @@ class StatisticsManager {
     }
 
     /**
-     * Scan all cases to find unique variable names
+     * Scan all cases to find unique variable names and temporal periods
      */
     discoverVariables() {
         const variables = new Set();
+        const periods = new Set();
 
         this.app.cases.forEach(caseData => {
             if (caseData.statistics && caseData.has_diagnostics) {
-                Object.values(caseData.statistics).forEach(period => {
-                    Object.keys(period).forEach(varName => variables.add(varName));
+                Object.entries(caseData.statistics).forEach(([periodKey, vars]) => {
+                    periods.add(periodKey);
+                    Object.keys(vars).forEach(varName => variables.add(varName));
                 });
             }
         });
 
         this.availableVariables = Array.from(variables).sort();
+        this.availablePeriods = Array.from(periods).sort();
+
+        // Default: select all discovered periods
+        this.state.selectedPeriods = [...this.availablePeriods];
 
         // Set default variable
         if (this.availableVariables.length > 0) {
             this.state.selectedVariable = this.availableVariables[0];
         }
 
-        console.log(`Discovered ${this.availableVariables.length} unique variables`);
+        console.log(`Discovered ${this.availableVariables.length} variables, ${this.availablePeriods.length} periods:`, this.availablePeriods);
     }
 
     /**
@@ -90,6 +97,31 @@ class StatisticsManager {
 
         // Set selected metric
         document.getElementById('metricSelect').value = this.state.selectedMetric;
+
+        // Populate dynamic period checkboxes for any period not in the standard set
+        const standardPeriods = new Set(['ANN', 'DJF', 'MAM', 'JJA', 'SON',
+            'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+            'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']);
+
+        const extraPeriods = this.availablePeriods.filter(p => !standardPeriods.has(p));
+        const container = document.getElementById('extraPeriods');
+        if (container) {
+            container.innerHTML = '';
+            extraPeriods.forEach(period => {
+                const label = document.createElement('label');
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.className = 'period-checkbox';
+                checkbox.value = period;
+                checkbox.checked = true;
+                label.appendChild(checkbox);
+                label.appendChild(document.createTextNode('\u00a0' + period));
+                container.appendChild(label);
+            });
+            if (extraPeriods.length > 0) {
+                container.style.display = 'flex';
+            }
+        }
     }
 
     /**
