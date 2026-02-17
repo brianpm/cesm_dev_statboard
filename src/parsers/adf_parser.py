@@ -262,6 +262,101 @@ class ADFParser:
 
         return all_stats
 
+    def normalize_html_table_columns(self, df: pd.DataFrame) -> pd.DataFrame:
+        """
+        Normalize column names from an HTML-sourced AMWG table to match CSV conventions.
+
+        HTML tables may use slightly different column headers than CSV files
+        (e.g. title-case, extra whitespace, or Unicode minus signs). This
+        method maps them to the same names used by extract_statistics_from_csv.
+
+        Args:
+            df: Raw DataFrame from pd.read_html()
+
+        Returns:
+            DataFrame with normalized column names
+        """
+        if df is None or df.empty:
+            return df
+
+        # Strip whitespace from column names
+        df = df.copy()
+        df.columns = [str(c).strip() for c in df.columns]
+
+        # Map known HTML table header variants to CSV canonical names
+        rename_map = {
+            'Variable': 'variable',
+            'Unit': 'unit',
+            'Units': 'unit',
+            'Mean': 'mean',
+            'Std Dev': 'standard dev.',
+            'Std. Dev.': 'standard dev.',
+            'Standard Dev.': 'standard dev.',
+            'Std Error': 'standard error',
+            'Standard Error': 'standard error',
+            'Sample Size': 'sample size',
+            'Test': 'test',
+            'Control': 'control',
+            'Diff': 'diff',
+            'Difference': 'diff',
+            'Trend': 'trend',
+            'Trend P-Value': 'trend p-value',
+        }
+        df.rename(columns={k: v for k, v in rename_map.items() if k in df.columns}, inplace=True)
+
+        # Lowercase first column if it looks like it should be 'variable'
+        if df.columns[0] not in ('variable',):
+            first = df.columns[0].lower()
+            if 'var' in first or 'name' in first:
+                df = df.rename(columns={df.columns[0]: 'variable'})
+
+        return df
+
+    def extract_statistics_from_html_tables(
+        self, tables_data: List[Dict], diagnostic_id: int
+    ) -> List[Dict]:
+        """
+        Extract statistics from web-sourced HTML AMWG tables.
+
+        Args:
+            tables_data: List of dicts, each with keys:
+                - 'url': source HTML URL
+                - 'period': temporal period string (e.g. 'ANN', 'yrs_2_21')
+                - 'df': DataFrame from pd.read_html()
+            diagnostic_id: Diagnostic ID from database
+
+        Returns:
+            List of statistic dictionaries ready for bulk_insert_statistics()
+        """
+        stats_list = []
+
+        for entry in tables_data:
+            url = entry.get('url', '')
+            period = entry.get('period', 'ANN')
+            df = entry.get('df')
+
+            if df is None or df.empty:
+                continue
+
+            df = self.normalize_html_table_columns(df)
+            stats = self.extract_statistics_from_csv(url, df)
+
+            for var_name, var_stats in stats.items():
+                for metric_name, value in var_stats.items():
+                    if metric_name.startswith('_'):
+                        continue
+                    stats_list.append({
+                        'diagnostic_id': diagnostic_id,
+                        'variable_name': var_name,
+                        'temporal_period': period,
+                        'metric_name': metric_name,
+                        'value': value,
+                        'units': var_stats.get('_unit'),
+                    })
+
+        logger.info(f"Extracted {len(stats_list)} statistics from {len(tables_data)} HTML tables")
+        return stats_list
+
     def extract_statistics_list(self, diag_dir: str, diagnostic_id: int) -> List[Dict]:
         """
         Extract statistics as a list of dictionaries for database insertion

@@ -64,9 +64,14 @@ bash scripts/deploy_to_pages.sh
 GitHub Issues (NCAR/cesm_dev)
   → github_collector.py (rate-limited API, cached)
   → issue_parser.py + case_parser.py
-  → filesystem_collector.py (GLADE path discovery)
-  → adf_parser.py (extracts statistics from AMWG CSV files)
+        ↓ also extracts diagnostic_urls (webext.cgd.ucar.edu)
+  → filesystem_collector.py (GLADE path discovery)  ← primary
+        ↓ if not found on GLADE
+  → web_collector.py (webext.cgd.ucar.edu fallback) ← secondary
+  → adf_parser.py (CSV files from filesystem, or HTML tables from web)
   → SQLite database (data/cesm_dev.db)
+        diagnostics.source = 'filesystem' | 'web'
+        cases.diagnostics_url = URL when source='web'
   → export_static.py → JSON files in web/data/
   → Static web interface (no server needed)
 ```
@@ -75,9 +80,11 @@ GitHub Issues (NCAR/cesm_dev)
 
 - **`config/settings.py`** — Central configuration: GLADE paths, GitHub repo, DB path, cache settings
 - **`src/collectors/github_collector.py`** — GitHub API with rate limiting and HTTP caching
-- **`src/collectors/filesystem_collector.py`** — Scans GLADE paths; ADF outputs discovered dynamically via `glob('/glade/derecho/scratch/*/ADF')`
-- **`src/parsers/adf_parser.py`** — Reads AMWG CSV tables; infers temporal periods from directory paths (e.g., `yrs_2_21`)
-- **`src/storage/database.py`** — SQLite schema (issues, cases, diagnostics, statistics, update_log) with upsert operations
+- **`src/collectors/filesystem_collector.py`** — Scans GLADE paths; ADF outputs discovered dynamically via `glob('/glade/derecho/scratch/*/ADF')`; `DiagnosticsInfo.source` field tracks `'filesystem'` vs `'web'`
+- **`src/collectors/web_collector.py`** — Fallback for web-hosted diagnostics on `webext.cgd.ucar.edu`; navigates directory listings to find `html_table/amwg_table_*.html`, parses via `pd.read_html()`
+- **`src/parsers/issue_parser.py`** — Parses issue bodies; extracts GLADE paths, GitHub mentions, and `webext.cgd.ucar.edu` URLs into `ParsedIssue.diagnostic_urls`
+- **`src/parsers/adf_parser.py`** — Reads AMWG CSV tables (filesystem) and HTML tables (web); `extract_statistics_from_html_tables()` handles web-sourced DataFrames
+- **`src/storage/database.py`** — SQLite schema with `migrate_schema()` for existing DBs; `diagnostics.source` column tracks data origin; `cases.diagnostics_url` stores web URL when applicable
 - **`web/js/main.js`** — Core app, tab switching, dashboard, case detail modal
 - **`web/js/statistics.js`** — Statistics tab: variable/metric/period selectors, Chart.js visualization
 - **`web/js/search.js`** — Real-time search/filter logic
@@ -92,7 +99,9 @@ GitHub Issues (NCAR/cesm_dev)
 ### Database Schema (SQLite)
 
 Tables: `issues`, `cases`, `diagnostics`, `statistics`, `update_log`
-Key fields: `cases.compset`, `cases.resolution`, `cases.has_diagnostics`, `statistics.variable_name`, `statistics.temporal_period`, `statistics.metric_name`
+Key fields: `cases.compset`, `cases.resolution`, `cases.has_diagnostics`, `cases.diagnostics_url`, `diagnostics.source`, `statistics.variable_name`, `statistics.temporal_period`, `statistics.metric_name`
+
+Schema migrations for existing databases are applied by `db.migrate_schema()`, which is called at startup in both `collect_data.py` and `update_data.py`.
 
 ### Web Interface
 

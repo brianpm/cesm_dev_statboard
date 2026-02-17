@@ -81,6 +81,7 @@ class Database:
                 diagnostics_directory TEXT,
                 has_diagnostics BOOLEAN DEFAULT 0,
                 contacts TEXT,
+                diagnostics_url TEXT,
                 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                 updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                 FOREIGN KEY (issue_id) REFERENCES issues(id)
@@ -96,6 +97,7 @@ class Database:
                 path TEXT,
                 last_modified TIMESTAMP,
                 file_count INTEGER DEFAULT 0,
+                source TEXT DEFAULT 'filesystem',
                 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                 FOREIGN KEY (case_id) REFERENCES cases(id) ON DELETE CASCADE,
                 UNIQUE(case_id, path)
@@ -141,6 +143,32 @@ class Database:
 
         self.conn.commit()
         logger.info("Database schema initialized successfully")
+
+    def migrate_schema(self):
+        """
+        Apply schema migrations for existing databases.
+
+        Adds columns introduced after initial deployment using ALTER TABLE.
+        Safe to run on already-migrated databases (ignores existing-column errors).
+        """
+        cursor = self.conn.cursor()
+
+        migrations = [
+            # (table, column, definition)
+            ('diagnostics', 'source', "TEXT DEFAULT 'filesystem'"),
+            ('cases', 'diagnostics_url', 'TEXT'),
+        ]
+
+        for table, column, definition in migrations:
+            try:
+                cursor.execute(f'ALTER TABLE {table} ADD COLUMN {column} {definition}')
+                logger.info(f"Migration: added {table}.{column}")
+            except Exception:
+                # Column already exists — this is expected for already-migrated DBs
+                pass
+
+        self.conn.commit()
+        logger.info("Schema migration complete")
 
     def upsert_issue(self, issue_data: Dict[str, Any]) -> int:
         """
@@ -214,9 +242,9 @@ class Database:
                 INSERT INTO cases (
                     case_name, compset, resolution, experiment_id, case_number,
                     issue_id, purpose, description, case_directory, diagnostics_directory,
-                    has_diagnostics, contacts, updated_at
+                    has_diagnostics, contacts, diagnostics_url, updated_at
                 )
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
                 ON CONFLICT(case_name) DO UPDATE SET
                     compset = excluded.compset,
                     resolution = excluded.resolution,
@@ -229,6 +257,7 @@ class Database:
                     diagnostics_directory = excluded.diagnostics_directory,
                     has_diagnostics = excluded.has_diagnostics,
                     contacts = excluded.contacts,
+                    diagnostics_url = excluded.diagnostics_url,
                     updated_at = CURRENT_TIMESTAMP
             ''', (
                 case_data['case_name'],
@@ -242,7 +271,8 @@ class Database:
                 case_data.get('case_directory'),
                 case_data.get('diagnostics_directory'),
                 case_data.get('has_diagnostics', False),
-                contacts
+                contacts,
+                case_data.get('diagnostics_url')
             ))
 
             self.conn.commit()
@@ -274,18 +304,20 @@ class Database:
 
         try:
             cursor.execute('''
-                INSERT INTO diagnostics (case_id, diagnostic_type, path, last_modified, file_count)
-                VALUES (?, ?, ?, ?, ?)
+                INSERT INTO diagnostics (case_id, diagnostic_type, path, last_modified, file_count, source)
+                VALUES (?, ?, ?, ?, ?, ?)
                 ON CONFLICT(case_id, path) DO UPDATE SET
                     diagnostic_type = excluded.diagnostic_type,
                     last_modified = excluded.last_modified,
-                    file_count = excluded.file_count
+                    file_count = excluded.file_count,
+                    source = excluded.source
             ''', (
                 diagnostic_data['case_id'],
                 diagnostic_data.get('diagnostic_type', 'AMWG'),
                 diagnostic_data.get('path'),
                 diagnostic_data.get('last_modified'),
-                diagnostic_data.get('file_count', 0)
+                diagnostic_data.get('file_count', 0),
+                diagnostic_data.get('source', 'filesystem')
             ))
 
             self.conn.commit()

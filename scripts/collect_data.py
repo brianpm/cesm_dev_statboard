@@ -22,6 +22,7 @@ from src.collectors.filesystem_collector import FilesystemCollector
 from src.parsers.issue_parser import IssueParser
 from src.parsers.case_parser import CaseParser
 from src.parsers.adf_parser import ADFParser
+from src.collectors.web_collector import WebDiagnosticsCollector
 
 # Setup logger
 logger = setup_logger('cesm_status_board', settings.LOG_FILE, settings.LOG_LEVEL)
@@ -48,6 +49,7 @@ def main():
 
     db = Database(settings.DATABASE_PATH)
     db.initialize_schema()
+    db.migrate_schema()
 
     # Log this update
     update_log_id = db.log_update('full' if args.mode == 'full' else 'test', datetime.now())
@@ -75,6 +77,7 @@ def main():
     issue_parser = IssueParser()
     case_parser = CaseParser()
     adf_parser = ADFParser()
+    web_collector = WebDiagnosticsCollector()
 
     # Fetch issues from GitHub
     logger.info("\n" + "=" * 80)
@@ -139,12 +142,30 @@ def main():
                     if filesystem_collector.case_directory_exists(parsed_issue.case_name):
                         case_dir = f"{settings.CESM_RUNS_BASE}/{parsed_issue.case_name}"
 
-                # Search for diagnostics
+                # Search for diagnostics — filesystem first, then web fallback
                 diagnostics_info = filesystem_collector.find_diagnostics(
                     parsed_issue.case_name,
                     case_dir,
                     parsed_issue.diagnostics_paths
                 )
+
+                web_result = None
+                diagnostics_url = None
+
+                if not (diagnostics_info and diagnostics_info.exists):
+                    # Filesystem lookup failed — try web-hosted diagnostics
+                    if parsed_issue.diagnostic_urls:
+                        logger.info(
+                            f"  No GLADE diagnostics; trying {len(parsed_issue.diagnostic_urls)} "
+                            f"web URL(s) for {parsed_issue.case_name}"
+                        )
+                        web_result = web_collector.find_diagnostics_from_urls(
+                            parsed_issue.diagnostic_urls, parsed_issue.case_name
+                        )
+                        if web_result:
+                            diagnostics_info = web_result.diagnostics_info
+                            diagnostics_url = web_result.source_url
+                            logger.info(f"  Found web-hosted diagnostics: {diagnostics_url}")
 
                 # Create case entry
                 case_db_data = {
@@ -159,7 +180,8 @@ def main():
                     'case_directory': case_dir,
                     'diagnostics_directory': diagnostics_info.path if diagnostics_info else None,
                     'has_diagnostics': diagnostics_info is not None and diagnostics_info.exists,
-                    'contacts': parsed_issue.contacts
+                    'contacts': parsed_issue.contacts,
+                    'diagnostics_url': diagnostics_url,
                 }
 
                 case_id = db.upsert_case(case_db_data)
@@ -167,7 +189,8 @@ def main():
 
                 # If diagnostics found, extract statistics
                 if diagnostics_info and diagnostics_info.exists:
-                    logger.info(f"  Found diagnostics: {diagnostics_info.path}")
+                    diag_source = getattr(diagnostics_info, 'source', 'filesystem')
+                    logger.info(f"  Found diagnostics ({diag_source}): {diagnostics_info.path}")
 
                     # Store diagnostic info
                     diag_db_data = {
@@ -175,14 +198,30 @@ def main():
                         'diagnostic_type': diagnostics_info.diagnostic_type,
                         'path': diagnostics_info.path,
                         'last_modified': diagnostics_info.last_modified,
-                        'file_count': diagnostics_info.file_count
+                        'file_count': diagnostics_info.file_count,
+                        'source': diag_source,
                     }
 
                     diag_id = db.upsert_diagnostic(diag_db_data)
                     stats['diagnostics_found'] += 1
 
-                    # Parse statistics from CSV files
-                    if diagnostics_info.file_count > 0:
+                    if diag_source == 'web' and web_result:
+                        # Extract statistics from fetched HTML tables
+                        try:
+                            stats_list = adf_parser.extract_statistics_from_html_tables(
+                                web_result.tables_data, diag_id
+                            )
+                            if stats_list:
+                                db.bulk_insert_statistics(stats_list)
+                                stats['statistics_extracted'] += len(stats_list)
+                                logger.info(f"  Extracted {len(stats_list)} statistics (web)")
+                        except Exception as e:
+                            logger.error(f"  Error extracting web statistics: {e}")
+                            stats['errors'].append(
+                                f"Issue #{issue_num}: Web statistics extraction failed - {str(e)}"
+                            )
+                    elif diagnostics_info.file_count > 0:
+                        # Extract statistics from filesystem CSV files
                         logger.info(f"  Extracting statistics from {diagnostics_info.file_count} CSV files...")
                         try:
                             stats_list = adf_parser.extract_statistics_list(diagnostics_info.path, diag_id)
@@ -192,7 +231,9 @@ def main():
                                 logger.info(f"  Extracted {len(stats_list)} statistics")
                         except Exception as e:
                             logger.error(f"  Error extracting statistics: {e}")
-                            stats['errors'].append(f"Issue #{issue_num}: Statistics extraction failed - {str(e)}")
+                            stats['errors'].append(
+                                f"Issue #{issue_num}: Statistics extraction failed - {str(e)}"
+                            )
                 else:
                     logger.info(f"  No diagnostics found (will be flagged as pending)")
 

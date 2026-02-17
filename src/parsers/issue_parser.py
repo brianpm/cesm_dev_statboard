@@ -22,6 +22,7 @@ class ParsedIssue:
     diagnostics_paths: List[str] = field(default_factory=list)
     output_paths: List[str] = field(default_factory=list)
     contacts: List[str] = field(default_factory=list)
+    diagnostic_urls: List[str] = field(default_factory=list)
     parsing_warnings: List[str] = field(default_factory=list)
 
 
@@ -45,6 +46,11 @@ class IssueParser:
 
         # Pattern for extracting GitHub usernames (mentions)
         self.username_pattern = re.compile(r'@([a-zA-Z0-9_-]+)')
+
+        # Pattern for web-hosted ADF diagnostic URLs (webext.cgd.ucar.edu)
+        self.diagnostic_url_pattern = re.compile(
+            r'https?://webext\.cgd\.ucar\.edu/[^\s\)\"\'<>]+'
+        )
 
     def parse_issue_body(self, body: str) -> Dict[str, any]:
         """
@@ -79,6 +85,9 @@ class IssueParser:
         # Extract contacts (GitHub mentions)
         contacts = self.extract_contacts(body)
         result['contacts'] = contacts
+
+        # Extract web-hosted diagnostic URLs
+        result['diagnostic_urls'] = self.extract_diagnostic_urls(body)
 
         return result
 
@@ -139,6 +148,32 @@ class IssueParser:
         matches = self.username_pattern.findall(text)
         return list(set(matches))  # Remove duplicates
 
+    def extract_diagnostic_urls(self, text: str) -> List[str]:
+        """
+        Extract web-hosted ADF diagnostic URLs from text.
+
+        Targets URLs on webext.cgd.ucar.edu which hosts ADF outputs
+        when the GLADE filesystem data is no longer available.
+
+        Args:
+            text: Text that may contain diagnostic URLs
+
+        Returns:
+            List of unique diagnostic URLs
+        """
+        if not text:
+            return []
+
+        matches = self.diagnostic_url_pattern.findall(text)
+
+        # Clean trailing punctuation and markdown link syntax
+        urls = []
+        for url in matches:
+            url = re.sub(r'[.,;:!?\)]+$', '', url)
+            urls.append(url)
+
+        return list(set(urls))
+
     def parse_configuration_blocks(self, text: str) -> Dict[str, str]:
         """
         Parse configuration parameters from code blocks
@@ -191,7 +226,8 @@ class IssueParser:
             case_directory=self._extract_case_directory(sections),
             diagnostics_paths=sections.get('diagnostic_paths', []),
             output_paths=sections.get('output_paths', []),
-            contacts=sections.get('contacts', [])
+            contacts=sections.get('contacts', []),
+            diagnostic_urls=sections.get('diagnostic_urls', [])
         )
 
         # Add warnings if critical data missing

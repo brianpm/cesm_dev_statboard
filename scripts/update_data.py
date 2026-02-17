@@ -21,6 +21,7 @@ from src.collectors.filesystem_collector import FilesystemCollector
 from src.parsers.issue_parser import IssueParser
 from src.parsers.case_parser import CaseParser
 from src.parsers.adf_parser import ADFParser
+from src.collectors.web_collector import WebDiagnosticsCollector
 
 # Setup logger
 logger = setup_logger('update_data', settings.LOG_FILE, settings.LOG_LEVEL)
@@ -40,6 +41,7 @@ def update_incremental(since_days: int = 7):
 
     # Initialize components
     db = Database(settings.DATABASE_PATH)
+    db.migrate_schema()
     cache_mgr = CacheManager(settings.CACHE_DIR)
     cache_mgr.setup_github_cache(expire_after_hours=1)  # Shorter cache for updates
 
@@ -123,18 +125,23 @@ def update_incremental(since_days: int = 7):
 
 
 def update_diagnostics():
-    """Rescan filesystem for new diagnostics"""
+    """Rescan filesystem for new diagnostics, with web fallback"""
     logger.info("=" * 80)
     logger.info("CESM Status Board - Diagnostics Update")
     logger.info("=" * 80)
 
     db = Database(settings.DATABASE_PATH)
+    db.migrate_schema()
+
     filesystem_collector = FilesystemCollector({
         'cesm_runs': settings.CESM_RUNS_BASE,
         'amwg_climo': settings.AMWG_CLIMO_BASE,
-        'scratch': settings.SCRATCH_BASE
+        'scratch': settings.SCRATCH_BASE,
+        'adf_output_bases': settings.ADF_OUTPUT_BASES,
     })
     adf_parser = ADFParser()
+    web_collector = WebDiagnosticsCollector()
+    issue_parser = IssueParser()
 
     update_log_id = db.log_update('diagnostics', datetime.now())
 
@@ -142,26 +149,60 @@ def update_diagnostics():
     cases = db.get_all_cases({'has_diagnostics': False})
     logger.info(f"Found {len(cases)} cases without diagnostics")
 
-    stats = {'diagnostics_found': 0, 'statistics_extracted': 0}
+    stats = {'diagnostics_found': 0, 'statistics_extracted': 0, 'errors': []}
 
     for case in cases:
         case_name = case['case_name']
         case_id = case['id']
 
-        # Search for diagnostics
+        # Strategy 1: filesystem
         diagnostics_info = filesystem_collector.find_diagnostics(
             case_name,
             case.get('case_directory')
         )
 
+        web_result = None
+        diagnostics_url = None
+
+        if not (diagnostics_info and diagnostics_info.exists):
+            # Strategy 2: web fallback
+            # Use URL already stored on the case, or re-parse the issue body
+            stored_url = case.get('diagnostics_url')
+            candidate_urls = [stored_url] if stored_url else []
+
+            if not candidate_urls and case.get('issue_id'):
+                # Re-parse the issue body to find URLs
+                cursor = db.conn.cursor()
+                cursor.execute(
+                    'SELECT body FROM issues WHERE id = ?', (case['issue_id'],)
+                )
+                row = cursor.fetchone()
+                if row and row[0]:
+                    candidate_urls = issue_parser.extract_diagnostic_urls(row[0])
+
+            if candidate_urls:
+                logger.info(
+                    f"  No GLADE diagnostics for {case_name}; "
+                    f"trying {len(candidate_urls)} web URL(s)"
+                )
+                web_result = web_collector.find_diagnostics_from_urls(
+                    candidate_urls, case_name
+                )
+                if web_result:
+                    diagnostics_info = web_result.diagnostics_info
+                    diagnostics_url = web_result.source_url
+                    logger.info(f"Found web-hosted diagnostics for {case_name}: {diagnostics_url}")
+
         if diagnostics_info and diagnostics_info.exists:
-            logger.info(f"Found diagnostics for {case_name}: {diagnostics_info.path}")
+            diag_source = getattr(diagnostics_info, 'source', 'filesystem')
+            logger.info(f"Found diagnostics ({diag_source}) for {case_name}: {diagnostics_info.path}")
 
             # Update case
             db.upsert_case({
                 'case_name': case_name,
                 'diagnostics_directory': diagnostics_info.path,
-                'has_diagnostics': True
+                'has_diagnostics': True,
+                'diagnostics_url': diagnostics_url,
             })
 
             # Store diagnostic info
@@ -170,14 +211,25 @@ def update_diagnostics():
                 'diagnostic_type': diagnostics_info.diagnostic_type,
                 'path': diagnostics_info.path,
                 'last_modified': diagnostics_info.last_modified,
-                'file_count': diagnostics_info.file_count
+                'file_count': diagnostics_info.file_count,
+                'source': diag_source,
             }
 
             diag_id = db.upsert_diagnostic(diag_db_data)
             stats['diagnostics_found'] += 1
 
-            # Extract statistics
-            if diagnostics_info.file_count > 0:
+            if diag_source == 'web' and web_result:
+                try:
+                    stats_list = adf_parser.extract_statistics_from_html_tables(
+                        web_result.tables_data, diag_id
+                    )
+                    if stats_list:
+                        db.bulk_insert_statistics(stats_list)
+                        stats['statistics_extracted'] += len(stats_list)
+                except Exception as e:
+                    logger.error(f"Error extracting web statistics for {case_name}: {e}")
+                    stats['errors'].append(str(e))
+            elif diagnostics_info.file_count > 0:
                 try:
                     stats_list = adf_parser.extract_statistics_list(diagnostics_info.path, diag_id)
                     if stats_list:
@@ -185,10 +237,12 @@ def update_diagnostics():
                         stats['statistics_extracted'] += len(stats_list)
                 except Exception as e:
                     logger.error(f"Error extracting statistics for {case_name}: {e}")
+                    stats['errors'].append(str(e))
 
     db.complete_update_log(
         update_log_id,
-        diagnostics_found=stats['diagnostics_found']
+        diagnostics_found=stats['diagnostics_found'],
+        errors='\n'.join(stats['errors']) if stats['errors'] else None,
     )
 
     db.close()
@@ -196,6 +250,7 @@ def update_diagnostics():
     logger.info(f"\nDiagnostics update completed:")
     logger.info(f"  New diagnostics found: {stats['diagnostics_found']}")
     logger.info(f"  Statistics extracted: {stats['statistics_extracted']}")
+    logger.info(f"  Errors: {len(stats['errors'])}")
 
 
 def main():

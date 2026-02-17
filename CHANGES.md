@@ -1,5 +1,58 @@
 # Changes
 
+## February 17, 2026 - Web-Hosted Diagnostics Fallback
+
+### Feature
+When GLADE filesystem diagnostics are unavailable (data purged or off-system),
+the pipeline now falls back to ADF outputs hosted on `webext.cgd.ucar.edu`.
+
+### Changes
+
+#### `src/parsers/issue_parser.py`
+- Added `diagnostic_urls: List[str]` field to `ParsedIssue`
+- Added `extract_diagnostic_urls(text)` method with regex for `webext.cgd.ucar.edu` URLs
+- `parse_issue_body()` and `parse_full_issue()` now populate `diagnostic_urls`
+
+#### `src/collectors/web_collector.py` (new)
+- `WebDiagnosticsCollector` class: navigates directory listings on `webext.cgd.ucar.edu`
+  to find `html_table/amwg_table_*.html` files, parses them with `pd.read_html()`
+- `WebDiagnosticsResult` dataclass: carries `DiagnosticsInfo`, parsed table DataFrames,
+  and the source URL
+- Only fetches from `ALLOWED_HOSTS = {'webext.cgd.ucar.edu'}` to prevent unintended requests
+- Respects a 0.5 s inter-request delay; max navigation depth of 4 levels
+
+#### `src/parsers/adf_parser.py`
+- Added `normalize_html_table_columns(df)` — maps HTML column header variants to CSV names
+- Added `extract_statistics_from_html_tables(tables_data, diagnostic_id)` — processes
+  web-sourced DataFrames using the same logic as CSV extraction
+
+#### `src/collectors/filesystem_collector.py`
+- `DiagnosticsInfo` gains a `source` field (`'filesystem'` default, set to `'web'` for
+  web-sourced diagnostics)
+
+#### `src/storage/database.py`
+- `diagnostics` table: new `source` column (`'filesystem'` | `'web'`)
+- `cases` table: new `diagnostics_url` column (stores root URL for web-sourced cases)
+- Added `migrate_schema()` — idempotent ALTER TABLE migrations for existing databases
+- `upsert_diagnostic()` and `upsert_case()` updated to persist new fields
+
+#### `scripts/collect_data.py`
+- Imports and instantiates `WebDiagnosticsCollector`
+- After GLADE lookup fails, tries `web_collector.find_diagnostics_from_urls()` with
+  URLs from `parsed_issue.diagnostic_urls`
+- Passes `source` field to `upsert_diagnostic()`; stores `diagnostics_url` on case
+- Calls `db.migrate_schema()` at startup
+
+#### `scripts/update_data.py`
+- Same web fallback added to `update_diagnostics()`
+- Re-parses issue body to recover web URLs when not stored on the case
+- Calls `db.migrate_schema()` at startup
+
+#### `docs/web_diagnostics.md` (new)
+- Feature documentation: URL structure, configuration, debugging, extending to new hosts
+
+---
+
 ## February 13, 2026 - ADF Data Pipeline Fixes & Diagnostic Testing
 
 ### Problem

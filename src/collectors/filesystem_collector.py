@@ -20,6 +20,7 @@ class DiagnosticsInfo:
     csv_files: List[str] = None
     last_modified: Optional[datetime] = None
     file_count: int = 0
+    source: str = 'filesystem'  # 'filesystem' or 'web'
 
     def __post_init__(self):
         if self.csv_files is None:
