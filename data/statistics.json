@@ -71,12 +71,12 @@
       "with_diagnostics": 8
     },
     "e30_alpha08b": {
-      "count": 11,
-      "with_diagnostics": 2
+      "count": 12,
+      "with_diagnostics": 10
     },
     "e30_alpha08a": {
       "count": 9,
-      "with_diagnostics": 2
+      "with_diagnostics": 3
     },
     "e30_beta04": {
       "count": 2,
@@ -112,10 +112,10 @@
     }
   },
   "diagnostic_coverage": {
-    "total_cases": 255,
-    "with_diagnostics": 131,
-    "without_diagnostics": 124,
-    "percentage": 51.4
+    "total_cases": 257,
+    "with_diagnostics": 140,
+    "without_diagnostics": 117,
+    "percentage": 54.5
   },
-  "last_updated": "2026-02-12T16:20:28.304286"
+  "last_updated": "2026-02-17T12:42:01.168535"
 }
