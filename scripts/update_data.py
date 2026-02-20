@@ -150,6 +150,7 @@ def update_diagnostics():
 
     db = Database(settings.DATABASE_PATH)
     db.migrate_schema()
+    db.cleanup_case_directories()
 
     filesystem_collector = FilesystemCollector({
         'cesm_runs': settings.CESM_RUNS_BASE,
@@ -264,7 +265,10 @@ def update_diagnostics():
         if case.get('atm_in_namelist'):
             continue
         case_dir = case.get('case_directory')
-        if not case_dir or not os.path.isdir(case_dir):
+        if not case_dir:
+            continue
+        case_dir = case_dir.rstrip('`').rstrip()  # defensive strip for any remaining dirty values
+        if not os.path.isdir(case_dir):
             continue
         candidate = os.path.join(case_dir, 'CaseDocs', 'atm_in')
         if os.path.isfile(candidate):

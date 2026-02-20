@@ -52,6 +52,7 @@ def main():
     db = Database(settings.DATABASE_PATH)
     db.initialize_schema()
     db.migrate_schema()
+    db.cleanup_case_directories()
 
     # Log this update
     update_log_id = db.log_update('full' if args.mode == 'full' else 'test', datetime.now())

@@ -126,8 +126,8 @@ class IssueParser:
         # Clean up paths (remove trailing punctuation)
         paths = []
         for path in matches:
-            # Remove trailing punctuation
-            path = re.sub(r'[.,;:!?)\]]+$', '', path)
+            # Remove trailing punctuation and Markdown backticks
+            path = re.sub(r'[.,;:!?)\]`]+$', '', path)
             paths.append(path)
 
         return list(set(paths))  # Remove duplicates

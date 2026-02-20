@@ -174,6 +174,25 @@ class Database:
         self.conn.commit()
         logger.info("Schema migration complete")
 
+    def cleanup_case_directories(self):
+        """
+        Strip trailing backticks (and whitespace) from stored case_directory values.
+
+        Issue bodies use Markdown inline code (e.g. `/glade/...`), so older
+        collection runs captured the closing backtick as part of the path.
+        This is safe to run repeatedly — rows without backticks are unaffected.
+        """
+        cursor = self.conn.cursor()
+        cursor.execute(
+            "UPDATE cases SET case_directory = RTRIM(TRIM(case_directory), '` ') "
+            "WHERE case_directory LIKE '%`'"
+        )
+        n = cursor.rowcount
+        self.conn.commit()
+        if n:
+            logger.info(f"cleanup_case_directories: fixed {n} case_directory values")
+        return n
+
     def upsert_issue(self, issue_data: Dict[str, Any]) -> int:
         """
         Insert or update an issue
