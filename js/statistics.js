@@ -264,12 +264,14 @@ class StatisticsManager {
         }
 
         cases.forEach(c => {
-            const row = document.createElement('label');
-            row.className = 'namelist-case-row';
+            // Use a div (not label) as the flex row — Safari collapses flex labels
+            const row = document.createElement('div');
+            row.className = 'stats-case-row';
             row.dataset.caseName = c.case_name;
 
             const cb = document.createElement('input');
             cb.type = 'checkbox';
+            cb.id = `stats-cb-${CSS.escape(c.case_name)}`;
             cb.className = 'stats-case-cb';
             cb.value = c.case_name;
             cb.checked = this.selectedCases.has(c.case_name);
@@ -283,12 +285,18 @@ class StatisticsManager {
                 this.updateView();
             });
 
+            // Label wraps the checkbox + name so clicking the name toggles it
+            const lbl = document.createElement('label');
+            lbl.htmlFor = cb.id;
+            lbl.className = 'stats-case-label';
+
             const nameSpan = document.createElement('span');
             nameSpan.className = 'namelist-case-name';
             nameSpan.textContent = c.case_name;
+            lbl.appendChild(nameSpan);
 
             row.appendChild(cb);
-            row.appendChild(nameSpan);
+            row.appendChild(lbl);
 
             if (c.year_range) {
                 const yr = document.createElement('span');
@@ -313,7 +321,7 @@ class StatisticsManager {
     _filterStatsCaseList(query) {
         const list = document.getElementById('statsCaseList');
         if (!list) return;
-        list.querySelectorAll('.namelist-case-row').forEach(row => {
+        list.querySelectorAll('.stats-case-row').forEach(row => {
             const name = row.dataset.caseName.toLowerCase();
             row.style.display = name.includes(query) ? '' : 'none';
         });
