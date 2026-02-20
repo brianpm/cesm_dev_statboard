@@ -10,10 +10,10 @@ class StatisticsManager {
             selectedVariable: null,
             selectedMetric: 'global_mean',
             selectedPeriods: [],  // Populated dynamically from data
-            filterCases: [],  // Empty = all cases with diagnostics
             viewMode: 'table',  // 'table' or 'chart'
             chartType: 'bar'  // 'bar' or 'line'
         };
+        this.selectedCases = new Set();  // case_names to include; empty = show all
         this.chart = null;  // Chart.js instance
         this.availableVariables = [];
         this.availablePeriods = [];  // All periods found in data
@@ -29,6 +29,7 @@ class StatisticsManager {
         console.log('Initializing Statistics Manager...');
 
         this.discoverVariables();
+        this.initCaseSelector();
         this.renderControls();
         this.setupEventListeners();
         this.updateView();
@@ -207,13 +208,142 @@ class StatisticsManager {
     }
 
     /**
-     * Aggregate data for selected variable/metric/periods
+     * Build the case selector list and wire its controls
      */
-    aggregateData() {
+    initCaseSelector() {
+        const diagCases = this.app.cases.filter(c => c.has_diagnostics);
+
+        // Start with all cases selected
+        diagCases.forEach(c => this.selectedCases.add(c.case_name));
+
+        this._renderStatsCaseRows(diagCases);
+        this._updateCaseSelectorCount();
+
+        document.getElementById('statsCaseSearch').addEventListener('input', (e) => {
+            this._filterStatsCaseList(e.target.value.toLowerCase());
+        });
+
+        document.getElementById('statsSelectAll').addEventListener('click', () => {
+            // Select ALL cases regardless of current filter
+            const list = document.getElementById('statsCaseList');
+            list.querySelectorAll('.stats-case-cb').forEach(cb => {
+                cb.checked = true;
+                this.selectedCases.add(cb.value);
+            });
+            this._updateCaseSelectorCount();
+            this.updateView();
+        });
+
+        document.getElementById('statsClearSelected').addEventListener('click', () => {
+            // Deselect all cases regardless of filter
+            const list = document.getElementById('statsCaseList');
+            list.querySelectorAll('.stats-case-cb').forEach(cb => {
+                cb.checked = false;
+            });
+            this.selectedCases.clear();
+            this._updateCaseSelectorCount();
+            this.updateView();
+        });
+    }
+
+    /**
+     * Render case rows into the selector list using createElement (avoids innerHTML
+     * fragility with arbitrary case name strings).
+     */
+    _renderStatsCaseRows(cases) {
+        const list = document.getElementById('statsCaseList');
+        if (!list) return;
+        list.innerHTML = '';
+
+        if (cases.length === 0) {
+            const msg = document.createElement('p');
+            msg.style.cssText = 'padding:0.5rem;color:var(--text-secondary);font-size:0.85em;';
+            msg.textContent = 'No cases with diagnostics found.';
+            list.appendChild(msg);
+            return;
+        }
+
+        cases.forEach(c => {
+            const row = document.createElement('label');
+            row.className = 'namelist-case-row';
+            row.dataset.caseName = c.case_name;
+
+            const cb = document.createElement('input');
+            cb.type = 'checkbox';
+            cb.className = 'stats-case-cb';
+            cb.value = c.case_name;
+            cb.checked = this.selectedCases.has(c.case_name);
+            cb.addEventListener('change', () => {
+                if (cb.checked) {
+                    this.selectedCases.add(c.case_name);
+                } else {
+                    this.selectedCases.delete(c.case_name);
+                }
+                this._updateCaseSelectorCount();
+                this.updateView();
+            });
+
+            const nameSpan = document.createElement('span');
+            nameSpan.className = 'namelist-case-name';
+            nameSpan.textContent = c.case_name;
+
+            row.appendChild(cb);
+            row.appendChild(nameSpan);
+
+            if (c.year_range) {
+                const yr = document.createElement('span');
+                yr.className = 'namelist-case-meta';
+                yr.textContent = c.year_range;
+                row.appendChild(yr);
+            }
+            if (c.issue_number) {
+                const iss = document.createElement('span');
+                iss.className = 'namelist-case-meta';
+                iss.textContent = `#${c.issue_number}`;
+                row.appendChild(iss);
+            }
+
+            list.appendChild(row);
+        });
+    }
+
+    /**
+     * Filter visible case rows in the selector by search string
+     */
+    _filterStatsCaseList(query) {
+        const list = document.getElementById('statsCaseList');
+        if (!list) return;
+        list.querySelectorAll('.namelist-case-row').forEach(row => {
+            const name = row.dataset.caseName.toLowerCase();
+            row.style.display = name.includes(query) ? '' : 'none';
+        });
+    }
+
+    /**
+     * Update the selected-count label
+     */
+    _updateCaseSelectorCount() {
+        const total = this.app.cases.filter(c => c.has_diagnostics).length;
+        const sel = this.selectedCases.size;
+        const el = document.getElementById('statsCaseSelectedCount');
+        if (el) el.textContent = `${sel} of ${total} selected`;
+    }
+
+    /**
+     * Aggregate data for selected variable/metric/periods.
+     *
+     * @param {boolean} includeEmpty - When true (table view), include rows that have
+     *   no data for the current variable so every selected case appears.
+     *   When false (chart view), drop rows with no data to avoid empty bars.
+     */
+    aggregateData(includeEmpty = false) {
         const data = [];
 
-        // Get cases with diagnostics
-        const cases = this.app.cases.filter(c => c.has_diagnostics);
+        // Get cases with diagnostics, filtered by case selector
+        const cases = this.app.cases.filter(c =>
+            c.has_diagnostics &&
+            (this.selectedCases.size === 0 || this.selectedCases.has(c.case_name))
+        );
 
         cases.forEach(caseData => {
             const row = {
@@ -228,9 +358,8 @@ class StatisticsManager {
                 row[period] = value !== undefined ? value : null;
             });
 
-            // Only include rows that have at least one value
             const hasData = this.state.selectedPeriods.some(p => row[p] !== null);
-            if (hasData) {
+            if (includeEmpty || hasData) {
                 data.push(row);
             }
         });
@@ -255,7 +384,9 @@ class StatisticsManager {
             return;
         }
 
-        const data = this.aggregateData();
+        // Table shows all selected cases (N/A for missing); chart drops empty rows
+        const isTable = this.state.viewMode === 'table';
+        const data = this.aggregateData(isTable);
 
         if (data.length === 0) {
             this.showEmptyState();
@@ -264,7 +395,7 @@ class StatisticsManager {
 
         this.hideEmptyState();
 
-        if (this.state.viewMode === 'table') {
+        if (isTable) {
             this.renderTable(data);
             this.showTableView();
         } else {
