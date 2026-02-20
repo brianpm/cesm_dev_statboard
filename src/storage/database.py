@@ -158,6 +158,7 @@ class Database:
         migrations = [
             # (table, column, definition)
             ('diagnostics', 'source', "TEXT DEFAULT 'filesystem'"),
+            ('diagnostics', 'year_range', 'TEXT'),
             ('cases', 'diagnostics_url', 'TEXT'),
             ('cases', 'atm_in_namelist', 'TEXT'),
             ('cases', 'atm_in_path', 'TEXT'),
@@ -173,6 +174,39 @@ class Database:
 
         self.conn.commit()
         logger.info("Schema migration complete")
+
+    def migrate_statistics_periods(self):
+        """
+        One-time data migration:
+        1. Copy year-range period info from statistics.temporal_period into
+           diagnostics.year_range (for display purposes).
+        2. Normalize all 'yrs_X_Y' temporal_period values to 'ANN' (since ADF
+           amwg_table statistics are always annual means).
+        Safe to run repeatedly — already-migrated rows are unaffected.
+        """
+        cursor = self.conn.cursor()
+        # Step 1: backfill diagnostics.year_range from statistics rows
+        cursor.execute("""
+            UPDATE diagnostics
+            SET year_range = (
+                SELECT temporal_period FROM statistics
+                WHERE diagnostic_id = diagnostics.id
+                  AND temporal_period LIKE 'yrs_%'
+                LIMIT 1
+            )
+            WHERE year_range IS NULL
+        """)
+        n_yr = cursor.rowcount
+        # Step 2: normalize temporal_period
+        cursor.execute(
+            "UPDATE statistics SET temporal_period = 'ANN' "
+            "WHERE temporal_period LIKE 'yrs_%'"
+        )
+        n_stat = cursor.rowcount
+        self.conn.commit()
+        if n_yr or n_stat:
+            logger.info(f"migrate_statistics_periods: updated {n_yr} diagnostics "
+                        f"year_range, fixed {n_stat} statistics periods → 'ANN'")
 
     def cleanup_case_directories(self):
         """
@@ -400,9 +434,11 @@ class Database:
         cursor = self.conn.cursor()
 
         query = '''
-            SELECT c.*, i.issue_number, i.state as issue_state, i.created_at as issue_created_at
+            SELECT c.*, i.issue_number, i.state as issue_state, i.created_at as issue_created_at,
+                   d.year_range
             FROM cases c
             LEFT JOIN issues i ON c.issue_id = i.id
+            LEFT JOIN diagnostics d ON d.case_id = c.id
             WHERE 1=1
         '''
         params = []

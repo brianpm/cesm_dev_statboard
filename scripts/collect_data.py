@@ -52,6 +52,7 @@ def main():
     db = Database(settings.DATABASE_PATH)
     db.initialize_schema()
     db.migrate_schema()
+    db.migrate_statistics_periods()
     db.cleanup_case_directories()
 
     # Log this update
@@ -252,6 +253,21 @@ def main():
                             stats['errors'].append(
                                 f"Issue #{issue_num}: Statistics extraction failed - {str(e)}"
                             )
+                        # Store year_range from diagnostics path
+                        year_range = adf_parser.extract_year_range(diagnostics_info.path)
+                        if not year_range:
+                            import glob as _glob
+                            csvs = _glob.glob(os.path.join(diagnostics_info.path, '**/*.csv'), recursive=True)
+                            for csv in csvs[:1]:
+                                year_range = adf_parser.extract_year_range(csv)
+                                if year_range:
+                                    break
+                        if year_range:
+                            db.conn.execute(
+                                'UPDATE diagnostics SET year_range = ? WHERE id = ?',
+                                (year_range, diag_id)
+                            )
+                            db.conn.commit()
                 else:
                     logger.info(f"  No diagnostics found (will be flagged as pending)")
 

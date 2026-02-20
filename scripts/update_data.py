@@ -150,6 +150,7 @@ def update_diagnostics():
 
     db = Database(settings.DATABASE_PATH)
     db.migrate_schema()
+    db.migrate_statistics_periods()
     db.cleanup_case_directories()
 
     filesystem_collector = FilesystemCollector({
@@ -257,6 +258,21 @@ def update_diagnostics():
                 except Exception as e:
                     logger.error(f"Error extracting statistics for {case_name}: {e}")
                     stats['errors'].append(str(e))
+                # Store year_range from diagnostics path
+                import glob as _glob
+                year_range = adf_parser.extract_year_range(diagnostics_info.path)
+                if not year_range:
+                    csvs = _glob.glob(os.path.join(diagnostics_info.path, '**/*.csv'), recursive=True)
+                    for csv in csvs[:1]:
+                        year_range = adf_parser.extract_year_range(csv)
+                        if year_range:
+                            break
+                if year_range:
+                    db.conn.execute(
+                        'UPDATE diagnostics SET year_range = ? WHERE id = ?',
+                        (year_range, diag_id)
+                    )
+                    db.conn.commit()
 
     # Also backfill atm_in namelist for cases that have a case_directory but no namelist yet
     all_cases = db.get_all_cases()

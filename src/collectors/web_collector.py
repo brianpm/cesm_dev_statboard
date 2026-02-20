@@ -86,7 +86,7 @@ class WebDiagnosticsCollector:
 
         Returns:
             List of (html_url, temporal_period) tuples.
-            temporal_period is inferred from the URL path (e.g. 'yrs_2_21').
+            temporal_period is inferred from the URL path; year-range URLs return 'ANN'.
         """
         if not self._is_allowed_url(base_url):
             logger.warning(f"Skipping disallowed URL: {base_url}")
@@ -242,16 +242,16 @@ class WebDiagnosticsCollector:
             if f'/{period}/' in url or url.endswith(f'/{period}'):
                 return period
 
-        # Filesystem ADF directory naming: yrs_2_21
+        # Filesystem ADF directory naming: yrs_2_21 → annual mean → 'ANN'
         m = re.search(r'yrs_(\d+)_(\d+)', url)
         if m:
-            return f"yrs_{m.group(1)}_{m.group(2)}"
+            return 'ANN'
 
         # Web URL comparison directory naming: {case}_{yr1}_{yr2}_vs_{ctrl}_{yr1}_{yr2}
-        # Extract the first year span (test case years)
+        # These are also annual means → 'ANN'
         m = re.search(r'_(\d+)_(\d+)_vs_', url)
         if m:
-            return f"yrs_{m.group(1)}_{m.group(2)}"
+            return 'ANN'
 
         return 'ANN'
 

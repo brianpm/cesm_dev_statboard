@@ -22,7 +22,23 @@
       "Bash(git checkout:*)",
       "Bash(git stash:*)",
       "Bash(gh issue list:*)",
-      "Bash(git -C /glade/u/home/brianpm/Code/cesm_dev_statboard log --oneline -10)"
+      "Bash(git -C /glade/u/home/brianpm/Code/cesm_dev_statboard log --oneline -10)",
+      "Bash(PYTHON=/glade/u/apps/opt/conda/envs/npl/bin/python bash -c '\nset -e\n\necho \"\"===================================\"\"\necho \"\"CESM Status Board - GitHub Pages Deploy\"\"\necho \"\"===================================\"\"\n\n# We already did full collection + export, skip the incremental update step\n# Go straight to deploy\n\necho \"\"\"\"\necho \"\"Step 1: Data already collected and exported. Proceeding to deploy...\"\"\n\n# Check if gh-pages branch exists\nif git show-ref --quiet refs/heads/gh-pages; then\n    echo \"\"\"\"\n    echo \"\"Step 2: Deploying to existing gh-pages branch...\"\"\n\n    # Stash any changes\n    git stash push -m \"\"Pre-deploy stash\"\" || true\n\n    # Switch to gh-pages\n    git checkout gh-pages\n\n    # Copy updated web files \\(HTML, CSS, JS\\) from main\n    echo \"\"Updating web files from main branch...\"\"\n    git checkout main -- web/\n\n    cp -r web/css web/js web/index.html .\n\n    # Copy updated data files\n    mkdir -p data\n    cp web/data/*.json data/\n\n    # Commit changes\n    git add css/ js/ index.html data/\n    git commit -m \"\"Update site - $\\(date '+%Y-%m-%d %H:%M:%S'\\)\"\" || echo \"\"No changes to commit\"\"\n\n    # Push to remote\n    echo \"\"\"\"\n    echo \"\"Step 3: Pushing to GitHub...\"\"\n    git push origin gh-pages\n\n    # Return to main branch\n    git checkout main\n\n    # Restore stashed changes if any\n    git stash pop || true\n\nelse\n    echo \"\"gh-pages branch not found locally — something unexpected, aborting\"\"\n    exit 1\nfi\n\necho \"\"\"\"\necho \"\"===================================\"\"\necho \"\"Deployment Complete!\"\"\necho \"\"===================================\"\"\necho \"\"\"\"\necho \"\"Your site should be available at:\"\"\necho \"\"https://brianpm.github.io/cesm_dev_statboard/\"\"\n')",
+      "Bash(/glade/u/apps/opt/conda/envs/npl/bin/python:*)",
+      "Bash(git -C /tmp/gh-pages-worktree add data/ css/ js/ index.html)",
+      "Bash(git -C /tmp/gh-pages-worktree status --short)",
+      "Bash(git -C /tmp/gh-pages-worktree commit -m \"Update site - 257 cases, 140 with diagnostics, 16861 statistics \\(2026-02-17\\)\")",
+      "Bash(git -C /tmp/gh-pages-worktree push origin gh-pages)",
+      "Bash(git push:*)",
+      "Bash(git worktree:*)",
+      "WebSearch",
+      "Bash(python3:*)",
+      "Bash(sqlite3:*)",
+      "Bash(git check-ignore:*)",
+      "Bash(bash scripts/deploy_to_pages.sh:*)",
+      "Bash(/glade/u/apps/opt/conda/envs/npl/bin/python3 -c:*)",
+      "Bash(/glade/u/apps/opt/conda/envs/npl/bin/python3:*)",
+      "Bash(find:*)"
     ]
   }
 }

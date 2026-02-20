@@ -149,7 +149,7 @@ class ADFParser:
             csv_path: Path to CSV file
 
         Returns:
-            Temporal period (e.g., 'ANN', 'DJF', 'yrs_2_21')
+            Temporal period (e.g., 'ANN', 'DJF'); yrs_X_Y paths return 'ANN'
         """
         full_path = str(csv_path)
 
@@ -160,12 +160,18 @@ class ADFParser:
                 return period
 
         # Check directory path for yrs_{start}_{end} pattern
+        # These directories contain annual-mean statistics → always return 'ANN'
         yrs_match = re.search(r'yrs_(\d+)_(\d+)', full_path)
         if yrs_match:
-            return f"yrs_{yrs_match.group(1)}_{yrs_match.group(2)}"
+            return 'ANN'
 
         # Default to annual
         return 'ANN'
+
+    def extract_year_range(self, path: str) -> Optional[str]:
+        """Return 'yrs_{start}_{end}' from a filesystem path, or None."""
+        m = re.search(r'yrs_(\d+)_(\d+)', str(path))
+        return f"yrs_{m.group(1)}_{m.group(2)}" if m else None
 
     def classify_csv_file(self, csv_path: str) -> Dict:
         """
@@ -321,7 +327,7 @@ class ADFParser:
         Args:
             tables_data: List of dicts, each with keys:
                 - 'url': source HTML URL
-                - 'period': temporal period string (e.g. 'ANN', 'yrs_2_21')
+                - 'period': temporal period string (e.g. 'ANN', 'DJF')
                 - 'df': DataFrame from pd.read_html()
             diagnostic_id: Diagnostic ID from database
 
