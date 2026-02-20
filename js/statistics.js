@@ -247,30 +247,34 @@ class StatisticsManager {
     }
 
     /**
-     * Render case rows into the selector list
+     * Render case rows into the selector list using createElement (avoids innerHTML
+     * fragility with arbitrary case name strings).
      */
     _renderStatsCaseRows(cases) {
         const list = document.getElementById('statsCaseList');
         if (!list) return;
         list.innerHTML = '';
 
+        if (cases.length === 0) {
+            const msg = document.createElement('p');
+            msg.style.cssText = 'padding:0.5rem;color:var(--text-secondary);font-size:0.85em;';
+            msg.textContent = 'No cases with diagnostics found.';
+            list.appendChild(msg);
+            return;
+        }
+
         cases.forEach(c => {
             const row = document.createElement('label');
             row.className = 'namelist-case-row';
             row.dataset.caseName = c.case_name;
 
-            const checked = this.selectedCases.has(c.case_name) ? 'checked' : '';
-            const yearRange = c.year_range ? `<span class="namelist-case-meta">${c.year_range}</span>` : '';
-            const issueNum = c.issue_number ? `<span class="namelist-case-meta">#${c.issue_number}</span>` : '';
-
-            row.innerHTML = `
-                <input type="checkbox" class="stats-case-cb" value="${c.case_name}" ${checked}>
-                <span class="namelist-case-name">${c.case_name}</span>
-                ${yearRange}${issueNum}
-            `;
-
-            row.querySelector('.stats-case-cb').addEventListener('change', (e) => {
-                if (e.target.checked) {
+            const cb = document.createElement('input');
+            cb.type = 'checkbox';
+            cb.className = 'stats-case-cb';
+            cb.value = c.case_name;
+            cb.checked = this.selectedCases.has(c.case_name);
+            cb.addEventListener('change', () => {
+                if (cb.checked) {
                     this.selectedCases.add(c.case_name);
                 } else {
                     this.selectedCases.delete(c.case_name);
@@ -278,6 +282,26 @@ class StatisticsManager {
                 this._updateCaseSelectorCount();
                 this.updateView();
             });
+
+            const nameSpan = document.createElement('span');
+            nameSpan.className = 'namelist-case-name';
+            nameSpan.textContent = c.case_name;
+
+            row.appendChild(cb);
+            row.appendChild(nameSpan);
+
+            if (c.year_range) {
+                const yr = document.createElement('span');
+                yr.className = 'namelist-case-meta';
+                yr.textContent = c.year_range;
+                row.appendChild(yr);
+            }
+            if (c.issue_number) {
+                const iss = document.createElement('span');
+                iss.className = 'namelist-case-meta';
+                iss.textContent = `#${c.issue_number}`;
+                row.appendChild(iss);
+            }
 
             list.appendChild(row);
         });
@@ -306,9 +330,13 @@ class StatisticsManager {
     }
 
     /**
-     * Aggregate data for selected variable/metric/periods
+     * Aggregate data for selected variable/metric/periods.
+     *
+     * @param {boolean} includeEmpty - When true (table view), include rows that have
+     *   no data for the current variable so every selected case appears.
+     *   When false (chart view), drop rows with no data to avoid empty bars.
      */
-    aggregateData() {
+    aggregateData(includeEmpty = false) {
         const data = [];
 
         // Get cases with diagnostics, filtered by case selector
@@ -330,9 +358,8 @@ class StatisticsManager {
                 row[period] = value !== undefined ? value : null;
             });
 
-            // Only include rows that have at least one value
             const hasData = this.state.selectedPeriods.some(p => row[p] !== null);
-            if (hasData) {
+            if (includeEmpty || hasData) {
                 data.push(row);
             }
         });
@@ -357,7 +384,9 @@ class StatisticsManager {
             return;
         }
 
-        const data = this.aggregateData();
+        // Table shows all selected cases (N/A for missing); chart drops empty rows
+        const isTable = this.state.viewMode === 'table';
+        const data = this.aggregateData(isTable);
 
         if (data.length === 0) {
             this.showEmptyState();
@@ -366,7 +395,7 @@ class StatisticsManager {
 
         this.hideEmptyState();
 
-        if (this.state.viewMode === 'table') {
+        if (isTable) {
             this.renderTable(data);
             this.showTableView();
         } else {
