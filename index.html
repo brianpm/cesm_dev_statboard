@@ -198,6 +198,20 @@
                 </div>
             </section>
 
+            <!-- Case selection -->
+            <section class="stats-case-selector">
+                <div class="stats-case-selector-header">
+                    <label class="controls-label">Cases:</label>
+                    <input type="text" id="statsCaseSearch" class="namelist-search" placeholder="Filter cases…">
+                    <button id="statsSelectAll" class="btn-secondary btn-sm">Select All</button>
+                    <button id="statsClearSelected" class="btn-secondary btn-sm">Clear</button>
+                    <span id="statsCaseSelectedCount" class="help-text"></span>
+                </div>
+                <div class="namelist-case-list" id="statsCaseList">
+                    <!-- Populated by JS -->
+                </div>
+            </section>
+
             <!-- Visualization area -->
             <section class="statistics-visualization">
                 <div id="statisticsTableContainer" class="stats-table-container">

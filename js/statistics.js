@@ -10,10 +10,10 @@ class StatisticsManager {
             selectedVariable: null,
             selectedMetric: 'global_mean',
             selectedPeriods: [],  // Populated dynamically from data
-            filterCases: [],  // Empty = all cases with diagnostics
             viewMode: 'table',  // 'table' or 'chart'
             chartType: 'bar'  // 'bar' or 'line'
         };
+        this.selectedCases = new Set();  // case_names to include; empty = show all
         this.chart = null;  // Chart.js instance
         this.availableVariables = [];
         this.availablePeriods = [];  // All periods found in data
@@ -29,6 +29,7 @@ class StatisticsManager {
         console.log('Initializing Statistics Manager...');
 
         this.discoverVariables();
+        this.initCaseSelector();
         this.renderControls();
         this.setupEventListeners();
         this.updateView();
@@ -207,13 +208,114 @@ class StatisticsManager {
     }
 
     /**
+     * Build the case selector list and wire its controls
+     */
+    initCaseSelector() {
+        const diagCases = this.app.cases.filter(c => c.has_diagnostics);
+
+        // Start with all cases selected
+        diagCases.forEach(c => this.selectedCases.add(c.case_name));
+
+        this._renderStatsCaseRows(diagCases);
+        this._updateCaseSelectorCount();
+
+        document.getElementById('statsCaseSearch').addEventListener('input', (e) => {
+            this._filterStatsCaseList(e.target.value.toLowerCase());
+        });
+
+        document.getElementById('statsSelectAll').addEventListener('click', () => {
+            // Select ALL cases regardless of current filter
+            const list = document.getElementById('statsCaseList');
+            list.querySelectorAll('.stats-case-cb').forEach(cb => {
+                cb.checked = true;
+                this.selectedCases.add(cb.value);
+            });
+            this._updateCaseSelectorCount();
+            this.updateView();
+        });
+
+        document.getElementById('statsClearSelected').addEventListener('click', () => {
+            // Deselect all cases regardless of filter
+            const list = document.getElementById('statsCaseList');
+            list.querySelectorAll('.stats-case-cb').forEach(cb => {
+                cb.checked = false;
+            });
+            this.selectedCases.clear();
+            this._updateCaseSelectorCount();
+            this.updateView();
+        });
+    }
+
+    /**
+     * Render case rows into the selector list
+     */
+    _renderStatsCaseRows(cases) {
+        const list = document.getElementById('statsCaseList');
+        if (!list) return;
+        list.innerHTML = '';
+
+        cases.forEach(c => {
+            const row = document.createElement('label');
+            row.className = 'namelist-case-row';
+            row.dataset.caseName = c.case_name;
+
+            const checked = this.selectedCases.has(c.case_name) ? 'checked' : '';
+            const yearRange = c.year_range ? `<span class="namelist-case-meta">${c.year_range}</span>` : '';
+            const issueNum = c.issue_number ? `<span class="namelist-case-meta">#${c.issue_number}</span>` : '';
+
+            row.innerHTML = `
+                <input type="checkbox" class="stats-case-cb" value="${c.case_name}" ${checked}>
+                <span class="namelist-case-name">${c.case_name}</span>
+                ${yearRange}${issueNum}
+            `;
+
+            row.querySelector('.stats-case-cb').addEventListener('change', (e) => {
+                if (e.target.checked) {
+                    this.selectedCases.add(c.case_name);
+                } else {
+                    this.selectedCases.delete(c.case_name);
+                }
+                this._updateCaseSelectorCount();
+                this.updateView();
+            });
+
+            list.appendChild(row);
+        });
+    }
+
+    /**
+     * Filter visible case rows in the selector by search string
+     */
+    _filterStatsCaseList(query) {
+        const list = document.getElementById('statsCaseList');
+        if (!list) return;
+        list.querySelectorAll('.namelist-case-row').forEach(row => {
+            const name = row.dataset.caseName.toLowerCase();
+            row.style.display = name.includes(query) ? '' : 'none';
+        });
+    }
+
+    /**
+     * Update the selected-count label
+     */
+    _updateCaseSelectorCount() {
+        const total = this.app.cases.filter(c => c.has_diagnostics).length;
+        const sel = this.selectedCases.size;
+        const el = document.getElementById('statsCaseSelectedCount');
+        if (el) el.textContent = `${sel} of ${total} selected`;
+    }
+
+    /**
      * Aggregate data for selected variable/metric/periods
      */
     aggregateData() {
         const data = [];
 
-        // Get cases with diagnostics
-        const cases = this.app.cases.filter(c => c.has_diagnostics);
+        // Get cases with diagnostics, filtered by case selector
+        const cases = this.app.cases.filter(c =>
+            c.has_diagnostics &&
+            (this.selectedCases.size === 0 || this.selectedCases.has(c.case_name))
+        );
 
         cases.forEach(caseData => {
             const row = {
