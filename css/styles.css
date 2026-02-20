@@ -748,3 +748,140 @@ a:hover {
         gap: 0.5rem;
     }
 }
+
+/* ===== Namelist Diff Tab ===== */
+.controls-section {
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+
+.controls-section h3 {
+    margin-bottom: 0.4rem;
+}
+
+.controls-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.75rem;
+}
+
+.btn.btn-primary {
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.btn.btn-primary:disabled {
+    background: var(--secondary-color);
+    cursor: not-allowed;
+}
+
+.namelist-search-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.namelist-search {
+    padding: 0.35rem 0.6rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 0.9rem;
+    width: 300px;
+}
+
+.namelist-case-list {
+    max-height: 220px;
+    overflow-y: auto;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 0.4rem 0;
+    background: var(--surface);
+}
+
+.namelist-case-row {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.2rem 0.6rem;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.namelist-case-row:hover {
+    background: var(--background);
+}
+
+.namelist-case-name {
+    font-family: monospace;
+    flex: 1;
+}
+
+.namelist-case-meta {
+    color: var(--text-secondary);
+    font-size: 0.78rem;
+}
+
+/* Diff table */
+.namelist-table {
+    font-family: monospace;
+    font-size: 0.82rem;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.namelist-table td,
+.namelist-table th {
+    padding: 0.25rem 0.5rem;
+    border: 1px solid var(--border-color);
+    vertical-align: top;
+    word-break: break-all;
+}
+
+.namelist-table th {
+    background: var(--surface);
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 0.8rem;
+}
+
+.namelist-group-header td {
+    background: var(--background);
+    font-weight: bold;
+    font-family: monospace;
+    color: var(--primary-color);
+    padding: 0.3rem 0.5rem;
+}
+
+.namelist-key {
+    color: var(--text-secondary);
+    white-space: nowrap;
+}
+
+.diff-row {
+    background-color: #fffbeb;
+}
+
+.diff-cell {
+    background-color: #fef3c7;
+    font-weight: 600;
+}
+
+.missing-val {
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+#namelistDiffContainer {
+    overflow-x: auto;
+}

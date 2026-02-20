@@ -43,7 +43,7 @@
   },
   "by_resolution": {
     "e30_alpha07g": {
-      "count": 43,
+      "count": 44,
       "with_diagnostics": 10
     },
     "e30_alpha07c_cesm": {
@@ -71,7 +71,7 @@
       "with_diagnostics": 8
     },
     "e30_alpha08b": {
-      "count": 12,
+      "count": 15,
       "with_diagnostics": 10
     },
     "e30_alpha08a": {
@@ -112,10 +112,10 @@
     }
   },
   "diagnostic_coverage": {
-    "total_cases": 257,
+    "total_cases": 261,
     "with_diagnostics": 140,
-    "without_diagnostics": 117,
-    "percentage": 54.5
+    "without_diagnostics": 121,
+    "percentage": 53.6
   },
-  "last_updated": "2026-02-17T13:24:15.453737"
+  "last_updated": "2026-02-20T11:52:05.742106"
 }

@@ -40,6 +40,7 @@
         <nav class="tabs">
             <button class="tab-btn active" data-tab="cases">Cases</button>
             <button class="tab-btn" data-tab="statistics">Statistics</button>
+            <button class="tab-btn" data-tab="namelist">Namelist Diff</button>
         </nav>
 
         <!-- Cases Tab Content -->
@@ -215,6 +216,23 @@
         </div>
         <!-- End Statistics Tab Content -->
 
+        <!-- Namelist Diff Tab Content -->
+        <div id="namelistTab" class="tab-content">
+            <div class="controls-section">
+                <h3>Atmosphere Namelist (atm_in) Comparison</h3>
+                <p class="help-text">Select 2–4 cases to compare their namelist settings.</p>
+                <div id="namelistCaseSelector"></div>
+                <div class="controls-row">
+                    <button id="namelistDiffBtn" class="btn btn-primary" disabled>Show Diff</button>
+                    <span id="namelistSelectedCount">0 selected</span>
+                </div>
+            </div>
+            <div id="namelistDiffContainer" style="display:none">
+                <div id="namelistDiffTable"></div>
+            </div>
+        </div>
+        <!-- End Namelist Diff Tab Content -->
+
         <!-- Case Detail Modal -->
         <div class="modal" id="caseModal">
             <div class="modal-content">
@@ -248,6 +266,7 @@
     <script src="js/search.js"></script>
     <script src="js/compare.js"></script>
     <script src="js/statistics.js"></script>
+    <script src="js/namelist.js"></script>
     <script>
         // Initialize application (use window.app so search.js and compare.js can find it)
         window.app = new CESMStatusBoard();

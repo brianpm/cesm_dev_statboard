@@ -11,6 +11,7 @@ class CESMStatusBoard {
         this.sortColumn = 'case_name';
         this.sortDirection = 'asc';
         this.statisticsManager = null;
+        this.namelistManager = null;
         this.currentTab = 'cases';
     }
 
@@ -28,6 +29,10 @@ class CESMStatusBoard {
             // Initialize Statistics Manager
             this.statisticsManager = new StatisticsManager(this);
             window.statisticsManager = this.statisticsManager;
+
+            // Initialize Namelist Diff Manager
+            this.namelistManager = new NamelistDiffManager(this);
+            window.namelistManager = this.namelistManager;
 
             // Check if we should show statistics tab on load
             if (window.location.hash === '#statistics') {
@@ -406,6 +411,11 @@ class CESMStatusBoard {
         // Initialize statistics manager when switching to statistics tab
         if (tabName === 'statistics' && this.statisticsManager) {
             this.statisticsManager.init();
+        }
+
+        // Initialize namelist manager when switching to namelist tab
+        if (tabName === 'namelist' && this.namelistManager) {
+            this.namelistManager.init();
         }
     }
 

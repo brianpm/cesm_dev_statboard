@@ -1,0 +1,11 @@
+{
+  "test": {
+    "file": "namelists/test.json"
+  },
+  "b.e30_beta06_megan.B1850C_MTt4s.ne30.001": {
+    "file": "namelists/b.e30_beta06_megan.B1850C_MTt4s.ne30.001.json"
+  },
+  "b.e30_alpha07b_dev.B1850C_MTt4s.ne30_t232_wgx3.213": {
+    "file": "namelists/b.e30_alpha07b_dev.B1850C_MTt4s.ne30_t232_wgx3.213.json"
+  }
+}
