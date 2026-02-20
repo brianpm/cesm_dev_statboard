@@ -82,6 +82,8 @@ class Database:
                 has_diagnostics BOOLEAN DEFAULT 0,
                 contacts TEXT,
                 diagnostics_url TEXT,
+                atm_in_namelist TEXT,
+                atm_in_path TEXT,
                 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                 updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                 FOREIGN KEY (issue_id) REFERENCES issues(id)
@@ -157,6 +159,8 @@ class Database:
             # (table, column, definition)
             ('diagnostics', 'source', "TEXT DEFAULT 'filesystem'"),
             ('cases', 'diagnostics_url', 'TEXT'),
+            ('cases', 'atm_in_namelist', 'TEXT'),
+            ('cases', 'atm_in_path', 'TEXT'),
         ]
 
         for table, column, definition in migrations:
@@ -574,6 +578,49 @@ class Database:
         summary['last_update'] = result['last_update'] if result else None
 
         return summary
+
+    def update_case_namelist(self, case_id: int, namelist_dict, path: Optional[str]):
+        """
+        Store parsed atm_in namelist for a case.
+
+        Args:
+            case_id: Case row ID
+            namelist_dict: Parsed namelist dict (will be JSON-serialised) or None
+            path: Source file path for provenance
+        """
+        cursor = self.conn.cursor()
+        namelist_json = json.dumps(namelist_dict, default=str) if namelist_dict is not None else None
+        try:
+            cursor.execute(
+                'UPDATE cases SET atm_in_namelist = ?, atm_in_path = ? WHERE id = ?',
+                (namelist_json, path, case_id)
+            )
+            self.conn.commit()
+            logger.debug(f"Stored atm_in namelist for case_id={case_id}")
+        except Exception as e:
+            logger.error(f"Error storing namelist for case_id={case_id}: {e}")
+            self.conn.rollback()
+            raise
+
+    def get_case_namelist(self, case_id: int):
+        """
+        Retrieve parsed atm_in namelist for a case.
+
+        Returns:
+            (namelist_dict, path) tuple, or (None, None) if not available
+        """
+        cursor = self.conn.cursor()
+        cursor.execute(
+            'SELECT atm_in_namelist, atm_in_path FROM cases WHERE id = ?',
+            (case_id,)
+        )
+        row = cursor.fetchone()
+        if row and row['atm_in_namelist']:
+            try:
+                return json.loads(row['atm_in_namelist']), row['atm_in_path']
+            except json.JSONDecodeError:
+                pass
+        return None, None
 
     def __enter__(self):
         """Context manager entry"""

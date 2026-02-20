@@ -5,6 +5,7 @@ Incremental update script for CESM Development Status Board
 Updates database with recent changes from GitHub and rescans for new diagnostics.
 """
 import argparse
+import os
 import sys
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -21,6 +22,7 @@ from src.collectors.filesystem_collector import FilesystemCollector
 from src.parsers.issue_parser import IssueParser
 from src.parsers.case_parser import CaseParser
 from src.parsers.adf_parser import ADFParser
+from src.parsers.namelist_parser import parse_namelist
 from src.collectors.web_collector import WebDiagnosticsCollector
 
 # Setup logger
@@ -99,8 +101,24 @@ def update_incremental(since_days: int = 7):
                     'contacts': parsed_issue.contacts
                 }
 
-                db.upsert_case(case_db_data)
+                case_id = db.upsert_case(case_db_data)
                 stats['cases_updated'] += 1
+
+                # Collect atm_in namelist if case directory is available and not yet stored
+                existing_case = db.get_case_by_name(parsed_issue.case_name)
+                if existing_case and not existing_case.get('atm_in_namelist'):
+                    case_dir = case_db_data.get('case_directory') or (
+                        existing_case.get('case_directory') if existing_case else None
+                    )
+                    if case_dir and os.path.isdir(case_dir):
+                        candidate = os.path.join(case_dir, 'CaseDocs', 'atm_in')
+                        if os.path.isfile(candidate):
+                            try:
+                                atm_in_namelist = parse_namelist(candidate)
+                                db.update_case_namelist(case_id, atm_in_namelist, candidate)
+                                logger.info(f"  Parsed atm_in: {candidate}")
+                            except Exception as e:
+                                logger.warning(f"  Failed to parse atm_in: {e}")
 
                 logger.info(f"Updated issue #{issue_num}: {parsed_issue.case_name}")
 
@@ -239,6 +257,26 @@ def update_diagnostics():
                     logger.error(f"Error extracting statistics for {case_name}: {e}")
                     stats['errors'].append(str(e))
 
+    # Also backfill atm_in namelist for cases that have a case_directory but no namelist yet
+    all_cases = db.get_all_cases()
+    namelists_added = 0
+    for case in all_cases:
+        if case.get('atm_in_namelist'):
+            continue
+        case_dir = case.get('case_directory')
+        if not case_dir or not os.path.isdir(case_dir):
+            continue
+        candidate = os.path.join(case_dir, 'CaseDocs', 'atm_in')
+        if os.path.isfile(candidate):
+            try:
+                atm_in_namelist = parse_namelist(candidate)
+                db.update_case_namelist(case['id'], atm_in_namelist, candidate)
+                namelists_added += 1
+                logger.info(f"  Parsed atm_in for {case['case_name']}: {candidate}")
+            except Exception as e:
+                logger.warning(f"  Failed to parse atm_in for {case['case_name']}: {e}")
+                stats['errors'].append(str(e))
+
     db.complete_update_log(
         update_log_id,
         diagnostics_found=stats['diagnostics_found'],
@@ -249,6 +287,7 @@ def update_diagnostics():
 
     logger.info(f"\nDiagnostics update completed:")
     logger.info(f"  New diagnostics found: {stats['diagnostics_found']}")
+    logger.info(f"  Namelists added: {namelists_added}")
     logger.info(f"  Statistics extracted: {stats['statistics_extracted']}")
     logger.info(f"  Errors: {len(stats['errors'])}")
 

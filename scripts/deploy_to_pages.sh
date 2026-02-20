@@ -93,7 +93,10 @@ cp -r web/js/.              "$WORKTREE_DIR/js/"
 
 # Fresh JSON data files
 mkdir -p "$WORKTREE_DIR/data"
-cp "$STAGING_DIR/"*.json "$WORKTREE_DIR/data/"
+cp "$STAGING_DIR/"*.json    "$WORKTREE_DIR/data/"
+if [ -d "$STAGING_DIR/namelists" ]; then
+    cp -r "$STAGING_DIR/namelists" "$WORKTREE_DIR/data/"
+fi
 
 # ── Step 5: Commit and push ──────────────────────────────────────────────────
 echo ""

@@ -58,8 +58,40 @@ def export_to_json(output_dir: str = None):
     logger.info("\n3. Computing summary statistics...")
     summary = db.get_summary_statistics()
 
+    # Export per-case namelist JSON files
+    logger.info("\n4a. Exporting namelist files...")
+    namelists_dir = output_path / 'namelists'
+    namelists_dir.mkdir(exist_ok=True)
+
+    namelist_index = {}
+    namelists_written = 0
+    for case in cases:
+        raw_nml = case.get('atm_in_namelist')
+        if raw_nml:
+            case_name = case['case_name']
+            fname = case_name + '.json'
+            nml_file = namelists_dir / fname
+            try:
+                nml_dict = json.loads(raw_nml) if isinstance(raw_nml, str) else raw_nml
+                with open(nml_file, 'w') as f:
+                    json.dump(nml_dict, f, indent=2, default=str)
+                namelist_index[case_name] = {'file': f'namelists/{fname}'}
+                namelists_written += 1
+            except Exception as e:
+                logger.warning(f"  Could not write namelist for {case_name}: {e}")
+
+    nml_index_file = namelists_dir / 'index.json'
+    with open(nml_index_file, 'w') as f:
+        json.dump(namelist_index, f, indent=2)
+    logger.info(f"  Wrote {namelists_written} namelist files + index.json")
+
     # Prepare cases.json
     logger.info("\n4. Preparing cases.json...")
+    # Add has_namelist flag; strip the large atm_in_namelist blob from the cases list
+    for case in cases:
+        case['has_namelist'] = bool(case.get('atm_in_namelist'))
+        case.pop('atm_in_namelist', None)  # keep data in per-case namelist files only
+
     cases_data = {
         'cases': cases,
         'metadata': {
@@ -132,6 +164,7 @@ def export_to_json(output_dir: str = None):
     logger.info(f"  - cases.json ({file_size_mb:.2f} MB)")
     logger.info(f"  - statistics.json ({file_size_kb:.2f} KB)")
     logger.info(f"  - last_update.json")
+    logger.info(f"  - namelists/ ({namelists_written} case files + index.json)")
 
     logger.info("\n" + "=" * 80)
     logger.info("Export completed successfully!")
