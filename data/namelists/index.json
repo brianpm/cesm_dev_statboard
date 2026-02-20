@@ -1,11 +1,704 @@
 {
+  "b.e30_beta04.BLT1850.ne30_t232_wgx3.114": {
+    "file": "namelists/b.e30_beta04.BLT1850.ne30_t232_wgx3.114.json"
+  },
+  "b.e30_alpha03d.BLT1850.ne30_t232_wgx3.112": {
+    "file": "namelists/b.e30_alpha03d.BLT1850.ne30_t232_wgx3.112.json"
+  },
+  "b.e30_beta02.BLT1850.ne30_t232.111": {
+    "file": "namelists/b.e30_beta02.BLT1850.ne30_t232.111.json"
+  },
+  "b.e30_beta02.BLT1850.ne30_t232.110": {
+    "file": "namelists/b.e30_beta02.BLT1850.ne30_t232.110.json"
+  },
   "test": {
     "file": "namelists/test.json"
+  },
+  "b.e30_beta04.BLT1850.ne30_t232_wgx3.116": {
+    "file": "namelists/b.e30_beta04.BLT1850.ne30_t232_wgx3.116.json"
+  },
+  "b.e30_beta04.BLT1850.ne30_t232_wgx3.115": {
+    "file": "namelists/b.e30_beta04.BLT1850.ne30_t232_wgx3.115.json"
+  },
+  "b.e30_beta04.BLT1850.ne30_t232_wgx3.120": {
+    "file": "namelists/b.e30_beta04.BLT1850.ne30_t232_wgx3.120.json"
+  },
+  "b.e30_beta04.BLT1850.ne30_t232_wgx3.118": {
+    "file": "namelists/b.e30_beta04.BLT1850.ne30_t232_wgx3.118.json"
+  },
+  "b.e30_beta04.BLT1850.ne30_t232_wgx3.117": {
+    "file": "namelists/b.e30_beta04.BLT1850.ne30_t232_wgx3.117.json"
+  },
+  "b.e30_beta05.BLT1850.ne30_t232_wgx3.123": {
+    "file": "namelists/b.e30_beta05.BLT1850.ne30_t232_wgx3.123.json"
+  },
+  "b.e30_beta05.BLT1850.ne30_t232_wgx3.122": {
+    "file": "namelists/b.e30_beta05.BLT1850.ne30_t232_wgx3.122.json"
+  },
+  "b.e30_beta04.BLT1850.ne30_t232_wgx3.121_1pctco2": {
+    "file": "namelists/b.e30_beta04.BLT1850.ne30_t232_wgx3.121_1pctco2.json"
+  },
+  "b.e30_beta04.BLT1850.ne30_t232_wgx3.121_4xco2": {
+    "file": "namelists/b.e30_beta04.BLT1850.ne30_t232_wgx3.121_4xco2.json"
+  },
+  "b.e30_beta04.BLTHIST.ne30_t232_wgx3.121": {
+    "file": "namelists/b.e30_beta04.BLTHIST.ne30_t232_wgx3.121.json"
+  },
+  "20th century with 121 configuration": {
+    "file": "namelists/20th century with 121 configuration.json"
+  },
+  "b.e30_beta04.BLT1850.ne30_t232_wgx3.121": {
+    "file": "namelists/b.e30_beta04.BLT1850.ne30_t232_wgx3.121.json"
+  },
+  "b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3_NUDGED.130": {
+    "file": "namelists/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3_NUDGED.130.json"
+  },
+  "b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.136": {
+    "file": "namelists/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.136.json"
+  },
+  "b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.134": {
+    "file": "namelists/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.134.json"
+  },
+  "b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.133": {
+    "file": "namelists/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.133.json"
+  },
+  "b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.132": {
+    "file": "namelists/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.132.json"
+  },
+  "b.e30_beta05.BLT1850.ne30_t232_wgx3.129": {
+    "file": "namelists/b.e30_beta05.BLT1850.ne30_t232_wgx3.129.json"
+  },
+  "b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.131": {
+    "file": "namelists/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.131.json"
+  },
+  "b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.130": {
+    "file": "namelists/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.130.json"
+  },
+  "b.e30_beta05.BLT1850.ne30_t232_wgx3.128": {
+    "file": "namelists/b.e30_beta05.BLT1850.ne30_t232_wgx3.128.json"
+  },
+  "b.e30_beta05.BLT1850.ne30_t232_wgx3.127": {
+    "file": "namelists/b.e30_beta05.BLT1850.ne30_t232_wgx3.127.json"
+  },
+  "b.e30_beta05.BLT1850.ne30_t232_wgx3.126": {
+    "file": "namelists/b.e30_beta05.BLT1850.ne30_t232_wgx3.126.json"
+  },
+  "b.e30_beta05.BLT1850.ne30_t232_wgx3.125": {
+    "file": "namelists/b.e30_beta05.BLT1850.ne30_t232_wgx3.125.json"
+  },
+  "b.e30_beta05.BLT1850.ne30_t232_wgx3.124": {
+    "file": "namelists/b.e30_beta05.BLT1850.ne30_t232_wgx3.124.json"
+  },
+  "b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.138": {
+    "file": "namelists/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.138.json"
+  },
+  "b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.137": {
+    "file": "namelists/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.137.json"
+  },
+  "b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.135 - BUGGY": {
+    "file": "namelists/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.135 - BUGGY.json"
+  },
+  "b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.144": {
+    "file": "namelists/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.144.json"
+  },
+  "b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.142": {
+    "file": "namelists/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.142.json"
+  },
+  "b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.141": {
+    "file": "namelists/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.141.json"
+  },
+  "b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.140": {
+    "file": "namelists/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.140.json"
+  },
+  "b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.139": {
+    "file": "namelists/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.139.json"
+  },
+  "b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3_rest_yr49.137": {
+    "file": "namelists/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3_rest_yr49.137.json"
+  },
+  "b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.148": {
+    "file": "namelists/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.148.json"
+  },
+  "b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.147": {
+    "file": "namelists/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.147.json"
+  },
+  "b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.146": {
+    "file": "namelists/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.146.json"
+  },
+  "b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.159 (159b)": {
+    "file": "namelists/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.159 (159b).json"
+  },
+  "b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.158": {
+    "file": "namelists/b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.158.json"
+  },
+  "b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.156": {
+    "file": "namelists/b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.156.json"
+  },
+  "b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.155": {
+    "file": "namelists/b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.155.json"
+  },
+  "b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.154": {
+    "file": "namelists/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.154.json"
+  },
+  "b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.153": {
+    "file": "namelists/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.153.json"
+  },
+  "b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.152": {
+    "file": "namelists/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.152.json"
+  },
+  "b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.150": {
+    "file": "namelists/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.150.json"
+  },
+  "b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.149": {
+    "file": "namelists/b.e30_alpha06b.B1850C_LTso.ne30_t232_wgx3.149.json"
+  },
+  "b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.161": {
+    "file": "namelists/b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.161.json"
+  },
+  "b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.160": {
+    "file": "namelists/b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.160.json"
+  },
+  "b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.159 (159e)": {
+    "file": "namelists/b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.159 (159e).json"
+  },
+  "b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.budget.156": {
+    "file": "namelists/b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.budget.156.json"
+  },
+  "b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.165": {
+    "file": "namelists/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.165.json"
+  },
+  "b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.164": {
+    "file": "namelists/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.164.json"
+  },
+  "b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.163": {
+    "file": "namelists/b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.163.json"
+  },
+  "b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.162": {
+    "file": "namelists/b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.162.json"
+  },
+  "b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.173": {
+    "file": "namelists/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.173.json"
+  },
+  "b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.172": {
+    "file": "namelists/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.172.json"
+  },
+  "b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.171": {
+    "file": "namelists/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.171.json"
+  },
+  "b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.170": {
+    "file": "namelists/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.170.json"
+  },
+  "b.e30_beta06.B1850C_MTso.ne30_t232_wgx3.165": {
+    "file": "namelists/b.e30_beta06.B1850C_MTso.ne30_t232_wgx3.165.json"
+  },
+  "b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.168": {
+    "file": "namelists/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.168.json"
+  },
+  "b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.169": {
+    "file": "namelists/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.169.json"
+  },
+  "b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.167": {
+    "file": "namelists/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.167.json"
+  },
+  "b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.166": {
+    "file": "namelists/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.166.json"
+  },
+  "b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.budget.156b": {
+    "file": "namelists/b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.budget.156b.json"
+  },
+  "b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.178": {
+    "file": "namelists/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.178.json"
+  },
+  "b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.170b": {
+    "file": "namelists/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.170b.json"
+  },
+  "b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.177": {
+    "file": "namelists/b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.177.json"
+  },
+  "b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.176": {
+    "file": "namelists/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.176.json"
+  },
+  "b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.175": {
+    "file": "namelists/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.175.json"
+  },
+  "b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.174": {
+    "file": "namelists/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.174.json"
+  },
+  "b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.budget.156c": {
+    "file": "namelists/b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.budget.156c.json"
+  },
+  "b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.budget.156e": {
+    "file": "namelists/b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.budget.156e.json"
+  },
+  "b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.budget.156d": {
+    "file": "namelists/b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.budget.156d.json"
+  },
+  "b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.budget.156g": {
+    "file": "namelists/b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.budget.156g.json"
+  },
+  "b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.budget.156f": {
+    "file": "namelists/b.e30_alpha06e.B1850C_LTso.ne30_t232_wgx3.budget.156f.json"
+  },
+  "b.e30_beta06.BHISTC_LTso.ne30_t232_wgx3.180": {
+    "file": "namelists/b.e30_beta06.BHISTC_LTso.ne30_t232_wgx3.180.json"
+  },
+  "b.e30_beta06.BHISTC_LTso.ne30_t232_wgx3.166": {
+    "file": "namelists/b.e30_beta06.BHISTC_LTso.ne30_t232_wgx3.166.json"
+  },
+  "b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.179wave": {
+    "file": "namelists/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.179wave.json"
+  },
+  "b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.179": {
+    "file": "namelists/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.179.json"
+  },
+  "b.e30_beta06.BHISTC_LTso.ne30_t232_wgx3.166b": {
+    "file": "namelists/b.e30_beta06.BHISTC_LTso.ne30_t232_wgx3.166b.json"
+  },
+  "b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.181": {
+    "file": "namelists/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.181.json"
+  },
+  "b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.189": {
+    "file": "namelists/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.189.json"
+  },
+  "b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.188": {
+    "file": "namelists/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.188.json"
+  },
+  "b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.187": {
+    "file": "namelists/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.187.json"
+  },
+  "b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.186": {
+    "file": "namelists/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.186.json"
+  },
+  "b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.185": {
+    "file": "namelists/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.185.json"
+  },
+  "b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.184": {
+    "file": "namelists/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.184.json"
   },
   "b.e30_beta06_megan.B1850C_MTt4s.ne30.001": {
     "file": "namelists/b.e30_beta06_megan.B1850C_MTt4s.ne30.001.json"
   },
+  "b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.183": {
+    "file": "namelists/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.183.json"
+  },
+  "b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.182": {
+    "file": "namelists/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.182.json"
+  },
+  "b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.193": {
+    "file": "namelists/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.193.json"
+  },
+  "b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.192": {
+    "file": "namelists/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.192.json"
+  },
+  "b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.191": {
+    "file": "namelists/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.191.json"
+  },
+  "b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.190": {
+    "file": "namelists/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.190.json"
+  },
+  "b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.196": {
+    "file": "namelists/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.196.json"
+  },
+  "b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.195": {
+    "file": "namelists/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.195.json"
+  },
+  "b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.194": {
+    "file": "namelists/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.194.json"
+  },
+  "b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.199": {
+    "file": "namelists/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.199.json"
+  },
+  "b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.197": {
+    "file": "namelists/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.197.json"
+  },
+  "b.e30_beta06.BHISTC_LTso.ne30_t232_wgx3.192": {
+    "file": "namelists/b.e30_beta06.BHISTC_LTso.ne30_t232_wgx3.192.json"
+  },
+  "b.e30_alpha07b.B1850C_LTso.ne30_t232_wgx3.201": {
+    "file": "namelists/b.e30_alpha07b.B1850C_LTso.ne30_t232_wgx3.201.json"
+  },
+  "b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.200": {
+    "file": "namelists/b.e30_beta06.B1850C_LTso.ne30_t232_wgx3.200.json"
+  },
+  "b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.198": {
+    "file": "namelists/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.198.json"
+  },
+  "b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.205": {
+    "file": "namelists/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.205.json"
+  },
+  "b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.204": {
+    "file": "namelists/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.204.json"
+  },
+  "b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.203": {
+    "file": "namelists/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.203.json"
+  },
+  "b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.202": {
+    "file": "namelists/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.202.json"
+  },
+  "b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.207": {
+    "file": "namelists/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.207.json"
+  },
+  "b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.206": {
+    "file": "namelists/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.206.json"
+  },
+  "b.e30_beta06.BHISTC_LTso.ne30_t232_wgx3.200": {
+    "file": "namelists/b.e30_beta06.BHISTC_LTso.ne30_t232_wgx3.200.json"
+  },
+  "b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.211": {
+    "file": "namelists/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.211.json"
+  },
+  "b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.210": {
+    "file": "namelists/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.210.json"
+  },
+  "b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.209": {
+    "file": "namelists/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.209.json"
+  },
+  "b.e30_beta06.BHISTC_LTso.ne30_t232_wgx3_fixed_emission.200": {
+    "file": "namelists/b.e30_beta06.BHISTC_LTso.ne30_t232_wgx3_fixed_emission.200.json"
+  },
+  "b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.214": {
+    "file": "namelists/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.214.json"
+  },
+  "b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.213": {
+    "file": "namelists/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.213.json"
+  },
+  "b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.212": {
+    "file": "namelists/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.212.json"
+  },
+  "b.e30_alpha07b_dev.BHISTC_LTso.ne30_t232_wgx3.215": {
+    "file": "namelists/b.e30_alpha07b_dev.BHISTC_LTso.ne30_t232_wgx3.215.json"
+  },
+  "b.e30_alpha07b_dev.BHISTC_LTso.ne30_t232_wgx3.214": {
+    "file": "namelists/b.e30_alpha07b_dev.BHISTC_LTso.ne30_t232_wgx3.214.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.217": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.217.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.216": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.216.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.219": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.219.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.218": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.218.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.220": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.220.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.221": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.221.json"
+  },
+  "b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.224": {
+    "file": "namelists/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.224.json"
+  },
+  "b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.223": {
+    "file": "namelists/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.223.json"
+  },
   "b.e30_alpha07b_dev.B1850C_MTt4s.ne30_t232_wgx3.213": {
     "file": "namelists/b.e30_alpha07b_dev.B1850C_MTt4s.ne30_t232_wgx3.213.json"
+  },
+  "b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.225": {
+    "file": "namelists/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.225.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.222": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.222.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.226": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.226.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.228": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.228.json"
+  },
+  "b.e30_alpha07c_cesm3_v2.B1850C_LTso.ne30_t232_wgx3.227": {
+    "file": "namelists/b.e30_alpha07c_cesm3_v2.B1850C_LTso.ne30_t232_wgx3.227.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.230": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.230.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.229": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.229.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.232": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.232.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.231": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.231.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.234": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.234.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.233": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.233.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.236.002": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.236.002.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.216_fsd": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.216_fsd.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.235": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.235.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.239": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.239.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.238": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.238.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.243": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.243.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.242": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.242.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.241": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.241.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.240": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.240.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.245": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.245.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.246": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.246.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.244": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.244.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.250": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.250.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.249": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.249.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.248": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.248.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.247": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.247.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.252": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.252.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.251": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.251.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.253": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.253.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.254": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.254.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.256": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.256.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.255": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.255.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.258": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.258.json"
+  },
+  "b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.257": {
+    "file": "namelists/b.e30_alpha07c_cesm.B1850C_LTso.ne30_t232_wgx3.257.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.261": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.261.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.259": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.259.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.262": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.262.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.263": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.263.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.265": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.265.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.264": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.264.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.266": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.266.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.267": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.267.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.268": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.268.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.270": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.270.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.269": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.269.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.272": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.272.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.271": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.271.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.274": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.274.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.273": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.273.json"
+  },
+  "b.e30_alpha07g.BHISTC_LTso.ne30_t232_wgx3.271": {
+    "file": "namelists/b.e30_alpha07g.BHISTC_LTso.ne30_t232_wgx3.271.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.276": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.276.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.275": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.275.json"
+  },
+  "b.e30_alpha07g.BHISTC_LTso.ne30_t232_wgx3.276": {
+    "file": "namelists/b.e30_alpha07g.BHISTC_LTso.ne30_t232_wgx3.276.json"
+  },
+  "b.e30_alpha07g.BHISTC_LTso.ne30_t232_wgx3.271sturm": {
+    "file": "namelists/b.e30_alpha07g.BHISTC_LTso.ne30_t232_wgx3.271sturm.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.278": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.278.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.277": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.277.json"
+  },
+  "b.e30_alpha08a.B1850C_LTso.ne30_t232_wgx3.282": {
+    "file": "namelists/b.e30_alpha08a.B1850C_LTso.ne30_t232_wgx3.282.json"
+  },
+  "b.e30_alpha08a.B1850C_LTso.ne30_t232_wgx3.281": {
+    "file": "namelists/b.e30_alpha08a.B1850C_LTso.ne30_t232_wgx3.281.json"
+  },
+  "b.e30_alpha08a.B1850C_LTso.ne30_t232_wgx3.280": {
+    "file": "namelists/b.e30_alpha08a.B1850C_LTso.ne30_t232_wgx3.280.json"
+  },
+  "alpha07g_qt3 (quadtune test)": {
+    "file": "namelists/alpha07g_qt3 (quadtune test).json"
+  },
+  "b.e30_alpha08a.B1850C_LTso.ne30_t232_wgx3.283": {
+    "file": "namelists/b.e30_alpha08a.B1850C_LTso.ne30_t232_wgx3.283.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.284": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.284.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.275.wav": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.275.wav.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.285": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.285.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.286": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.286.json"
+  },
+  "b.e30_alpha08a.B1850C_LTso.ne30_t232_wgx3.287 (287_08a)": {
+    "file": "namelists/b.e30_alpha08a.B1850C_LTso.ne30_t232_wgx3.287 (287_08a).json"
+  },
+  "b.e30_alpha08a.B1850C_MTso.ne30_t232_wgx3.280": {
+    "file": "namelists/b.e30_alpha08a.B1850C_MTso.ne30_t232_wgx3.280.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.291": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.291.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.287 (287_07g)": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.287 (287_07g).json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.293": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.293.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.292": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.292.json"
+  },
+  "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.289": {
+    "file": "namelists/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.289.json"
+  },
+  "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.290": {
+    "file": "namelists/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.290.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.294": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.294.json"
+  },
+  "b.e30_alpha07g.BHISTC_LTso.ne30_t232_wgx3.271b": {
+    "file": "namelists/b.e30_alpha07g.BHISTC_LTso.ne30_t232_wgx3.271b.json"
+  },
+  "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.295": {
+    "file": "namelists/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.295.json"
+  },
+  "b.e30_alpha07g.BHISTC_LTso.ne30_t232_wgx3.276b": {
+    "file": "namelists/b.e30_alpha07g.BHISTC_LTso.ne30_t232_wgx3.276b.json"
+  },
+  "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.296": {
+    "file": "namelists/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.296.json"
+  },
+  "b.e30_alpha08a.B1850C_LTso.ne30_t232_wgx3.280.ivoc": {
+    "file": "namelists/b.e30_alpha08a.B1850C_LTso.ne30_t232_wgx3.280.ivoc.json"
+  },
+  "b.e30_alpha08a.B1850C_LTso.ne30_t232_wgx3.280.nohygro": {
+    "file": "namelists/b.e30_alpha08a.B1850C_LTso.ne30_t232_wgx3.280.nohygro.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.297": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.297.json"
+  },
+  "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.299": {
+    "file": "namelists/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.299.json"
+  },
+  "b.e30_alpha08a.B1850C_MTso.ne30_t232_wgx3.280.mcsp": {
+    "file": "namelists/b.e30_alpha08a.B1850C_MTso.ne30_t232_wgx3.280.mcsp.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.298": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.298.json"
+  },
+  "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.302": {
+    "file": "namelists/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.302.json"
+  },
+  "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.301": {
+    "file": "namelists/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.301.json"
+  },
+  "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.300": {
+    "file": "namelists/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.300.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.304": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.304.json"
+  },
+  "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.303": {
+    "file": "namelists/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.303.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.306": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.306.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.305": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.305.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.309": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.309.json"
+  },
+  "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.308": {
+    "file": "namelists/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.308.json"
+  },
+  "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.307": {
+    "file": "namelists/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.307.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.310": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.310.json"
+  },
+  "b.e30_alpha08b.B1850C_MTso.ne30_t232_wgx3.308": {
+    "file": "namelists/b.e30_alpha08b.B1850C_MTso.ne30_t232_wgx3.308.json"
+  },
+  "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.313": {
+    "file": "namelists/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.313.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.284.mpas (coupled mpas configuration)": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.284.mpas (coupled mpas configuration).json"
+  },
+  "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.315": {
+    "file": "namelists/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.315.json"
+  },
+  "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.314": {
+    "file": "namelists/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.314.json"
   }
 }
