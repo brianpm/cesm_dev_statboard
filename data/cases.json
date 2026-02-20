@@ -28,6 +28,7 @@
       "issue_number": 17,
       "issue_state": "open",
       "issue_created_at": "2024-11-11T22:16:31Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -59,6 +60,7 @@
       "issue_number": 16,
       "issue_state": "closed",
       "issue_created_at": "2024-11-11T21:01:28Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": false
     },
@@ -87,6 +89,7 @@
       "issue_number": 15,
       "issue_state": "open",
       "issue_created_at": "2024-10-03T21:38:28Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -113,6 +116,7 @@
       "issue_number": 14,
       "issue_state": "open",
       "issue_created_at": "2024-09-27T20:44:07Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -145,6 +149,7 @@
       "issue_number": 5,
       "issue_state": "open",
       "issue_created_at": "2024-09-04T18:55:01Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -169,6 +174,7 @@
       "issue_number": 3,
       "issue_state": "closed",
       "issue_created_at": "2024-08-26T20:56:26Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -200,6 +206,7 @@
       "issue_number": 19,
       "issue_state": "open",
       "issue_created_at": "2024-11-12T02:44:11Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -231,6 +238,7 @@
       "issue_number": 18,
       "issue_state": "open",
       "issue_created_at": "2024-11-11T22:32:58Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -265,6 +273,7 @@
       "issue_number": 25,
       "issue_state": "open",
       "issue_created_at": "2024-12-04T00:00:37Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -292,6 +301,7 @@
       "issue_number": 24,
       "issue_state": "open",
       "issue_created_at": "2024-12-03T20:04:26Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": false
     },
@@ -322,6 +332,7 @@
       "issue_number": 23,
       "issue_state": "open",
       "issue_created_at": "2024-11-25T18:50:23Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -351,6 +362,7 @@
       "issue_number": 21,
       "issue_state": "open",
       "issue_created_at": "2024-11-21T16:30:55Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -380,6 +392,7 @@
       "issue_number": 20,
       "issue_state": "closed",
       "issue_created_at": "2024-11-19T20:47:44Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": false
     },
@@ -415,6 +428,7 @@
       "issue_number": 39,
       "issue_state": "open",
       "issue_created_at": "2025-02-13T20:12:34Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -450,6 +464,7 @@
       "issue_number": 38,
       "issue_state": "open",
       "issue_created_at": "2025-02-10T20:36:52Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -483,6 +498,7 @@
       "issue_number": 37,
       "issue_state": "open",
       "issue_created_at": "2025-02-10T18:13:22Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -516,6 +532,7 @@
       "issue_number": 36,
       "issue_state": "open",
       "issue_created_at": "2025-02-10T18:01:48Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -550,6 +567,7 @@
       "issue_number": 34,
       "issue_state": "open",
       "issue_created_at": "2025-01-13T02:57:04Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -578,6 +596,7 @@
       "issue_number": 33,
       "issue_state": "closed",
       "issue_created_at": "2025-01-08T00:17:18Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -612,6 +631,7 @@
       "issue_number": 32,
       "issue_state": "open",
       "issue_created_at": "2024-12-24T23:48:49Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -640,6 +660,7 @@
       "issue_number": 55,
       "issue_state": "open",
       "issue_created_at": "2025-03-15T13:17:11Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -680,6 +701,7 @@
       "issue_number": 54,
       "issue_state": "open",
       "issue_created_at": "2025-03-14T21:36:13Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -719,6 +741,7 @@
       "issue_number": 53,
       "issue_state": "open",
       "issue_created_at": "2025-03-12T20:24:24Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -755,6 +778,7 @@
       "issue_number": 52,
       "issue_state": "open",
       "issue_created_at": "2025-03-12T20:18:07Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -791,6 +815,7 @@
       "issue_number": 51,
       "issue_state": "open",
       "issue_created_at": "2025-03-07T17:40:27Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -827,6 +852,7 @@
       "issue_number": 50,
       "issue_state": "open",
       "issue_created_at": "2025-03-04T15:15:10Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -863,6 +889,7 @@
       "issue_number": 49,
       "issue_state": "open",
       "issue_created_at": "2025-02-28T18:57:54Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -899,6 +926,7 @@
       "issue_number": 48,
       "issue_state": "open",
       "issue_created_at": "2025-02-28T18:54:31Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -935,6 +963,7 @@
       "issue_number": 46,
       "issue_state": "open",
       "issue_created_at": "2025-02-20T20:31:19Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -971,6 +1000,7 @@
       "issue_number": 45,
       "issue_state": "open",
       "issue_created_at": "2025-02-18T22:51:12Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -1007,6 +1037,7 @@
       "issue_number": 43,
       "issue_state": "open",
       "issue_created_at": "2025-02-18T16:14:32Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -1042,6 +1073,7 @@
       "issue_number": 41,
       "issue_state": "open",
       "issue_created_at": "2025-02-17T17:00:19Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -1077,6 +1109,7 @@
       "issue_number": 40,
       "issue_state": "open",
       "issue_created_at": "2025-02-13T20:17:34Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -1116,6 +1149,7 @@
       "issue_number": 59,
       "issue_state": "open",
       "issue_created_at": "2025-03-18T20:08:13Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -1155,6 +1189,7 @@
       "issue_number": 57,
       "issue_state": "open",
       "issue_created_at": "2025-03-17T21:15:57Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -1194,6 +1229,7 @@
       "issue_number": 56,
       "issue_state": "closed",
       "issue_created_at": "2025-03-17T17:18:27Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -1234,6 +1270,7 @@
       "issue_number": 67,
       "issue_state": "open",
       "issue_created_at": "2025-03-31T20:37:08Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -1273,6 +1310,7 @@
       "issue_number": 66,
       "issue_state": "open",
       "issue_created_at": "2025-03-31T14:50:46Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": false
     },
@@ -1313,6 +1351,7 @@
       "issue_number": 65,
       "issue_state": "open",
       "issue_created_at": "2025-03-28T22:51:12Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": false
     },
@@ -1353,6 +1392,7 @@
       "issue_number": 64,
       "issue_state": "open",
       "issue_created_at": "2025-03-27T23:46:21Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -1392,6 +1432,7 @@
       "issue_number": 63,
       "issue_state": "open",
       "issue_created_at": "2025-03-27T23:30:19Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -1431,6 +1472,7 @@
       "issue_number": 62,
       "issue_state": "open",
       "issue_created_at": "2025-03-27T23:25:37Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -1470,6 +1512,7 @@
       "issue_number": 61,
       "issue_state": "open",
       "issue_created_at": "2025-03-27T23:02:16Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -1509,6 +1552,7 @@
       "issue_number": 60,
       "issue_state": "open",
       "issue_created_at": "2025-03-24T19:39:45Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -1549,6 +1593,7 @@
       "issue_number": 71,
       "issue_state": "open",
       "issue_created_at": "2025-04-04T21:12:35Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": false
     },
@@ -1589,6 +1634,7 @@
       "issue_number": 70,
       "issue_state": "open",
       "issue_created_at": "2025-04-04T20:59:22Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -1629,6 +1675,7 @@
       "issue_number": 69,
       "issue_state": "open",
       "issue_created_at": "2025-04-03T14:43:10Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -1668,6 +1715,7 @@
       "issue_number": 68,
       "issue_state": "open",
       "issue_created_at": "2025-04-02T19:40:33Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -1708,6 +1756,7 @@
       "issue_number": 82,
       "issue_state": "open",
       "issue_created_at": "2025-04-26T19:18:21Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -1748,6 +1797,7 @@
       "issue_number": 81,
       "issue_state": "open",
       "issue_created_at": "2025-04-25T20:46:11Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -1788,6 +1838,7 @@
       "issue_number": 79,
       "issue_state": "open",
       "issue_created_at": "2025-04-18T20:09:20Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -1828,6 +1879,7 @@
       "issue_number": 78,
       "issue_state": "open",
       "issue_created_at": "2025-04-17T21:51:47Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -1869,6 +1921,7 @@
       "issue_number": 77,
       "issue_state": "open",
       "issue_created_at": "2025-04-16T17:11:04Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": false
     },
@@ -1909,6 +1962,7 @@
       "issue_number": 76,
       "issue_state": "open",
       "issue_created_at": "2025-04-11T21:34:02Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -1949,6 +2003,7 @@
       "issue_number": 75,
       "issue_state": "open",
       "issue_created_at": "2025-04-11T16:47:55Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -1988,6 +2043,7 @@
       "issue_number": 74,
       "issue_state": "open",
       "issue_created_at": "2025-04-07T16:25:03Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -2028,6 +2084,7 @@
       "issue_number": 73,
       "issue_state": "open",
       "issue_created_at": "2025-04-04T22:03:43Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -2068,6 +2125,7 @@
       "issue_number": 72,
       "issue_state": "open",
       "issue_created_at": "2025-04-04T21:57:14Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -2109,6 +2167,7 @@
       "issue_number": 85,
       "issue_state": "open",
       "issue_created_at": "2025-05-01T22:17:13Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -2149,6 +2208,7 @@
       "issue_number": 84,
       "issue_state": "open",
       "issue_created_at": "2025-05-01T17:27:32Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -2189,6 +2249,7 @@
       "issue_number": 83,
       "issue_state": "open",
       "issue_created_at": "2025-04-28T18:02:06Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -2228,6 +2289,7 @@
       "issue_number": 92,
       "issue_state": "open",
       "issue_created_at": "2025-05-15T16:45:29Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -2269,6 +2331,7 @@
       "issue_number": 90,
       "issue_state": "open",
       "issue_created_at": "2025-05-09T22:52:43Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -2297,6 +2360,7 @@
       "issue_number": 89,
       "issue_state": "open",
       "issue_created_at": "2025-05-08T22:17:28Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": false
     },
@@ -2337,6 +2401,7 @@
       "issue_number": 88,
       "issue_state": "open",
       "issue_created_at": "2025-05-08T21:15:36Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -2378,6 +2443,7 @@
       "issue_number": 87,
       "issue_state": "open",
       "issue_created_at": "2025-05-03T22:42:58Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -2419,6 +2485,7 @@
       "issue_number": 86,
       "issue_state": "open",
       "issue_created_at": "2025-05-02T15:45:02Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -2461,6 +2528,7 @@
       "issue_number": 101,
       "issue_state": "open",
       "issue_created_at": "2025-05-23T16:55:38Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -2503,6 +2571,7 @@
       "issue_number": 100,
       "issue_state": "open",
       "issue_created_at": "2025-05-23T16:45:26Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -2545,6 +2614,7 @@
       "issue_number": 99,
       "issue_state": "open",
       "issue_created_at": "2025-05-21T12:55:38Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -2587,6 +2657,7 @@
       "issue_number": 98,
       "issue_state": "open",
       "issue_created_at": "2025-05-21T12:47:24Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -2628,6 +2699,7 @@
       "issue_number": 97,
       "issue_state": "open",
       "issue_created_at": "2025-05-20T22:46:15Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -2669,6 +2741,7 @@
       "issue_number": 96,
       "issue_state": "open",
       "issue_created_at": "2025-05-15T22:06:13Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -2710,6 +2783,7 @@
       "issue_number": 95,
       "issue_state": "open",
       "issue_created_at": "2025-05-15T22:02:10Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -2751,6 +2825,7 @@
       "issue_number": 94,
       "issue_state": "open",
       "issue_created_at": "2025-05-15T16:57:11Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -2792,6 +2867,7 @@
       "issue_number": 93,
       "issue_state": "open",
       "issue_created_at": "2025-05-15T16:49:31Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -2822,6 +2898,7 @@
       "issue_number": 111,
       "issue_state": "open",
       "issue_created_at": "2025-06-18T19:25:29Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": false
     },
@@ -2861,6 +2938,7 @@
       "issue_number": 110,
       "issue_state": "open",
       "issue_created_at": "2025-06-16T20:43:53Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -2903,6 +2981,7 @@
       "issue_number": 109,
       "issue_state": "open",
       "issue_created_at": "2025-06-16T16:01:40Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -2931,6 +3010,7 @@
       "issue_number": 108,
       "issue_state": "open",
       "issue_created_at": "2025-06-10T15:07:01Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -2959,6 +3039,7 @@
       "issue_number": 107,
       "issue_state": "open",
       "issue_created_at": "2025-06-05T22:32:40Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": false
     },
@@ -3000,6 +3081,7 @@
       "issue_number": 105,
       "issue_state": "open",
       "issue_created_at": "2025-05-23T21:39:27Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -3042,6 +3124,7 @@
       "issue_number": 104,
       "issue_state": "open",
       "issue_created_at": "2025-05-23T21:33:30Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -3084,6 +3167,7 @@
       "issue_number": 103,
       "issue_state": "open",
       "issue_created_at": "2025-05-23T21:29:03Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -3126,6 +3210,7 @@
       "issue_number": 102,
       "issue_state": "open",
       "issue_created_at": "2025-05-23T21:21:44Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -3165,6 +3250,7 @@
       "issue_number": 112,
       "issue_state": "open",
       "issue_created_at": "2025-06-18T20:06:19Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -3204,6 +3290,7 @@
       "issue_number": 115,
       "issue_state": "open",
       "issue_created_at": "2025-06-20T21:14:29Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -3232,6 +3319,7 @@
       "issue_number": 114,
       "issue_state": "open",
       "issue_created_at": "2025-06-18T21:54:24Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": false
     },
@@ -3271,6 +3359,7 @@
       "issue_number": 113,
       "issue_state": "open",
       "issue_created_at": "2025-06-18T21:43:00Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -3310,6 +3399,7 @@
       "issue_number": 117,
       "issue_state": "open",
       "issue_created_at": "2025-06-20T21:18:40Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -3349,6 +3439,7 @@
       "issue_number": 116,
       "issue_state": "open",
       "issue_created_at": "2025-06-20T21:16:51Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -3380,6 +3471,7 @@
       "issue_number": 122,
       "issue_state": "open",
       "issue_created_at": "2025-06-30T17:58:05Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -3421,6 +3513,7 @@
       "issue_number": 121,
       "issue_state": "open",
       "issue_created_at": "2025-06-30T17:18:42Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -3447,6 +3540,7 @@
       "issue_number": 120,
       "issue_state": "open",
       "issue_created_at": "2025-06-27T20:09:50Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -3489,6 +3583,7 @@
       "issue_number": 119,
       "issue_state": "open",
       "issue_created_at": "2025-06-27T20:06:02Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -3520,6 +3615,7 @@
       "issue_number": 118,
       "issue_state": "open",
       "issue_created_at": "2025-06-27T18:12:48Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": false
     },
@@ -3546,6 +3642,7 @@
       "issue_number": 124,
       "issue_state": "open",
       "issue_created_at": "2025-07-08T15:23:52Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -3577,8 +3674,9 @@
       "issue_number": 123,
       "issue_state": "open",
       "issue_created_at": "2025-07-02T20:30:10Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": 0.0004,
             "global_mean": 0.0136,
@@ -3923,6 +4021,7 @@
       "issue_number": 137,
       "issue_state": "open",
       "issue_created_at": "2025-07-30T15:55:01Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -3965,6 +4064,7 @@
       "issue_number": 136,
       "issue_state": "open",
       "issue_created_at": "2025-07-26T20:38:44Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -4006,6 +4106,7 @@
       "issue_number": 135,
       "issue_state": "closed",
       "issue_created_at": "2025-07-26T18:53:54Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -4033,6 +4134,7 @@
       "issue_number": 133,
       "issue_state": "open",
       "issue_created_at": "2025-07-26T00:11:22Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -4074,6 +4176,7 @@
       "issue_number": 132,
       "issue_state": "closed",
       "issue_created_at": "2025-07-25T23:53:25Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -4100,6 +4203,7 @@
       "issue_number": 131,
       "issue_state": "closed",
       "issue_created_at": "2025-07-25T16:18:09Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": false
     },
@@ -4127,6 +4231,7 @@
       "issue_number": 130,
       "issue_state": "closed",
       "issue_created_at": "2025-07-24T19:23:29Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": false
     },
@@ -4170,6 +4275,7 @@
       "issue_number": 129,
       "issue_state": "open",
       "issue_created_at": "2025-07-22T15:41:25Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -4196,6 +4302,7 @@
       "issue_number": 128,
       "issue_state": "open",
       "issue_created_at": "2025-07-21T15:00:22Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -4224,6 +4331,7 @@
       "issue_number": 127,
       "issue_state": "open",
       "issue_created_at": "2025-07-17T15:20:26Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -4266,6 +4374,7 @@
       "issue_number": 125,
       "issue_state": "open",
       "issue_created_at": "2025-07-10T15:24:44Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -4307,8 +4416,9 @@
       "issue_number": 141,
       "issue_state": "open",
       "issue_created_at": "2025-08-13T21:54:26Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": 0.0031,
             "global_mean": 0.0224,
@@ -4666,346 +4776,9 @@
       "issue_number": 140,
       "issue_state": "open",
       "issue_created_at": "2025-08-12T21:35:09Z",
+      "year_range": "yrs_102_121",
       "statistics": {
-        "yrs_102_121": {
-          "AODDUSTdn": {
-            "bias": 0.0062,
-            "global_mean": 0.0189,
-            "sample_size": 20.0,
-            "std": 0.000529,
-            "std_error": 2.65e-05
-          },
-          "AODVISdn": {
-            "bias": 0.0519,
-            "global_mean": 0.145,
-            "sample_size": 20.0,
-            "std": 0.00223,
-            "std_error": 0.000112
-          },
-          "BURDENBC": {
-            "bias": -3.1e-09,
-            "global_mean": 6.45e-08,
-            "sample_size": 20.0,
-            "std": 8.75e-10,
-            "std_error": 4.37e-11
-          },
-          "BURDENDUST": {
-            "bias": 1.39e-05,
-            "global_mean": 4.14e-05,
-            "sample_size": 20.0,
-            "std": 1.16e-06,
-            "std_error": 5.8e-08
-          },
-          "BURDENPOM": {
-            "bias": -2.5e-08,
-            "global_mean": 6.2e-07,
-            "sample_size": 20.0,
-            "std": 7.89e-09,
-            "std_error": 3.95e-10
-          },
-          "BURDENSEASALT": {
-            "bias": 8.8e-06,
-            "global_mean": 2.33e-05,
-            "sample_size": 20.0,
-            "std": 2.81e-07,
-            "std_error": 1.41e-08
-          },
-          "BURDENSO4": {
-            "bias": -1.5e-07,
-            "global_mean": 1.88e-06,
-            "sample_size": 20.0,
-            "std": 4.13e-08,
-            "std_error": 2.06e-09
-          },
-          "BURDENSOA": {
-            "bias": -5e-08,
-            "global_mean": 9.5e-07,
-            "sample_size": 20.0,
-            "std": 6.02e-08,
-            "std_error": 3.01e-09
-          },
-          "CLDHGH": {
-            "bias": -0.011,
-            "global_mean": 0.477,
-            "sample_size": 20.0,
-            "std": 0.00369,
-            "std_error": 0.000185
-          },
-          "CLDLOW": {
-            "bias": -0.003,
-            "global_mean": 0.438,
-            "sample_size": 20.0,
-            "std": 0.00638,
-            "std_error": 0.000319
-          },
-          "CLDMED": {
-            "bias": 0.013,
-            "global_mean": 0.313,
-            "sample_size": 20.0,
-            "std": 0.00245,
-            "std_error": 0.000123
-          },
-          "CLDTOT": {
-            "bias": -0.006,
-            "global_mean": 0.73,
-            "sample_size": 20.0,
-            "std": 0.00308,
-            "std_error": 0.000154
-          },
-          "FLNS": {
-            "bias": 0.561,
-            "global_mean": 56.781,
-            "sample_size": 20.0,
-            "std": 0.483,
-            "std_error": 0.024
-          },
-          "FLNT": {
-            "bias": -0.962,
-            "global_mean": 238.886,
-            "sample_size": 20.0,
-            "std": 0.718,
-            "std_error": 0.036
-          },
-          "FLNTC": {
-            "bias": -2.231,
-            "global_mean": 263.275,
-            "sample_size": 20.0,
-            "std": 0.664,
-            "std_error": 0.033
-          },
-          "FSDS": {
-            "bias": 0.499,
-            "global_mean": 190.096,
-            "sample_size": 20.0,
-            "std": 0.648,
-            "std_error": 0.032
-          },
-          "FSDSC": {
-            "bias": -1.046,
-            "global_mean": 246.928,
-            "sample_size": 20.0,
-            "std": 0.503,
-            "std_error": 0.025
-          },
-          "FSNS": {
-            "bias": -0.011,
-            "global_mean": 164.982,
-            "sample_size": 20.0,
-            "std": 0.66,
-            "std_error": 0.033
-          },
-          "FSNSC": {
-            "bias": -1.714,
-            "global_mean": 215.961,
-            "sample_size": 20.0,
-            "std": 0.336,
-            "std_error": 0.017
-          },
-          "FSNT": {
-            "bias": -0.679,
-            "global_mean": 238.773,
-            "sample_size": 20.0,
-            "std": 0.806,
-            "std_error": 0.04
-          },
-          "FSNTC": {
-            "bias": -2.283,
-            "global_mean": 285.38,
-            "sample_size": 20.0,
-            "std": 0.162,
-            "std_error": 0.008
-          },
-          "ICEFRAC": {
-            "bias": 0.0073,
-            "global_mean": 0.0472,
-            "sample_size": 20.0,
-            "std": 0.00179,
-            "std_error": 8.97e-05
-          },
-          "LANDFRAC": {
-            "bias": 0.0,
-            "global_mean": 0.292,
-            "sample_size": 20.0,
-            "std": 5.55e-17,
-            "std_error": 2.78e-18
-          },
-          "LHFLX": {
-            "bias": 2.588,
-            "global_mean": 88.394,
-            "sample_size": 20.0,
-            "std": 0.864,
-            "std_error": 0.043
-          },
-          "LWCF": {
-            "bias": -1.268,
-            "global_mean": 24.39,
-            "sample_size": 20.0,
-            "std": 0.117,
-            "std_error": 0.006
-          },
-          "OCNFRAC": {
-            "bias": -0.008,
-            "global_mean": 0.66,
-            "sample_size": 20.0,
-            "std": 0.00179,
-            "std_error": 8.97e-05
-          },
-          "OMEGA500": {
-            "bias": 1.2e-06,
-            "global_mean": -4.75e-05,
-            "sample_size": 20.0,
-            "std": 2e-06,
-            "std_error": 9.98e-08
-          },
-          "PBLH": {
-            "bias": 36.866,
-            "global_mean": 732.505,
-            "sample_size": 20.0,
-            "std": 2.609,
-            "std_error": 0.13
-          },
-          "PRECC": {
-            "bias": 3e-10,
-            "global_mean": 1.69e-08,
-            "sample_size": 20.0,
-            "std": 1.53e-10,
-            "std_error": 7.65e-12
-          },
-          "PRECL": {
-            "bias": 7e-10,
-            "global_mean": 1.84e-08,
-            "sample_size": 20.0,
-            "std": 4.05e-10,
-            "std_error": 2.03e-11
-          },
-          "PRECSC": {
-            "bias": 1.97e-11,
-            "global_mean": 4.74e-11,
-            "sample_size": 20.0,
-            "std": 4.26e-12,
-            "std_error": 2.13e-13
-          },
-          "PRECSL": {
-            "bias": 1e-10,
-            "global_mean": 2.74e-09,
-            "sample_size": 20.0,
-            "std": 9.53e-11,
-            "std_error": 4.77e-12
-          },
-          "PRECT": {
-            "bias": 1e-09,
-            "global_mean": 3.53e-08,
-            "sample_size": 20.0,
-            "std": 3.5e-10,
-            "std_error": 1.75e-11
-          },
-          "PS": {
-            "bias": -15.96,
-            "global_mean": 98523.064,
-            "sample_size": 20.0,
-            "std": 7.207,
-            "std_error": 0.36
-          },
-          "PSL": {
-            "bias": -15.256,
-            "global_mean": 101103.439,
-            "sample_size": 20.0,
-            "std": 6.036,
-            "std_error": 0.302
-          },
-          "QFLX": {
-            "bias": 1e-06,
-            "global_mean": 3.53e-05,
-            "sample_size": 20.0,
-            "std": 3.46e-07,
-            "std_error": 1.73e-08
-          },
-          "RESTOM": {
-            "bias": 0.283,
-            "global_mean": -0.113,
-            "sample_size": 20.0,
-            "std": 0.57,
-            "std_error": 0.0285
-          },
-          "SHFLX": {
-            "bias": -3.471,
-            "global_mean": 18.961,
-            "sample_size": 20.0,
-            "std": 0.152,
-            "std_error": 0.008
-          },
-          "SST": {
-            "bias": -0.647,
-            "global_mean": 292.577,
-            "sample_size": 20.0,
-            "std": 0.266,
-            "std_error": 0.013
-          },
-          "SWCF": {
-            "bias": 1.604,
-            "global_mean": -46.596,
-            "sample_size": 20.0,
-            "std": 0.72,
-            "std_error": 0.036
-          },
-          "TAUX": {
-            "bias": 0.00126,
-            "global_mean": -0.00705,
-            "sample_size": 20.0,
-            "std": 0.0007,
-            "std_error": 3.5e-05
-          },
-          "TAUY": {
-            "bias": -0.00064,
-            "global_mean": -0.00221,
-            "sample_size": 20.0,
-            "std": 0.000797,
-            "std_error": 3.98e-05
-          },
-          "TGCLDIWP": {
-            "bias": -0.0022,
-            "global_mean": 0.0149,
-            "sample_size": 20.0,
-            "std": 0.000178,
-            "std_error": 8.88e-06
-          },
-          "TGCLDLWP": {
-            "bias": -0.0024,
-            "global_mean": 0.0515,
-            "sample_size": 20.0,
-            "std": 0.00092,
-            "std_error": 4.6e-05
-          },
-          "TMQ": {
-            "bias": -1.633,
-            "global_mean": 23.872,
-            "sample_size": 20.0,
-            "std": 0.735,
-            "std_error": 0.037
-          },
-          "TREFHT": {
-            "bias": -0.796,
-            "global_mean": 286.946,
-            "sample_size": 20.0,
-            "std": 0.345,
-            "std_error": 0.017
-          },
-          "TS": {
-            "bias": -1.014,
-            "global_mean": 287.78,
-            "sample_size": 20.0,
-            "std": 0.339,
-            "std_error": 0.017
-          },
-          "U10": {
-            "bias": 0.102,
-            "global_mean": 6.787,
-            "sample_size": 20.0,
-            "std": 0.032,
-            "std_error": 0.002
-          }
-        },
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": 0.0056,
             "global_mean": 0.0193,
@@ -5384,8 +5157,9 @@
       "issue_number": 139,
       "issue_state": "closed",
       "issue_created_at": "2025-08-07T21:41:34Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": 0.0004,
             "global_mean": 0.0144,
@@ -5744,6 +5518,7 @@
       "issue_number": 138,
       "issue_state": "open",
       "issue_created_at": "2025-08-01T00:03:47Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -5775,6 +5550,7 @@
       "issue_number": 145,
       "issue_state": "closed",
       "issue_created_at": "2025-08-22T22:08:45Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": false
     },
@@ -5817,8 +5593,9 @@
       "issue_number": 144,
       "issue_state": "open",
       "issue_created_at": "2025-08-21T22:41:19Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": 0.001,
             "global_mean": 0.0216,
@@ -6177,8 +5954,9 @@
       "issue_number": 143,
       "issue_state": "open",
       "issue_created_at": "2025-08-21T22:37:45Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": 0.0009,
             "global_mean": 0.0206,
@@ -6537,8 +6315,9 @@
       "issue_number": 142,
       "issue_state": "open",
       "issue_created_at": "2025-08-21T22:25:28Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": 0.0004,
             "global_mean": 0.0197,
@@ -6898,8 +6677,9 @@
       "issue_number": 148,
       "issue_state": "open",
       "issue_created_at": "2025-08-27T22:06:54Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": -0.0069,
             "global_mean": 0.0128,
@@ -7279,8 +7059,9 @@
       "issue_number": 147,
       "issue_state": "open",
       "issue_created_at": "2025-08-27T13:53:34Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": 0.0002,
             "global_mean": 0.0208,
@@ -7659,325 +7440,9 @@
       "issue_number": 146,
       "issue_state": "open",
       "issue_created_at": "2025-08-25T23:14:26Z",
+      "year_range": "yrs_1851_1865",
       "statistics": {
-        "yrs_1851_1865": {
-          "AODDUSTdn": {
-            "bias": -0.0006,
-            "global_mean": 0.0187,
-            "sample_size": 15.0,
-            "std": 0.000896,
-            "std_error": 5.97e-05
-          },
-          "AODVISdn": {
-            "bias": 0.0,
-            "global_mean": 0.146,
-            "sample_size": 15.0,
-            "std": 0.00152,
-            "std_error": 0.000102
-          },
-          "BURDENBC": {
-            "bias": 2.6e-09,
-            "global_mean": 6.69e-08,
-            "sample_size": 15.0,
-            "std": 1.67e-09,
-            "std_error": 1.12e-10
-          },
-          "BURDENDUST": {
-            "bias": -1.1e-06,
-            "global_mean": 4.1e-05,
-            "sample_size": 15.0,
-            "std": 1.88e-06,
-            "std_error": 1.25e-07
-          },
-          "BURDENPOM": {
-            "bias": 1e-09,
-            "global_mean": 6.17e-07,
-            "sample_size": 15.0,
-            "std": 1.48e-08,
-            "std_error": 9.87e-10
-          },
-          "BURDENSEASALT": {
-            "bias": 0.0,
-            "global_mean": 2.32e-05,
-            "sample_size": 15.0,
-            "std": 1.74e-07,
-            "std_error": 1.16e-08
-          },
-          "BURDENSO4": {
-            "bias": -1e-08,
-            "global_mean": 1.88e-06,
-            "sample_size": 15.0,
-            "std": 4.48e-08,
-            "std_error": 2.99e-09
-          },
-          "BURDENSOA": {
-            "bias": 3.7e-08,
-            "global_mean": 1.02e-06,
-            "sample_size": 15.0,
-            "std": 1.58e-08,
-            "std_error": 1.05e-09
-          },
-          "CLDHGH": {
-            "bias": 0.001,
-            "global_mean": 0.479,
-            "sample_size": 15.0,
-            "std": 0.00311,
-            "std_error": 0.000207
-          },
-          "CLDLOW": {
-            "bias": 0.004,
-            "global_mean": 0.438,
-            "sample_size": 15.0,
-            "std": 0.00334,
-            "std_error": 0.000223
-          },
-          "CLDMED": {
-            "bias": 0.0,
-            "global_mean": 0.312,
-            "sample_size": 15.0,
-            "std": 0.00165,
-            "std_error": 0.00011
-          },
-          "CLDTOT": {
-            "bias": 0.004,
-            "global_mean": 0.732,
-            "sample_size": 15.0,
-            "std": 0.00259,
-            "std_error": 0.000173
-          },
-          "FLNS": {
-            "bias": -0.025,
-            "global_mean": 56.618,
-            "sample_size": 15.0,
-            "std": 0.215,
-            "std_error": 0.014
-          },
-          "FLNT": {
-            "bias": -0.549,
-            "global_mean": 238.916,
-            "sample_size": 15.0,
-            "std": 0.541,
-            "std_error": 0.036
-          },
-          "FLNTC": {
-            "bias": -0.593,
-            "global_mean": 263.255,
-            "sample_size": 15.0,
-            "std": 0.554,
-            "std_error": 0.037
-          },
-          "FSNS": {
-            "bias": -0.795,
-            "global_mean": 164.699,
-            "sample_size": 15.0,
-            "std": 0.597,
-            "std_error": 0.04
-          },
-          "FSNT": {
-            "bias": -0.923,
-            "global_mean": 238.543,
-            "sample_size": 15.0,
-            "std": 0.705,
-            "std_error": 0.047
-          },
-          "FSNTC": {
-            "bias": -0.585,
-            "global_mean": 285.134,
-            "sample_size": 15.0,
-            "std": 0.741,
-            "std_error": 0.049
-          },
-          "ICEFRAC": {
-            "bias": 0.0033,
-            "global_mean": 0.0476,
-            "sample_size": 15.0,
-            "std": 0.00319,
-            "std_error": 0.000212
-          },
-          "LANDFRAC": {
-            "bias": 0.0,
-            "global_mean": 0.292,
-            "sample_size": 15.0,
-            "std": 5.55e-17,
-            "std_error": 3.7e-18
-          },
-          "LHFLX": {
-            "bias": -0.326,
-            "global_mean": 88.552,
-            "sample_size": 15.0,
-            "std": 0.491,
-            "std_error": 0.033
-          },
-          "LWCF": {
-            "bias": -0.044,
-            "global_mean": 24.339,
-            "sample_size": 15.0,
-            "std": 0.111,
-            "std_error": 0.007
-          },
-          "OCNFRAC": {
-            "bias": -0.003,
-            "global_mean": 0.66,
-            "sample_size": 15.0,
-            "std": 0.00319,
-            "std_error": 0.000212
-          },
-          "OMEGA500": {
-            "bias": -7e-07,
-            "global_mean": -4.74e-05,
-            "sample_size": 15.0,
-            "std": 2.31e-06,
-            "std_error": 1.54e-07
-          },
-          "PBLH": {
-            "bias": -1.72,
-            "global_mean": 730.717,
-            "sample_size": 15.0,
-            "std": 1.779,
-            "std_error": 0.119
-          },
-          "PRECC": {
-            "bias": -1e-10,
-            "global_mean": 1.7e-08,
-            "sample_size": 15.0,
-            "std": 1.14e-10,
-            "std_error": 7.62e-12
-          },
-          "PRECL": {
-            "bias": 0.0,
-            "global_mean": 1.84e-08,
-            "sample_size": 15.0,
-            "std": 1.62e-10,
-            "std_error": 1.08e-11
-          },
-          "PRECSC": {
-            "bias": 4.6e-12,
-            "global_mean": 4.59e-11,
-            "sample_size": 15.0,
-            "std": 3.14e-12,
-            "std_error": 2.1e-13
-          },
-          "PRECSL": {
-            "bias": 1.1e-10,
-            "global_mean": 2.73e-09,
-            "sample_size": 15.0,
-            "std": 1.01e-10,
-            "std_error": 6.73e-12
-          },
-          "PRECT": {
-            "bias": -1e-10,
-            "global_mean": 3.54e-08,
-            "sample_size": 15.0,
-            "std": 1.99e-10,
-            "std_error": 1.33e-11
-          },
-          "PS": {
-            "bias": -2.585,
-            "global_mean": 98524.536,
-            "sample_size": 15.0,
-            "std": 3.31,
-            "std_error": 0.221
-          },
-          "PSL": {
-            "bias": -1.382,
-            "global_mean": 101104.799,
-            "sample_size": 15.0,
-            "std": 2.34,
-            "std_error": 0.156
-          },
-          "QFLX": {
-            "bias": -1e-07,
-            "global_mean": 3.54e-05,
-            "sample_size": 15.0,
-            "std": 1.97e-07,
-            "std_error": 1.31e-08
-          },
-          "RESTOM": {
-            "bias": -0.375,
-            "global_mean": -0.373,
-            "sample_size": 15.0,
-            "std": 0.436,
-            "std_error": 0.0291
-          },
-          "SHFLX": {
-            "bias": -0.143,
-            "global_mean": 18.925,
-            "sample_size": 15.0,
-            "std": 0.113,
-            "std_error": 0.008
-          },
-          "SST": {
-            "bias": -0.097,
-            "global_mean": 292.65,
-            "sample_size": 15.0,
-            "std": 0.152,
-            "std_error": 0.01
-          },
-          "SWCF": {
-            "bias": -0.339,
-            "global_mean": -46.581,
-            "sample_size": 15.0,
-            "std": 0.406,
-            "std_error": 0.027
-          },
-          "TAUX": {
-            "bias": 0.00032,
-            "global_mean": -0.00694,
-            "sample_size": 15.0,
-            "std": 0.000658,
-            "std_error": 4.39e-05
-          },
-          "TAUY": {
-            "bias": -0.0001,
-            "global_mean": -0.00215,
-            "sample_size": 15.0,
-            "std": 0.000648,
-            "std_error": 4.32e-05
-          },
-          "TGCLDIWP": {
-            "bias": 0.0,
-            "global_mean": 0.0149,
-            "sample_size": 15.0,
-            "std": 0.000176,
-            "std_error": 1.18e-05
-          },
-          "TGCLDLWP": {
-            "bias": 0.0007,
-            "global_mean": 0.0517,
-            "sample_size": 15.0,
-            "std": 0.000548,
-            "std_error": 3.65e-05
-          },
-          "TMQ": {
-            "bias": -0.265,
-            "global_mean": 24.02,
-            "sample_size": 15.0,
-            "std": 0.337,
-            "std_error": 0.022
-          },
-          "TREFHT": {
-            "bias": -0.281,
-            "global_mean": 286.984,
-            "sample_size": 15.0,
-            "std": 0.25,
-            "std_error": 0.017
-          },
-          "TS": {
-            "bias": -0.267,
-            "global_mean": 287.819,
-            "sample_size": 15.0,
-            "std": 0.25,
-            "std_error": 0.017
-          },
-          "U10": {
-            "bias": 0.035,
-            "global_mean": 6.777,
-            "sample_size": 15.0,
-            "std": 0.02,
-            "std_error": 0.001
-          }
-        },
-        "yrs_1851_1870": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": 0.0002,
             "global_mean": 0.019,
@@ -8356,6 +7821,7 @@
       "issue_number": 151,
       "issue_state": "open",
       "issue_created_at": "2025-08-29T23:16:37Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -8398,8 +7864,9 @@
       "issue_number": 150,
       "issue_state": "open",
       "issue_created_at": "2025-08-29T21:51:26Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": 0.0006,
             "global_mean": 0.0194,
@@ -8779,8 +8246,9 @@
       "issue_number": 149,
       "issue_state": "open",
       "issue_created_at": "2025-08-28T18:09:03Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": -0.001,
             "global_mean": 0.0208,
@@ -9160,8 +8628,9 @@
       "issue_number": 156,
       "issue_state": "open",
       "issue_created_at": "2025-09-03T23:02:37Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": 0.0087,
             "global_mean": 0.0214,
@@ -9541,8 +9010,9 @@
       "issue_number": 155,
       "issue_state": "open",
       "issue_created_at": "2025-09-03T22:59:50Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": 0.0091,
             "global_mean": 0.0127,
@@ -9922,8 +9392,9 @@
       "issue_number": 154,
       "issue_state": "open",
       "issue_created_at": "2025-09-03T22:04:41Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": 0.0085,
             "global_mean": 0.0127,
@@ -10303,8 +9774,9 @@
       "issue_number": 153,
       "issue_state": "open",
       "issue_created_at": "2025-09-03T21:46:47Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": -0.0071,
             "global_mean": 0.0127,
@@ -10684,6 +10156,7 @@
       "issue_number": 152,
       "issue_state": "open",
       "issue_created_at": "2025-09-02T22:37:05Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": false
     },
@@ -10726,8 +10199,9 @@
       "issue_number": 158,
       "issue_state": "open",
       "issue_created_at": "2025-09-04T21:46:14Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": 0.0009,
             "global_mean": 0.0198,
@@ -11107,8 +10581,9 @@
       "issue_number": 157,
       "issue_state": "open",
       "issue_created_at": "2025-09-03T23:03:55Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": 0.0078,
             "global_mean": 0.0127,
@@ -11473,6 +10948,7 @@
       "issue_number": 163,
       "issue_state": "open",
       "issue_created_at": "2025-09-10T22:26:55Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -11515,8 +10991,9 @@
       "issue_number": 161,
       "issue_state": "open",
       "issue_created_at": "2025-09-08T21:15:51Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": 0.0085,
             "global_mean": 0.0212,
@@ -11896,8 +11373,9 @@
       "issue_number": 160,
       "issue_state": "open",
       "issue_created_at": "2025-09-08T15:15:39Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": 0.0024,
             "global_mean": 0.0127,
@@ -12277,8 +11755,9 @@
       "issue_number": 159,
       "issue_state": "open",
       "issue_created_at": "2025-09-08T15:13:10Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": 0.0013,
             "global_mean": 0.014,
@@ -12643,6 +12122,7 @@
       "issue_number": 164,
       "issue_state": "open",
       "issue_created_at": "2025-09-10T22:30:22Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -12685,8 +12165,9 @@
       "issue_number": 169,
       "issue_state": "open",
       "issue_created_at": "2025-09-21T14:47:48Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": 0.0009,
             "global_mean": 0.0204,
@@ -13066,8 +12547,9 @@
       "issue_number": 166,
       "issue_state": "open",
       "issue_created_at": "2025-09-10T22:35:36Z",
+      "year_range": "yrs_81_100",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": -0.0023,
             "global_mean": 0.0175,
@@ -13404,344 +12886,6 @@
             "std": 0.027,
             "std_error": 0.001
           }
-        },
-        "yrs_81_100": {
-          "AODDUSTdn": {
-            "bias": -0.0034,
-            "global_mean": 0.0169,
-            "sample_size": 20.0,
-            "std": 0.000939,
-            "std_error": 4.7e-05
-          },
-          "AODVISdn": {
-            "bias": -0.039,
-            "global_mean": 0.105,
-            "sample_size": 20.0,
-            "std": 0.00146,
-            "std_error": 7.3e-05
-          },
-          "BURDENBC": {
-            "bias": 1e-10,
-            "global_mean": 6.5e-08,
-            "sample_size": 20.0,
-            "std": 1.01e-09,
-            "std_error": 5.06e-11
-          },
-          "BURDENDUST": {
-            "bias": -7.3e-06,
-            "global_mean": 3.7e-05,
-            "sample_size": 20.0,
-            "std": 1.93e-06,
-            "std_error": 9.64e-08
-          },
-          "BURDENPOM": {
-            "bias": -1e-09,
-            "global_mean": 6.23e-07,
-            "sample_size": 20.0,
-            "std": 9.68e-09,
-            "std_error": 4.84e-10
-          },
-          "BURDENSEASALT": {
-            "bias": -8e-06,
-            "global_mean": 1.5e-05,
-            "sample_size": 20.0,
-            "std": 1.6e-07,
-            "std_error": 8.02e-09
-          },
-          "BURDENSO4": {
-            "bias": 8e-08,
-            "global_mean": 1.95e-06,
-            "sample_size": 20.0,
-            "std": 3.37e-08,
-            "std_error": 1.69e-09
-          },
-          "BURDENSOA": {
-            "bias": -1.7e-08,
-            "global_mean": 9.19e-07,
-            "sample_size": 20.0,
-            "std": 1.74e-08,
-            "std_error": 8.68e-10
-          },
-          "CLDHGH": {
-            "bias": 0.006,
-            "global_mean": 0.482,
-            "sample_size": 20.0,
-            "std": 0.00311,
-            "std_error": 0.000156
-          },
-          "CLDLOW": {
-            "bias": -0.004,
-            "global_mean": 0.442,
-            "sample_size": 20.0,
-            "std": 0.00221,
-            "std_error": 0.00011
-          },
-          "CLDMED": {
-            "bias": 0.001,
-            "global_mean": 0.319,
-            "sample_size": 20.0,
-            "std": 0.000711,
-            "std_error": 3.56e-05
-          },
-          "CLDTOT": {
-            "bias": -0.003,
-            "global_mean": 0.733,
-            "sample_size": 20.0,
-            "std": 0.00178,
-            "std_error": 8.89e-05
-          },
-          "FLNS": {
-            "bias": -0.256,
-            "global_mean": 56.745,
-            "sample_size": 20.0,
-            "std": 0.192,
-            "std_error": 0.01
-          },
-          "FLNT": {
-            "bias": 0.747,
-            "global_mean": 238.466,
-            "sample_size": 20.0,
-            "std": 0.29,
-            "std_error": 0.015
-          },
-          "FLNTC": {
-            "bias": 1.297,
-            "global_mean": 263.604,
-            "sample_size": 20.0,
-            "std": 0.269,
-            "std_error": 0.013
-          },
-          "FSDS": {
-            "bias": 0.168,
-            "global_mean": 189.731,
-            "sample_size": 20.0,
-            "std": 0.335,
-            "std_error": 0.017
-          },
-          "FSDSC": {
-            "bias": 0.717,
-            "global_mean": 248.175,
-            "sample_size": 20.0,
-            "std": 0.18,
-            "std_error": 0.009
-          },
-          "FSNS": {
-            "bias": 0.647,
-            "global_mean": 164.88,
-            "sample_size": 20.0,
-            "std": 0.334,
-            "std_error": 0.017
-          },
-          "FSNSC": {
-            "bias": 1.199,
-            "global_mean": 217.453,
-            "sample_size": 20.0,
-            "std": 0.199,
-            "std_error": 0.01
-          },
-          "FSNT": {
-            "bias": 1.044,
-            "global_mean": 238.743,
-            "sample_size": 20.0,
-            "std": 0.307,
-            "std_error": 0.015
-          },
-          "FSNTC": {
-            "bias": 1.72,
-            "global_mean": 286.899,
-            "sample_size": 20.0,
-            "std": 0.144,
-            "std_error": 0.007
-          },
-          "ICEFRAC": {
-            "bias": -0.0031,
-            "global_mean": 0.0433,
-            "sample_size": 20.0,
-            "std": 0.00115,
-            "std_error": 5.77e-05
-          },
-          "LANDFRAC": {
-            "bias": 0.0,
-            "global_mean": 0.292,
-            "sample_size": 20.0,
-            "std": 5.55e-17,
-            "std_error": 2.78e-18
-          },
-          "LHFLX": {
-            "bias": 0.272,
-            "global_mean": 87.393,
-            "sample_size": 20.0,
-            "std": 0.313,
-            "std_error": 0.016
-          },
-          "LWCF": {
-            "bias": 0.55,
-            "global_mean": 25.138,
-            "sample_size": 20.0,
-            "std": 0.105,
-            "std_error": 0.005
-          },
-          "OCNFRAC": {
-            "bias": 0.003,
-            "global_mean": 0.664,
-            "sample_size": 20.0,
-            "std": 0.00115,
-            "std_error": 5.77e-05
-          },
-          "OMEGA500": {
-            "bias": 2.2e-06,
-            "global_mean": -4.77e-05,
-            "sample_size": 20.0,
-            "std": 2.05e-06,
-            "std_error": 1.03e-07
-          },
-          "PBLH": {
-            "bias": -9.15,
-            "global_mean": 722.316,
-            "sample_size": 20.0,
-            "std": 1.516,
-            "std_error": 0.076
-          },
-          "PRECC": {
-            "bias": -1e-10,
-            "global_mean": 1.66e-08,
-            "sample_size": 20.0,
-            "std": 9.94e-11,
-            "std_error": 4.97e-12
-          },
-          "PRECL": {
-            "bias": 2e-10,
-            "global_mean": 1.83e-08,
-            "sample_size": 20.0,
-            "std": 1.6e-10,
-            "std_error": 7.99e-12
-          },
-          "PRECSC": {
-            "bias": -1.54e-11,
-            "global_mean": 4.28e-11,
-            "sample_size": 20.0,
-            "std": 2.97e-12,
-            "std_error": 1.48e-13
-          },
-          "PRECSL": {
-            "bias": -1.3e-10,
-            "global_mean": 2.68e-09,
-            "sample_size": 20.0,
-            "std": 8.22e-11,
-            "std_error": 4.11e-12
-          },
-          "PRECT": {
-            "bias": 1e-10,
-            "global_mean": 3.49e-08,
-            "sample_size": 20.0,
-            "std": 1.23e-10,
-            "std_error": 6.17e-12
-          },
-          "PS": {
-            "bias": 10.701,
-            "global_mean": 98526.236,
-            "sample_size": 20.0,
-            "std": 2.526,
-            "std_error": 0.126
-          },
-          "PSL": {
-            "bias": 8.546,
-            "global_mean": 101108.013,
-            "sample_size": 20.0,
-            "std": 2.519,
-            "std_error": 0.126
-          },
-          "QFLX": {
-            "bias": 1e-07,
-            "global_mean": 3.49e-05,
-            "sample_size": 20.0,
-            "std": 1.25e-07,
-            "std_error": 6.27e-09
-          },
-          "RESTOM": {
-            "bias": 0.298,
-            "global_mean": 0.278,
-            "sample_size": 20.0,
-            "std": 0.321,
-            "std_error": 0.0161
-          },
-          "SHFLX": {
-            "bias": 0.406,
-            "global_mean": 19.546,
-            "sample_size": 20.0,
-            "std": 0.088,
-            "std_error": 0.004
-          },
-          "SST": {
-            "bias": 0.515,
-            "global_mean": 292.587,
-            "sample_size": 20.0,
-            "std": 0.09,
-            "std_error": 0.004
-          },
-          "SWCF": {
-            "bias": -0.676,
-            "global_mean": -48.145,
-            "sample_size": 20.0,
-            "std": 0.282,
-            "std_error": 0.014
-          },
-          "TAUX": {
-            "bias": -0.00069,
-            "global_mean": -0.0069,
-            "sample_size": 20.0,
-            "std": 0.000748,
-            "std_error": 3.74e-05
-          },
-          "TAUY": {
-            "bias": -0.00014,
-            "global_mean": -0.00239,
-            "sample_size": 20.0,
-            "std": 0.000536,
-            "std_error": 2.68e-05
-          },
-          "TGCLDIWP": {
-            "bias": 0.0011,
-            "global_mean": 0.0163,
-            "sample_size": 20.0,
-            "std": 0.000153,
-            "std_error": 7.64e-06
-          },
-          "TGCLDLWP": {
-            "bias": 0.0018,
-            "global_mean": 0.0533,
-            "sample_size": 20.0,
-            "std": 0.000437,
-            "std_error": 2.18e-05
-          },
-          "TMQ": {
-            "bias": 1.086,
-            "global_mean": 24.191,
-            "sample_size": 20.0,
-            "std": 0.257,
-            "std_error": 0.013
-          },
-          "TREFHT": {
-            "bias": 0.652,
-            "global_mean": 287.091,
-            "sample_size": 20.0,
-            "std": 0.13,
-            "std_error": 0.007
-          },
-          "TS": {
-            "bias": 0.692,
-            "global_mean": 287.967,
-            "sample_size": 20.0,
-            "std": 0.129,
-            "std_error": 0.006
-          },
-          "U10": {
-            "bias": -0.049,
-            "global_mean": 6.729,
-            "sample_size": 20.0,
-            "std": 0.021,
-            "std_error": 0.001
-          }
         }
       },
       "has_namelist": true
@@ -13785,8 +12929,9 @@
       "issue_number": 165,
       "issue_state": "open",
       "issue_created_at": "2025-09-10T22:34:36Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": 0.0002,
             "global_mean": 0.0129,
@@ -14166,6 +13311,7 @@
       "issue_number": 171,
       "issue_state": "open",
       "issue_created_at": "2025-09-21T14:59:32Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -14208,6 +13354,7 @@
       "issue_number": 170,
       "issue_state": "open",
       "issue_created_at": "2025-09-21T14:55:53Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -14250,6 +13397,7 @@
       "issue_number": 173,
       "issue_state": "open",
       "issue_created_at": "2025-09-22T17:53:26Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -14292,8 +13440,9 @@
       "issue_number": 172,
       "issue_state": "open",
       "issue_created_at": "2025-09-21T21:18:41Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": 0.0018,
             "global_mean": 0.0216,
@@ -14673,6 +13822,7 @@
       "issue_number": 176,
       "issue_state": "open",
       "issue_created_at": "2025-09-24T22:25:39Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -14697,6 +13847,7 @@
       "issue_number": 175,
       "issue_state": "open",
       "issue_created_at": "2025-09-24T19:24:55Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": false
     },
@@ -14739,6 +13890,7 @@
       "issue_number": 174,
       "issue_state": "open",
       "issue_created_at": "2025-09-24T15:53:51Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -14781,6 +13933,7 @@
       "issue_number": 178,
       "issue_state": "open",
       "issue_created_at": "2025-09-24T23:30:18Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -14823,6 +13976,7 @@
       "issue_number": 177,
       "issue_state": "open",
       "issue_created_at": "2025-09-24T22:32:38Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -14865,8 +14019,9 @@
       "issue_number": 181,
       "issue_state": "open",
       "issue_created_at": "2025-09-26T22:10:03Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": 0.0007,
             "global_mean": 0.0205,
@@ -15246,8 +14401,9 @@
       "issue_number": 180,
       "issue_state": "open",
       "issue_created_at": "2025-09-26T22:04:01Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": 0.0004,
             "global_mean": 0.0198,
@@ -15609,6 +14765,7 @@
       "issue_number": 179,
       "issue_state": "open",
       "issue_created_at": "2025-09-25T12:43:13Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -15651,8 +14808,9 @@
       "issue_number": 183,
       "issue_state": "open",
       "issue_created_at": "2025-09-29T20:34:13Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": 0.0008,
             "global_mean": 0.0198,
@@ -16032,8 +15190,9 @@
       "issue_number": 182,
       "issue_state": "open",
       "issue_created_at": "2025-09-29T15:45:29Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": 0.0023,
             "global_mean": 0.0221,
@@ -16413,6 +15572,7 @@
       "issue_number": 185,
       "issue_state": "open",
       "issue_created_at": "2025-10-01T17:19:57Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -16455,6 +15615,7 @@
       "issue_number": 187,
       "issue_state": "open",
       "issue_created_at": "2025-10-01T17:59:19Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -16497,6 +15658,7 @@
       "issue_number": 186,
       "issue_state": "open",
       "issue_created_at": "2025-10-01T17:30:13Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -16539,6 +15701,7 @@
       "issue_number": 189,
       "issue_state": "open",
       "issue_created_at": "2025-10-06T19:42:27Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -16582,6 +15745,7 @@
       "issue_number": 188,
       "issue_state": "open",
       "issue_created_at": "2025-10-03T22:01:38Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -16624,6 +15788,7 @@
       "issue_number": 191,
       "issue_state": "open",
       "issue_created_at": "2025-10-06T21:47:10Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -16666,6 +15831,7 @@
       "issue_number": 190,
       "issue_state": "open",
       "issue_created_at": "2025-10-06T21:46:24Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -16708,8 +15874,9 @@
       "issue_number": 193,
       "issue_state": "open",
       "issue_created_at": "2025-10-13T12:44:37Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": 0.0015,
             "global_mean": 0.0213,
@@ -17089,6 +16256,7 @@
       "issue_number": 192,
       "issue_state": "open",
       "issue_created_at": "2025-10-13T12:42:03Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -17115,8 +16283,9 @@
       "issue_number": 196,
       "issue_state": "open",
       "issue_created_at": "2025-10-26T20:20:54Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": 0.0003,
             "global_mean": 0.0216,
@@ -17480,6 +16649,7 @@
       "issue_number": 195,
       "issue_state": "open",
       "issue_created_at": "2025-10-17T20:04:39Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -17522,8 +16692,9 @@
       "issue_number": 194,
       "issue_state": "open",
       "issue_created_at": "2025-10-13T12:48:09Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": -0.0014,
             "global_mean": 0.0199,
@@ -17887,6 +17058,7 @@
       "issue_number": 199,
       "issue_state": "open",
       "issue_created_at": "2025-10-26T20:41:33Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -17913,8 +17085,9 @@
       "issue_number": 198,
       "issue_state": "open",
       "issue_created_at": "2025-10-26T20:37:37Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": 0.0015,
             "global_mean": 0.0234,
@@ -18278,8 +17451,9 @@
       "issue_number": 197,
       "issue_state": "open",
       "issue_created_at": "2025-10-26T20:33:13Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": 0.0006,
             "global_mean": 0.0219,
@@ -18659,8 +17833,9 @@
       "issue_number": 203,
       "issue_state": "open",
       "issue_created_at": "2025-10-31T22:12:26Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": -0.0043,
             "global_mean": 0.017,
@@ -19040,8 +18215,9 @@
       "issue_number": 202,
       "issue_state": "open",
       "issue_created_at": "2025-10-31T22:08:50Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": -0.0072,
             "global_mean": 0.0141,
@@ -19405,8 +18581,9 @@
       "issue_number": 201,
       "issue_state": "open",
       "issue_created_at": "2025-10-29T19:42:17Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": 0.0,
             "global_mean": 0.0219,
@@ -19770,8 +18947,9 @@
       "issue_number": 200,
       "issue_state": "open",
       "issue_created_at": "2025-10-26T20:44:52Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": 0.0005,
             "global_mean": 0.0218,
@@ -20151,8 +19329,9 @@
       "issue_number": 206,
       "issue_state": "open",
       "issue_created_at": "2025-11-10T20:43:05Z",
+      "year_range": "yrs_9_28",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": -0.0031,
             "global_mean": 0.0182,
@@ -20489,344 +19668,6 @@
             "std": 0.03,
             "std_error": 0.001
           }
-        },
-        "yrs_9_28": {
-          "AODDUSTdn": {
-            "bias": -0.0038,
-            "global_mean": 0.0178,
-            "sample_size": 20.0,
-            "std": 0.000791,
-            "std_error": 3.95e-05
-          },
-          "AODVISdn": {
-            "bias": -0.035,
-            "global_mean": 0.114,
-            "sample_size": 20.0,
-            "std": 0.00164,
-            "std_error": 8.22e-05
-          },
-          "BURDENBC": {
-            "bias": 2.14e-08,
-            "global_mean": 6.45e-08,
-            "sample_size": 20.0,
-            "std": 1.14e-09,
-            "std_error": 5.68e-11
-          },
-          "BURDENDUST": {
-            "bias": -1.72e-05,
-            "global_mean": 2.94e-05,
-            "sample_size": 20.0,
-            "std": 1.27e-06,
-            "std_error": 6.37e-08
-          },
-          "BURDENPOM": {
-            "bias": -3.7e-08,
-            "global_mean": 6.14e-07,
-            "sample_size": 20.0,
-            "std": 1.12e-08,
-            "std_error": 5.59e-10
-          },
-          "BURDENSEASALT": {
-            "bias": -6.4e-06,
-            "global_mean": 1.66e-05,
-            "sample_size": 20.0,
-            "std": 1.75e-07,
-            "std_error": 8.75e-09
-          },
-          "BURDENSO4": {
-            "bias": 2e-08,
-            "global_mean": 1.9e-06,
-            "sample_size": 20.0,
-            "std": 4.97e-08,
-            "std_error": 2.48e-09
-          },
-          "BURDENSOA": {
-            "bias": -9e-08,
-            "global_mean": 1.13e-06,
-            "sample_size": 20.0,
-            "std": 6.89e-08,
-            "std_error": 3.44e-09
-          },
-          "CLDHGH": {
-            "bias": 0.001,
-            "global_mean": 0.481,
-            "sample_size": 20.0,
-            "std": 0.00373,
-            "std_error": 0.000187
-          },
-          "CLDLOW": {
-            "bias": -0.006,
-            "global_mean": 0.44,
-            "sample_size": 20.0,
-            "std": 0.00364,
-            "std_error": 0.000182
-          },
-          "CLDMED": {
-            "bias": -0.005,
-            "global_mean": 0.312,
-            "sample_size": 20.0,
-            "std": 0.00154,
-            "std_error": 7.7e-05
-          },
-          "CLDTOT": {
-            "bias": -0.003,
-            "global_mean": 0.734,
-            "sample_size": 20.0,
-            "std": 0.00263,
-            "std_error": 0.000131
-          },
-          "FLNS": {
-            "bias": -0.046,
-            "global_mean": 56.822,
-            "sample_size": 20.0,
-            "std": 0.437,
-            "std_error": 0.022
-          },
-          "FLNT": {
-            "bias": 1.767,
-            "global_mean": 239.719,
-            "sample_size": 20.0,
-            "std": 0.434,
-            "std_error": 0.022
-          },
-          "FLNTC": {
-            "bias": 1.175,
-            "global_mean": 263.774,
-            "sample_size": 20.0,
-            "std": 0.402,
-            "std_error": 0.02
-          },
-          "FSDS": {
-            "bias": 2.015,
-            "global_mean": 191.272,
-            "sample_size": 20.0,
-            "std": 0.537,
-            "std_error": 0.027
-          },
-          "FSDSC": {
-            "bias": 0.896,
-            "global_mean": 248.031,
-            "sample_size": 20.0,
-            "std": 0.286,
-            "std_error": 0.014
-          },
-          "FSNS": {
-            "bias": 2.023,
-            "global_mean": 166.439,
-            "sample_size": 20.0,
-            "std": 0.476,
-            "std_error": 0.024
-          },
-          "FSNSC": {
-            "bias": 1.145,
-            "global_mean": 217.513,
-            "sample_size": 20.0,
-            "std": 0.264,
-            "std_error": 0.013
-          },
-          "FSNT": {
-            "bias": 2.355,
-            "global_mean": 240.257,
-            "sample_size": 20.0,
-            "std": 0.4,
-            "std_error": 0.02
-          },
-          "FSNTC": {
-            "bias": 1.53,
-            "global_mean": 286.909,
-            "sample_size": 20.0,
-            "std": 0.131,
-            "std_error": 0.007
-          },
-          "ICEFRAC": {
-            "bias": -0.0023,
-            "global_mean": 0.0407,
-            "sample_size": 20.0,
-            "std": 0.000713,
-            "std_error": 3.57e-05
-          },
-          "LANDFRAC": {
-            "bias": 0.0,
-            "global_mean": 0.292,
-            "sample_size": 20.0,
-            "std": 5.55e-17,
-            "std_error": 2.78e-18
-          },
-          "LHFLX": {
-            "bias": 1.482,
-            "global_mean": 88.926,
-            "sample_size": 20.0,
-            "std": 0.566,
-            "std_error": 0.028
-          },
-          "LWCF": {
-            "bias": -0.591,
-            "global_mean": 24.055,
-            "sample_size": 20.0,
-            "std": 0.093,
-            "std_error": 0.005
-          },
-          "OCNFRAC": {
-            "bias": 0.002,
-            "global_mean": 0.667,
-            "sample_size": 20.0,
-            "std": 0.000713,
-            "std_error": 3.57e-05
-          },
-          "OMEGA500": {
-            "bias": -1.04e-05,
-            "global_mean": -6.02e-05,
-            "sample_size": 20.0,
-            "std": 3.11e-06,
-            "std_error": 1.56e-07
-          },
-          "PBLH": {
-            "bias": -2.092,
-            "global_mean": 728.497,
-            "sample_size": 20.0,
-            "std": 1.836,
-            "std_error": 0.092
-          },
-          "PRECC": {
-            "bias": 2e-10,
-            "global_mean": 1.69e-08,
-            "sample_size": 20.0,
-            "std": 1.02e-10,
-            "std_error": 5.12e-12
-          },
-          "PRECL": {
-            "bias": 5e-10,
-            "global_mean": 1.87e-08,
-            "sample_size": 20.0,
-            "std": 2.69e-10,
-            "std_error": 1.35e-11
-          },
-          "PRECSC": {
-            "bias": -8.9e-12,
-            "global_mean": 4.68e-11,
-            "sample_size": 20.0,
-            "std": 3.37e-12,
-            "std_error": 1.69e-13
-          },
-          "PRECSL": {
-            "bias": -1.1e-10,
-            "global_mean": 2.67e-09,
-            "sample_size": 20.0,
-            "std": 4.48e-11,
-            "std_error": 2.24e-12
-          },
-          "PRECT": {
-            "bias": 6e-10,
-            "global_mean": 3.55e-08,
-            "sample_size": 20.0,
-            "std": 2.31e-10,
-            "std_error": 1.16e-11
-          },
-          "PS": {
-            "bias": 8.099,
-            "global_mean": 98525.924,
-            "sample_size": 20.0,
-            "std": 4.526,
-            "std_error": 0.226
-          },
-          "PSL": {
-            "bias": 4.413,
-            "global_mean": 101107.071,
-            "sample_size": 20.0,
-            "std": 3.993,
-            "std_error": 0.2
-          },
-          "QFLX": {
-            "bias": 6e-07,
-            "global_mean": 3.55e-05,
-            "sample_size": 20.0,
-            "std": 2.26e-07,
-            "std_error": 1.13e-08
-          },
-          "RESTOM": {
-            "bias": 0.588,
-            "global_mean": 0.538,
-            "sample_size": 20.0,
-            "std": 0.579,
-            "std_error": 0.0289
-          },
-          "SHFLX": {
-            "bias": 0.031,
-            "global_mean": 19.212,
-            "sample_size": 20.0,
-            "std": 0.079,
-            "std_error": 0.004
-          },
-          "SST": {
-            "bias": 0.327,
-            "global_mean": 292.479,
-            "sample_size": 20.0,
-            "std": 0.156,
-            "std_error": 0.008
-          },
-          "SWCF": {
-            "bias": 0.824,
-            "global_mean": -46.642,
-            "sample_size": 20.0,
-            "std": 0.412,
-            "std_error": 0.021
-          },
-          "TAUX": {
-            "bias": -0.0002,
-            "global_mean": -0.00644,
-            "sample_size": 20.0,
-            "std": 0.000703,
-            "std_error": 3.51e-05
-          },
-          "TAUY": {
-            "bias": -0.00054,
-            "global_mean": -0.00229,
-            "sample_size": 20.0,
-            "std": 0.000725,
-            "std_error": 3.63e-05
-          },
-          "TGCLDIWP": {
-            "bias": -0.001,
-            "global_mean": 0.0144,
-            "sample_size": 20.0,
-            "std": 0.000169,
-            "std_error": 8.47e-06
-          },
-          "TGCLDLWP": {
-            "bias": -0.0004,
-            "global_mean": 0.0509,
-            "sample_size": 20.0,
-            "std": 0.000747,
-            "std_error": 3.74e-05
-          },
-          "TMQ": {
-            "bias": 0.825,
-            "global_mean": 24.162,
-            "sample_size": 20.0,
-            "std": 0.461,
-            "std_error": 0.023
-          },
-          "TREFHT": {
-            "bias": 0.54,
-            "global_mean": 287.156,
-            "sample_size": 20.0,
-            "std": 0.208,
-            "std_error": 0.01
-          },
-          "TS": {
-            "bias": 0.524,
-            "global_mean": 287.973,
-            "sample_size": 20.0,
-            "std": 0.206,
-            "std_error": 0.01
-          },
-          "U10": {
-            "bias": 0.015,
-            "global_mean": 6.768,
-            "sample_size": 20.0,
-            "std": 0.025,
-            "std_error": 0.001
-          }
         }
       },
       "has_namelist": true
@@ -20870,6 +19711,7 @@
       "issue_number": 205,
       "issue_state": "closed",
       "issue_created_at": "2025-11-07T21:01:04Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -20912,632 +19754,343 @@
       "issue_number": 204,
       "issue_state": "open",
       "issue_created_at": "2025-10-31T22:20:22Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_1_21": {
+        "ANN": {
           "AODDUSTdn": {
+            "bias": 0.0002,
             "global_mean": 0.0214,
             "sample_size": 21.0,
             "std": 0.000949,
             "std_error": 4.52e-05
           },
           "AODVISdn": {
+            "bias": -0.031,
             "global_mean": 0.119,
             "sample_size": 21.0,
             "std": 0.0015,
             "std_error": 7.13e-05
           },
           "BURDENBC": {
+            "bias": 2e-10,
             "global_mean": 4.31e-08,
             "sample_size": 21.0,
             "std": 6.77e-10,
             "std_error": 3.22e-11
           },
           "BURDENDUST": {
+            "bias": 3e-07,
             "global_mean": 4.63e-05,
             "sample_size": 21.0,
             "std": 1.95e-06,
             "std_error": 9.29e-08
           },
           "BURDENPOM": {
+            "bias": 2e-09,
             "global_mean": 6.5e-07,
             "sample_size": 21.0,
             "std": 8.85e-09,
             "std_error": 4.22e-10
           },
           "BURDENSEASALT": {
+            "bias": -6.5e-06,
             "global_mean": 1.66e-05,
             "sample_size": 21.0,
             "std": 1.59e-07,
             "std_error": 7.59e-09
           },
           "BURDENSO4": {
+            "bias": -1.3e-07,
             "global_mean": 1.74e-06,
             "sample_size": 21.0,
             "std": 7.77e-08,
             "std_error": 3.7e-09
           },
           "BURDENSOA": {
+            "bias": 4e-08,
             "global_mean": 1.31e-06,
             "sample_size": 21.0,
             "std": 1.27e-07,
             "std_error": 6.06e-09
           },
           "CLDHGH": {
+            "bias": 0.001,
             "global_mean": 0.48,
             "sample_size": 21.0,
             "std": 0.00436,
             "std_error": 0.000208
           },
           "CLDLOW": {
+            "bias": -0.01,
             "global_mean": 0.435,
             "sample_size": 21.0,
             "std": 0.00313,
             "std_error": 0.000149
           },
           "CLDMED": {
+            "bias": -0.004,
             "global_mean": 0.312,
             "sample_size": 21.0,
             "std": 0.00134,
             "std_error": 6.37e-05
           },
           "CLDTOT": {
+            "bias": -0.005,
             "global_mean": 0.731,
             "sample_size": 21.0,
             "std": 0.00356,
             "std_error": 0.000169
           },
           "FLNS": {
+            "bias": 0.809,
             "global_mean": 57.534,
             "sample_size": 21.0,
             "std": 0.483,
             "std_error": 0.023
           },
           "FLNT": {
+            "bias": 1.535,
             "global_mean": 239.736,
             "sample_size": 21.0,
             "std": 0.43,
             "std_error": 0.02
           },
           "FLNTC": {
+            "bias": 1.333,
             "global_mean": 264.143,
             "sample_size": 21.0,
             "std": 0.396,
             "std_error": 0.019
           },
           "FSDS": {
+            "bias": 2.36,
             "global_mean": 191.507,
             "sample_size": 21.0,
             "std": 0.489,
             "std_error": 0.023
           },
           "FSDSC": {
+            "bias": 0.45,
             "global_mean": 247.419,
             "sample_size": 21.0,
             "std": 0.252,
             "std_error": 0.012
           },
           "FSNS": {
+            "bias": 2.345,
             "global_mean": 166.76,
             "sample_size": 21.0,
             "std": 0.548,
             "std_error": 0.026
           },
           "FSNSC": {
+            "bias": 0.577,
             "global_mean": 216.923,
             "sample_size": 21.0,
             "std": 0.271,
             "std_error": 0.013
           },
           "FSNT": {
+            "bias": 2.649,
             "global_mean": 240.672,
             "sample_size": 21.0,
             "std": 0.467,
             "std_error": 0.022
           },
           "FSNTC": {
+            "bias": 1.124,
             "global_mean": 286.613,
             "sample_size": 21.0,
             "std": 0.225,
             "std_error": 0.011
           },
           "ICEFRAC": {
+            "bias": -0.0013,
             "global_mean": 0.0406,
             "sample_size": 21.0,
             "std": 0.00245,
             "std_error": 0.000116
           },
           "LANDFRAC": {
+            "bias": 0.0,
             "global_mean": 0.292,
             "sample_size": 21.0,
             "std": 5.55e-17,
             "std_error": 2.64e-18
           },
           "LHFLX": {
+            "bias": 0.284,
             "global_mean": 88.103,
             "sample_size": 21.0,
             "std": 0.622,
             "std_error": 0.03
           },
           "LWCF": {
+            "bias": -0.202,
             "global_mean": 24.406,
             "sample_size": 21.0,
             "std": 0.132,
             "std_error": 0.006
           },
           "OCNFRAC": {
+            "bias": 0.002,
             "global_mean": 0.667,
             "sample_size": 21.0,
             "std": 0.00245,
             "std_error": 0.000116
           },
           "OMEGA500": {
+            "bias": 1.6e-06,
             "global_mean": -4.8e-05,
             "sample_size": 21.0,
             "std": 3.21e-06,
             "std_error": 1.53e-07
           },
           "PBLH": {
+            "bias": 21.911,
             "global_mean": 751.829,
             "sample_size": 21.0,
             "std": 2.89,
             "std_error": 0.138
           },
           "PRECC": {
+            "bias": -1e-10,
             "global_mean": 1.67e-08,
             "sample_size": 21.0,
             "std": 1.12e-10,
             "std_error": 5.34e-12
           },
           "PRECL": {
+            "bias": 2e-10,
             "global_mean": 1.85e-08,
             "sample_size": 21.0,
             "std": 2.95e-10,
             "std_error": 1.41e-11
           },
           "PRECSC": {
+            "bias": -1.12e-11,
             "global_mean": 4.26e-11,
             "sample_size": 21.0,
             "std": 2.95e-12,
             "std_error": 1.41e-13
           },
           "PRECSL": {
+            "bias": -1.3e-10,
             "global_mean": 2.61e-09,
             "sample_size": 21.0,
             "std": 6.53e-11,
             "std_error": 3.11e-12
           },
           "PRECT": {
+            "bias": 1e-10,
             "global_mean": 3.52e-08,
             "sample_size": 21.0,
             "std": 2.53e-10,
             "std_error": 1.2e-11
           },
           "PS": {
+            "bias": 10.096,
             "global_mean": 98529.797,
             "sample_size": 21.0,
             "std": 4.638,
             "std_error": 0.221
           },
           "PSL": {
+            "bias": 10.189,
             "global_mean": 101114.05,
             "sample_size": 21.0,
             "std": 3.888,
             "std_error": 0.185
           },
           "QFLX": {
+            "bias": 1e-07,
             "global_mean": 3.52e-05,
             "sample_size": 21.0,
             "std": 2.49e-07,
             "std_error": 1.19e-08
           },
           "RESTOM": {
+            "bias": 1.113,
             "global_mean": 0.935,
             "sample_size": 21.0,
             "std": 0.597,
             "std_error": 0.0284
           },
           "SHFLX": {
+            "bias": 0.202,
             "global_mean": 19.276,
             "sample_size": 21.0,
             "std": 0.149,
             "std_error": 0.007
           },
           "SST": {
+            "bias": 0.71,
             "global_mean": 292.921,
             "sample_size": 21.0,
             "std": 0.159,
             "std_error": 0.008
           },
           "SWCF": {
+            "bias": 1.523,
             "global_mean": -45.931,
             "sample_size": 21.0,
             "std": 0.337,
             "std_error": 0.016
           },
           "TAUX": {
+            "bias": 0.00048,
             "global_mean": -0.00561,
             "sample_size": 21.0,
             "std": 0.0007,
             "std_error": 3.34e-05
           },
           "TAUY": {
+            "bias": -0.00046,
             "global_mean": -0.00212,
             "sample_size": 21.0,
             "std": 0.000495,
             "std_error": 2.36e-05
           },
           "TGCLDIWP": {
+            "bias": -0.0004,
             "global_mean": 0.015,
             "sample_size": 21.0,
             "std": 0.000254,
             "std_error": 1.21e-05
           },
           "TGCLDLWP": {
+            "bias": -0.0021,
             "global_mean": 0.0494,
             "sample_size": 21.0,
             "std": 0.000757,
             "std_error": 3.6e-05
           },
           "TMQ": {
+            "bias": 1.03,
             "global_mean": 24.558,
             "sample_size": 21.0,
             "std": 0.472,
             "std_error": 0.022
           },
           "TREFHT": {
+            "bias": 0.611,
             "global_mean": 287.339,
             "sample_size": 21.0,
             "std": 0.204,
             "std_error": 0.01
           },
           "TS": {
+            "bias": 0.678,
             "global_mean": 288.237,
             "sample_size": 21.0,
             "std": 0.202,
             "std_error": 0.01
           },
           "U10": {
+            "bias": -0.545,
             "global_mean": 6.204,
             "sample_size": 21.0,
             "std": 0.023,
-            "std_error": 0.001
-          }
-        },
-        "yrs_2_21": {
-          "AODDUSTdn": {
-            "bias": 0.0002,
-            "global_mean": 0.0215,
-            "sample_size": 20.0,
-            "std": 0.000975,
-            "std_error": 4.87e-05
-          },
-          "AODVISdn": {
-            "bias": -0.031,
-            "global_mean": 0.119,
-            "sample_size": 20.0,
-            "std": 0.00163,
-            "std_error": 8.13e-05
-          },
-          "BURDENBC": {
-            "bias": 2e-10,
-            "global_mean": 4.32e-08,
-            "sample_size": 20.0,
-            "std": 6.36e-10,
-            "std_error": 3.18e-11
-          },
-          "BURDENDUST": {
-            "bias": 3e-07,
-            "global_mean": 4.63e-05,
-            "sample_size": 20.0,
-            "std": 2.01e-06,
-            "std_error": 1e-07
-          },
-          "BURDENPOM": {
-            "bias": 2e-09,
-            "global_mean": 6.51e-07,
-            "sample_size": 20.0,
-            "std": 9.35e-09,
-            "std_error": 4.68e-10
-          },
-          "BURDENSEASALT": {
-            "bias": -6.5e-06,
-            "global_mean": 1.66e-05,
-            "sample_size": 20.0,
-            "std": 1.85e-07,
-            "std_error": 9.25e-09
-          },
-          "BURDENSO4": {
-            "bias": -1.3e-07,
-            "global_mean": 1.75e-06,
-            "sample_size": 20.0,
-            "std": 6.14e-08,
-            "std_error": 3.07e-09
-          },
-          "BURDENSOA": {
-            "bias": 4e-08,
-            "global_mean": 1.3e-06,
-            "sample_size": 20.0,
-            "std": 8.19e-08,
-            "std_error": 4.09e-09
-          },
-          "CLDHGH": {
-            "bias": 0.001,
-            "global_mean": 0.48,
-            "sample_size": 20.0,
-            "std": 0.00292,
-            "std_error": 0.000146
-          },
-          "CLDLOW": {
-            "bias": -0.01,
-            "global_mean": 0.435,
-            "sample_size": 20.0,
-            "std": 0.00326,
-            "std_error": 0.000163
-          },
-          "CLDMED": {
-            "bias": -0.004,
-            "global_mean": 0.312,
-            "sample_size": 20.0,
-            "std": 0.00155,
-            "std_error": 7.77e-05
-          },
-          "CLDTOT": {
-            "bias": -0.005,
-            "global_mean": 0.731,
-            "sample_size": 20.0,
-            "std": 0.00279,
-            "std_error": 0.00014
-          },
-          "FLNS": {
-            "bias": 0.809,
-            "global_mean": 57.525,
-            "sample_size": 20.0,
-            "std": 0.272,
-            "std_error": 0.014
-          },
-          "FLNT": {
-            "bias": 1.535,
-            "global_mean": 239.756,
-            "sample_size": 20.0,
-            "std": 0.482,
-            "std_error": 0.024
-          },
-          "FLNTC": {
-            "bias": 1.333,
-            "global_mean": 264.166,
-            "sample_size": 20.0,
-            "std": 0.429,
-            "std_error": 0.021
-          },
-          "FSDS": {
-            "bias": 2.36,
-            "global_mean": 191.495,
-            "sample_size": 20.0,
-            "std": 0.417,
-            "std_error": 0.021
-          },
-          "FSDSC": {
-            "bias": 0.45,
-            "global_mean": 247.417,
-            "sample_size": 20.0,
-            "std": 0.286,
-            "std_error": 0.014
-          },
-          "FSNS": {
-            "bias": 2.345,
-            "global_mean": 166.734,
-            "sample_size": 20.0,
-            "std": 0.399,
-            "std_error": 0.02
-          },
-          "FSNSC": {
-            "bias": 0.577,
-            "global_mean": 216.896,
-            "sample_size": 20.0,
-            "std": 0.123,
-            "std_error": 0.006
-          },
-          "FSNT": {
-            "bias": 2.649,
-            "global_mean": 240.655,
-            "sample_size": 20.0,
-            "std": 0.443,
-            "std_error": 0.022
-          },
-          "FSNTC": {
-            "bias": 1.124,
-            "global_mean": 286.595,
-            "sample_size": 20.0,
-            "std": 0.169,
-            "std_error": 0.008
-          },
-          "ICEFRAC": {
-            "bias": -0.0013,
-            "global_mean": 0.0409,
-            "sample_size": 20.0,
-            "std": 0.00175,
-            "std_error": 8.74e-05
-          },
-          "LANDFRAC": {
-            "bias": 0.0,
-            "global_mean": 0.292,
-            "sample_size": 20.0,
-            "std": 5.55e-17,
-            "std_error": 2.78e-18
-          },
-          "LHFLX": {
-            "bias": 0.284,
-            "global_mean": 88.107,
-            "sample_size": 20.0,
-            "std": 0.566,
-            "std_error": 0.028
-          },
-          "LWCF": {
-            "bias": -0.202,
-            "global_mean": 24.41,
-            "sample_size": 20.0,
-            "std": 0.102,
-            "std_error": 0.005
-          },
-          "OCNFRAC": {
-            "bias": 0.002,
-            "global_mean": 0.667,
-            "sample_size": 20.0,
-            "std": 0.00175,
-            "std_error": 8.74e-05
-          },
-          "OMEGA500": {
-            "bias": 1.6e-06,
-            "global_mean": -4.79e-05,
-            "sample_size": 20.0,
-            "std": 2.16e-06,
-            "std_error": 1.08e-07
-          },
-          "PBLH": {
-            "bias": 21.911,
-            "global_mean": 751.878,
-            "sample_size": 20.0,
-            "std": 1.357,
-            "std_error": 0.068
-          },
-          "PRECC": {
-            "bias": -1e-10,
-            "global_mean": 1.67e-08,
-            "sample_size": 20.0,
-            "std": 1.23e-10,
-            "std_error": 6.15e-12
-          },
-          "PRECL": {
-            "bias": 2e-10,
-            "global_mean": 1.85e-08,
-            "sample_size": 20.0,
-            "std": 1.89e-10,
-            "std_error": 9.43e-12
-          },
-          "PRECSC": {
-            "bias": -1.12e-11,
-            "global_mean": 4.23e-11,
-            "sample_size": 20.0,
-            "std": 3.47e-12,
-            "std_error": 1.74e-13
-          },
-          "PRECSL": {
-            "bias": -1.3e-10,
-            "global_mean": 2.62e-09,
-            "sample_size": 20.0,
-            "std": 7.96e-11,
-            "std_error": 3.98e-12
-          },
-          "PRECT": {
-            "bias": 1e-10,
-            "global_mean": 3.52e-08,
-            "sample_size": 20.0,
-            "std": 2.31e-10,
-            "std_error": 1.15e-11
-          },
-          "PS": {
-            "bias": 10.096,
-            "global_mean": 98529.983,
-            "sample_size": 20.0,
-            "std": 3.696,
-            "std_error": 0.185
-          },
-          "PSL": {
-            "bias": 10.189,
-            "global_mean": 101114.257,
-            "sample_size": 20.0,
-            "std": 2.9,
-            "std_error": 0.145
-          },
-          "QFLX": {
-            "bias": 1e-07,
-            "global_mean": 3.52e-05,
-            "sample_size": 20.0,
-            "std": 2.27e-07,
-            "std_error": 1.13e-08
-          },
-          "RESTOM": {
-            "bias": 1.113,
-            "global_mean": 0.898,
-            "sample_size": 20.0,
-            "std": 0.411,
-            "std_error": 0.0205
-          },
-          "SHFLX": {
-            "bias": 0.202,
-            "global_mean": 19.3,
-            "sample_size": 20.0,
-            "std": 0.12,
-            "std_error": 0.006
-          },
-          "SST": {
-            "bias": 0.71,
-            "global_mean": 292.941,
-            "sample_size": 20.0,
-            "std": 0.139,
-            "std_error": 0.007
-          },
-          "SWCF": {
-            "bias": 1.523,
-            "global_mean": -45.931,
-            "sample_size": 20.0,
-            "std": 0.367,
-            "std_error": 0.018
-          },
-          "TAUX": {
-            "bias": 0.00048,
-            "global_mean": -0.00561,
-            "sample_size": 20.0,
-            "std": 0.000633,
-            "std_error": 3.16e-05
-          },
-          "TAUY": {
-            "bias": -0.00046,
-            "global_mean": -0.00214,
-            "sample_size": 20.0,
-            "std": 0.000553,
-            "std_error": 2.77e-05
-          },
-          "TGCLDIWP": {
-            "bias": -0.0004,
-            "global_mean": 0.015,
-            "sample_size": 20.0,
-            "std": 0.00017,
-            "std_error": 8.49e-06
-          },
-          "TGCLDLWP": {
-            "bias": -0.0021,
-            "global_mean": 0.0494,
-            "sample_size": 20.0,
-            "std": 0.000506,
-            "std_error": 2.53e-05
-          },
-          "TMQ": {
-            "bias": 1.03,
-            "global_mean": 24.577,
-            "sample_size": 20.0,
-            "std": 0.377,
-            "std_error": 0.019
-          },
-          "TREFHT": {
-            "bias": 0.611,
-            "global_mean": 287.346,
-            "sample_size": 20.0,
-            "std": 0.226,
-            "std_error": 0.011
-          },
-          "TS": {
-            "bias": 0.678,
-            "global_mean": 288.245,
-            "sample_size": 20.0,
-            "std": 0.225,
-            "std_error": 0.011
-          },
-          "U10": {
-            "bias": -0.545,
-            "global_mean": 6.203,
-            "sample_size": 20.0,
-            "std": 0.018,
             "std_error": 0.001
           }
         }
@@ -21583,6 +20136,7 @@
       "issue_number": 211,
       "issue_state": "open",
       "issue_created_at": "2025-11-18T22:24:52Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -21607,6 +20161,7 @@
       "issue_number": 210,
       "issue_state": "open",
       "issue_created_at": "2025-11-18T18:22:47Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": false
     },
@@ -21650,8 +20205,9 @@
       "issue_number": 209,
       "issue_state": "open",
       "issue_created_at": "2025-11-14T21:56:10Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": -0.0001,
             "global_mean": 0.0177,
@@ -22032,8 +20588,9 @@
       "issue_number": 208,
       "issue_state": "open",
       "issue_created_at": "2025-11-14T21:30:49Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODDUSTdn": {
             "bias": 0.0003,
             "global_mean": 0.0181,
@@ -22413,8 +20970,9 @@
       "issue_number": 207,
       "issue_state": "open",
       "issue_created_at": "2025-11-10T22:56:07Z",
+      "year_range": "yrs_97_116",
       "statistics": {
-        "yrs_97_116": {
+        "ANN": {
           "AODVISdn": {
             "global_mean": 0.148,
             "sample_size": 20.0,
@@ -22741,6 +21299,7 @@
       "issue_number": 213,
       "issue_state": "open",
       "issue_created_at": "2025-11-19T19:17:10Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -22784,6 +21343,7 @@
       "issue_number": 212,
       "issue_state": "open",
       "issue_created_at": "2025-11-19T19:15:08Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -22810,6 +21370,7 @@
       "issue_number": 216,
       "issue_state": "open",
       "issue_created_at": "2025-11-26T19:50:11Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": false
     },
@@ -22853,6 +21414,7 @@
       "issue_number": 214,
       "issue_state": "open",
       "issue_created_at": "2025-11-19T19:19:40Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -22896,6 +21458,7 @@
       "issue_number": 217,
       "issue_state": "open",
       "issue_created_at": "2025-11-26T20:23:47Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -22939,6 +21502,7 @@
       "issue_number": 219,
       "issue_state": "open",
       "issue_created_at": "2025-11-26T20:37:58Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -22982,6 +21546,7 @@
       "issue_number": 218,
       "issue_state": "open",
       "issue_created_at": "2025-11-26T20:32:43Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -23025,6 +21590,7 @@
       "issue_number": 221,
       "issue_state": "open",
       "issue_created_at": "2025-12-01T20:27:22Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -23068,6 +21634,7 @@
       "issue_number": 220,
       "issue_state": "open",
       "issue_created_at": "2025-12-01T20:18:59Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -23111,6 +21678,7 @@
       "issue_number": 223,
       "issue_state": "open",
       "issue_created_at": "2025-12-04T22:15:46Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -23154,6 +21722,7 @@
       "issue_number": 222,
       "issue_state": "open",
       "issue_created_at": "2025-12-02T21:14:20Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -23197,6 +21766,7 @@
       "issue_number": 224,
       "issue_state": "open",
       "issue_created_at": "2025-12-08T19:54:14Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -23240,6 +21810,7 @@
       "issue_number": 225,
       "issue_state": "open",
       "issue_created_at": "2025-12-08T20:34:54Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -23283,6 +21854,7 @@
       "issue_number": 227,
       "issue_state": "open",
       "issue_created_at": "2025-12-08T20:59:56Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -23326,6 +21898,7 @@
       "issue_number": 226,
       "issue_state": "open",
       "issue_created_at": "2025-12-08T20:38:42Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -23369,6 +21942,7 @@
       "issue_number": 229,
       "issue_state": "open",
       "issue_created_at": "2025-12-12T16:11:27Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -23395,6 +21969,7 @@
       "issue_number": 231,
       "issue_state": "closed",
       "issue_created_at": "2025-12-12T16:14:07Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": false
     },
@@ -23438,8 +22013,9 @@
       "issue_number": 230,
       "issue_state": "open",
       "issue_created_at": "2025-12-12T16:13:48Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODVISdn": {
             "global_mean": 0.126,
             "sample_size": 20.0,
@@ -23766,8 +22342,9 @@
       "issue_number": 232,
       "issue_state": "open",
       "issue_created_at": "2025-12-12T16:17:08Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODVISdn": {
             "bias": 0.0,
             "global_mean": 0.126,
@@ -24141,8 +22718,9 @@
       "issue_number": 234,
       "issue_state": "open",
       "issue_created_at": "2025-12-15T16:59:03Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODVISdn": {
             "bias": 0.001,
             "global_mean": 0.127,
@@ -24516,6 +23094,7 @@
       "issue_number": 233,
       "issue_state": "open",
       "issue_created_at": "2025-12-15T16:12:43Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -24559,6 +23138,7 @@
       "issue_number": 237,
       "issue_state": "open",
       "issue_created_at": "2025-12-17T04:07:11Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -24602,154 +23182,155 @@
       "issue_number": 236,
       "issue_state": "open",
       "issue_created_at": "2025-12-17T02:39:00Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODVISdn": {
             "bias": 0.004,
-            "global_mean": 0.13,
+            "global_mean": 0.129,
             "sample_size": 20.0,
-            "std": 0.00222,
-            "std_error": 0.000111
+            "std": 0.00174,
+            "std_error": 8.72e-05
           },
           "BURDENBC": {
             "bias": -2e-10,
-            "global_mean": 6.29e-08,
+            "global_mean": 6.36e-08,
             "sample_size": 20.0,
-            "std": 6.04e-10,
-            "std_error": 3.02e-11
+            "std": 8.56e-10,
+            "std_error": 4.28e-11
           },
           "BURDENDUST": {
             "bias": 7e-06,
-            "global_mean": 3.51e-05,
+            "global_mean": 3.48e-05,
             "sample_size": 20.0,
-            "std": 2.31e-06,
-            "std_error": 1.15e-07
+            "std": 1.8e-06,
+            "std_error": 8.99e-08
           },
           "BURDENPOM": {
             "bias": -3e-09,
-            "global_mean": 5.97e-07,
+            "global_mean": 6.07e-07,
             "sample_size": 20.0,
-            "std": 6.04e-09,
-            "std_error": 3.02e-10
+            "std": 8.89e-09,
+            "std_error": 4.44e-10
           },
           "BURDENSEASALT": {
             "bias": 0.0,
             "global_mean": 2.03e-05,
             "sample_size": 20.0,
-            "std": 2.47e-07,
-            "std_error": 1.24e-08
+            "std": 2.3e-07,
+            "std_error": 1.15e-08
           },
           "BURDENSO4": {
             "bias": -1e-08,
             "global_mean": 2.04e-06,
             "sample_size": 20.0,
-            "std": 5.26e-08,
-            "std_error": 2.63e-09
+            "std": 3.05e-08,
+            "std_error": 1.53e-09
           },
           "BURDENSOA": {
             "bias": -2e-08,
-            "global_mean": 1.05e-06,
+            "global_mean": 1.04e-06,
             "sample_size": 20.0,
-            "std": 5.4e-08,
-            "std_error": 2.7e-09
+            "std": 2.74e-08,
+            "std_error": 1.37e-09
           },
           "CLDHGH": {
             "bias": 0.0,
-            "global_mean": 0.468,
+            "global_mean": 0.467,
             "sample_size": 20.0,
-            "std": 0.00357,
-            "std_error": 0.000178
+            "std": 0.00351,
+            "std_error": 0.000175
           },
           "CLDLOW": {
             "bias": 0.007,
-            "global_mean": 0.441,
+            "global_mean": 0.443,
             "sample_size": 20.0,
-            "std": 0.00343,
-            "std_error": 0.000172
+            "std": 0.00338,
+            "std_error": 0.000169
           },
           "CLDMED": {
             "bias": 0.001,
-            "global_mean": 0.322,
+            "global_mean": 0.323,
             "sample_size": 20.0,
-            "std": 0.00089,
-            "std_error": 4.45e-05
+            "std": 0.000915,
+            "std_error": 4.57e-05
           },
           "CLDTOT": {
             "bias": 0.004,
-            "global_mean": 0.724,
+            "global_mean": 0.725,
             "sample_size": 20.0,
-            "std": 0.00268,
-            "std_error": 0.000134
+            "std": 0.00315,
+            "std_error": 0.000158
           },
           "FLNS": {
             "bias": -0.172,
-            "global_mean": 58.293,
+            "global_mean": 58.383,
             "sample_size": 20.0,
-            "std": 0.304,
-            "std_error": 0.015
+            "std": 0.269,
+            "std_error": 0.013
           },
           "FLNT": {
             "bias": -0.554,
-            "global_mean": 239.866,
+            "global_mean": 239.13,
             "sample_size": 20.0,
-            "std": 0.272,
-            "std_error": 0.014
+            "std": 0.244,
+            "std_error": 0.012
           },
           "FLNTC": {
             "bias": -0.33,
-            "global_mean": 262.833,
+            "global_mean": 262.165,
             "sample_size": 20.0,
-            "std": 0.285,
-            "std_error": 0.014
+            "std": 0.239,
+            "std_error": 0.012
           },
           "FSDS": {
             "bias": -0.723,
-            "global_mean": 191.813,
+            "global_mean": 191.634,
             "sample_size": 20.0,
-            "std": 0.473,
-            "std_error": 0.024
+            "std": 0.469,
+            "std_error": 0.023
           },
           "FSDSC": {
             "bias": -0.038,
-            "global_mean": 248.186,
+            "global_mean": 248.548,
             "sample_size": 20.0,
-            "std": 0.2,
-            "std_error": 0.01
+            "std": 0.189,
+            "std_error": 0.009
           },
           "FSNS": {
             "bias": -0.718,
-            "global_mean": 166.816,
+            "global_mean": 166.26,
             "sample_size": 20.0,
-            "std": 0.482,
-            "std_error": 0.024
+            "std": 0.462,
+            "std_error": 0.023
           },
           "FSNSC": {
             "bias": -0.087,
-            "global_mean": 217.422,
+            "global_mean": 217.295,
             "sample_size": 20.0,
-            "std": 0.181,
-            "std_error": 0.009
+            "std": 0.158,
+            "std_error": 0.008
           },
           "FSNT": {
             "bias": -0.711,
-            "global_mean": 239.929,
+            "global_mean": 239.175,
             "sample_size": 20.0,
-            "std": 0.44,
-            "std_error": 0.022
+            "std": 0.388,
+            "std_error": 0.019
           },
           "FSNTC": {
             "bias": -0.14,
-            "global_mean": 286.117,
+            "global_mean": 285.702,
             "sample_size": 20.0,
-            "std": 0.132,
+            "std": 0.142,
             "std_error": 0.007
           },
           "ICEFRAC": {
             "bias": 0.0006,
-            "global_mean": 0.0422,
+            "global_mean": 0.0456,
             "sample_size": 20.0,
-            "std": 0.000816,
-            "std_error": 4.08e-05
+            "std": 0.00103,
+            "std_error": 5.16e-05
           },
           "LANDFRAC": {
             "bias": 0.0,
@@ -24760,458 +23341,174 @@
           },
           "LHFLX": {
             "bias": -0.302,
-            "global_mean": 88.589,
-            "sample_size": 20.0,
-            "std": 0.367,
-            "std_error": 0.018
-          },
-          "LWCF": {
-            "bias": 0.224,
-            "global_mean": 22.967,
-            "sample_size": 20.0,
-            "std": 0.086,
-            "std_error": 0.004
-          },
-          "OCNFRAC": {
-            "bias": -0.001,
-            "global_mean": 0.665,
-            "sample_size": 20.0,
-            "std": 0.000816,
-            "std_error": 4.08e-05
-          },
-          "OMEGA500": {
-            "bias": -4e-07,
-            "global_mean": -6.51e-05,
-            "sample_size": 20.0,
-            "std": 2.44e-06,
-            "std_error": 1.22e-07
-          },
-          "PBLH": {
-            "bias": 1.929,
-            "global_mean": 737.374,
-            "sample_size": 20.0,
-            "std": 1.146,
-            "std_error": 0.057
-          },
-          "PRECC": {
-            "bias": 1e-10,
-            "global_mean": 1.75e-08,
-            "sample_size": 20.0,
-            "std": 8.31e-11,
-            "std_error": 4.15e-12
-          },
-          "PRECL": {
-            "bias": -1e-10,
-            "global_mean": 1.8e-08,
-            "sample_size": 20.0,
-            "std": 1.82e-10,
-            "std_error": 9.09e-12
-          },
-          "PRECSC": {
-            "bias": -1.2e-12,
-            "global_mean": 5.11e-11,
-            "sample_size": 20.0,
-            "std": 3.81e-12,
-            "std_error": 1.91e-13
-          },
-          "PRECSL": {
-            "bias": -2e-11,
-            "global_mean": 2.66e-09,
-            "sample_size": 20.0,
-            "std": 4.68e-11,
-            "std_error": 2.34e-12
-          },
-          "PRECT": {
-            "bias": -1e-10,
-            "global_mean": 3.54e-08,
-            "sample_size": 20.0,
-            "std": 1.51e-10,
-            "std_error": 7.53e-12
-          },
-          "PS": {
-            "bias": -2.506,
-            "global_mean": 98512.736,
-            "sample_size": 20.0,
-            "std": 2.429,
-            "std_error": 0.121
-          },
-          "PSL": {
-            "bias": -1.774,
-            "global_mean": 101100.05,
-            "sample_size": 20.0,
-            "std": 2.208,
-            "std_error": 0.11
-          },
-          "QFLX": {
-            "bias": -1e-07,
-            "global_mean": 3.54e-05,
-            "sample_size": 20.0,
-            "std": 1.47e-07,
-            "std_error": 7.33e-09
-          },
-          "RESTOM": {
-            "bias": -0.157,
-            "global_mean": 0.0633,
-            "sample_size": 20.0,
-            "std": 0.514,
-            "std_error": 0.0257
-          },
-          "SHFLX": {
-            "bias": -0.084,
-            "global_mean": 18.938,
-            "sample_size": 20.0,
-            "std": 0.06,
-            "std_error": 0.003
-          },
-          "SST": {
-            "bias": -0.105,
-            "global_mean": 292.192,
-            "sample_size": 20.0,
-            "std": 0.104,
-            "std_error": 0.005
-          },
-          "SWCF": {
-            "bias": -0.572,
-            "global_mean": -46.178,
-            "sample_size": 20.0,
-            "std": 0.368,
-            "std_error": 0.018
-          },
-          "TAUX": {
-            "bias": 0.00042,
-            "global_mean": -0.00562,
-            "sample_size": 20.0,
-            "std": 0.000691,
-            "std_error": 3.46e-05
-          },
-          "TAUY": {
-            "bias": 0.00017,
-            "global_mean": -0.00171,
-            "sample_size": 20.0,
-            "std": 0.000442,
-            "std_error": 2.21e-05
-          },
-          "TGCLDIWP": {
-            "bias": 0.0002,
-            "global_mean": 0.0139,
-            "sample_size": 20.0,
-            "std": 0.00014,
-            "std_error": 7.02e-06
-          },
-          "TGCLDLWP": {
-            "bias": 0.0001,
-            "global_mean": 0.0539,
-            "sample_size": 20.0,
-            "std": 0.000616,
-            "std_error": 3.08e-05
-          },
-          "TMQ": {
-            "bias": -0.257,
-            "global_mean": 22.826,
-            "sample_size": 20.0,
-            "std": 0.248,
-            "std_error": 0.012
-          },
-          "TREFHT": {
-            "bias": -0.13,
-            "global_mean": 286.557,
-            "sample_size": 20.0,
-            "std": 0.14,
-            "std_error": 0.007
-          },
-          "TS": {
-            "bias": -0.133,
-            "global_mean": 287.38,
-            "sample_size": 20.0,
-            "std": 0.14,
-            "std_error": 0.007
-          },
-          "U10": {
-            "bias": -0.014,
-            "global_mean": 6.709,
-            "sample_size": 20.0,
-            "std": 0.031,
-            "std_error": 0.002
-          }
-        },
-        "yrs_81_100": {
-          "AODVISdn": {
-            "global_mean": 0.129,
-            "sample_size": 20.0,
-            "std": 0.00174,
-            "std_error": 8.72e-05
-          },
-          "BURDENBC": {
-            "global_mean": 6.36e-08,
-            "sample_size": 20.0,
-            "std": 8.56e-10,
-            "std_error": 4.28e-11
-          },
-          "BURDENDUST": {
-            "global_mean": 3.48e-05,
-            "sample_size": 20.0,
-            "std": 1.8e-06,
-            "std_error": 8.99e-08
-          },
-          "BURDENPOM": {
-            "global_mean": 6.07e-07,
-            "sample_size": 20.0,
-            "std": 8.89e-09,
-            "std_error": 4.44e-10
-          },
-          "BURDENSEASALT": {
-            "global_mean": 2.03e-05,
-            "sample_size": 20.0,
-            "std": 2.3e-07,
-            "std_error": 1.15e-08
-          },
-          "BURDENSO4": {
-            "global_mean": 2.04e-06,
-            "sample_size": 20.0,
-            "std": 3.05e-08,
-            "std_error": 1.53e-09
-          },
-          "BURDENSOA": {
-            "global_mean": 1.04e-06,
-            "sample_size": 20.0,
-            "std": 2.74e-08,
-            "std_error": 1.37e-09
-          },
-          "CLDHGH": {
-            "global_mean": 0.467,
-            "sample_size": 20.0,
-            "std": 0.00351,
-            "std_error": 0.000175
-          },
-          "CLDLOW": {
-            "global_mean": 0.443,
-            "sample_size": 20.0,
-            "std": 0.00338,
-            "std_error": 0.000169
-          },
-          "CLDMED": {
-            "global_mean": 0.323,
-            "sample_size": 20.0,
-            "std": 0.000915,
-            "std_error": 4.57e-05
-          },
-          "CLDTOT": {
-            "global_mean": 0.725,
-            "sample_size": 20.0,
-            "std": 0.00315,
-            "std_error": 0.000158
-          },
-          "FLNS": {
-            "global_mean": 58.383,
-            "sample_size": 20.0,
-            "std": 0.269,
-            "std_error": 0.013
-          },
-          "FLNT": {
-            "global_mean": 239.13,
-            "sample_size": 20.0,
-            "std": 0.244,
-            "std_error": 0.012
-          },
-          "FLNTC": {
-            "global_mean": 262.165,
-            "sample_size": 20.0,
-            "std": 0.239,
-            "std_error": 0.012
-          },
-          "FSDS": {
-            "global_mean": 191.634,
-            "sample_size": 20.0,
-            "std": 0.469,
-            "std_error": 0.023
-          },
-          "FSDSC": {
-            "global_mean": 248.548,
-            "sample_size": 20.0,
-            "std": 0.189,
-            "std_error": 0.009
-          },
-          "FSNS": {
-            "global_mean": 166.26,
-            "sample_size": 20.0,
-            "std": 0.462,
-            "std_error": 0.023
-          },
-          "FSNSC": {
-            "global_mean": 217.295,
-            "sample_size": 20.0,
-            "std": 0.158,
-            "std_error": 0.008
-          },
-          "FSNT": {
-            "global_mean": 239.175,
-            "sample_size": 20.0,
-            "std": 0.388,
-            "std_error": 0.019
-          },
-          "FSNTC": {
-            "global_mean": 285.702,
-            "sample_size": 20.0,
-            "std": 0.142,
-            "std_error": 0.007
-          },
-          "ICEFRAC": {
-            "global_mean": 0.0456,
-            "sample_size": 20.0,
-            "std": 0.00103,
-            "std_error": 5.16e-05
-          },
-          "LANDFRAC": {
-            "global_mean": 0.292,
-            "sample_size": 20.0,
-            "std": 5.55e-17,
-            "std_error": 2.78e-18
-          },
-          "LHFLX": {
             "global_mean": 87.809,
             "sample_size": 20.0,
             "std": 0.311,
             "std_error": 0.016
           },
           "LWCF": {
+            "bias": 0.224,
             "global_mean": 23.035,
             "sample_size": 20.0,
             "std": 0.1,
             "std_error": 0.005
           },
           "OCNFRAC": {
+            "bias": -0.001,
             "global_mean": 0.662,
             "sample_size": 20.0,
             "std": 0.00103,
             "std_error": 5.16e-05
           },
           "OMEGA500": {
+            "bias": -4e-07,
             "global_mean": -6.53e-05,
             "sample_size": 20.0,
             "std": 2.15e-06,
             "std_error": 1.07e-07
           },
           "PBLH": {
+            "bias": 1.929,
             "global_mean": 736.604,
             "sample_size": 20.0,
             "std": 1.648,
             "std_error": 0.082
           },
           "PRECC": {
+            "bias": 1e-10,
             "global_mean": 1.73e-08,
             "sample_size": 20.0,
             "std": 8.59e-11,
             "std_error": 4.3e-12
           },
           "PRECL": {
+            "bias": -1e-10,
             "global_mean": 1.78e-08,
             "sample_size": 20.0,
             "std": 1.9e-10,
             "std_error": 9.48e-12
           },
           "PRECSC": {
+            "bias": -1.2e-12,
             "global_mean": 5.53e-11,
             "sample_size": 20.0,
             "std": 2.91e-12,
             "std_error": 1.46e-13
           },
           "PRECSL": {
+            "bias": -2e-11,
             "global_mean": 2.79e-09,
             "sample_size": 20.0,
             "std": 4.25e-11,
             "std_error": 2.12e-12
           },
           "PRECT": {
+            "bias": -1e-10,
             "global_mean": 3.51e-08,
             "sample_size": 20.0,
             "std": 1.28e-10,
             "std_error": 6.4e-12
           },
           "PS": {
+            "bias": -2.506,
             "global_mean": 98508.503,
             "sample_size": 20.0,
             "std": 2.158,
             "std_error": 0.108
           },
           "PSL": {
+            "bias": -1.774,
             "global_mean": 101097.213,
             "sample_size": 20.0,
             "std": 2.083,
             "std_error": 0.104
           },
           "QFLX": {
+            "bias": -1e-07,
             "global_mean": 3.51e-05,
             "sample_size": 20.0,
             "std": 1.24e-07,
             "std_error": 6.22e-09
           },
           "RESTOM": {
+            "bias": -0.157,
             "global_mean": 0.0451,
             "sample_size": 20.0,
             "std": 0.454,
             "std_error": 0.0227
           },
           "SHFLX": {
+            "bias": -0.084,
             "global_mean": 19.049,
             "sample_size": 20.0,
             "std": 0.078,
             "std_error": 0.004
           },
           "SST": {
+            "bias": -0.105,
             "global_mean": 292.022,
             "sample_size": 20.0,
             "std": 0.076,
             "std_error": 0.004
           },
           "SWCF": {
+            "bias": -0.572,
             "global_mean": -46.517,
             "sample_size": 20.0,
             "std": 0.34,
             "std_error": 0.017
           },
           "TAUX": {
+            "bias": 0.00042,
             "global_mean": -0.00621,
             "sample_size": 20.0,
             "std": 0.000637,
             "std_error": 3.18e-05
           },
           "TAUY": {
+            "bias": 0.00017,
             "global_mean": -0.0021,
             "sample_size": 20.0,
             "std": 0.000505,
             "std_error": 2.53e-05
           },
           "TGCLDIWP": {
+            "bias": 0.0002,
             "global_mean": 0.014,
             "sample_size": 20.0,
             "std": 0.00013,
             "std_error": 6.49e-06
           },
           "TGCLDLWP": {
+            "bias": 0.0001,
             "global_mean": 0.0543,
             "sample_size": 20.0,
             "std": 0.000496,
             "std_error": 2.48e-05
           },
           "TMQ": {
+            "bias": -0.257,
             "global_mean": 22.393,
             "sample_size": 20.0,
             "std": 0.22,
             "std_error": 0.011
           },
           "TREFHT": {
+            "bias": -0.13,
             "global_mean": 286.204,
             "sample_size": 20.0,
             "std": 0.125,
             "std_error": 0.006
           },
           "TS": {
+            "bias": -0.133,
             "global_mean": 287.029,
             "sample_size": 20.0,
             "std": 0.125,
             "std_error": 0.006
           },
           "U10": {
+            "bias": -0.014,
             "global_mean": 6.751,
             "sample_size": 20.0,
             "std": 0.025,
@@ -25244,6 +23541,7 @@
       "issue_number": 235,
       "issue_state": "open",
       "issue_created_at": "2025-12-16T19:16:13Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": false
     },
@@ -25287,8 +23585,9 @@
       "issue_number": 239,
       "issue_state": "open",
       "issue_created_at": "2025-12-19T00:12:28Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODVISdn": {
             "bias": 0.001,
             "global_mean": 0.126,
@@ -25662,8 +23961,9 @@
       "issue_number": 238,
       "issue_state": "open",
       "issue_created_at": "2025-12-17T04:23:18Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODVISdn": {
             "bias": 0.002,
             "global_mean": 0.128,
@@ -26037,6 +24337,7 @@
       "issue_number": 242,
       "issue_state": "open",
       "issue_created_at": "2025-12-23T22:04:40Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -26063,339 +24364,9 @@
       "issue_number": 241,
       "issue_state": "open",
       "issue_created_at": "2025-12-21T20:26:19Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
-          "AODVISdn": {
-            "bias": 0.001,
-            "global_mean": 0.127,
-            "sample_size": 20.0,
-            "std": 0.0017,
-            "std_error": 8.48e-05
-          },
-          "BURDENBC": {
-            "bias": 8e-10,
-            "global_mean": 6.39e-08,
-            "sample_size": 20.0,
-            "std": 9.31e-10,
-            "std_error": 4.66e-11
-          },
-          "BURDENDUST": {
-            "bias": 7.1e-06,
-            "global_mean": 3.52e-05,
-            "sample_size": 20.0,
-            "std": 1.87e-06,
-            "std_error": 9.34e-08
-          },
-          "BURDENPOM": {
-            "bias": 7e-09,
-            "global_mean": 6.07e-07,
-            "sample_size": 20.0,
-            "std": 8.05e-09,
-            "std_error": 4.03e-10
-          },
-          "BURDENSEASALT": {
-            "bias": -4e-07,
-            "global_mean": 1.99e-05,
-            "sample_size": 20.0,
-            "std": 2.05e-07,
-            "std_error": 1.02e-08
-          },
-          "BURDENSO4": {
-            "bias": 3e-08,
-            "global_mean": 2.08e-06,
-            "sample_size": 20.0,
-            "std": 3.22e-08,
-            "std_error": 1.61e-09
-          },
-          "BURDENSOA": {
-            "bias": -2e-08,
-            "global_mean": 1.05e-06,
-            "sample_size": 20.0,
-            "std": 5.14e-08,
-            "std_error": 2.57e-09
-          },
-          "CLDHGH": {
-            "bias": 0.009,
-            "global_mean": 0.477,
-            "sample_size": 20.0,
-            "std": 0.00256,
-            "std_error": 0.000128
-          },
-          "CLDLOW": {
-            "bias": 0.007,
-            "global_mean": 0.441,
-            "sample_size": 20.0,
-            "std": 0.00262,
-            "std_error": 0.000131
-          },
-          "CLDMED": {
-            "bias": -0.002,
-            "global_mean": 0.319,
-            "sample_size": 20.0,
-            "std": 0.00105,
-            "std_error": 5.26e-05
-          },
-          "CLDTOT": {
-            "bias": 0.01,
-            "global_mean": 0.73,
-            "sample_size": 20.0,
-            "std": 0.00233,
-            "std_error": 0.000116
-          },
-          "FLNS": {
-            "bias": -0.474,
-            "global_mean": 57.991,
-            "sample_size": 20.0,
-            "std": 0.236,
-            "std_error": 0.012
-          },
-          "FLNT": {
-            "bias": -1.245,
-            "global_mean": 239.175,
-            "sample_size": 20.0,
-            "std": 0.269,
-            "std_error": 0.013
-          },
-          "FLNTC": {
-            "bias": -0.069,
-            "global_mean": 263.094,
-            "sample_size": 20.0,
-            "std": 0.201,
-            "std_error": 0.01
-          },
-          "FSDS": {
-            "bias": -1.743,
-            "global_mean": 190.793,
-            "sample_size": 20.0,
-            "std": 0.343,
-            "std_error": 0.017
-          },
-          "FSDSC": {
-            "bias": -0.09,
-            "global_mean": 248.134,
-            "sample_size": 20.0,
-            "std": 0.128,
-            "std_error": 0.006
-          },
-          "FSNS": {
-            "bias": -1.661,
-            "global_mean": 165.873,
-            "sample_size": 20.0,
-            "std": 0.328,
-            "std_error": 0.016
-          },
-          "FSNSC": {
-            "bias": -0.114,
-            "global_mean": 217.395,
-            "sample_size": 20.0,
-            "std": 0.125,
-            "std_error": 0.006
-          },
-          "FSNT": {
-            "bias": -1.457,
-            "global_mean": 239.183,
-            "sample_size": 20.0,
-            "std": 0.279,
-            "std_error": 0.014
-          },
-          "FSNTC": {
-            "bias": -0.025,
-            "global_mean": 286.232,
-            "sample_size": 20.0,
-            "std": 0.109,
-            "std_error": 0.005
-          },
-          "ICEFRAC": {
-            "bias": 0.0004,
-            "global_mean": 0.042,
-            "sample_size": 20.0,
-            "std": 0.000597,
-            "std_error": 2.99e-05
-          },
-          "LANDFRAC": {
-            "bias": 0.0,
-            "global_mean": 0.292,
-            "sample_size": 20.0,
-            "std": 5.55e-17,
-            "std_error": 2.78e-18
-          },
-          "LHFLX": {
-            "bias": -1.773,
-            "global_mean": 87.118,
-            "sample_size": 20.0,
-            "std": 0.331,
-            "std_error": 0.017
-          },
-          "LWCF": {
-            "bias": 1.176,
-            "global_mean": 23.919,
-            "sample_size": 20.0,
-            "std": 0.114,
-            "std_error": 0.006
-          },
-          "OCNFRAC": {
-            "bias": 0.0,
-            "global_mean": 0.666,
-            "sample_size": 20.0,
-            "std": 0.000597,
-            "std_error": 2.99e-05
-          },
-          "OMEGA500": {
-            "bias": 1.1e-06,
-            "global_mean": -6.36e-05,
-            "sample_size": 20.0,
-            "std": 3.11e-06,
-            "std_error": 1.56e-07
-          },
-          "PBLH": {
-            "bias": -11.401,
-            "global_mean": 724.044,
-            "sample_size": 20.0,
-            "std": 1.033,
-            "std_error": 0.052
-          },
-          "PRECC": {
-            "bias": -9e-10,
-            "global_mean": 1.65e-08,
-            "sample_size": 20.0,
-            "std": 6.48e-11,
-            "std_error": 3.24e-12
-          },
-          "PRECL": {
-            "bias": 2e-10,
-            "global_mean": 1.83e-08,
-            "sample_size": 20.0,
-            "std": 1.54e-10,
-            "std_error": 7.71e-12
-          },
-          "PRECSC": {
-            "bias": 1e-13,
-            "global_mean": 5.24e-11,
-            "sample_size": 20.0,
-            "std": 3.08e-12,
-            "std_error": 1.54e-13
-          },
-          "PRECSL": {
-            "bias": 0.0,
-            "global_mean": 2.68e-09,
-            "sample_size": 20.0,
-            "std": 6.09e-11,
-            "std_error": 3.04e-12
-          },
-          "PRECT": {
-            "bias": -7e-10,
-            "global_mean": 3.48e-08,
-            "sample_size": 20.0,
-            "std": 1.37e-10,
-            "std_error": 6.83e-12
-          },
-          "PS": {
-            "bias": 0.133,
-            "global_mean": 98515.375,
-            "sample_size": 20.0,
-            "std": 1.786,
-            "std_error": 0.089
-          },
-          "PSL": {
-            "bias": 0.965,
-            "global_mean": 101102.789,
-            "sample_size": 20.0,
-            "std": 2.071,
-            "std_error": 0.104
-          },
-          "QFLX": {
-            "bias": -7e-07,
-            "global_mean": 3.48e-05,
-            "sample_size": 20.0,
-            "std": 1.33e-07,
-            "std_error": 6.63e-09
-          },
-          "RESTOM": {
-            "bias": -0.213,
-            "global_mean": 0.00745,
-            "sample_size": 20.0,
-            "std": 0.407,
-            "std_error": 0.0203
-          },
-          "SHFLX": {
-            "bias": 0.798,
-            "global_mean": 19.82,
-            "sample_size": 20.0,
-            "std": 0.073,
-            "std_error": 0.004
-          },
-          "SST": {
-            "bias": 0.005,
-            "global_mean": 292.302,
-            "sample_size": 20.0,
-            "std": 0.064,
-            "std_error": 0.003
-          },
-          "SWCF": {
-            "bias": -1.432,
-            "global_mean": -47.038,
-            "sample_size": 20.0,
-            "std": 0.286,
-            "std_error": 0.014
-          },
-          "TAUX": {
-            "bias": -0.00018,
-            "global_mean": -0.00622,
-            "sample_size": 20.0,
-            "std": 0.000764,
-            "std_error": 3.82e-05
-          },
-          "TAUY": {
-            "bias": 2e-05,
-            "global_mean": -0.00186,
-            "sample_size": 20.0,
-            "std": 0.000559,
-            "std_error": 2.8e-05
-          },
-          "TGCLDIWP": {
-            "bias": 0.0007,
-            "global_mean": 0.0144,
-            "sample_size": 20.0,
-            "std": 0.000186,
-            "std_error": 9.31e-06
-          },
-          "TGCLDLWP": {
-            "bias": 0.0015,
-            "global_mean": 0.0553,
-            "sample_size": 20.0,
-            "std": 0.000551,
-            "std_error": 2.75e-05
-          },
-          "TMQ": {
-            "bias": 0.009,
-            "global_mean": 23.092,
-            "sample_size": 20.0,
-            "std": 0.182,
-            "std_error": 0.009
-          },
-          "TREFHT": {
-            "bias": -0.053,
-            "global_mean": 286.634,
-            "sample_size": 20.0,
-            "std": 0.087,
-            "std_error": 0.004
-          },
-          "TS": {
-            "bias": 0.0,
-            "global_mean": 287.513,
-            "sample_size": 20.0,
-            "std": 0.087,
-            "std_error": 0.004
-          },
-          "U10": {
-            "bias": -0.022,
-            "global_mean": 6.701,
-            "sample_size": 20.0,
-            "std": 0.02,
-            "std_error": 0.001
-          }
-        },
-        "yrs_81_100": {
+        "ANN": {
           "AODVISdn": {
             "bias": -0.003,
             "global_mean": 0.126,
@@ -26769,8 +24740,9 @@
       "issue_number": 240,
       "issue_state": "open",
       "issue_created_at": "2025-12-19T00:22:41Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODVISdn": {
             "bias": 0.0,
             "global_mean": 0.126,
@@ -27144,6 +25116,7 @@
       "issue_number": 244,
       "issue_state": "open",
       "issue_created_at": "2025-12-23T22:50:56Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -27187,6 +25160,7 @@
       "issue_number": 243,
       "issue_state": "open",
       "issue_created_at": "2025-12-23T22:27:50Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -27230,6 +25204,7 @@
       "issue_number": 245,
       "issue_state": "open",
       "issue_created_at": "2025-12-23T23:14:15Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": false
     },
@@ -27257,8 +25232,9 @@
       "issue_number": 248,
       "issue_state": "open",
       "issue_created_at": "2025-12-30T21:00:03Z",
+      "year_range": "yrs_21_40",
       "statistics": {
-        "yrs_21_40": {
+        "ANN": {
           "AODVISdn": {
             "bias": -0.0513,
             "global_mean": 0.126,
@@ -27616,8 +25592,9 @@
       "issue_number": 247,
       "issue_state": "open",
       "issue_created_at": "2025-12-30T20:57:34Z",
+      "year_range": "yrs_21_40",
       "statistics": {
-        "yrs_21_40": {
+        "ANN": {
           "AODVISdn": {
             "bias": -0.0493,
             "global_mean": 0.0767,
@@ -27991,6 +25968,7 @@
       "issue_number": 246,
       "issue_state": "open",
       "issue_created_at": "2025-12-27T20:55:03Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": false
     },
@@ -28021,6 +25999,7 @@
       "issue_number": 251,
       "issue_state": "open",
       "issue_created_at": "2026-01-05T23:07:55Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -28051,6 +26030,7 @@
       "issue_number": 250,
       "issue_state": "open",
       "issue_created_at": "2026-01-05T23:05:35Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -28094,8 +26074,9 @@
       "issue_number": 249,
       "issue_state": "open",
       "issue_created_at": "2026-01-01T22:35:35Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODVISdn": {
             "bias": -0.008,
             "global_mean": 0.13,
@@ -28454,6 +26435,7 @@
       "issue_number": 255,
       "issue_state": "open",
       "issue_created_at": "2026-01-12T19:14:44Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -28484,6 +26466,7 @@
       "issue_number": 252,
       "issue_state": "open",
       "issue_created_at": "2026-01-05T23:11:35Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -28527,6 +26510,7 @@
       "issue_number": 257,
       "issue_state": "open",
       "issue_created_at": "2026-01-12T20:46:56Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -28570,6 +26554,7 @@
       "issue_number": 256,
       "issue_state": "open",
       "issue_created_at": "2026-01-12T20:32:01Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -28613,6 +26598,7 @@
       "issue_number": 258,
       "issue_state": "open",
       "issue_created_at": "2026-01-12T20:50:14Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -28656,6 +26642,7 @@
       "issue_number": 261,
       "issue_state": "open",
       "issue_created_at": "2026-01-16T16:17:56Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -28699,6 +26686,7 @@
       "issue_number": 260,
       "issue_state": "open",
       "issue_created_at": "2026-01-16T00:42:09Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -28742,8 +26730,9 @@
       "issue_number": 259,
       "issue_state": "open",
       "issue_created_at": "2026-01-12T22:39:43Z",
+      "year_range": "yrs_2_20",
       "statistics": {
-        "yrs_2_20": {
+        "ANN": {
           "AODVISdn": {
             "bias": 0.0,
             "global_mean": 0.122,
@@ -29117,6 +27106,7 @@
       "issue_number": 263,
       "issue_state": "open",
       "issue_created_at": "2026-01-19T12:17:00Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -29161,6 +27151,7 @@
       "issue_number": 262,
       "issue_state": "open",
       "issue_created_at": "2026-01-16T16:19:07Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -29204,6 +27195,7 @@
       "issue_number": 266,
       "issue_state": "open",
       "issue_created_at": "2026-01-21T00:21:50Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -29247,6 +27239,7 @@
       "issue_number": 265,
       "issue_state": "open",
       "issue_created_at": "2026-01-20T23:19:29Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -29290,6 +27283,7 @@
       "issue_number": 264,
       "issue_state": "open",
       "issue_created_at": "2026-01-20T16:58:25Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -29333,6 +27327,7 @@
       "issue_number": 268,
       "issue_state": "open",
       "issue_created_at": "2026-01-21T03:11:56Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -29376,6 +27371,7 @@
       "issue_number": 267,
       "issue_state": "open",
       "issue_created_at": "2026-01-21T00:40:40Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -29419,6 +27415,7 @@
       "issue_number": 269,
       "issue_state": "open",
       "issue_created_at": "2026-01-21T03:17:00Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -29462,8 +27459,9 @@
       "issue_number": 273,
       "issue_state": "open",
       "issue_created_at": "2026-01-23T21:01:09Z",
+      "year_range": "yrs_2_20",
       "statistics": {
-        "yrs_2_20": {
+        "ANN": {
           "AODVISdn": {
             "bias": 0.002,
             "global_mean": 0.123,
@@ -29818,6 +27816,7 @@
       "issue_number": 272,
       "issue_state": "closed",
       "issue_created_at": "2026-01-23T20:26:44Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": false
     },
@@ -29861,6 +27860,7 @@
       "issue_number": 270,
       "issue_state": "open",
       "issue_created_at": "2026-01-21T03:18:20Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -29904,8 +27904,9 @@
       "issue_number": 274,
       "issue_state": "open",
       "issue_created_at": "2026-01-23T21:29:50Z",
+      "year_range": "yrs_2_20",
       "statistics": {
-        "yrs_2_20": {
+        "ANN": {
           "AODVISdn": {
             "bias": 0.002,
             "global_mean": 0.121,
@@ -30264,6 +28265,7 @@
       "issue_number": 276,
       "issue_state": "open",
       "issue_created_at": "2026-01-23T21:43:53Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -30290,8 +28292,9 @@
       "issue_number": 275,
       "issue_state": "open",
       "issue_created_at": "2026-01-23T21:37:03Z",
+      "year_range": "yrs_2_20",
       "statistics": {
-        "yrs_2_20": {
+        "ANN": {
           "AODVISdn": {
             "bias": 0.007,
             "global_mean": 0.129,
@@ -30666,6 +28669,7 @@
       "issue_number": 277,
       "issue_state": "open",
       "issue_created_at": "2026-01-23T22:07:42Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -30697,6 +28701,7 @@
       "issue_number": 280,
       "issue_state": "open",
       "issue_created_at": "2026-01-28T22:06:44Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -30741,8 +28746,9 @@
       "issue_number": 279,
       "issue_state": "open",
       "issue_created_at": "2026-01-28T18:15:46Z",
+      "year_range": "yrs_2_20",
       "statistics": {
-        "yrs_2_20": {
+        "ANN": {
           "AODVISdn": {
             "bias": -0.006,
             "global_mean": 0.123,
@@ -31115,6 +29121,7 @@
       "issue_number": 278,
       "issue_state": "open",
       "issue_created_at": "2026-01-23T22:25:45Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -31159,6 +29166,7 @@
       "issue_number": 284,
       "issue_state": "open",
       "issue_created_at": "2026-02-01T19:16:15Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -31202,8 +29210,9 @@
       "issue_number": 283,
       "issue_state": "open",
       "issue_created_at": "2026-01-31T04:18:39Z",
+      "year_range": "yrs_2_20",
       "statistics": {
-        "yrs_2_20": {
+        "ANN": {
           "AODVISdn": {
             "bias": 0.007,
             "global_mean": 0.13,
@@ -31577,8 +29586,9 @@
       "issue_number": 282,
       "issue_state": "open",
       "issue_created_at": "2026-01-31T00:17:04Z",
+      "year_range": "yrs_2_20",
       "statistics": {
-        "yrs_2_20": {
+        "ANN": {
           "AODVISdn": {
             "bias": 0.012,
             "global_mean": 0.135,
@@ -31952,8 +29962,9 @@
       "issue_number": 281,
       "issue_state": "open",
       "issue_created_at": "2026-01-31T00:14:27Z",
+      "year_range": "yrs_2_20",
       "statistics": {
-        "yrs_2_20": {
+        "ANN": {
           "AODVISdn": {
             "bias": 0.002,
             "global_mean": 0.125,
@@ -32328,6 +30339,7 @@
       "issue_number": 286,
       "issue_state": "open",
       "issue_created_at": "2026-02-04T20:26:45Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -32371,8 +30383,9 @@
       "issue_number": 285,
       "issue_state": "open",
       "issue_created_at": "2026-02-04T02:50:17Z",
+      "year_range": "yrs_2_20",
       "statistics": {
-        "yrs_2_20": {
+        "ANN": {
           "AODVISdn": {
             "bias": 0.001,
             "global_mean": 0.124,
@@ -32747,6 +30760,7 @@
       "issue_number": 288,
       "issue_state": "open",
       "issue_created_at": "2026-02-04T20:44:43Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -32791,6 +30805,7 @@
       "issue_number": 287,
       "issue_state": "open",
       "issue_created_at": "2026-02-04T20:44:36Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -32835,6 +30850,7 @@
       "issue_number": 292,
       "issue_state": "open",
       "issue_created_at": "2026-02-12T22:49:03Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -32878,8 +30894,9 @@
       "issue_number": 290,
       "issue_state": "open",
       "issue_created_at": "2026-02-06T22:46:56Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODVISdn": {
             "bias": -0.004,
             "global_mean": 0.13,
@@ -33253,8 +31270,9 @@
       "issue_number": 289,
       "issue_state": "open",
       "issue_created_at": "2026-02-06T22:37:31Z",
+      "year_range": "yrs_2_21",
       "statistics": {
-        "yrs_2_21": {
+        "ANN": {
           "AODVISdn": {
             "bias": 0.0,
             "global_mean": 0.13,
@@ -33629,6 +31647,7 @@
       "issue_number": 293,
       "issue_state": "open",
       "issue_created_at": "2026-02-12T22:53:47Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -33672,6 +31691,7 @@
       "issue_number": 294,
       "issue_state": "open",
       "issue_created_at": "2026-02-13T22:00:57Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -33715,6 +31735,7 @@
       "issue_number": 296,
       "issue_state": "open",
       "issue_created_at": "2026-02-19T21:11:47Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -33746,6 +31767,7 @@
       "issue_number": 295,
       "issue_state": "open",
       "issue_created_at": "2026-02-16T21:45:02Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -33789,6 +31811,7 @@
       "issue_number": 298,
       "issue_state": "open",
       "issue_created_at": "2026-02-19T22:52:52Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -33832,6 +31855,7 @@
       "issue_number": 297,
       "issue_state": "open",
       "issue_created_at": "2026-02-19T22:16:22Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": true
     },
@@ -33862,6 +31886,7 @@
       "issue_number": 295,
       "issue_state": "open",
       "issue_created_at": "2026-02-16T21:45:02Z",
+      "year_range": null,
       "statistics": {},
       "has_namelist": false
     }
@@ -33869,7 +31894,7 @@
   "metadata": {
     "total_cases": 261,
     "cases_with_diagnostics": 140,
-    "last_updated": "2026-02-20T12:04:32.868191",
+    "last_updated": "2026-02-20T13:24:39.505698",
     "diagnostic_coverage_percent": 53.6
   }
 }

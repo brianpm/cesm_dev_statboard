@@ -225,6 +225,13 @@ class CESMStatusBoard {
         diagCell.appendChild(diagBadge);
         row.appendChild(diagCell);
 
+        // Year range (simulation averaging interval)
+        const yearRangeCell = document.createElement('td');
+        yearRangeCell.textContent = caseData.year_range || '-';
+        yearRangeCell.style.fontFamily = 'monospace';
+        yearRangeCell.style.fontSize = '0.85em';
+        row.appendChild(yearRangeCell);
+
         // Purpose (truncated)
         const purposeCell = document.createElement('td');
         const purpose = caseData.purpose || '-';
@@ -285,12 +292,14 @@ class CESMStatusBoard {
 
         // Add statistics if available
         if (caseData.statistics && Object.keys(caseData.statistics).length > 0) {
-            html += '<div class="detail-section"><h3>Statistics Summary</h3>';
-            for (const [period, variables] of Object.entries(caseData.statistics)) {
-                const varCount = Object.keys(variables).length;
-                html += `<p><strong>${period}:</strong> ${varCount} variables</p>`;
+            const periods = Object.keys(caseData.statistics);
+            const varCount = Object.keys(caseData.statistics[periods[0]] || {}).length;
+            html += `<div class="detail-section"><h3>Statistics Summary</h3>`;
+            html += `<p><strong>Variables:</strong> ${varCount}</p>`;
+            if (caseData.year_range) {
+                html += `<p><strong>Averaging Interval:</strong> ${caseData.year_range}</p>`;
             }
-            html += '</div>';
+            html += `</div>`;
         }
 
         // Add contacts if available
