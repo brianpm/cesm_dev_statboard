@@ -331,17 +331,27 @@ git commit -m "Add statistics visualization"
 git push origin main
 ```
 
+## Implemented Enhancements (post-initial release)
+
+1. ✅ **Statistics Period Normalization** (Feb 20, 2026) — ADF `yrs_X_Y` directories
+   now correctly stored as `temporal_period = 'ANN'`; `diagnostics.year_range` column
+   added to surface the averaging interval in the UI
+2. ✅ **Year Range Column** (Feb 20, 2026) — Cases table and case detail modal now show
+   `year_range` (e.g. `yrs_2_21`)
+3. ✅ **Statistics Case Selector** (Feb 20, 2026) — Scrollable, filterable checkbox
+   list of all cases with diagnostics; Select All / Clear buttons; both table and chart
+   views respect the selection
+4. ✅ **Safari CSS Fix** (Feb 20, 2026) — Case selector rows use `div` + separate
+   `label` structure to avoid Safari `display:flex` on `<label>` collapse bug
+
 ## Future Enhancements
 
-The implementation has placeholders for:
-
-1. **Case Filtering** - Filter statistics by specific cases
-2. **Line Charts** - Time series visualization (chartType: 'line')
-3. **Export** - Download table data as CSV
-4. **Comparison Mode** - Compare specific cases side-by-side
-5. **Statistical Tests** - Significance testing between cases
-6. **Variable Metadata** - Show units and descriptions
-7. **Multi-Variable Charts** - Compare different variables
+1. **Line Charts** - Time series visualization (chartType: 'line')
+2. **Export** - Download table data as CSV
+3. **Comparison Mode** - Compare specific cases side-by-side in Statistics tab
+4. **Statistical Tests** - Significance testing between cases
+5. **Variable Metadata** - Show units and descriptions
+6. **Multi-Variable Charts** - Compare different variables
 
 These can be added incrementally without breaking existing functionality.
 

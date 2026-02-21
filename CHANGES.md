@@ -1,5 +1,89 @@
 # Changes
 
+## February 20, 2026 - Statistics Case Selector + Safari CSS Fix
+
+### Feature
+The Statistics tab now includes a scrollable, filterable case selector (like the
+Namelist Diff tab). All cases with diagnostics are listed — users can filter by
+name, select/deselect individual cases, select all, or clear the selection. Both
+table and chart views respect the selection.
+
+### Bug Fix
+Case selector rows were invisible in Safari due to Safari collapsing `display:flex`
+on `<label>` elements. Fixed by using a `<div class="stats-case-row">` as the
+flex container with a separate `<label>` (linked via `htmlFor`) for checkbox toggle.
+`CSS.escape()` is used to generate safe `id` attributes from arbitrary case names.
+
+### Changes
+
+#### `web/index.html`
+- Added `<section class="stats-case-selector">` with filter input,
+  "Select All" / "Clear" buttons, selected-count label, and scrollable case list
+  (`<div id="statsCaseList">`)
+
+#### `web/js/statistics.js`
+- `StatisticsManager` constructor: replaced `state.filterCases` with
+  `this.selectedCases = new Set()`
+- `init()`: calls `initCaseSelector()` before `renderControls()`
+- Added `initCaseSelector()`: loads all cases with diagnostics into the selector,
+  wires search/select-all/clear events
+- Added `_renderStatsCaseRows(cases)`: builds `div.stats-case-row` + checkbox +
+  `label.stats-case-label` DOM nodes (Safari-compatible)
+- Added `_filterStatsCaseList(query)`: shows/hides rows matching the filter string
+- Added `_updateCaseSelectorCount()`: updates "N of M selected" label
+- `aggregateData(includeEmpty?)`: filters results by `selectedCases`; `includeEmpty`
+  flag controls whether rows with no data appear (true = table view, false = chart)
+- `updateView()`: passes `includeEmpty = (viewMode === 'table')` to `aggregateData()`
+
+#### `web/css/styles.css`
+- Added `.stats-case-selector`, `.stats-case-selector-header` layout rules
+- Added `#statsCaseList` with `min-height: 60px; max-height: 260px`
+- Added `.stats-case-row`, `.stats-case-row:hover`, `.stats-case-label` (Safari-compatible)
+- Added `.btn-sm` padding/font-size
+
+---
+
+## February 20, 2026 - Statistics Period Normalization + Year Range Column
+
+### Problem
+`infer_temporal_period()` was returning `'yrs_2_21'` (the directory name) instead
+of `'ANN'` for ADF annual-mean statistics. This caused the Statistics tab to display
+spurious `yrs_X_Y` entries under "extra periods" and no data under the standard ANN
+checkbox.
+
+### Changes
+
+#### `src/parsers/adf_parser.py`
+- `infer_temporal_period()`: changed `yrs_X_Y` path match to `return 'ANN'` (was
+  returning the `yrs_{...}` string); updated docstring
+- Added `extract_year_range(path)` → returns `'yrs_{start}_{end}'` string for display
+
+#### `src/collectors/web_collector.py`
+- `_infer_period_from_url()`: both `yrs_(\d+)_(\d+)` and `_(\d+)_(\d+)_vs_` patterns
+  now `return 'ANN'`; updated docstring
+
+#### `src/storage/database.py`
+- `migrate_schema()` migrations: added `('diagnostics', 'year_range', 'TEXT')`
+- Added `migrate_statistics_periods()`: one-time migration that
+  (1) backfills `diagnostics.year_range` from existing `statistics.temporal_period`
+  rows that match `yrs_%`, and (2) normalizes all `yrs_X_Y` temporal periods to `'ANN'`
+- `get_all_cases()` query: LEFT JOINs `diagnostics` to include `year_range` in results
+
+#### `scripts/collect_data.py` / `scripts/update_data.py`
+- Both call `db.migrate_statistics_periods()` at startup (after `migrate_schema()`)
+- After `bulk_insert_statistics`, extract and persist `year_range` to
+  `diagnostics.year_range` via `adf_parser.extract_year_range()`
+
+#### `web/index.html`
+- Cases table: added `<th>Year Range</th>` column header (between Diagnostics and Purpose)
+
+#### `web/js/main.js`
+- `createTableRow()`: added year_range cell (monospace, 0.85em) after diagnostics cell
+- `showCaseDetail()`: Statistics Summary section now shows variable count and
+  `caseData.year_range` as "Averaging Interval" instead of period-keyed data
+
+---
+
 ## February 17, 2026 - Web-Hosted Diagnostics Fallback
 
 ### Feature
@@ -416,8 +500,8 @@ Not implemented but ready for future work:
 
 1. **Chart Type:** Only bar charts implemented (line charts planned)
 2. **Export:** No CSV/PNG export yet (planned)
-3. **Filtering:** No case filtering in Statistics tab yet
-4. **Sorting:** Table columns not sortable yet
+3. ~~**Filtering:** No case filtering in Statistics tab yet~~ ✅ Implemented Feb 20, 2026
+4. **Sorting:** Statistics table columns not sortable yet
 5. **Comparison:** No side-by-side case comparison in Statistics yet
 
 These are all marked as future enhancements and don't block current functionality.
