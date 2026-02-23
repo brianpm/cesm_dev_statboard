@@ -1,183 +1,385 @@
 {
   "cases": [
     {
-      "id": 2,
-      "case_name": "b.e30_alpha08b.B1850C_MTso.ne30_t232_wgx3.308",
+      "id": 6,
+      "case_name": "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.307",
       "compset": null,
-      "resolution": "e30_alpha08b",
+      "resolution": null,
       "experiment_id": null,
-      "case_number": "308",
-      "issue_id": 2,
-      "purpose": "MTso equivalent of 308\n___",
-      "description": "Same as 308 (#290) but using MT compset + \n- add to user_nl_cam\n```",
+      "case_number": null,
+      "issue_id": null,
+      "purpose": null,
+      "description": null,
       "case_directory": null,
-      "diagnostics_directory": null,
-      "has_diagnostics": 0,
-      "contacts": [
-        "dabail10",
-        "gustavo-marques",
-        "cecilehannay",
-        "slevis-lmwg",
-        "gunterl",
-        "iangrooms",
-        "tilmes",
-        "mbramberger",
-        "wwieder",
-        "olyson",
-        "klindsay28",
-        "dlawrenncar",
-        "duvivier",
-        "fobryan3",
-        "adamrher",
-        "JulioTBacmeister",
-        "PeterHjortLauritzen",
-        "swrneale"
-      ],
-      "diagnostics_url": null,
-      "created_at": "2026-02-17 19:40:41",
-      "updated_at": "2026-02-23 19:26:35",
-      "atm_in_path": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.308/CaseDocs/atm_in",
-      "readme_create_newcase": null,
-      "issue_number": 294,
-      "issue_state": "open",
-      "issue_created_at": "2026-02-13T22:00:57Z",
-      "year_range": null,
-      "statistics": {},
-      "has_namelist": true
-    },
-    {
-      "id": 3,
-      "case_name": "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.310",
-      "compset": null,
-      "resolution": "e30_alpha07g",
-      "experiment_id": null,
-      "case_number": "310",
-      "issue_id": 3,
-      "purpose": "Check the effect of reducing the radius of the liquid and frozen runoff spreading on the strength of the ACC (as in 309 #292) in combination with enforcing KHTR_MIN = 50.0 m2/s throughout the entire water column.\n___",
-      "description": "Same as 309 (#292) except",
-      "case_directory": null,
-      "diagnostics_directory": null,
-      "has_diagnostics": 0,
-      "contacts": [
-        "gustavo-marques",
-        "tilmes",
-        "dmleung",
-        "mbramberger",
-        "olyson",
-        "dlawrenncar",
-        "duvivier",
-        "fobryan3",
-        "cecilehannay",
-        "gunterl",
-        "klindsay28",
-        "PeterHjortLauritzen",
-        "dabail10",
-        "iangrooms",
-        "wwieder",
-        "slevis-lmwg",
-        "adamrher",
-        "JulioTBacmeister",
-        "swrneale"
-      ],
+      "diagnostics_directory": "/glade/derecho/scratch/hannay/ADF/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.307",
+      "has_diagnostics": 1,
+      "contacts": null,
       "diagnostics_url": null,
       "created_at": "2026-02-17 19:40:42",
-      "updated_at": "2026-02-23 19:26:35",
-      "atm_in_path": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.310/CaseDocs/atm_in",
+      "updated_at": "2026-02-23 19:29:28",
+      "atm_in_path": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.302/CaseDocs/atm_in",
       "readme_create_newcase": null,
-      "issue_number": 293,
-      "issue_state": "open",
-      "issue_created_at": "2026-02-12T22:53:47Z",
-      "year_range": null,
-      "statistics": {},
-      "has_namelist": true
-    },
-    {
-      "id": 4,
-      "case_name": "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.309",
-      "compset": null,
-      "resolution": "e30_alpha07g",
-      "experiment_id": null,
-      "case_number": "309",
-      "issue_id": 4,
-      "purpose": "Check the effect of reducing the radius (1000 km to 250 km for frozen and 250 km to 100 km for liquid) and e-folding decay (same as the radius) of the liquid and frozen runoff spreading on the strength of the ACC.\n___",
-      "description": "Same as 287 (#262) except a different mapping file for liquid and frozen runoff.",
-      "case_directory": null,
-      "diagnostics_directory": null,
-      "has_diagnostics": 0,
-      "contacts": [
-        "gustavo-marques",
-        "tilmes",
-        "dmleung",
-        "mbramberger",
-        "olyson",
-        "dlawrenncar",
-        "duvivier",
-        "fobryan3",
-        "cecilehannay",
-        "gunterl",
-        "klindsay28",
-        "PeterHjortLauritzen",
-        "dabail10",
-        "iangrooms",
-        "wwieder",
-        "slevis-lmwg",
-        "adamrher",
-        "JulioTBacmeister",
-        "swrneale"
-      ],
-      "diagnostics_url": null,
-      "created_at": "2026-02-17 19:40:42",
-      "updated_at": "2026-02-23 19:26:35",
-      "atm_in_path": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.309/CaseDocs/atm_in",
-      "readme_create_newcase": null,
-      "issue_number": 292,
-      "issue_state": "open",
-      "issue_created_at": "2026-02-12T22:49:03Z",
-      "year_range": null,
-      "statistics": {},
+      "issue_number": null,
+      "issue_state": null,
+      "issue_created_at": null,
+      "year_range": "yrs_2_21",
+      "statistics": {
+        "ANN": {
+          "AODVISdn": {
+            "bias": 0.0,
+            "global_mean": 0.13,
+            "sample_size": 20.0,
+            "std": 0.00217,
+            "std_error": 0.000109
+          },
+          "BURDENBC": {
+            "bias": 7e-10,
+            "global_mean": 6.41e-08,
+            "sample_size": 20.0,
+            "std": 6.96e-10,
+            "std_error": 3.48e-11
+          },
+          "BURDENDUST": {
+            "bias": 0.0,
+            "global_mean": 3.48e-05,
+            "sample_size": 20.0,
+            "std": 2.03e-06,
+            "std_error": 1.01e-07
+          },
+          "BURDENPOM": {
+            "bias": 4e-09,
+            "global_mean": 6.06e-07,
+            "sample_size": 20.0,
+            "std": 6.72e-09,
+            "std_error": 3.36e-10
+          },
+          "BURDENSEASALT": {
+            "bias": 0.0,
+            "global_mean": 1.57e-05,
+            "sample_size": 20.0,
+            "std": 2.4e-07,
+            "std_error": 1.2e-08
+          },
+          "BURDENSO4": {
+            "bias": -1e-08,
+            "global_mean": 2.01e-06,
+            "sample_size": 20.0,
+            "std": 4.17e-08,
+            "std_error": 2.08e-09
+          },
+          "BURDENSOA": {
+            "bias": 0.0,
+            "global_mean": 1.34e-06,
+            "sample_size": 20.0,
+            "std": 5.11e-08,
+            "std_error": 2.56e-09
+          },
+          "CLDHGH": {
+            "bias": 0.0,
+            "global_mean": 0.463,
+            "sample_size": 20.0,
+            "std": 0.00164,
+            "std_error": 8.21e-05
+          },
+          "CLDLOW": {
+            "bias": 0.002,
+            "global_mean": 0.448,
+            "sample_size": 20.0,
+            "std": 0.00278,
+            "std_error": 0.000139
+          },
+          "CLDMED": {
+            "bias": 0.0,
+            "global_mean": 0.324,
+            "sample_size": 20.0,
+            "std": 0.00151,
+            "std_error": 7.57e-05
+          },
+          "CLDTOT": {
+            "bias": 0.001,
+            "global_mean": 0.726,
+            "sample_size": 20.0,
+            "std": 0.00235,
+            "std_error": 0.000118
+          },
+          "FLNS": {
+            "bias": -0.047,
+            "global_mean": 58.326,
+            "sample_size": 20.0,
+            "std": 0.232,
+            "std_error": 0.012
+          },
+          "FLNT": {
+            "bias": -0.138,
+            "global_mean": 239.294,
+            "sample_size": 20.0,
+            "std": 0.278,
+            "std_error": 0.014
+          },
+          "FLNTC": {
+            "bias": -0.09,
+            "global_mean": 262.369,
+            "sample_size": 20.0,
+            "std": 0.188,
+            "std_error": 0.009
+          },
+          "FSDS": {
+            "bias": -0.142,
+            "global_mean": 191.715,
+            "sample_size": 20.0,
+            "std": 0.437,
+            "std_error": 0.022
+          },
+          "FSDSC": {
+            "bias": 0.038,
+            "global_mean": 248.779,
+            "sample_size": 20.0,
+            "std": 0.12,
+            "std_error": 0.006
+          },
+          "FSNS": {
+            "bias": -0.145,
+            "global_mean": 166.345,
+            "sample_size": 20.0,
+            "std": 0.466,
+            "std_error": 0.023
+          },
+          "FSNSC": {
+            "bias": 0.02,
+            "global_mean": 217.487,
+            "sample_size": 20.0,
+            "std": 0.173,
+            "std_error": 0.009
+          },
+          "FSNT": {
+            "bias": -0.163,
+            "global_mean": 239.366,
+            "sample_size": 20.0,
+            "std": 0.417,
+            "std_error": 0.021
+          },
+          "FSNTC": {
+            "bias": -0.02,
+            "global_mean": 285.946,
+            "sample_size": 20.0,
+            "std": 0.168,
+            "std_error": 0.008
+          },
+          "ICEFRAC": {
+            "bias": -0.0002,
+            "global_mean": 0.0445,
+            "sample_size": 20.0,
+            "std": 0.000923,
+            "std_error": 4.61e-05
+          },
+          "LANDFRAC": {
+            "bias": 0.0,
+            "global_mean": 0.292,
+            "sample_size": 20.0,
+            "std": 5.55e-17,
+            "std_error": 2.78e-18
+          },
+          "LHFLX": {
+            "bias": -0.092,
+            "global_mean": 87.838,
+            "sample_size": 20.0,
+            "std": 0.331,
+            "std_error": 0.017
+          },
+          "LWCF": {
+            "bias": 0.048,
+            "global_mean": 23.075,
+            "sample_size": 20.0,
+            "std": 0.106,
+            "std_error": 0.005
+          },
+          "OCNFRAC": {
+            "bias": 0.0,
+            "global_mean": 0.663,
+            "sample_size": 20.0,
+            "std": 0.000923,
+            "std_error": 4.61e-05
+          },
+          "OMEGA500": {
+            "bias": 7e-07,
+            "global_mean": -5.16e-05,
+            "sample_size": 20.0,
+            "std": 2.38e-06,
+            "std_error": 1.19e-07
+          },
+          "PBLH": {
+            "bias": -0.413,
+            "global_mean": 739.439,
+            "sample_size": 20.0,
+            "std": 1.051,
+            "std_error": 0.053
+          },
+          "PRECC": {
+            "bias": -1e-10,
+            "global_mean": 1.73e-08,
+            "sample_size": 20.0,
+            "std": 1.32e-10,
+            "std_error": 6.59e-12
+          },
+          "PRECL": {
+            "bias": 0.0,
+            "global_mean": 1.78e-08,
+            "sample_size": 20.0,
+            "std": 1.67e-10,
+            "std_error": 8.33e-12
+          },
+          "PRECSC": {
+            "bias": 8e-13,
+            "global_mean": 5.79e-11,
+            "sample_size": 20.0,
+            "std": 3.86e-12,
+            "std_error": 1.93e-13
+          },
+          "PRECSL": {
+            "bias": 0.0,
+            "global_mean": 2.76e-09,
+            "sample_size": 20.0,
+            "std": 5.28e-11,
+            "std_error": 2.64e-12
+          },
+          "PRECT": {
+            "bias": 0.0,
+            "global_mean": 3.51e-08,
+            "sample_size": 20.0,
+            "std": 1.35e-10,
+            "std_error": 6.76e-12
+          },
+          "PS": {
+            "bias": -0.698,
+            "global_mean": 98507.148,
+            "sample_size": 20.0,
+            "std": 1.562,
+            "std_error": 0.078
+          },
+          "PSL": {
+            "bias": -0.513,
+            "global_mean": 101095.88,
+            "sample_size": 20.0,
+            "std": 1.833,
+            "std_error": 0.092
+          },
+          "QFLX": {
+            "bias": 0.0,
+            "global_mean": 3.51e-05,
+            "sample_size": 20.0,
+            "std": 1.32e-07,
+            "std_error": 6.62e-09
+          },
+          "RESTOM": {
+            "bias": -0.0248,
+            "global_mean": 0.072,
+            "sample_size": 20.0,
+            "std": 0.425,
+            "std_error": 0.0212
+          },
+          "SHFLX": {
+            "bias": 0.014,
+            "global_mean": 19.136,
+            "sample_size": 20.0,
+            "std": 0.092,
+            "std_error": 0.005
+          },
+          "SST": {
+            "bias": -0.051,
+            "global_mean": 291.933,
+            "sample_size": 20.0,
+            "std": 0.069,
+            "std_error": 0.003
+          },
+          "SWCF": {
+            "bias": -0.143,
+            "global_mean": -46.569,
+            "sample_size": 20.0,
+            "std": 0.331,
+            "std_error": 0.017
+          },
+          "TAUX": {
+            "bias": -9e-05,
+            "global_mean": -0.00599,
+            "sample_size": 20.0,
+            "std": 0.000794,
+            "std_error": 3.97e-05
+          },
+          "TAUY": {
+            "bias": 0.00027,
+            "global_mean": -0.00177,
+            "sample_size": 20.0,
+            "std": 0.00057,
+            "std_error": 2.85e-05
+          },
+          "TGCLDIWP": {
+            "bias": 0.0001,
+            "global_mean": 0.0142,
+            "sample_size": 20.0,
+            "std": 0.000194,
+            "std_error": 9.7e-06
+          },
+          "TGCLDLWP": {
+            "bias": 0.0001,
+            "global_mean": 0.054,
+            "sample_size": 20.0,
+            "std": 0.000467,
+            "std_error": 2.34e-05
+          },
+          "TMQ": {
+            "bias": -0.071,
+            "global_mean": 22.257,
+            "sample_size": 20.0,
+            "std": 0.159,
+            "std_error": 0.008
+          },
+          "TREFHT": {
+            "bias": -0.056,
+            "global_mean": 286.153,
+            "sample_size": 20.0,
+            "std": 0.092,
+            "std_error": 0.005
+          },
+          "TS": {
+            "bias": -0.055,
+            "global_mean": 286.971,
+            "sample_size": 20.0,
+            "std": 0.093,
+            "std_error": 0.005
+          },
+          "U10": {
+            "bias": -0.004,
+            "global_mean": 6.725,
+            "sample_size": 20.0,
+            "std": 0.029,
+            "std_error": 0.001
+          }
+        }
+      },
       "has_namelist": true
     },
     {
       "id": 5,
       "case_name": "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.308",
       "compset": null,
-      "resolution": "e30_alpha08b",
+      "resolution": null,
       "experiment_id": null,
-      "case_number": "308",
-      "issue_id": 5,
-      "purpose": "same as 307 but add alternate tuning from 276\n___",
-      "description": "Same as 307 (#289) except:\n- user_nl_cam\n```\nmicro_mg_vtrmi_factor = 1.0\nclubb_c8 = 4.5\nclubb_c_k10h = 0.20\n```\n___",
+      "case_number": null,
+      "issue_id": null,
+      "purpose": null,
+      "description": null,
       "case_directory": null,
-      "diagnostics_directory": null,
-      "has_diagnostics": 0,
-      "contacts": [
-        "dabail10",
-        "gustavo-marques",
-        "cecilehannay",
-        "slevis-lmwg",
-        "gunterl",
-        "iangrooms",
-        "tilmes",
-        "mbramberger",
-        "wwieder",
-        "olyson",
-        "klindsay28",
-        "dlawrenncar",
-        "duvivier",
-        "fobryan3",
-        "adamrher",
-        "JulioTBacmeister",
-        "PeterHjortLauritzen",
-        "swrneale"
-      ],
+      "diagnostics_directory": "/glade/derecho/scratch/hannay/ADF/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.308",
+      "has_diagnostics": 1,
+      "contacts": null,
       "diagnostics_url": null,
       "created_at": "2026-02-17 19:40:42",
-      "updated_at": "2026-02-23 19:26:35",
+      "updated_at": "2026-02-23 19:29:27",
       "atm_in_path": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.308/CaseDocs/atm_in",
       "readme_create_newcase": null,
-      "issue_number": 290,
-      "issue_state": "open",
-      "issue_created_at": "2026-02-06T22:46:56Z",
+      "issue_number": null,
+      "issue_state": null,
+      "issue_created_at": null,
       "year_range": "yrs_2_21",
       "statistics": {
         "ANN": {
@@ -515,15 +717,15 @@
       "has_namelist": true
     },
     {
-      "id": 6,
-      "case_name": "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.307",
+      "id": 2,
+      "case_name": "b.e30_alpha08b.B1850C_MTso.ne30_t232_wgx3.308",
       "compset": null,
       "resolution": "e30_alpha08b",
       "experiment_id": null,
-      "case_number": "307",
-      "issue_id": 6,
-      "purpose": "302 \n+ add the ocean mods from 304 (new runoff mapping files), and 305 (KHTR_MIN = 50) + Src Mods \n+ new land param files + set ndep \n___",
-      "description": "Same as 302 (#283) except:\n- user_nl_clm\n```\nfinidat = '/glade/campaign/cgd/tss/common/Land_Only_Simulations/CTSM54_DEV/ctsm5.4.004_bgc_ne30_130_pSASU_greenland/rest/0121-01-01-00000/ctsm5.4.004_bgc_ne30_130_pSASU_greenland.clm2.r.0121-01-01-00000.nc'",
+      "case_number": "308",
+      "issue_id": 2,
+      "purpose": "MTso equivalent of 308\n___",
+      "description": "Same as 308 (#290) but using MT compset + \n- add to user_nl_cam\n```",
       "case_directory": null,
       "diagnostics_directory": null,
       "has_diagnostics": 0,
@@ -548,347 +750,107 @@
         "swrneale"
       ],
       "diagnostics_url": null,
+      "created_at": "2026-02-17 19:40:41",
+      "updated_at": "2026-02-23 19:26:35",
+      "atm_in_path": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.308/CaseDocs/atm_in",
+      "readme_create_newcase": null,
+      "issue_number": 294,
+      "issue_state": "open",
+      "issue_created_at": "2026-02-13T22:00:57Z",
+      "year_range": null,
+      "statistics": {},
+      "has_namelist": true
+    },
+    {
+      "id": 3,
+      "case_name": "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.310",
+      "compset": null,
+      "resolution": "e30_alpha07g",
+      "experiment_id": null,
+      "case_number": "310",
+      "issue_id": 3,
+      "purpose": "Check the effect of reducing the radius of the liquid and frozen runoff spreading on the strength of the ACC (as in 309 #292) in combination with enforcing KHTR_MIN = 50.0 m2/s throughout the entire water column.\n___",
+      "description": "Same as 309 (#292) except",
+      "case_directory": null,
+      "diagnostics_directory": null,
+      "has_diagnostics": 0,
+      "contacts": [
+        "gustavo-marques",
+        "tilmes",
+        "dmleung",
+        "mbramberger",
+        "olyson",
+        "dlawrenncar",
+        "duvivier",
+        "fobryan3",
+        "cecilehannay",
+        "gunterl",
+        "klindsay28",
+        "PeterHjortLauritzen",
+        "dabail10",
+        "iangrooms",
+        "wwieder",
+        "slevis-lmwg",
+        "adamrher",
+        "JulioTBacmeister",
+        "swrneale"
+      ],
+      "diagnostics_url": null,
       "created_at": "2026-02-17 19:40:42",
       "updated_at": "2026-02-23 19:26:35",
-      "atm_in_path": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.302/CaseDocs/atm_in",
+      "atm_in_path": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.310/CaseDocs/atm_in",
       "readme_create_newcase": null,
-      "issue_number": 289,
+      "issue_number": 293,
       "issue_state": "open",
-      "issue_created_at": "2026-02-06T22:37:31Z",
-      "year_range": "yrs_2_21",
-      "statistics": {
-        "ANN": {
-          "AODVISdn": {
-            "bias": 0.0,
-            "global_mean": 0.13,
-            "sample_size": 20.0,
-            "std": 0.00217,
-            "std_error": 0.000109
-          },
-          "BURDENBC": {
-            "bias": 7e-10,
-            "global_mean": 6.41e-08,
-            "sample_size": 20.0,
-            "std": 6.96e-10,
-            "std_error": 3.48e-11
-          },
-          "BURDENDUST": {
-            "bias": 0.0,
-            "global_mean": 3.48e-05,
-            "sample_size": 20.0,
-            "std": 2.03e-06,
-            "std_error": 1.01e-07
-          },
-          "BURDENPOM": {
-            "bias": 4e-09,
-            "global_mean": 6.06e-07,
-            "sample_size": 20.0,
-            "std": 6.72e-09,
-            "std_error": 3.36e-10
-          },
-          "BURDENSEASALT": {
-            "bias": 0.0,
-            "global_mean": 1.57e-05,
-            "sample_size": 20.0,
-            "std": 2.4e-07,
-            "std_error": 1.2e-08
-          },
-          "BURDENSO4": {
-            "bias": -1e-08,
-            "global_mean": 2.01e-06,
-            "sample_size": 20.0,
-            "std": 4.17e-08,
-            "std_error": 2.08e-09
-          },
-          "BURDENSOA": {
-            "bias": 0.0,
-            "global_mean": 1.34e-06,
-            "sample_size": 20.0,
-            "std": 5.11e-08,
-            "std_error": 2.56e-09
-          },
-          "CLDHGH": {
-            "bias": 0.0,
-            "global_mean": 0.463,
-            "sample_size": 20.0,
-            "std": 0.00164,
-            "std_error": 8.21e-05
-          },
-          "CLDLOW": {
-            "bias": 0.002,
-            "global_mean": 0.448,
-            "sample_size": 20.0,
-            "std": 0.00278,
-            "std_error": 0.000139
-          },
-          "CLDMED": {
-            "bias": 0.0,
-            "global_mean": 0.324,
-            "sample_size": 20.0,
-            "std": 0.00151,
-            "std_error": 7.57e-05
-          },
-          "CLDTOT": {
-            "bias": 0.001,
-            "global_mean": 0.726,
-            "sample_size": 20.0,
-            "std": 0.00235,
-            "std_error": 0.000118
-          },
-          "FLNS": {
-            "bias": -0.047,
-            "global_mean": 58.326,
-            "sample_size": 20.0,
-            "std": 0.232,
-            "std_error": 0.012
-          },
-          "FLNT": {
-            "bias": -0.138,
-            "global_mean": 239.294,
-            "sample_size": 20.0,
-            "std": 0.278,
-            "std_error": 0.014
-          },
-          "FLNTC": {
-            "bias": -0.09,
-            "global_mean": 262.369,
-            "sample_size": 20.0,
-            "std": 0.188,
-            "std_error": 0.009
-          },
-          "FSDS": {
-            "bias": -0.142,
-            "global_mean": 191.715,
-            "sample_size": 20.0,
-            "std": 0.437,
-            "std_error": 0.022
-          },
-          "FSDSC": {
-            "bias": 0.038,
-            "global_mean": 248.779,
-            "sample_size": 20.0,
-            "std": 0.12,
-            "std_error": 0.006
-          },
-          "FSNS": {
-            "bias": -0.145,
-            "global_mean": 166.345,
-            "sample_size": 20.0,
-            "std": 0.466,
-            "std_error": 0.023
-          },
-          "FSNSC": {
-            "bias": 0.02,
-            "global_mean": 217.487,
-            "sample_size": 20.0,
-            "std": 0.173,
-            "std_error": 0.009
-          },
-          "FSNT": {
-            "bias": -0.163,
-            "global_mean": 239.366,
-            "sample_size": 20.0,
-            "std": 0.417,
-            "std_error": 0.021
-          },
-          "FSNTC": {
-            "bias": -0.02,
-            "global_mean": 285.946,
-            "sample_size": 20.0,
-            "std": 0.168,
-            "std_error": 0.008
-          },
-          "ICEFRAC": {
-            "bias": -0.0002,
-            "global_mean": 0.0445,
-            "sample_size": 20.0,
-            "std": 0.000923,
-            "std_error": 4.61e-05
-          },
-          "LANDFRAC": {
-            "bias": 0.0,
-            "global_mean": 0.292,
-            "sample_size": 20.0,
-            "std": 5.55e-17,
-            "std_error": 2.78e-18
-          },
-          "LHFLX": {
-            "bias": -0.092,
-            "global_mean": 87.838,
-            "sample_size": 20.0,
-            "std": 0.331,
-            "std_error": 0.017
-          },
-          "LWCF": {
-            "bias": 0.048,
-            "global_mean": 23.075,
-            "sample_size": 20.0,
-            "std": 0.106,
-            "std_error": 0.005
-          },
-          "OCNFRAC": {
-            "bias": 0.0,
-            "global_mean": 0.663,
-            "sample_size": 20.0,
-            "std": 0.000923,
-            "std_error": 4.61e-05
-          },
-          "OMEGA500": {
-            "bias": 7e-07,
-            "global_mean": -5.16e-05,
-            "sample_size": 20.0,
-            "std": 2.38e-06,
-            "std_error": 1.19e-07
-          },
-          "PBLH": {
-            "bias": -0.413,
-            "global_mean": 739.439,
-            "sample_size": 20.0,
-            "std": 1.051,
-            "std_error": 0.053
-          },
-          "PRECC": {
-            "bias": -1e-10,
-            "global_mean": 1.73e-08,
-            "sample_size": 20.0,
-            "std": 1.32e-10,
-            "std_error": 6.59e-12
-          },
-          "PRECL": {
-            "bias": 0.0,
-            "global_mean": 1.78e-08,
-            "sample_size": 20.0,
-            "std": 1.67e-10,
-            "std_error": 8.33e-12
-          },
-          "PRECSC": {
-            "bias": 8e-13,
-            "global_mean": 5.79e-11,
-            "sample_size": 20.0,
-            "std": 3.86e-12,
-            "std_error": 1.93e-13
-          },
-          "PRECSL": {
-            "bias": 0.0,
-            "global_mean": 2.76e-09,
-            "sample_size": 20.0,
-            "std": 5.28e-11,
-            "std_error": 2.64e-12
-          },
-          "PRECT": {
-            "bias": 0.0,
-            "global_mean": 3.51e-08,
-            "sample_size": 20.0,
-            "std": 1.35e-10,
-            "std_error": 6.76e-12
-          },
-          "PS": {
-            "bias": -0.698,
-            "global_mean": 98507.148,
-            "sample_size": 20.0,
-            "std": 1.562,
-            "std_error": 0.078
-          },
-          "PSL": {
-            "bias": -0.513,
-            "global_mean": 101095.88,
-            "sample_size": 20.0,
-            "std": 1.833,
-            "std_error": 0.092
-          },
-          "QFLX": {
-            "bias": 0.0,
-            "global_mean": 3.51e-05,
-            "sample_size": 20.0,
-            "std": 1.32e-07,
-            "std_error": 6.62e-09
-          },
-          "RESTOM": {
-            "bias": -0.0248,
-            "global_mean": 0.072,
-            "sample_size": 20.0,
-            "std": 0.425,
-            "std_error": 0.0212
-          },
-          "SHFLX": {
-            "bias": 0.014,
-            "global_mean": 19.136,
-            "sample_size": 20.0,
-            "std": 0.092,
-            "std_error": 0.005
-          },
-          "SST": {
-            "bias": -0.051,
-            "global_mean": 291.933,
-            "sample_size": 20.0,
-            "std": 0.069,
-            "std_error": 0.003
-          },
-          "SWCF": {
-            "bias": -0.143,
-            "global_mean": -46.569,
-            "sample_size": 20.0,
-            "std": 0.331,
-            "std_error": 0.017
-          },
-          "TAUX": {
-            "bias": -9e-05,
-            "global_mean": -0.00599,
-            "sample_size": 20.0,
-            "std": 0.000794,
-            "std_error": 3.97e-05
-          },
-          "TAUY": {
-            "bias": 0.00027,
-            "global_mean": -0.00177,
-            "sample_size": 20.0,
-            "std": 0.00057,
-            "std_error": 2.85e-05
-          },
-          "TGCLDIWP": {
-            "bias": 0.0001,
-            "global_mean": 0.0142,
-            "sample_size": 20.0,
-            "std": 0.000194,
-            "std_error": 9.7e-06
-          },
-          "TGCLDLWP": {
-            "bias": 0.0001,
-            "global_mean": 0.054,
-            "sample_size": 20.0,
-            "std": 0.000467,
-            "std_error": 2.34e-05
-          },
-          "TMQ": {
-            "bias": -0.071,
-            "global_mean": 22.257,
-            "sample_size": 20.0,
-            "std": 0.159,
-            "std_error": 0.008
-          },
-          "TREFHT": {
-            "bias": -0.056,
-            "global_mean": 286.153,
-            "sample_size": 20.0,
-            "std": 0.092,
-            "std_error": 0.005
-          },
-          "TS": {
-            "bias": -0.055,
-            "global_mean": 286.971,
-            "sample_size": 20.0,
-            "std": 0.093,
-            "std_error": 0.005
-          },
-          "U10": {
-            "bias": -0.004,
-            "global_mean": 6.725,
-            "sample_size": 20.0,
-            "std": 0.029,
-            "std_error": 0.001
-          }
-        }
-      },
+      "issue_created_at": "2026-02-12T22:53:47Z",
+      "year_range": null,
+      "statistics": {},
+      "has_namelist": true
+    },
+    {
+      "id": 4,
+      "case_name": "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.309",
+      "compset": null,
+      "resolution": "e30_alpha07g",
+      "experiment_id": null,
+      "case_number": "309",
+      "issue_id": 4,
+      "purpose": "Check the effect of reducing the radius (1000 km to 250 km for frozen and 250 km to 100 km for liquid) and e-folding decay (same as the radius) of the liquid and frozen runoff spreading on the strength of the ACC.\n___",
+      "description": "Same as 287 (#262) except a different mapping file for liquid and frozen runoff.",
+      "case_directory": null,
+      "diagnostics_directory": null,
+      "has_diagnostics": 0,
+      "contacts": [
+        "gustavo-marques",
+        "tilmes",
+        "dmleung",
+        "mbramberger",
+        "olyson",
+        "dlawrenncar",
+        "duvivier",
+        "fobryan3",
+        "cecilehannay",
+        "gunterl",
+        "klindsay28",
+        "PeterHjortLauritzen",
+        "dabail10",
+        "iangrooms",
+        "wwieder",
+        "slevis-lmwg",
+        "adamrher",
+        "JulioTBacmeister",
+        "swrneale"
+      ],
+      "diagnostics_url": null,
+      "created_at": "2026-02-17 19:40:42",
+      "updated_at": "2026-02-23 19:26:35",
+      "atm_in_path": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.309/CaseDocs/atm_in",
+      "readme_create_newcase": null,
+      "issue_number": 292,
+      "issue_state": "open",
+      "issue_created_at": "2026-02-12T22:49:03Z",
+      "year_range": null,
+      "statistics": {},
       "has_namelist": true
     },
     {
@@ -29682,336 +29644,336 @@
       "issue_number": 275,
       "issue_state": "open",
       "issue_created_at": "2026-01-23T21:37:03Z",
-      "year_range": "yrs_2_20",
+      "year_range": "yrs_81_100",
       "statistics": {
         "ANN": {
           "AODVISdn": {
-            "bias": 0.007,
-            "global_mean": 0.129,
-            "sample_size": 19.0,
-            "std": 0.00147,
-            "std_error": 7.76e-05
+            "bias": -0.004,
+            "global_mean": 0.13,
+            "sample_size": 20.0,
+            "std": 0.00217,
+            "std_error": 0.000109
           },
           "BURDENBC": {
-            "bias": -4e-10,
-            "global_mean": 6.28e-08,
-            "sample_size": 19.0,
-            "std": 8.44e-10,
-            "std_error": 4.44e-11
+            "bias": 1e-10,
+            "global_mean": 6.41e-08,
+            "sample_size": 20.0,
+            "std": 6.96e-10,
+            "std_error": 3.48e-11
           },
           "BURDENDUST": {
-            "bias": -6e-07,
-            "global_mean": 3.36e-05,
-            "sample_size": 19.0,
-            "std": 1.41e-06,
-            "std_error": 7.44e-08
+            "bias": -7e-07,
+            "global_mean": 3.48e-05,
+            "sample_size": 20.0,
+            "std": 2.03e-06,
+            "std_error": 1.01e-07
           },
           "BURDENPOM": {
-            "bias": -4e-09,
-            "global_mean": 5.96e-07,
-            "sample_size": 19.0,
-            "std": 7.76e-09,
-            "std_error": 4.09e-10
+            "bias": 1e-09,
+            "global_mean": 6.06e-07,
+            "sample_size": 20.0,
+            "std": 6.72e-09,
+            "std_error": 3.36e-10
           },
           "BURDENSEASALT": {
-            "bias": 5.5e-06,
-            "global_mean": 2.02e-05,
-            "sample_size": 19.0,
-            "std": 1.68e-07,
-            "std_error": 8.83e-09
+            "bias": -5e-07,
+            "global_mean": 1.57e-05,
+            "sample_size": 20.0,
+            "std": 2.4e-07,
+            "std_error": 1.2e-08
           },
           "BURDENSO4": {
-            "bias": 2e-08,
-            "global_mean": 2.04e-06,
-            "sample_size": 19.0,
-            "std": 4.2e-08,
-            "std_error": 2.21e-09
+            "bias": 1e-08,
+            "global_mean": 2.01e-06,
+            "sample_size": 20.0,
+            "std": 4.17e-08,
+            "std_error": 2.08e-09
           },
           "BURDENSOA": {
-            "bias": 1e-08,
-            "global_mean": 1.14e-06,
-            "sample_size": 19.0,
-            "std": 2.02e-08,
-            "std_error": 1.06e-09
+            "bias": 0.0,
+            "global_mean": 1.34e-06,
+            "sample_size": 20.0,
+            "std": 5.11e-08,
+            "std_error": 2.56e-09
           },
           "CLDHGH": {
-            "bias": 0.0,
+            "bias": 0.009,
             "global_mean": 0.463,
-            "sample_size": 19.0,
-            "std": 0.00178,
-            "std_error": 9.37e-05
+            "sample_size": 20.0,
+            "std": 0.00164,
+            "std_error": 8.21e-05
           },
           "CLDLOW": {
-            "bias": -0.001,
-            "global_mean": 0.446,
-            "sample_size": 19.0,
-            "std": 0.00313,
-            "std_error": 0.000165
+            "bias": 0.0,
+            "global_mean": 0.448,
+            "sample_size": 20.0,
+            "std": 0.00278,
+            "std_error": 0.000139
           },
           "CLDMED": {
-            "bias": 0.0,
+            "bias": -0.003,
             "global_mean": 0.324,
-            "sample_size": 19.0,
-            "std": 0.00123,
-            "std_error": 6.47e-05
+            "sample_size": 20.0,
+            "std": 0.00151,
+            "std_error": 7.57e-05
           },
           "CLDTOT": {
-            "bias": -0.001,
-            "global_mean": 0.724,
-            "sample_size": 19.0,
-            "std": 0.0024,
-            "std_error": 0.000127
+            "bias": 0.006,
+            "global_mean": 0.726,
+            "sample_size": 20.0,
+            "std": 0.00235,
+            "std_error": 0.000118
           },
           "FLNS": {
-            "bias": -0.213,
-            "global_mean": 58.138,
-            "sample_size": 19.0,
-            "std": 0.234,
+            "bias": -0.302,
+            "global_mean": 58.326,
+            "sample_size": 20.0,
+            "std": 0.232,
             "std_error": 0.012
           },
           "FLNT": {
-            "bias": 0.203,
-            "global_mean": 238.994,
-            "sample_size": 19.0,
-            "std": 0.198,
-            "std_error": 0.01
+            "bias": -0.649,
+            "global_mean": 239.294,
+            "sample_size": 20.0,
+            "std": 0.278,
+            "std_error": 0.014
           },
           "FLNTC": {
-            "bias": 0.197,
-            "global_mean": 262.277,
-            "sample_size": 19.0,
-            "std": 0.159,
-            "std_error": 0.008
+            "bias": 0.258,
+            "global_mean": 262.369,
+            "sample_size": 20.0,
+            "std": 0.188,
+            "std_error": 0.009
           },
           "FSDS": {
-            "bias": 0.149,
-            "global_mean": 191.154,
-            "sample_size": 19.0,
-            "std": 0.409,
+            "bias": -1.072,
+            "global_mean": 191.715,
+            "sample_size": 20.0,
+            "std": 0.437,
             "std_error": 0.022
           },
           "FSDSC": {
-            "bias": -0.513,
-            "global_mean": 248.484,
-            "sample_size": 19.0,
+            "bias": 0.008,
+            "global_mean": 248.779,
+            "sample_size": 20.0,
             "std": 0.12,
             "std_error": 0.006
           },
           "FSNS": {
-            "bias": 0.211,
-            "global_mean": 165.992,
-            "sample_size": 19.0,
-            "std": 0.391,
-            "std_error": 0.021
+            "bias": -0.946,
+            "global_mean": 166.345,
+            "sample_size": 20.0,
+            "std": 0.466,
+            "std_error": 0.023
           },
           "FSNSC": {
-            "bias": -0.361,
-            "global_mean": 217.378,
-            "sample_size": 19.0,
-            "std": 0.171,
+            "bias": 0.052,
+            "global_mean": 217.487,
+            "sample_size": 20.0,
+            "std": 0.173,
             "std_error": 0.009
           },
           "FSNT": {
-            "bias": 0.312,
-            "global_mean": 238.972,
-            "sample_size": 19.0,
-            "std": 0.337,
-            "std_error": 0.018
+            "bias": -0.755,
+            "global_mean": 239.366,
+            "sample_size": 20.0,
+            "std": 0.417,
+            "std_error": 0.021
           },
           "FSNTC": {
-            "bias": -0.23,
-            "global_mean": 285.839,
-            "sample_size": 19.0,
-            "std": 0.145,
+            "bias": 0.162,
+            "global_mean": 285.946,
+            "sample_size": 20.0,
+            "std": 0.168,
             "std_error": 0.008
           },
           "ICEFRAC": {
-            "bias": -0.0004,
-            "global_mean": 0.0442,
-            "sample_size": 19.0,
-            "std": 0.00117,
-            "std_error": 6.15e-05
+            "bias": -0.0002,
+            "global_mean": 0.0445,
+            "sample_size": 20.0,
+            "std": 0.000923,
+            "std_error": 4.61e-05
           },
           "LANDFRAC": {
             "bias": 0.0,
             "global_mean": 0.292,
-            "sample_size": 19.0,
+            "sample_size": 20.0,
             "std": 5.55e-17,
-            "std_error": 2.92e-18
+            "std_error": 2.78e-18
           },
           "LHFLX": {
-            "bias": 0.319,
-            "global_mean": 88.01,
-            "sample_size": 19.0,
-            "std": 0.319,
+            "bias": -1.344,
+            "global_mean": 87.838,
+            "sample_size": 20.0,
+            "std": 0.331,
             "std_error": 0.017
           },
           "LWCF": {
-            "bias": -0.006,
-            "global_mean": 23.283,
-            "sample_size": 19.0,
-            "std": 0.088,
+            "bias": 0.907,
+            "global_mean": 23.075,
+            "sample_size": 20.0,
+            "std": 0.106,
             "std_error": 0.005
           },
           "OCNFRAC": {
             "bias": 0.0,
             "global_mean": 0.663,
-            "sample_size": 19.0,
-            "std": 0.00117,
-            "std_error": 6.15e-05
+            "sample_size": 20.0,
+            "std": 0.000923,
+            "std_error": 4.61e-05
           },
           "OMEGA500": {
-            "bias": 4e-07,
-            "global_mean": -5.13e-05,
-            "sample_size": 19.0,
-            "std": 2.35e-06,
-            "std_error": 1.24e-07
+            "bias": 2.4e-06,
+            "global_mean": -5.16e-05,
+            "sample_size": 20.0,
+            "std": 2.38e-06,
+            "std_error": 1.19e-07
           },
           "PBLH": {
-            "bias": -0.941,
-            "global_mean": 737.302,
-            "sample_size": 19.0,
-            "std": 0.973,
-            "std_error": 0.051
+            "bias": -13.412,
+            "global_mean": 739.439,
+            "sample_size": 20.0,
+            "std": 1.051,
+            "std_error": 0.053
           },
           "PRECC": {
-            "bias": 1e-10,
-            "global_mean": 1.74e-08,
-            "sample_size": 19.0,
-            "std": 9.72e-11,
-            "std_error": 5.12e-12
-          },
-          "PRECL": {
-            "bias": 1e-10,
-            "global_mean": 1.78e-08,
-            "sample_size": 19.0,
+            "bias": -8e-10,
+            "global_mean": 1.73e-08,
+            "sample_size": 20.0,
             "std": 1.32e-10,
-            "std_error": 6.97e-12
-          },
-          "PRECSC": {
-            "bias": -3.2e-12,
-            "global_mean": 5.91e-11,
-            "sample_size": 19.0,
-            "std": 3.95e-12,
-            "std_error": 2.08e-13
-          },
-          "PRECSL": {
-            "bias": -4e-11,
-            "global_mean": 2.79e-09,
-            "sample_size": 19.0,
-            "std": 5.48e-11,
-            "std_error": 2.89e-12
-          },
-          "PRECT": {
-            "bias": 2e-10,
-            "global_mean": 3.52e-08,
-            "sample_size": 19.0,
-            "std": 1.25e-10,
             "std_error": 6.59e-12
           },
+          "PRECL": {
+            "bias": 3e-10,
+            "global_mean": 1.78e-08,
+            "sample_size": 20.0,
+            "std": 1.67e-10,
+            "std_error": 8.33e-12
+          },
+          "PRECSC": {
+            "bias": 1.4e-12,
+            "global_mean": 5.79e-11,
+            "sample_size": 20.0,
+            "std": 3.86e-12,
+            "std_error": 1.93e-13
+          },
+          "PRECSL": {
+            "bias": 3e-11,
+            "global_mean": 2.76e-09,
+            "sample_size": 20.0,
+            "std": 5.28e-11,
+            "std_error": 2.64e-12
+          },
+          "PRECT": {
+            "bias": -5e-10,
+            "global_mean": 3.51e-08,
+            "sample_size": 20.0,
+            "std": 1.35e-10,
+            "std_error": 6.76e-12
+          },
           "PS": {
-            "bias": 2.018,
-            "global_mean": 98509.326,
-            "sample_size": 19.0,
-            "std": 1.483,
+            "bias": 2.186,
+            "global_mean": 98507.148,
+            "sample_size": 20.0,
+            "std": 1.562,
             "std_error": 0.078
           },
           "PSL": {
-            "bias": 1.455,
-            "global_mean": 101097.138,
-            "sample_size": 19.0,
-            "std": 1.359,
-            "std_error": 0.072
+            "bias": 2.515,
+            "global_mean": 101095.88,
+            "sample_size": 20.0,
+            "std": 1.833,
+            "std_error": 0.092
           },
           "QFLX": {
-            "bias": 2e-07,
-            "global_mean": 3.52e-05,
-            "sample_size": 19.0,
-            "std": 1.28e-07,
-            "std_error": 6.72e-09
+            "bias": -5e-07,
+            "global_mean": 3.51e-05,
+            "sample_size": 20.0,
+            "std": 1.32e-07,
+            "std_error": 6.62e-09
           },
           "RESTOM": {
-            "bias": 0.109,
-            "global_mean": -0.0222,
-            "sample_size": 19.0,
-            "std": 0.376,
-            "std_error": 0.0198
+            "bias": -0.106,
+            "global_mean": 0.072,
+            "sample_size": 20.0,
+            "std": 0.425,
+            "std_error": 0.0212
           },
           "SHFLX": {
-            "bias": 0.02,
-            "global_mean": 18.89,
-            "sample_size": 19.0,
-            "std": 0.067,
-            "std_error": 0.004
+            "bias": 0.807,
+            "global_mean": 19.136,
+            "sample_size": 20.0,
+            "std": 0.092,
+            "std_error": 0.005
           },
           "SST": {
-            "bias": 0.086,
-            "global_mean": 292.02,
-            "sample_size": 19.0,
-            "std": 0.084,
-            "std_error": 0.004
+            "bias": 0.096,
+            "global_mean": 291.933,
+            "sample_size": 20.0,
+            "std": 0.069,
+            "std_error": 0.003
           },
           "SWCF": {
-            "bias": 0.542,
-            "global_mean": -46.857,
-            "sample_size": 19.0,
-            "std": 0.314,
+            "bias": -0.917,
+            "global_mean": -46.569,
+            "sample_size": 20.0,
+            "std": 0.331,
             "std_error": 0.017
           },
           "TAUX": {
-            "bias": 0.00014,
-            "global_mean": -0.00646,
-            "sample_size": 19.0,
-            "std": 0.000882,
-            "std_error": 4.64e-05
+            "bias": -0.00013,
+            "global_mean": -0.00599,
+            "sample_size": 20.0,
+            "std": 0.000794,
+            "std_error": 3.97e-05
           },
           "TAUY": {
-            "bias": -0.00017,
-            "global_mean": -0.00226,
-            "sample_size": 19.0,
-            "std": 0.000572,
-            "std_error": 3.01e-05
+            "bias": -0.00046,
+            "global_mean": -0.00177,
+            "sample_size": 20.0,
+            "std": 0.00057,
+            "std_error": 2.85e-05
           },
           "TGCLDIWP": {
-            "bias": 0.0,
-            "global_mean": 0.0143,
-            "sample_size": 19.0,
-            "std": 0.000152,
-            "std_error": 7.99e-06
+            "bias": 0.0004,
+            "global_mean": 0.0142,
+            "sample_size": 20.0,
+            "std": 0.000194,
+            "std_error": 9.7e-06
           },
           "TGCLDLWP": {
-            "bias": -0.0003,
-            "global_mean": 0.0545,
-            "sample_size": 19.0,
-            "std": 0.000605,
-            "std_error": 3.19e-05
+            "bias": 0.0017,
+            "global_mean": 0.054,
+            "sample_size": 20.0,
+            "std": 0.000467,
+            "std_error": 2.34e-05
           },
           "TMQ": {
-            "bias": 0.206,
-            "global_mean": 22.478,
-            "sample_size": 19.0,
-            "std": 0.151,
+            "bias": 0.219,
+            "global_mean": 22.257,
+            "sample_size": 20.0,
+            "std": 0.159,
             "std_error": 0.008
           },
           "TREFHT": {
-            "bias": 0.126,
-            "global_mean": 286.273,
-            "sample_size": 19.0,
-            "std": 0.071,
-            "std_error": 0.004
+            "bias": 0.076,
+            "global_mean": 286.153,
+            "sample_size": 20.0,
+            "std": 0.092,
+            "std_error": 0.005
           },
           "TS": {
-            "bias": 0.128,
-            "global_mean": 287.104,
-            "sample_size": 19.0,
-            "std": 0.07,
-            "std_error": 0.004
+            "bias": 0.136,
+            "global_mean": 286.971,
+            "sample_size": 20.0,
+            "std": 0.093,
+            "std_error": 0.005
           },
           "U10": {
-            "bias": -0.007,
-            "global_mean": 6.751,
-            "sample_size": 19.0,
-            "std": 0.025,
+            "bias": -0.012,
+            "global_mean": 6.725,
+            "sample_size": 20.0,
+            "std": 0.029,
             "std_error": 0.001
           }
         }
@@ -32154,8 +32116,8 @@
   ],
   "metadata": {
     "total_cases": 261,
-    "cases_with_diagnostics": 138,
-    "last_updated": "2026-02-23T12:26:50.686939",
-    "diagnostic_coverage_percent": 52.9
+    "cases_with_diagnostics": 140,
+    "last_updated": "2026-02-23T12:30:38.643596",
+    "diagnostic_coverage_percent": 53.6
   }
 }
