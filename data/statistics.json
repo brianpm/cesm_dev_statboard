@@ -72,7 +72,7 @@
     },
     "e30_alpha08b": {
       "count": 15,
-      "with_diagnostics": 10
+      "with_diagnostics": 8
     },
     "e30_alpha08a": {
       "count": 9,
@@ -113,9 +113,9 @@
   },
   "diagnostic_coverage": {
     "total_cases": 261,
-    "with_diagnostics": 140,
-    "without_diagnostics": 121,
-    "percentage": 53.6
+    "with_diagnostics": 138,
+    "without_diagnostics": 123,
+    "percentage": 52.9
   },
-  "last_updated": "2026-02-20T15:42:37.229958"
+  "last_updated": "2026-02-23T09:05:29.140500"
 }

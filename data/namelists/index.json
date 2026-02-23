@@ -1,4 +1,40 @@
 {
+  "b.e30_alpha08b.B1850C_MTso.ne30_t232_wgx3.308": {
+    "file": "namelists/b.e30_alpha08b.B1850C_MTso.ne30_t232_wgx3.308.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.310": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.310.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.309": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.309.json"
+  },
+  "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.308": {
+    "file": "namelists/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.308.json"
+  },
+  "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.307": {
+    "file": "namelists/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.307.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.306": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.306.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.305": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.305.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.284": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.284.json"
+  },
+  "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.315": {
+    "file": "namelists/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.315.json"
+  },
+  "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.314": {
+    "file": "namelists/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.314.json"
+  },
+  "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.313": {
+    "file": "namelists/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.313.json"
+  },
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.284.mpas (coupled mpas configuration)": {
+    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.284.mpas (coupled mpas configuration).json"
+  },
   "b.e30_beta04.BLT1850.ne30_t232_wgx3.114": {
     "file": "namelists/b.e30_beta04.BLT1850.ne30_t232_wgx3.114.json"
   },
@@ -584,9 +620,6 @@
   "b.e30_alpha08a.B1850C_LTso.ne30_t232_wgx3.283": {
     "file": "namelists/b.e30_alpha08a.B1850C_LTso.ne30_t232_wgx3.283.json"
   },
-  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.284": {
-    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.284.json"
-  },
   "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.275.wav": {
     "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.275.wav.json"
   },
@@ -667,38 +700,5 @@
   },
   "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.303": {
     "file": "namelists/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.303.json"
-  },
-  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.306": {
-    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.306.json"
-  },
-  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.305": {
-    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.305.json"
-  },
-  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.309": {
-    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.309.json"
-  },
-  "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.308": {
-    "file": "namelists/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.308.json"
-  },
-  "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.307": {
-    "file": "namelists/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.307.json"
-  },
-  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.310": {
-    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.310.json"
-  },
-  "b.e30_alpha08b.B1850C_MTso.ne30_t232_wgx3.308": {
-    "file": "namelists/b.e30_alpha08b.B1850C_MTso.ne30_t232_wgx3.308.json"
-  },
-  "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.313": {
-    "file": "namelists/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.313.json"
-  },
-  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.284.mpas (coupled mpas configuration)": {
-    "file": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.284.mpas (coupled mpas configuration).json"
-  },
-  "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.315": {
-    "file": "namelists/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.315.json"
-  },
-  "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.314": {
-    "file": "namelists/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.314.json"
   }
 }

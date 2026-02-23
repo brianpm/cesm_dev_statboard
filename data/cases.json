@@ -1,6 +1,1190 @@
 {
   "cases": [
     {
+      "id": 2,
+      "case_name": "b.e30_alpha08b.B1850C_MTso.ne30_t232_wgx3.308",
+      "compset": null,
+      "resolution": "e30_alpha08b",
+      "experiment_id": null,
+      "case_number": "308",
+      "issue_id": 2,
+      "purpose": "MTso equivalent of 308\n___",
+      "description": "Same as 308 (#290) but using MT compset + \n- add to user_nl_cam\n```",
+      "case_directory": null,
+      "diagnostics_directory": null,
+      "has_diagnostics": 0,
+      "contacts": [
+        "olyson",
+        "klindsay28",
+        "mbramberger",
+        "duvivier",
+        "adamrher",
+        "dlawrenncar",
+        "gustavo-marques",
+        "dabail10",
+        "cecilehannay",
+        "PeterHjortLauritzen",
+        "JulioTBacmeister",
+        "iangrooms",
+        "slevis-lmwg",
+        "gunterl",
+        "tilmes",
+        "wwieder",
+        "fobryan3",
+        "swrneale"
+      ],
+      "diagnostics_url": null,
+      "created_at": "2026-02-17 19:40:41",
+      "updated_at": "2026-02-23 16:05:26",
+      "atm_in_path": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.308/CaseDocs/atm_in",
+      "issue_number": 294,
+      "issue_state": "open",
+      "issue_created_at": "2026-02-13T22:00:57Z",
+      "year_range": null,
+      "statistics": {},
+      "has_namelist": true
+    },
+    {
+      "id": 3,
+      "case_name": "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.310",
+      "compset": null,
+      "resolution": "e30_alpha07g",
+      "experiment_id": null,
+      "case_number": "310",
+      "issue_id": 3,
+      "purpose": "Check the effect of reducing the radius of the liquid and frozen runoff spreading on the strength of the ACC (as in 309 #292) in combination with enforcing KHTR_MIN = 50.0 m2/s throughout the entire water column.\n___",
+      "description": "Same as 309 (#292) except",
+      "case_directory": null,
+      "diagnostics_directory": null,
+      "has_diagnostics": 0,
+      "contacts": [
+        "dlawrenncar",
+        "dabail10",
+        "cecilehannay",
+        "PeterHjortLauritzen",
+        "dmleung",
+        "fobryan3",
+        "swrneale",
+        "olyson",
+        "klindsay28",
+        "adamrher",
+        "iangrooms",
+        "gustavo-marques",
+        "JulioTBacmeister",
+        "slevis-lmwg",
+        "gunterl",
+        "tilmes",
+        "wwieder",
+        "mbramberger",
+        "duvivier"
+      ],
+      "diagnostics_url": null,
+      "created_at": "2026-02-17 19:40:42",
+      "updated_at": "2026-02-23 16:05:26",
+      "atm_in_path": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.310/CaseDocs/atm_in",
+      "issue_number": 293,
+      "issue_state": "open",
+      "issue_created_at": "2026-02-12T22:53:47Z",
+      "year_range": null,
+      "statistics": {},
+      "has_namelist": true
+    },
+    {
+      "id": 4,
+      "case_name": "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.309",
+      "compset": null,
+      "resolution": "e30_alpha07g",
+      "experiment_id": null,
+      "case_number": "309",
+      "issue_id": 4,
+      "purpose": "Check the effect of reducing the radius (1000 km to 250 km for frozen and 250 km to 100 km for liquid) and e-folding decay (same as the radius) of the liquid and frozen runoff spreading on the strength of the ACC.\n___",
+      "description": "Same as 287 (#262) except a different mapping file for liquid and frozen runoff.",
+      "case_directory": null,
+      "diagnostics_directory": null,
+      "has_diagnostics": 0,
+      "contacts": [
+        "dlawrenncar",
+        "dabail10",
+        "cecilehannay",
+        "PeterHjortLauritzen",
+        "dmleung",
+        "fobryan3",
+        "swrneale",
+        "olyson",
+        "klindsay28",
+        "adamrher",
+        "iangrooms",
+        "gustavo-marques",
+        "JulioTBacmeister",
+        "slevis-lmwg",
+        "gunterl",
+        "tilmes",
+        "wwieder",
+        "mbramberger",
+        "duvivier"
+      ],
+      "diagnostics_url": null,
+      "created_at": "2026-02-17 19:40:42",
+      "updated_at": "2026-02-23 16:05:26",
+      "atm_in_path": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.309/CaseDocs/atm_in",
+      "issue_number": 292,
+      "issue_state": "open",
+      "issue_created_at": "2026-02-12T22:49:03Z",
+      "year_range": null,
+      "statistics": {},
+      "has_namelist": true
+    },
+    {
+      "id": 5,
+      "case_name": "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.308",
+      "compset": null,
+      "resolution": "e30_alpha08b",
+      "experiment_id": null,
+      "case_number": "308",
+      "issue_id": 5,
+      "purpose": "same as 307 but add alternate tuning from 276\n___",
+      "description": "Same as 307 (#289) except:\n- user_nl_cam\n```\nmicro_mg_vtrmi_factor = 1.0\nclubb_c8 = 4.5\nclubb_c_k10h = 0.20\n```\n___",
+      "case_directory": null,
+      "diagnostics_directory": null,
+      "has_diagnostics": 0,
+      "contacts": [
+        "olyson",
+        "klindsay28",
+        "mbramberger",
+        "duvivier",
+        "adamrher",
+        "dlawrenncar",
+        "gustavo-marques",
+        "dabail10",
+        "cecilehannay",
+        "PeterHjortLauritzen",
+        "JulioTBacmeister",
+        "iangrooms",
+        "slevis-lmwg",
+        "gunterl",
+        "tilmes",
+        "wwieder",
+        "fobryan3",
+        "swrneale"
+      ],
+      "diagnostics_url": null,
+      "created_at": "2026-02-17 19:40:42",
+      "updated_at": "2026-02-23 16:05:26",
+      "atm_in_path": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.308/CaseDocs/atm_in",
+      "issue_number": 290,
+      "issue_state": "open",
+      "issue_created_at": "2026-02-06T22:46:56Z",
+      "year_range": "yrs_2_21",
+      "statistics": {
+        "ANN": {
+          "AODVISdn": {
+            "bias": -0.004,
+            "global_mean": 0.13,
+            "sample_size": 20.0,
+            "std": 0.00217,
+            "std_error": 0.000109
+          },
+          "BURDENBC": {
+            "bias": 1e-10,
+            "global_mean": 6.41e-08,
+            "sample_size": 20.0,
+            "std": 6.96e-10,
+            "std_error": 3.48e-11
+          },
+          "BURDENDUST": {
+            "bias": -7e-07,
+            "global_mean": 3.48e-05,
+            "sample_size": 20.0,
+            "std": 2.03e-06,
+            "std_error": 1.01e-07
+          },
+          "BURDENPOM": {
+            "bias": 1e-09,
+            "global_mean": 6.06e-07,
+            "sample_size": 20.0,
+            "std": 6.72e-09,
+            "std_error": 3.36e-10
+          },
+          "BURDENSEASALT": {
+            "bias": -5e-07,
+            "global_mean": 1.57e-05,
+            "sample_size": 20.0,
+            "std": 2.4e-07,
+            "std_error": 1.2e-08
+          },
+          "BURDENSO4": {
+            "bias": 1e-08,
+            "global_mean": 2.01e-06,
+            "sample_size": 20.0,
+            "std": 4.17e-08,
+            "std_error": 2.08e-09
+          },
+          "BURDENSOA": {
+            "bias": 0.0,
+            "global_mean": 1.34e-06,
+            "sample_size": 20.0,
+            "std": 5.11e-08,
+            "std_error": 2.56e-09
+          },
+          "CLDHGH": {
+            "bias": 0.009,
+            "global_mean": 0.463,
+            "sample_size": 20.0,
+            "std": 0.00164,
+            "std_error": 8.21e-05
+          },
+          "CLDLOW": {
+            "bias": 0.0,
+            "global_mean": 0.448,
+            "sample_size": 20.0,
+            "std": 0.00278,
+            "std_error": 0.000139
+          },
+          "CLDMED": {
+            "bias": -0.003,
+            "global_mean": 0.324,
+            "sample_size": 20.0,
+            "std": 0.00151,
+            "std_error": 7.57e-05
+          },
+          "CLDTOT": {
+            "bias": 0.006,
+            "global_mean": 0.726,
+            "sample_size": 20.0,
+            "std": 0.00235,
+            "std_error": 0.000118
+          },
+          "FLNS": {
+            "bias": -0.302,
+            "global_mean": 58.326,
+            "sample_size": 20.0,
+            "std": 0.232,
+            "std_error": 0.012
+          },
+          "FLNT": {
+            "bias": -0.649,
+            "global_mean": 239.294,
+            "sample_size": 20.0,
+            "std": 0.278,
+            "std_error": 0.014
+          },
+          "FLNTC": {
+            "bias": 0.258,
+            "global_mean": 262.369,
+            "sample_size": 20.0,
+            "std": 0.188,
+            "std_error": 0.009
+          },
+          "FSDS": {
+            "bias": -1.072,
+            "global_mean": 191.715,
+            "sample_size": 20.0,
+            "std": 0.437,
+            "std_error": 0.022
+          },
+          "FSDSC": {
+            "bias": 0.008,
+            "global_mean": 248.779,
+            "sample_size": 20.0,
+            "std": 0.12,
+            "std_error": 0.006
+          },
+          "FSNS": {
+            "bias": -0.946,
+            "global_mean": 166.345,
+            "sample_size": 20.0,
+            "std": 0.466,
+            "std_error": 0.023
+          },
+          "FSNSC": {
+            "bias": 0.052,
+            "global_mean": 217.487,
+            "sample_size": 20.0,
+            "std": 0.173,
+            "std_error": 0.009
+          },
+          "FSNT": {
+            "bias": -0.755,
+            "global_mean": 239.366,
+            "sample_size": 20.0,
+            "std": 0.417,
+            "std_error": 0.021
+          },
+          "FSNTC": {
+            "bias": 0.162,
+            "global_mean": 285.946,
+            "sample_size": 20.0,
+            "std": 0.168,
+            "std_error": 0.008
+          },
+          "ICEFRAC": {
+            "bias": -0.0002,
+            "global_mean": 0.0445,
+            "sample_size": 20.0,
+            "std": 0.000923,
+            "std_error": 4.61e-05
+          },
+          "LANDFRAC": {
+            "bias": 0.0,
+            "global_mean": 0.292,
+            "sample_size": 20.0,
+            "std": 5.55e-17,
+            "std_error": 2.78e-18
+          },
+          "LHFLX": {
+            "bias": -1.344,
+            "global_mean": 87.838,
+            "sample_size": 20.0,
+            "std": 0.331,
+            "std_error": 0.017
+          },
+          "LWCF": {
+            "bias": 0.907,
+            "global_mean": 23.075,
+            "sample_size": 20.0,
+            "std": 0.106,
+            "std_error": 0.005
+          },
+          "OCNFRAC": {
+            "bias": 0.0,
+            "global_mean": 0.663,
+            "sample_size": 20.0,
+            "std": 0.000923,
+            "std_error": 4.61e-05
+          },
+          "OMEGA500": {
+            "bias": 2.4e-06,
+            "global_mean": -5.16e-05,
+            "sample_size": 20.0,
+            "std": 2.38e-06,
+            "std_error": 1.19e-07
+          },
+          "PBLH": {
+            "bias": -13.412,
+            "global_mean": 739.439,
+            "sample_size": 20.0,
+            "std": 1.051,
+            "std_error": 0.053
+          },
+          "PRECC": {
+            "bias": -8e-10,
+            "global_mean": 1.73e-08,
+            "sample_size": 20.0,
+            "std": 1.32e-10,
+            "std_error": 6.59e-12
+          },
+          "PRECL": {
+            "bias": 3e-10,
+            "global_mean": 1.78e-08,
+            "sample_size": 20.0,
+            "std": 1.67e-10,
+            "std_error": 8.33e-12
+          },
+          "PRECSC": {
+            "bias": 1.4e-12,
+            "global_mean": 5.79e-11,
+            "sample_size": 20.0,
+            "std": 3.86e-12,
+            "std_error": 1.93e-13
+          },
+          "PRECSL": {
+            "bias": 3e-11,
+            "global_mean": 2.76e-09,
+            "sample_size": 20.0,
+            "std": 5.28e-11,
+            "std_error": 2.64e-12
+          },
+          "PRECT": {
+            "bias": -5e-10,
+            "global_mean": 3.51e-08,
+            "sample_size": 20.0,
+            "std": 1.35e-10,
+            "std_error": 6.76e-12
+          },
+          "PS": {
+            "bias": 2.186,
+            "global_mean": 98507.148,
+            "sample_size": 20.0,
+            "std": 1.562,
+            "std_error": 0.078
+          },
+          "PSL": {
+            "bias": 2.515,
+            "global_mean": 101095.88,
+            "sample_size": 20.0,
+            "std": 1.833,
+            "std_error": 0.092
+          },
+          "QFLX": {
+            "bias": -5e-07,
+            "global_mean": 3.51e-05,
+            "sample_size": 20.0,
+            "std": 1.32e-07,
+            "std_error": 6.62e-09
+          },
+          "RESTOM": {
+            "bias": -0.106,
+            "global_mean": 0.072,
+            "sample_size": 20.0,
+            "std": 0.425,
+            "std_error": 0.0212
+          },
+          "SHFLX": {
+            "bias": 0.807,
+            "global_mean": 19.136,
+            "sample_size": 20.0,
+            "std": 0.092,
+            "std_error": 0.005
+          },
+          "SST": {
+            "bias": 0.096,
+            "global_mean": 291.933,
+            "sample_size": 20.0,
+            "std": 0.069,
+            "std_error": 0.003
+          },
+          "SWCF": {
+            "bias": -0.917,
+            "global_mean": -46.569,
+            "sample_size": 20.0,
+            "std": 0.331,
+            "std_error": 0.017
+          },
+          "TAUX": {
+            "bias": -0.00013,
+            "global_mean": -0.00599,
+            "sample_size": 20.0,
+            "std": 0.000794,
+            "std_error": 3.97e-05
+          },
+          "TAUY": {
+            "bias": -0.00046,
+            "global_mean": -0.00177,
+            "sample_size": 20.0,
+            "std": 0.00057,
+            "std_error": 2.85e-05
+          },
+          "TGCLDIWP": {
+            "bias": 0.0004,
+            "global_mean": 0.0142,
+            "sample_size": 20.0,
+            "std": 0.000194,
+            "std_error": 9.7e-06
+          },
+          "TGCLDLWP": {
+            "bias": 0.0017,
+            "global_mean": 0.054,
+            "sample_size": 20.0,
+            "std": 0.000467,
+            "std_error": 2.34e-05
+          },
+          "TMQ": {
+            "bias": 0.219,
+            "global_mean": 22.257,
+            "sample_size": 20.0,
+            "std": 0.159,
+            "std_error": 0.008
+          },
+          "TREFHT": {
+            "bias": 0.076,
+            "global_mean": 286.153,
+            "sample_size": 20.0,
+            "std": 0.092,
+            "std_error": 0.005
+          },
+          "TS": {
+            "bias": 0.136,
+            "global_mean": 286.971,
+            "sample_size": 20.0,
+            "std": 0.093,
+            "std_error": 0.005
+          },
+          "U10": {
+            "bias": -0.012,
+            "global_mean": 6.725,
+            "sample_size": 20.0,
+            "std": 0.029,
+            "std_error": 0.001
+          }
+        }
+      },
+      "has_namelist": true
+    },
+    {
+      "id": 6,
+      "case_name": "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.307",
+      "compset": null,
+      "resolution": "e30_alpha08b",
+      "experiment_id": null,
+      "case_number": "307",
+      "issue_id": 6,
+      "purpose": "302 \n+ add the ocean mods from 304 (new runoff mapping files), and 305 (KHTR_MIN = 50) + Src Mods \n+ new land param files + set ndep \n___",
+      "description": "Same as 302 (#283) except:\n- user_nl_clm\n```\nfinidat = '/glade/campaign/cgd/tss/common/Land_Only_Simulations/CTSM54_DEV/ctsm5.4.004_bgc_ne30_130_pSASU_greenland/rest/0121-01-01-00000/ctsm5.4.004_bgc_ne30_130_pSASU_greenland.clm2.r.0121-01-01-00000.nc'",
+      "case_directory": null,
+      "diagnostics_directory": null,
+      "has_diagnostics": 0,
+      "contacts": [
+        "olyson",
+        "klindsay28",
+        "mbramberger",
+        "duvivier",
+        "adamrher",
+        "dlawrenncar",
+        "gustavo-marques",
+        "dabail10",
+        "cecilehannay",
+        "PeterHjortLauritzen",
+        "JulioTBacmeister",
+        "iangrooms",
+        "slevis-lmwg",
+        "gunterl",
+        "tilmes",
+        "wwieder",
+        "fobryan3",
+        "swrneale"
+      ],
+      "diagnostics_url": null,
+      "created_at": "2026-02-17 19:40:42",
+      "updated_at": "2026-02-23 16:05:26",
+      "atm_in_path": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.302/CaseDocs/atm_in",
+      "issue_number": 289,
+      "issue_state": "open",
+      "issue_created_at": "2026-02-06T22:37:31Z",
+      "year_range": "yrs_2_21",
+      "statistics": {
+        "ANN": {
+          "AODVISdn": {
+            "bias": 0.0,
+            "global_mean": 0.13,
+            "sample_size": 20.0,
+            "std": 0.00217,
+            "std_error": 0.000109
+          },
+          "BURDENBC": {
+            "bias": 7e-10,
+            "global_mean": 6.41e-08,
+            "sample_size": 20.0,
+            "std": 6.96e-10,
+            "std_error": 3.48e-11
+          },
+          "BURDENDUST": {
+            "bias": 0.0,
+            "global_mean": 3.48e-05,
+            "sample_size": 20.0,
+            "std": 2.03e-06,
+            "std_error": 1.01e-07
+          },
+          "BURDENPOM": {
+            "bias": 4e-09,
+            "global_mean": 6.06e-07,
+            "sample_size": 20.0,
+            "std": 6.72e-09,
+            "std_error": 3.36e-10
+          },
+          "BURDENSEASALT": {
+            "bias": 0.0,
+            "global_mean": 1.57e-05,
+            "sample_size": 20.0,
+            "std": 2.4e-07,
+            "std_error": 1.2e-08
+          },
+          "BURDENSO4": {
+            "bias": -1e-08,
+            "global_mean": 2.01e-06,
+            "sample_size": 20.0,
+            "std": 4.17e-08,
+            "std_error": 2.08e-09
+          },
+          "BURDENSOA": {
+            "bias": 0.0,
+            "global_mean": 1.34e-06,
+            "sample_size": 20.0,
+            "std": 5.11e-08,
+            "std_error": 2.56e-09
+          },
+          "CLDHGH": {
+            "bias": 0.0,
+            "global_mean": 0.463,
+            "sample_size": 20.0,
+            "std": 0.00164,
+            "std_error": 8.21e-05
+          },
+          "CLDLOW": {
+            "bias": 0.002,
+            "global_mean": 0.448,
+            "sample_size": 20.0,
+            "std": 0.00278,
+            "std_error": 0.000139
+          },
+          "CLDMED": {
+            "bias": 0.0,
+            "global_mean": 0.324,
+            "sample_size": 20.0,
+            "std": 0.00151,
+            "std_error": 7.57e-05
+          },
+          "CLDTOT": {
+            "bias": 0.001,
+            "global_mean": 0.726,
+            "sample_size": 20.0,
+            "std": 0.00235,
+            "std_error": 0.000118
+          },
+          "FLNS": {
+            "bias": -0.047,
+            "global_mean": 58.326,
+            "sample_size": 20.0,
+            "std": 0.232,
+            "std_error": 0.012
+          },
+          "FLNT": {
+            "bias": -0.138,
+            "global_mean": 239.294,
+            "sample_size": 20.0,
+            "std": 0.278,
+            "std_error": 0.014
+          },
+          "FLNTC": {
+            "bias": -0.09,
+            "global_mean": 262.369,
+            "sample_size": 20.0,
+            "std": 0.188,
+            "std_error": 0.009
+          },
+          "FSDS": {
+            "bias": -0.142,
+            "global_mean": 191.715,
+            "sample_size": 20.0,
+            "std": 0.437,
+            "std_error": 0.022
+          },
+          "FSDSC": {
+            "bias": 0.038,
+            "global_mean": 248.779,
+            "sample_size": 20.0,
+            "std": 0.12,
+            "std_error": 0.006
+          },
+          "FSNS": {
+            "bias": -0.145,
+            "global_mean": 166.345,
+            "sample_size": 20.0,
+            "std": 0.466,
+            "std_error": 0.023
+          },
+          "FSNSC": {
+            "bias": 0.02,
+            "global_mean": 217.487,
+            "sample_size": 20.0,
+            "std": 0.173,
+            "std_error": 0.009
+          },
+          "FSNT": {
+            "bias": -0.163,
+            "global_mean": 239.366,
+            "sample_size": 20.0,
+            "std": 0.417,
+            "std_error": 0.021
+          },
+          "FSNTC": {
+            "bias": -0.02,
+            "global_mean": 285.946,
+            "sample_size": 20.0,
+            "std": 0.168,
+            "std_error": 0.008
+          },
+          "ICEFRAC": {
+            "bias": -0.0002,
+            "global_mean": 0.0445,
+            "sample_size": 20.0,
+            "std": 0.000923,
+            "std_error": 4.61e-05
+          },
+          "LANDFRAC": {
+            "bias": 0.0,
+            "global_mean": 0.292,
+            "sample_size": 20.0,
+            "std": 5.55e-17,
+            "std_error": 2.78e-18
+          },
+          "LHFLX": {
+            "bias": -0.092,
+            "global_mean": 87.838,
+            "sample_size": 20.0,
+            "std": 0.331,
+            "std_error": 0.017
+          },
+          "LWCF": {
+            "bias": 0.048,
+            "global_mean": 23.075,
+            "sample_size": 20.0,
+            "std": 0.106,
+            "std_error": 0.005
+          },
+          "OCNFRAC": {
+            "bias": 0.0,
+            "global_mean": 0.663,
+            "sample_size": 20.0,
+            "std": 0.000923,
+            "std_error": 4.61e-05
+          },
+          "OMEGA500": {
+            "bias": 7e-07,
+            "global_mean": -5.16e-05,
+            "sample_size": 20.0,
+            "std": 2.38e-06,
+            "std_error": 1.19e-07
+          },
+          "PBLH": {
+            "bias": -0.413,
+            "global_mean": 739.439,
+            "sample_size": 20.0,
+            "std": 1.051,
+            "std_error": 0.053
+          },
+          "PRECC": {
+            "bias": -1e-10,
+            "global_mean": 1.73e-08,
+            "sample_size": 20.0,
+            "std": 1.32e-10,
+            "std_error": 6.59e-12
+          },
+          "PRECL": {
+            "bias": 0.0,
+            "global_mean": 1.78e-08,
+            "sample_size": 20.0,
+            "std": 1.67e-10,
+            "std_error": 8.33e-12
+          },
+          "PRECSC": {
+            "bias": 8e-13,
+            "global_mean": 5.79e-11,
+            "sample_size": 20.0,
+            "std": 3.86e-12,
+            "std_error": 1.93e-13
+          },
+          "PRECSL": {
+            "bias": 0.0,
+            "global_mean": 2.76e-09,
+            "sample_size": 20.0,
+            "std": 5.28e-11,
+            "std_error": 2.64e-12
+          },
+          "PRECT": {
+            "bias": 0.0,
+            "global_mean": 3.51e-08,
+            "sample_size": 20.0,
+            "std": 1.35e-10,
+            "std_error": 6.76e-12
+          },
+          "PS": {
+            "bias": -0.698,
+            "global_mean": 98507.148,
+            "sample_size": 20.0,
+            "std": 1.562,
+            "std_error": 0.078
+          },
+          "PSL": {
+            "bias": -0.513,
+            "global_mean": 101095.88,
+            "sample_size": 20.0,
+            "std": 1.833,
+            "std_error": 0.092
+          },
+          "QFLX": {
+            "bias": 0.0,
+            "global_mean": 3.51e-05,
+            "sample_size": 20.0,
+            "std": 1.32e-07,
+            "std_error": 6.62e-09
+          },
+          "RESTOM": {
+            "bias": -0.0248,
+            "global_mean": 0.072,
+            "sample_size": 20.0,
+            "std": 0.425,
+            "std_error": 0.0212
+          },
+          "SHFLX": {
+            "bias": 0.014,
+            "global_mean": 19.136,
+            "sample_size": 20.0,
+            "std": 0.092,
+            "std_error": 0.005
+          },
+          "SST": {
+            "bias": -0.051,
+            "global_mean": 291.933,
+            "sample_size": 20.0,
+            "std": 0.069,
+            "std_error": 0.003
+          },
+          "SWCF": {
+            "bias": -0.143,
+            "global_mean": -46.569,
+            "sample_size": 20.0,
+            "std": 0.331,
+            "std_error": 0.017
+          },
+          "TAUX": {
+            "bias": -9e-05,
+            "global_mean": -0.00599,
+            "sample_size": 20.0,
+            "std": 0.000794,
+            "std_error": 3.97e-05
+          },
+          "TAUY": {
+            "bias": 0.00027,
+            "global_mean": -0.00177,
+            "sample_size": 20.0,
+            "std": 0.00057,
+            "std_error": 2.85e-05
+          },
+          "TGCLDIWP": {
+            "bias": 0.0001,
+            "global_mean": 0.0142,
+            "sample_size": 20.0,
+            "std": 0.000194,
+            "std_error": 9.7e-06
+          },
+          "TGCLDLWP": {
+            "bias": 0.0001,
+            "global_mean": 0.054,
+            "sample_size": 20.0,
+            "std": 0.000467,
+            "std_error": 2.34e-05
+          },
+          "TMQ": {
+            "bias": -0.071,
+            "global_mean": 22.257,
+            "sample_size": 20.0,
+            "std": 0.159,
+            "std_error": 0.008
+          },
+          "TREFHT": {
+            "bias": -0.056,
+            "global_mean": 286.153,
+            "sample_size": 20.0,
+            "std": 0.092,
+            "std_error": 0.005
+          },
+          "TS": {
+            "bias": -0.055,
+            "global_mean": 286.971,
+            "sample_size": 20.0,
+            "std": 0.093,
+            "std_error": 0.005
+          },
+          "U10": {
+            "bias": -0.004,
+            "global_mean": 6.725,
+            "sample_size": 20.0,
+            "std": 0.029,
+            "std_error": 0.001
+          }
+        }
+      },
+      "has_namelist": true
+    },
+    {
+      "id": 7,
+      "case_name": "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.306",
+      "compset": null,
+      "resolution": "e30_alpha07g",
+      "experiment_id": null,
+      "case_number": "306",
+      "issue_id": 7,
+      "purpose": "Check the effect of enforcing `KHTR_MIN = 200.0` m2/s throughout the entire water column on the strength of the ACC and AABW cell of the global MOC.\n___",
+      "description": "Same as 287 (#262) except:",
+      "case_directory": null,
+      "diagnostics_directory": null,
+      "has_diagnostics": 0,
+      "contacts": [
+        "dlawrenncar",
+        "dabail10",
+        "cecilehannay",
+        "PeterHjortLauritzen",
+        "dmleung",
+        "fobryan3",
+        "swrneale",
+        "olyson",
+        "klindsay28",
+        "adamrher",
+        "iangrooms",
+        "gustavo-marques",
+        "JulioTBacmeister",
+        "slevis-lmwg",
+        "gunterl",
+        "tilmes",
+        "wwieder",
+        "mbramberger",
+        "duvivier"
+      ],
+      "diagnostics_url": null,
+      "created_at": "2026-02-17 19:40:43",
+      "updated_at": "2026-02-23 16:05:26",
+      "atm_in_path": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.306/CaseDocs/atm_in",
+      "issue_number": 288,
+      "issue_state": "open",
+      "issue_created_at": "2026-02-04T20:44:43Z",
+      "year_range": null,
+      "statistics": {},
+      "has_namelist": true
+    },
+    {
+      "id": 8,
+      "case_name": "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.305",
+      "compset": null,
+      "resolution": "e30_alpha07g",
+      "experiment_id": null,
+      "case_number": "305",
+      "issue_id": 8,
+      "purpose": "Check the effect of enforcing `KHTR_MIN = 50.0` m2/s throughout the entire water column on the strength of the ACC and AABW cell of the global MOC.\n___",
+      "description": "Same as 287 (#262) except:",
+      "case_directory": null,
+      "diagnostics_directory": null,
+      "has_diagnostics": 0,
+      "contacts": [
+        "dlawrenncar",
+        "dabail10",
+        "cecilehannay",
+        "PeterHjortLauritzen",
+        "dmleung",
+        "fobryan3",
+        "swrneale",
+        "olyson",
+        "klindsay28",
+        "adamrher",
+        "iangrooms",
+        "gustavo-marques",
+        "JulioTBacmeister",
+        "slevis-lmwg",
+        "gunterl",
+        "tilmes",
+        "wwieder",
+        "mbramberger",
+        "duvivier"
+      ],
+      "diagnostics_url": null,
+      "created_at": "2026-02-17 19:40:44",
+      "updated_at": "2026-02-23 16:05:26",
+      "atm_in_path": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.305/CaseDocs/atm_in",
+      "issue_number": 287,
+      "issue_state": "open",
+      "issue_created_at": "2026-02-04T20:44:36Z",
+      "year_range": null,
+      "statistics": {},
+      "has_namelist": true
+    },
+    {
+      "id": 37,
+      "case_name": "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.284",
+      "compset": null,
+      "resolution": "e30_alpha07g",
+      "experiment_id": null,
+      "case_number": "284",
+      "issue_id": 37,
+      "purpose": "Make it less prone to Lab Sea freezing and improve Equatorial currents\n___",
+      "description": "Same as 275 (#240) + changing the Bodner coefficient Cr from 0.01 to 0.005 + MLE_DENSITY_DIFF from 0.02 to 0.03 + the taper settings for the Leithy backscatter LEITHY_DEPTH from 800 to 1000.0, and \nLEITHY_WIDTH from 400 to 500.0",
+      "case_directory": null,
+      "diagnostics_directory": null,
+      "has_diagnostics": 0,
+      "contacts": [
+        "olyson",
+        "klindsay28",
+        "mbramberger",
+        "duvivier",
+        "adamrher",
+        "dlawrenncar",
+        "gustavo-marques",
+        "dabail10",
+        "cecilehannay",
+        "PeterHjortLauritzen",
+        "JulioTBacmeister",
+        "iangrooms",
+        "slevis-lmwg",
+        "dmleung",
+        "tilmes",
+        "wwieder",
+        "fobryan3",
+        "swrneale"
+      ],
+      "diagnostics_url": null,
+      "created_at": "2026-02-17 19:40:57",
+      "updated_at": "2026-02-23 16:05:26",
+      "atm_in_path": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.284/CaseDocs/atm_in",
+      "issue_number": 257,
+      "issue_state": "open",
+      "issue_created_at": "2026-01-12T20:46:56Z",
+      "year_range": null,
+      "statistics": {},
+      "has_namelist": true
+    },
+    {
+      "id": 258,
+      "case_name": "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.315",
+      "compset": null,
+      "resolution": "e30_alpha08b",
+      "experiment_id": null,
+      "case_number": "315",
+      "issue_id": 258,
+      "purpose": "Add the latest beautiful land files. \n___",
+      "description": "Same as 314 (#297) except:\n- user_nl_clm\n```\nparamfile = '/glade/u/home/slevis/paramfiles/iss3725_forFang/ctsm60_params.c260204.cesm3-01.nc'\ndefo_fire_precip_thresh_bet = 1.4d00\nrh_hgh = 80.0d00",
+      "case_directory": null,
+      "diagnostics_directory": null,
+      "has_diagnostics": 0,
+      "contacts": [
+        "olyson",
+        "klindsay28",
+        "mbramberger",
+        "duvivier",
+        "adamrher",
+        "dlawrenncar",
+        "gustavo-marques",
+        "dabail10",
+        "cecilehannay",
+        "PeterHjortLauritzen",
+        "JulioTBacmeister",
+        "iangrooms",
+        "slevis-lmwg",
+        "gunterl",
+        "tilmes",
+        "wwieder",
+        "fobryan3",
+        "swrneale"
+      ],
+      "diagnostics_url": null,
+      "created_at": "2026-02-20 18:50:28",
+      "updated_at": "2026-02-23 16:05:26",
+      "atm_in_path": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.315/CaseDocs/atm_in",
+      "issue_number": 298,
+      "issue_state": "open",
+      "issue_created_at": "2026-02-19T22:52:52Z",
+      "year_range": null,
+      "statistics": {},
+      "has_namelist": true
+    },
+    {
+      "id": 259,
+      "case_name": "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.314",
+      "compset": null,
+      "resolution": "e30_alpha08b",
+      "experiment_id": null,
+      "case_number": "314",
+      "issue_id": 259,
+      "purpose": "Adding the new changes from 311 to 308 and revert r_snw to 1. \n___",
+      "description": "Same as 308 (#290) except:\n- user_nl_cice\n```\nr_snw = 1.25 -> 1.0",
+      "case_directory": null,
+      "diagnostics_directory": null,
+      "has_diagnostics": 0,
+      "contacts": [
+        "olyson",
+        "klindsay28",
+        "mbramberger",
+        "duvivier",
+        "adamrher",
+        "dlawrenncar",
+        "gustavo-marques",
+        "dabail10",
+        "cecilehannay",
+        "PeterHjortLauritzen",
+        "JulioTBacmeister",
+        "iangrooms",
+        "slevis-lmwg",
+        "gunterl",
+        "tilmes",
+        "wwieder",
+        "fobryan3",
+        "swrneale"
+      ],
+      "diagnostics_url": null,
+      "created_at": "2026-02-20 18:50:28",
+      "updated_at": "2026-02-23 16:05:26",
+      "atm_in_path": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.314/CaseDocs/atm_in",
+      "issue_number": 297,
+      "issue_state": "open",
+      "issue_created_at": "2026-02-19T22:16:22Z",
+      "year_range": null,
+      "statistics": {},
+      "has_namelist": true
+    },
+    {
+      "id": 260,
+      "case_name": "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.313",
+      "compset": null,
+      "resolution": "e30_alpha08b",
+      "experiment_id": null,
+      "case_number": "313",
+      "issue_id": 260,
+      "purpose": "Trying to understand the differences in sea-ice thickness between 302 and 307.\n=> same as 308 but reverting the land file changes.",
+      "description": "Same as 308 (#290) except:\n- user_nl_clm\n```\nfinidat = '/glade/campaign/cgd/tss/common/Land_Only_Simulations/CTSM54_DEV/ctsm5.4.004_bgc_ne30_130_pSASU_greenland/rest/0121-01-01-00000/ctsm5.4.004_bgc_ne30_130_pSASU_green\nland.clm2.r.0121-01-01-00000.nc'\nuse_init_interp = .true.\nreseed_dead_plants = .true.\nparamfile = '/glade/work/linnia/CLM6-PPE/ctsm6_cal/paramfiles/ctsm60_params.c251211_BETTmedlynslope3.5.nc'\n```\n___",
+      "case_directory": null,
+      "diagnostics_directory": null,
+      "has_diagnostics": 0,
+      "contacts": [
+        "olyson",
+        "klindsay28",
+        "mbramberger",
+        "duvivier",
+        "adamrher",
+        "dlawrenncar",
+        "gustavo-marques",
+        "dabail10",
+        "cecilehannay",
+        "PeterHjortLauritzen",
+        "JulioTBacmeister",
+        "iangrooms",
+        "slevis-lmwg",
+        "gunterl",
+        "tilmes",
+        "wwieder",
+        "fobryan3",
+        "swrneale"
+      ],
+      "diagnostics_url": null,
+      "created_at": "2026-02-20 18:50:30",
+      "updated_at": "2026-02-23 16:05:26",
+      "atm_in_path": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.313/CaseDocs/atm_in",
+      "issue_number": 296,
+      "issue_state": "open",
+      "issue_created_at": "2026-02-19T21:11:47Z",
+      "year_range": null,
+      "statistics": {},
+      "has_namelist": true
+    },
+    {
+      "id": 261,
+      "case_name": "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.284.mpas (coupled mpas configuration)",
+      "compset": null,
+      "resolution": "e30_alpha07g",
+      "experiment_id": null,
+      "case_number": null,
+      "issue_id": 1,
+      "purpose": "Demonstrate mpasa atmosphere coupled run for mgmt. Will require tuning.\n___",
+      "description": "Modify sandbox to include coupled mpas grid alias in sandbox/ccs_config/modelgrid_aliases_nuopc.xml\n```\n  <model_grid alias=\"mpasa120_t232\">\n    <grid name=\"atm\">mpasa120</grid>\n    <grid name=\"lnd\">mpasa120</grid>\n    <grid name=\"ocnice\">tx2_3v2</grid>\n    <grid name=\"wav\">wgx3v7</grid>\n    <mask>tx2_3v2</mask>\n  </model_grid>\n```\nNot sure on the baseline, however I think it should be initialized from a G-case ocean, rather than a prior ne30pg3 B-case. Perhaps run 287.",
+      "case_directory": null,
+      "diagnostics_directory": null,
+      "has_diagnostics": 0,
+      "contacts": [
+        "islasimpson",
+        "dlawrenncar",
+        "PeterHjortLauritzen",
+        "cecilehannay",
+        "gunterl",
+        "HingOng"
+      ],
+      "diagnostics_url": null,
+      "created_at": "2026-02-20 18:50:30",
+      "updated_at": "2026-02-23 16:05:26",
+      "atm_in_path": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.284.mpas/CaseDocs/atm_in",
+      "issue_number": 295,
+      "issue_state": "open",
+      "issue_created_at": "2026-02-16T21:45:02Z",
+      "year_range": null,
+      "statistics": {},
+      "has_namelist": true
+    },
+    {
       "id": 252,
       "case_name": "b.e30_beta04.BLT1850.ne30_t232_wgx3.114",
       "compset": "BLT1850",
@@ -26471,50 +27655,6 @@
       "has_namelist": true
     },
     {
-      "id": 37,
-      "case_name": "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.284",
-      "compset": null,
-      "resolution": "e30_alpha07g",
-      "experiment_id": null,
-      "case_number": "284",
-      "issue_id": 37,
-      "purpose": "Make it less prone to Lab Sea freezing and improve Equatorial currents\n___",
-      "description": "Same as 275 (#240) + changing the Bodner coefficient Cr from 0.01 to 0.005 + MLE_DENSITY_DIFF from 0.02 to 0.03 + the taper settings for the Leithy backscatter LEITHY_DEPTH from 800 to 1000.0, and \nLEITHY_WIDTH from 400 to 500.0",
-      "case_directory": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.284",
-      "diagnostics_directory": null,
-      "has_diagnostics": 0,
-      "contacts": [
-        "fobryan3",
-        "cecilehannay",
-        "JulioTBacmeister",
-        "tilmes",
-        "dmleung",
-        "dabail10",
-        "dlawrenncar",
-        "duvivier",
-        "swrneale",
-        "adamrher",
-        "PeterHjortLauritzen",
-        "slevis-lmwg",
-        "gustavo-marques",
-        "klindsay28",
-        "wwieder",
-        "mbramberger",
-        "olyson",
-        "iangrooms"
-      ],
-      "diagnostics_url": null,
-      "created_at": "2026-02-17 19:40:57",
-      "updated_at": "2026-02-20 18:50:50",
-      "atm_in_path": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.284/CaseDocs/atm_in",
-      "issue_number": 257,
-      "issue_state": "open",
-      "issue_created_at": "2026-01-12T20:46:56Z",
-      "year_range": null,
-      "statistics": {},
-      "has_namelist": true
-    },
-    {
       "id": 38,
       "case_name": "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.275.wav",
       "compset": null,
@@ -30720,1146 +31860,6 @@
       "has_namelist": true
     },
     {
-      "id": 7,
-      "case_name": "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.306",
-      "compset": null,
-      "resolution": "e30_alpha07g",
-      "experiment_id": null,
-      "case_number": "306",
-      "issue_id": 7,
-      "purpose": "Check the effect of enforcing `KHTR_MIN = 200.0` m2/s throughout the entire water column on the strength of the ACC and AABW cell of the global MOC.\n___",
-      "description": "Same as 287 (#262) except:",
-      "case_directory": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.306",
-      "diagnostics_directory": null,
-      "has_diagnostics": 0,
-      "contacts": [
-        "cecilehannay",
-        "duvivier",
-        "swrneale",
-        "klindsay28",
-        "iangrooms",
-        "JulioTBacmeister",
-        "PeterHjortLauritzen",
-        "fobryan3",
-        "dmleung",
-        "wwieder",
-        "mbramberger",
-        "gunterl",
-        "tilmes",
-        "dabail10",
-        "dlawrenncar",
-        "slevis-lmwg",
-        "adamrher",
-        "gustavo-marques",
-        "olyson"
-      ],
-      "diagnostics_url": null,
-      "created_at": "2026-02-17 19:40:43",
-      "updated_at": "2026-02-20 18:50:35",
-      "atm_in_path": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.306/CaseDocs/atm_in",
-      "issue_number": 288,
-      "issue_state": "open",
-      "issue_created_at": "2026-02-04T20:44:43Z",
-      "year_range": null,
-      "statistics": {},
-      "has_namelist": true
-    },
-    {
-      "id": 8,
-      "case_name": "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.305",
-      "compset": null,
-      "resolution": "e30_alpha07g",
-      "experiment_id": null,
-      "case_number": "305",
-      "issue_id": 8,
-      "purpose": "Check the effect of enforcing `KHTR_MIN = 50.0` m2/s throughout the entire water column on the strength of the ACC and AABW cell of the global MOC.\n___",
-      "description": "Same as 287 (#262) except:",
-      "case_directory": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.305",
-      "diagnostics_directory": null,
-      "has_diagnostics": 0,
-      "contacts": [
-        "cecilehannay",
-        "duvivier",
-        "swrneale",
-        "klindsay28",
-        "iangrooms",
-        "JulioTBacmeister",
-        "PeterHjortLauritzen",
-        "fobryan3",
-        "dmleung",
-        "wwieder",
-        "mbramberger",
-        "gunterl",
-        "tilmes",
-        "dabail10",
-        "dlawrenncar",
-        "slevis-lmwg",
-        "adamrher",
-        "gustavo-marques",
-        "olyson"
-      ],
-      "diagnostics_url": null,
-      "created_at": "2026-02-17 19:40:44",
-      "updated_at": "2026-02-20 18:50:35",
-      "atm_in_path": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.305/CaseDocs/atm_in",
-      "issue_number": 287,
-      "issue_state": "open",
-      "issue_created_at": "2026-02-04T20:44:36Z",
-      "year_range": null,
-      "statistics": {},
-      "has_namelist": true
-    },
-    {
-      "id": 4,
-      "case_name": "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.309",
-      "compset": null,
-      "resolution": "e30_alpha07g",
-      "experiment_id": null,
-      "case_number": "309",
-      "issue_id": 4,
-      "purpose": "Check the effect of reducing the radius (1000 km to 250 km for frozen and 250 km to 100 km for liquid) and e-folding decay (same as the radius) of the liquid and frozen runoff spreading on the strength of the ACC.\n___",
-      "description": "Same as 287 (#262) except a different mapping file for liquid and frozen runoff.",
-      "case_directory": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.309",
-      "diagnostics_directory": null,
-      "has_diagnostics": 0,
-      "contacts": [
-        "cecilehannay",
-        "duvivier",
-        "swrneale",
-        "klindsay28",
-        "iangrooms",
-        "JulioTBacmeister",
-        "PeterHjortLauritzen",
-        "fobryan3",
-        "dmleung",
-        "wwieder",
-        "mbramberger",
-        "gunterl",
-        "tilmes",
-        "dabail10",
-        "dlawrenncar",
-        "slevis-lmwg",
-        "adamrher",
-        "gustavo-marques",
-        "olyson"
-      ],
-      "diagnostics_url": null,
-      "created_at": "2026-02-17 19:40:42",
-      "updated_at": "2026-02-20 18:50:34",
-      "atm_in_path": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.309/CaseDocs/atm_in",
-      "issue_number": 292,
-      "issue_state": "open",
-      "issue_created_at": "2026-02-12T22:49:03Z",
-      "year_range": null,
-      "statistics": {},
-      "has_namelist": true
-    },
-    {
-      "id": 5,
-      "case_name": "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.308",
-      "compset": null,
-      "resolution": "e30_alpha08b",
-      "experiment_id": null,
-      "case_number": "308",
-      "issue_id": 5,
-      "purpose": "same as 307 but add alternate tuning from 276\n___",
-      "description": "Same as 307 (#289) except:\n- user_nl_cam\n```\nmicro_mg_vtrmi_factor = 1.0\nclubb_c8 = 4.5\nclubb_c_k10h = 0.20\n```\n___",
-      "case_directory": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.308",
-      "diagnostics_directory": "/glade/derecho/scratch/hannay/ADF/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.308",
-      "has_diagnostics": 1,
-      "contacts": [
-        "fobryan3",
-        "cecilehannay",
-        "JulioTBacmeister",
-        "gunterl",
-        "tilmes",
-        "dabail10",
-        "dlawrenncar",
-        "duvivier",
-        "swrneale",
-        "adamrher",
-        "PeterHjortLauritzen",
-        "slevis-lmwg",
-        "gustavo-marques",
-        "klindsay28",
-        "wwieder",
-        "mbramberger",
-        "olyson",
-        "iangrooms"
-      ],
-      "diagnostics_url": null,
-      "created_at": "2026-02-17 19:40:42",
-      "updated_at": "2026-02-20 18:50:34",
-      "atm_in_path": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.308/CaseDocs/atm_in",
-      "issue_number": 290,
-      "issue_state": "open",
-      "issue_created_at": "2026-02-06T22:46:56Z",
-      "year_range": "yrs_2_21",
-      "statistics": {
-        "ANN": {
-          "AODVISdn": {
-            "bias": -0.004,
-            "global_mean": 0.13,
-            "sample_size": 20.0,
-            "std": 0.00217,
-            "std_error": 0.000109
-          },
-          "BURDENBC": {
-            "bias": 1e-10,
-            "global_mean": 6.41e-08,
-            "sample_size": 20.0,
-            "std": 6.96e-10,
-            "std_error": 3.48e-11
-          },
-          "BURDENDUST": {
-            "bias": -7e-07,
-            "global_mean": 3.48e-05,
-            "sample_size": 20.0,
-            "std": 2.03e-06,
-            "std_error": 1.01e-07
-          },
-          "BURDENPOM": {
-            "bias": 1e-09,
-            "global_mean": 6.06e-07,
-            "sample_size": 20.0,
-            "std": 6.72e-09,
-            "std_error": 3.36e-10
-          },
-          "BURDENSEASALT": {
-            "bias": -5e-07,
-            "global_mean": 1.57e-05,
-            "sample_size": 20.0,
-            "std": 2.4e-07,
-            "std_error": 1.2e-08
-          },
-          "BURDENSO4": {
-            "bias": 1e-08,
-            "global_mean": 2.01e-06,
-            "sample_size": 20.0,
-            "std": 4.17e-08,
-            "std_error": 2.08e-09
-          },
-          "BURDENSOA": {
-            "bias": 0.0,
-            "global_mean": 1.34e-06,
-            "sample_size": 20.0,
-            "std": 5.11e-08,
-            "std_error": 2.56e-09
-          },
-          "CLDHGH": {
-            "bias": 0.009,
-            "global_mean": 0.463,
-            "sample_size": 20.0,
-            "std": 0.00164,
-            "std_error": 8.21e-05
-          },
-          "CLDLOW": {
-            "bias": 0.0,
-            "global_mean": 0.448,
-            "sample_size": 20.0,
-            "std": 0.00278,
-            "std_error": 0.000139
-          },
-          "CLDMED": {
-            "bias": -0.003,
-            "global_mean": 0.324,
-            "sample_size": 20.0,
-            "std": 0.00151,
-            "std_error": 7.57e-05
-          },
-          "CLDTOT": {
-            "bias": 0.006,
-            "global_mean": 0.726,
-            "sample_size": 20.0,
-            "std": 0.00235,
-            "std_error": 0.000118
-          },
-          "FLNS": {
-            "bias": -0.302,
-            "global_mean": 58.326,
-            "sample_size": 20.0,
-            "std": 0.232,
-            "std_error": 0.012
-          },
-          "FLNT": {
-            "bias": -0.649,
-            "global_mean": 239.294,
-            "sample_size": 20.0,
-            "std": 0.278,
-            "std_error": 0.014
-          },
-          "FLNTC": {
-            "bias": 0.258,
-            "global_mean": 262.369,
-            "sample_size": 20.0,
-            "std": 0.188,
-            "std_error": 0.009
-          },
-          "FSDS": {
-            "bias": -1.072,
-            "global_mean": 191.715,
-            "sample_size": 20.0,
-            "std": 0.437,
-            "std_error": 0.022
-          },
-          "FSDSC": {
-            "bias": 0.008,
-            "global_mean": 248.779,
-            "sample_size": 20.0,
-            "std": 0.12,
-            "std_error": 0.006
-          },
-          "FSNS": {
-            "bias": -0.946,
-            "global_mean": 166.345,
-            "sample_size": 20.0,
-            "std": 0.466,
-            "std_error": 0.023
-          },
-          "FSNSC": {
-            "bias": 0.052,
-            "global_mean": 217.487,
-            "sample_size": 20.0,
-            "std": 0.173,
-            "std_error": 0.009
-          },
-          "FSNT": {
-            "bias": -0.755,
-            "global_mean": 239.366,
-            "sample_size": 20.0,
-            "std": 0.417,
-            "std_error": 0.021
-          },
-          "FSNTC": {
-            "bias": 0.162,
-            "global_mean": 285.946,
-            "sample_size": 20.0,
-            "std": 0.168,
-            "std_error": 0.008
-          },
-          "ICEFRAC": {
-            "bias": -0.0002,
-            "global_mean": 0.0445,
-            "sample_size": 20.0,
-            "std": 0.000923,
-            "std_error": 4.61e-05
-          },
-          "LANDFRAC": {
-            "bias": 0.0,
-            "global_mean": 0.292,
-            "sample_size": 20.0,
-            "std": 5.55e-17,
-            "std_error": 2.78e-18
-          },
-          "LHFLX": {
-            "bias": -1.344,
-            "global_mean": 87.838,
-            "sample_size": 20.0,
-            "std": 0.331,
-            "std_error": 0.017
-          },
-          "LWCF": {
-            "bias": 0.907,
-            "global_mean": 23.075,
-            "sample_size": 20.0,
-            "std": 0.106,
-            "std_error": 0.005
-          },
-          "OCNFRAC": {
-            "bias": 0.0,
-            "global_mean": 0.663,
-            "sample_size": 20.0,
-            "std": 0.000923,
-            "std_error": 4.61e-05
-          },
-          "OMEGA500": {
-            "bias": 2.4e-06,
-            "global_mean": -5.16e-05,
-            "sample_size": 20.0,
-            "std": 2.38e-06,
-            "std_error": 1.19e-07
-          },
-          "PBLH": {
-            "bias": -13.412,
-            "global_mean": 739.439,
-            "sample_size": 20.0,
-            "std": 1.051,
-            "std_error": 0.053
-          },
-          "PRECC": {
-            "bias": -8e-10,
-            "global_mean": 1.73e-08,
-            "sample_size": 20.0,
-            "std": 1.32e-10,
-            "std_error": 6.59e-12
-          },
-          "PRECL": {
-            "bias": 3e-10,
-            "global_mean": 1.78e-08,
-            "sample_size": 20.0,
-            "std": 1.67e-10,
-            "std_error": 8.33e-12
-          },
-          "PRECSC": {
-            "bias": 1.4e-12,
-            "global_mean": 5.79e-11,
-            "sample_size": 20.0,
-            "std": 3.86e-12,
-            "std_error": 1.93e-13
-          },
-          "PRECSL": {
-            "bias": 3e-11,
-            "global_mean": 2.76e-09,
-            "sample_size": 20.0,
-            "std": 5.28e-11,
-            "std_error": 2.64e-12
-          },
-          "PRECT": {
-            "bias": -5e-10,
-            "global_mean": 3.51e-08,
-            "sample_size": 20.0,
-            "std": 1.35e-10,
-            "std_error": 6.76e-12
-          },
-          "PS": {
-            "bias": 2.186,
-            "global_mean": 98507.148,
-            "sample_size": 20.0,
-            "std": 1.562,
-            "std_error": 0.078
-          },
-          "PSL": {
-            "bias": 2.515,
-            "global_mean": 101095.88,
-            "sample_size": 20.0,
-            "std": 1.833,
-            "std_error": 0.092
-          },
-          "QFLX": {
-            "bias": -5e-07,
-            "global_mean": 3.51e-05,
-            "sample_size": 20.0,
-            "std": 1.32e-07,
-            "std_error": 6.62e-09
-          },
-          "RESTOM": {
-            "bias": -0.106,
-            "global_mean": 0.072,
-            "sample_size": 20.0,
-            "std": 0.425,
-            "std_error": 0.0212
-          },
-          "SHFLX": {
-            "bias": 0.807,
-            "global_mean": 19.136,
-            "sample_size": 20.0,
-            "std": 0.092,
-            "std_error": 0.005
-          },
-          "SST": {
-            "bias": 0.096,
-            "global_mean": 291.933,
-            "sample_size": 20.0,
-            "std": 0.069,
-            "std_error": 0.003
-          },
-          "SWCF": {
-            "bias": -0.917,
-            "global_mean": -46.569,
-            "sample_size": 20.0,
-            "std": 0.331,
-            "std_error": 0.017
-          },
-          "TAUX": {
-            "bias": -0.00013,
-            "global_mean": -0.00599,
-            "sample_size": 20.0,
-            "std": 0.000794,
-            "std_error": 3.97e-05
-          },
-          "TAUY": {
-            "bias": -0.00046,
-            "global_mean": -0.00177,
-            "sample_size": 20.0,
-            "std": 0.00057,
-            "std_error": 2.85e-05
-          },
-          "TGCLDIWP": {
-            "bias": 0.0004,
-            "global_mean": 0.0142,
-            "sample_size": 20.0,
-            "std": 0.000194,
-            "std_error": 9.7e-06
-          },
-          "TGCLDLWP": {
-            "bias": 0.0017,
-            "global_mean": 0.054,
-            "sample_size": 20.0,
-            "std": 0.000467,
-            "std_error": 2.34e-05
-          },
-          "TMQ": {
-            "bias": 0.219,
-            "global_mean": 22.257,
-            "sample_size": 20.0,
-            "std": 0.159,
-            "std_error": 0.008
-          },
-          "TREFHT": {
-            "bias": 0.076,
-            "global_mean": 286.153,
-            "sample_size": 20.0,
-            "std": 0.092,
-            "std_error": 0.005
-          },
-          "TS": {
-            "bias": 0.136,
-            "global_mean": 286.971,
-            "sample_size": 20.0,
-            "std": 0.093,
-            "std_error": 0.005
-          },
-          "U10": {
-            "bias": -0.012,
-            "global_mean": 6.725,
-            "sample_size": 20.0,
-            "std": 0.029,
-            "std_error": 0.001
-          }
-        }
-      },
-      "has_namelist": true
-    },
-    {
-      "id": 6,
-      "case_name": "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.307",
-      "compset": null,
-      "resolution": "e30_alpha08b",
-      "experiment_id": null,
-      "case_number": "307",
-      "issue_id": 6,
-      "purpose": "302 \n+ add the ocean mods from 304 (new runoff mapping files), and 305 (KHTR_MIN = 50) + Src Mods \n+ new land param files + set ndep \n___",
-      "description": "Same as 302 (#283) except:\n- user_nl_clm\n```\nfinidat = '/glade/campaign/cgd/tss/common/Land_Only_Simulations/CTSM54_DEV/ctsm5.4.004_bgc_ne30_130_pSASU_greenland/rest/0121-01-01-00000/ctsm5.4.004_bgc_ne30_130_pSASU_greenland.clm2.r.0121-01-01-00000.nc'",
-      "case_directory": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.302",
-      "diagnostics_directory": "/glade/derecho/scratch/hannay/ADF/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.307",
-      "has_diagnostics": 1,
-      "contacts": [
-        "fobryan3",
-        "cecilehannay",
-        "JulioTBacmeister",
-        "gunterl",
-        "tilmes",
-        "dabail10",
-        "dlawrenncar",
-        "duvivier",
-        "swrneale",
-        "adamrher",
-        "PeterHjortLauritzen",
-        "slevis-lmwg",
-        "gustavo-marques",
-        "klindsay28",
-        "wwieder",
-        "mbramberger",
-        "olyson",
-        "iangrooms"
-      ],
-      "diagnostics_url": null,
-      "created_at": "2026-02-17 19:40:42",
-      "updated_at": "2026-02-20 18:50:34",
-      "atm_in_path": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.302/CaseDocs/atm_in",
-      "issue_number": 289,
-      "issue_state": "open",
-      "issue_created_at": "2026-02-06T22:37:31Z",
-      "year_range": "yrs_2_21",
-      "statistics": {
-        "ANN": {
-          "AODVISdn": {
-            "bias": 0.0,
-            "global_mean": 0.13,
-            "sample_size": 20.0,
-            "std": 0.00217,
-            "std_error": 0.000109
-          },
-          "BURDENBC": {
-            "bias": 7e-10,
-            "global_mean": 6.41e-08,
-            "sample_size": 20.0,
-            "std": 6.96e-10,
-            "std_error": 3.48e-11
-          },
-          "BURDENDUST": {
-            "bias": 0.0,
-            "global_mean": 3.48e-05,
-            "sample_size": 20.0,
-            "std": 2.03e-06,
-            "std_error": 1.01e-07
-          },
-          "BURDENPOM": {
-            "bias": 4e-09,
-            "global_mean": 6.06e-07,
-            "sample_size": 20.0,
-            "std": 6.72e-09,
-            "std_error": 3.36e-10
-          },
-          "BURDENSEASALT": {
-            "bias": 0.0,
-            "global_mean": 1.57e-05,
-            "sample_size": 20.0,
-            "std": 2.4e-07,
-            "std_error": 1.2e-08
-          },
-          "BURDENSO4": {
-            "bias": -1e-08,
-            "global_mean": 2.01e-06,
-            "sample_size": 20.0,
-            "std": 4.17e-08,
-            "std_error": 2.08e-09
-          },
-          "BURDENSOA": {
-            "bias": 0.0,
-            "global_mean": 1.34e-06,
-            "sample_size": 20.0,
-            "std": 5.11e-08,
-            "std_error": 2.56e-09
-          },
-          "CLDHGH": {
-            "bias": 0.0,
-            "global_mean": 0.463,
-            "sample_size": 20.0,
-            "std": 0.00164,
-            "std_error": 8.21e-05
-          },
-          "CLDLOW": {
-            "bias": 0.002,
-            "global_mean": 0.448,
-            "sample_size": 20.0,
-            "std": 0.00278,
-            "std_error": 0.000139
-          },
-          "CLDMED": {
-            "bias": 0.0,
-            "global_mean": 0.324,
-            "sample_size": 20.0,
-            "std": 0.00151,
-            "std_error": 7.57e-05
-          },
-          "CLDTOT": {
-            "bias": 0.001,
-            "global_mean": 0.726,
-            "sample_size": 20.0,
-            "std": 0.00235,
-            "std_error": 0.000118
-          },
-          "FLNS": {
-            "bias": -0.047,
-            "global_mean": 58.326,
-            "sample_size": 20.0,
-            "std": 0.232,
-            "std_error": 0.012
-          },
-          "FLNT": {
-            "bias": -0.138,
-            "global_mean": 239.294,
-            "sample_size": 20.0,
-            "std": 0.278,
-            "std_error": 0.014
-          },
-          "FLNTC": {
-            "bias": -0.09,
-            "global_mean": 262.369,
-            "sample_size": 20.0,
-            "std": 0.188,
-            "std_error": 0.009
-          },
-          "FSDS": {
-            "bias": -0.142,
-            "global_mean": 191.715,
-            "sample_size": 20.0,
-            "std": 0.437,
-            "std_error": 0.022
-          },
-          "FSDSC": {
-            "bias": 0.038,
-            "global_mean": 248.779,
-            "sample_size": 20.0,
-            "std": 0.12,
-            "std_error": 0.006
-          },
-          "FSNS": {
-            "bias": -0.145,
-            "global_mean": 166.345,
-            "sample_size": 20.0,
-            "std": 0.466,
-            "std_error": 0.023
-          },
-          "FSNSC": {
-            "bias": 0.02,
-            "global_mean": 217.487,
-            "sample_size": 20.0,
-            "std": 0.173,
-            "std_error": 0.009
-          },
-          "FSNT": {
-            "bias": -0.163,
-            "global_mean": 239.366,
-            "sample_size": 20.0,
-            "std": 0.417,
-            "std_error": 0.021
-          },
-          "FSNTC": {
-            "bias": -0.02,
-            "global_mean": 285.946,
-            "sample_size": 20.0,
-            "std": 0.168,
-            "std_error": 0.008
-          },
-          "ICEFRAC": {
-            "bias": -0.0002,
-            "global_mean": 0.0445,
-            "sample_size": 20.0,
-            "std": 0.000923,
-            "std_error": 4.61e-05
-          },
-          "LANDFRAC": {
-            "bias": 0.0,
-            "global_mean": 0.292,
-            "sample_size": 20.0,
-            "std": 5.55e-17,
-            "std_error": 2.78e-18
-          },
-          "LHFLX": {
-            "bias": -0.092,
-            "global_mean": 87.838,
-            "sample_size": 20.0,
-            "std": 0.331,
-            "std_error": 0.017
-          },
-          "LWCF": {
-            "bias": 0.048,
-            "global_mean": 23.075,
-            "sample_size": 20.0,
-            "std": 0.106,
-            "std_error": 0.005
-          },
-          "OCNFRAC": {
-            "bias": 0.0,
-            "global_mean": 0.663,
-            "sample_size": 20.0,
-            "std": 0.000923,
-            "std_error": 4.61e-05
-          },
-          "OMEGA500": {
-            "bias": 7e-07,
-            "global_mean": -5.16e-05,
-            "sample_size": 20.0,
-            "std": 2.38e-06,
-            "std_error": 1.19e-07
-          },
-          "PBLH": {
-            "bias": -0.413,
-            "global_mean": 739.439,
-            "sample_size": 20.0,
-            "std": 1.051,
-            "std_error": 0.053
-          },
-          "PRECC": {
-            "bias": -1e-10,
-            "global_mean": 1.73e-08,
-            "sample_size": 20.0,
-            "std": 1.32e-10,
-            "std_error": 6.59e-12
-          },
-          "PRECL": {
-            "bias": 0.0,
-            "global_mean": 1.78e-08,
-            "sample_size": 20.0,
-            "std": 1.67e-10,
-            "std_error": 8.33e-12
-          },
-          "PRECSC": {
-            "bias": 8e-13,
-            "global_mean": 5.79e-11,
-            "sample_size": 20.0,
-            "std": 3.86e-12,
-            "std_error": 1.93e-13
-          },
-          "PRECSL": {
-            "bias": 0.0,
-            "global_mean": 2.76e-09,
-            "sample_size": 20.0,
-            "std": 5.28e-11,
-            "std_error": 2.64e-12
-          },
-          "PRECT": {
-            "bias": 0.0,
-            "global_mean": 3.51e-08,
-            "sample_size": 20.0,
-            "std": 1.35e-10,
-            "std_error": 6.76e-12
-          },
-          "PS": {
-            "bias": -0.698,
-            "global_mean": 98507.148,
-            "sample_size": 20.0,
-            "std": 1.562,
-            "std_error": 0.078
-          },
-          "PSL": {
-            "bias": -0.513,
-            "global_mean": 101095.88,
-            "sample_size": 20.0,
-            "std": 1.833,
-            "std_error": 0.092
-          },
-          "QFLX": {
-            "bias": 0.0,
-            "global_mean": 3.51e-05,
-            "sample_size": 20.0,
-            "std": 1.32e-07,
-            "std_error": 6.62e-09
-          },
-          "RESTOM": {
-            "bias": -0.0248,
-            "global_mean": 0.072,
-            "sample_size": 20.0,
-            "std": 0.425,
-            "std_error": 0.0212
-          },
-          "SHFLX": {
-            "bias": 0.014,
-            "global_mean": 19.136,
-            "sample_size": 20.0,
-            "std": 0.092,
-            "std_error": 0.005
-          },
-          "SST": {
-            "bias": -0.051,
-            "global_mean": 291.933,
-            "sample_size": 20.0,
-            "std": 0.069,
-            "std_error": 0.003
-          },
-          "SWCF": {
-            "bias": -0.143,
-            "global_mean": -46.569,
-            "sample_size": 20.0,
-            "std": 0.331,
-            "std_error": 0.017
-          },
-          "TAUX": {
-            "bias": -9e-05,
-            "global_mean": -0.00599,
-            "sample_size": 20.0,
-            "std": 0.000794,
-            "std_error": 3.97e-05
-          },
-          "TAUY": {
-            "bias": 0.00027,
-            "global_mean": -0.00177,
-            "sample_size": 20.0,
-            "std": 0.00057,
-            "std_error": 2.85e-05
-          },
-          "TGCLDIWP": {
-            "bias": 0.0001,
-            "global_mean": 0.0142,
-            "sample_size": 20.0,
-            "std": 0.000194,
-            "std_error": 9.7e-06
-          },
-          "TGCLDLWP": {
-            "bias": 0.0001,
-            "global_mean": 0.054,
-            "sample_size": 20.0,
-            "std": 0.000467,
-            "std_error": 2.34e-05
-          },
-          "TMQ": {
-            "bias": -0.071,
-            "global_mean": 22.257,
-            "sample_size": 20.0,
-            "std": 0.159,
-            "std_error": 0.008
-          },
-          "TREFHT": {
-            "bias": -0.056,
-            "global_mean": 286.153,
-            "sample_size": 20.0,
-            "std": 0.092,
-            "std_error": 0.005
-          },
-          "TS": {
-            "bias": -0.055,
-            "global_mean": 286.971,
-            "sample_size": 20.0,
-            "std": 0.093,
-            "std_error": 0.005
-          },
-          "U10": {
-            "bias": -0.004,
-            "global_mean": 6.725,
-            "sample_size": 20.0,
-            "std": 0.029,
-            "std_error": 0.001
-          }
-        }
-      },
-      "has_namelist": true
-    },
-    {
-      "id": 3,
-      "case_name": "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.310",
-      "compset": null,
-      "resolution": "e30_alpha07g",
-      "experiment_id": null,
-      "case_number": "310",
-      "issue_id": 3,
-      "purpose": "Check the effect of reducing the radius of the liquid and frozen runoff spreading on the strength of the ACC (as in 309 #292) in combination with enforcing KHTR_MIN = 50.0 m2/s throughout the entire water column.\n___",
-      "description": "Same as 309 (#292) except",
-      "case_directory": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.310",
-      "diagnostics_directory": null,
-      "has_diagnostics": 0,
-      "contacts": [
-        "cecilehannay",
-        "duvivier",
-        "swrneale",
-        "klindsay28",
-        "iangrooms",
-        "JulioTBacmeister",
-        "PeterHjortLauritzen",
-        "fobryan3",
-        "dmleung",
-        "wwieder",
-        "mbramberger",
-        "gunterl",
-        "tilmes",
-        "dabail10",
-        "dlawrenncar",
-        "slevis-lmwg",
-        "adamrher",
-        "gustavo-marques",
-        "olyson"
-      ],
-      "diagnostics_url": null,
-      "created_at": "2026-02-17 19:40:42",
-      "updated_at": "2026-02-20 18:50:32",
-      "atm_in_path": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.310/CaseDocs/atm_in",
-      "issue_number": 293,
-      "issue_state": "open",
-      "issue_created_at": "2026-02-12T22:53:47Z",
-      "year_range": null,
-      "statistics": {},
-      "has_namelist": true
-    },
-    {
-      "id": 2,
-      "case_name": "b.e30_alpha08b.B1850C_MTso.ne30_t232_wgx3.308",
-      "compset": null,
-      "resolution": "e30_alpha08b",
-      "experiment_id": null,
-      "case_number": "308",
-      "issue_id": 2,
-      "purpose": "MTso equivalent of 308\n___",
-      "description": "Same as 308 (#290) but using MT compset + \n- add to user_nl_cam\n```",
-      "case_directory": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.308",
-      "diagnostics_directory": null,
-      "has_diagnostics": 0,
-      "contacts": [
-        "fobryan3",
-        "cecilehannay",
-        "JulioTBacmeister",
-        "gunterl",
-        "tilmes",
-        "dabail10",
-        "dlawrenncar",
-        "duvivier",
-        "swrneale",
-        "adamrher",
-        "PeterHjortLauritzen",
-        "slevis-lmwg",
-        "gustavo-marques",
-        "klindsay28",
-        "wwieder",
-        "mbramberger",
-        "olyson",
-        "iangrooms"
-      ],
-      "diagnostics_url": null,
-      "created_at": "2026-02-17 19:40:41",
-      "updated_at": "2026-02-20 18:50:31",
-      "atm_in_path": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.308/CaseDocs/atm_in",
-      "issue_number": 294,
-      "issue_state": "open",
-      "issue_created_at": "2026-02-13T22:00:57Z",
-      "year_range": null,
-      "statistics": {},
-      "has_namelist": true
-    },
-    {
-      "id": 260,
-      "case_name": "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.313",
-      "compset": null,
-      "resolution": "e30_alpha08b",
-      "experiment_id": null,
-      "case_number": "313",
-      "issue_id": 260,
-      "purpose": "Trying to understand the differences in sea-ice thickness between 302 and 307.\n=> same as 308 but reverting the land file changes.",
-      "description": "Same as 308 (#290) except:\n- user_nl_clm\n```\nfinidat = '/glade/campaign/cgd/tss/common/Land_Only_Simulations/CTSM54_DEV/ctsm5.4.004_bgc_ne30_130_pSASU_greenland/rest/0121-01-01-00000/ctsm5.4.004_bgc_ne30_130_pSASU_green\nland.clm2.r.0121-01-01-00000.nc'\nuse_init_interp = .true.\nreseed_dead_plants = .true.\nparamfile = '/glade/work/linnia/CLM6-PPE/ctsm6_cal/paramfiles/ctsm60_params.c251211_BETTmedlynslope3.5.nc'\n```\n___",
-      "case_directory": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.313",
-      "diagnostics_directory": null,
-      "has_diagnostics": 0,
-      "contacts": [
-        "fobryan3",
-        "cecilehannay",
-        "JulioTBacmeister",
-        "gunterl",
-        "tilmes",
-        "dabail10",
-        "dlawrenncar",
-        "duvivier",
-        "swrneale",
-        "adamrher",
-        "PeterHjortLauritzen",
-        "slevis-lmwg",
-        "gustavo-marques",
-        "klindsay28",
-        "wwieder",
-        "mbramberger",
-        "olyson",
-        "iangrooms"
-      ],
-      "diagnostics_url": null,
-      "created_at": "2026-02-20 18:50:30",
-      "updated_at": "2026-02-20 18:50:30",
-      "atm_in_path": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.313/CaseDocs/atm_in",
-      "issue_number": 296,
-      "issue_state": "open",
-      "issue_created_at": "2026-02-19T21:11:47Z",
-      "year_range": null,
-      "statistics": {},
-      "has_namelist": true
-    },
-    {
-      "id": 261,
-      "case_name": "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.284.mpas (coupled mpas configuration)",
-      "compset": null,
-      "resolution": "e30_alpha07g",
-      "experiment_id": null,
-      "case_number": null,
-      "issue_id": 1,
-      "purpose": "Demonstrate mpasa atmosphere coupled run for mgmt. Will require tuning.\n___",
-      "description": "Modify sandbox to include coupled mpas grid alias in sandbox/ccs_config/modelgrid_aliases_nuopc.xml\n```\n  <model_grid alias=\"mpasa120_t232\">\n    <grid name=\"atm\">mpasa120</grid>\n    <grid name=\"lnd\">mpasa120</grid>\n    <grid name=\"ocnice\">tx2_3v2</grid>\n    <grid name=\"wav\">wgx3v7</grid>\n    <mask>tx2_3v2</mask>\n  </model_grid>\n```\nNot sure on the baseline, however I think it should be initialized from a G-case ocean, rather than a prior ne30pg3 B-case. Perhaps run 287.",
-      "case_directory": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.284.mpas",
-      "diagnostics_directory": null,
-      "has_diagnostics": 0,
-      "contacts": [
-        "islasimpson",
-        "cecilehannay",
-        "gunterl",
-        "dlawrenncar",
-        "PeterHjortLauritzen",
-        "HingOng"
-      ],
-      "diagnostics_url": null,
-      "created_at": "2026-02-20 18:50:30",
-      "updated_at": "2026-02-20 18:50:30",
-      "atm_in_path": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.284.mpas/CaseDocs/atm_in",
-      "issue_number": 295,
-      "issue_state": "open",
-      "issue_created_at": "2026-02-16T21:45:02Z",
-      "year_range": null,
-      "statistics": {},
-      "has_namelist": true
-    },
-    {
-      "id": 258,
-      "case_name": "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.315",
-      "compset": null,
-      "resolution": "e30_alpha08b",
-      "experiment_id": null,
-      "case_number": "315",
-      "issue_id": 258,
-      "purpose": "Add the latest beautiful land files. \n___",
-      "description": "Same as 314 (#297) except:\n- user_nl_clm\n```\nparamfile = '/glade/u/home/slevis/paramfiles/iss3725_forFang/ctsm60_params.c260204.cesm3-01.nc'\ndefo_fire_precip_thresh_bet = 1.4d00\nrh_hgh = 80.0d00",
-      "case_directory": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.315",
-      "diagnostics_directory": null,
-      "has_diagnostics": 0,
-      "contacts": [
-        "fobryan3",
-        "cecilehannay",
-        "JulioTBacmeister",
-        "gunterl",
-        "tilmes",
-        "dabail10",
-        "dlawrenncar",
-        "duvivier",
-        "swrneale",
-        "adamrher",
-        "PeterHjortLauritzen",
-        "slevis-lmwg",
-        "gustavo-marques",
-        "klindsay28",
-        "wwieder",
-        "mbramberger",
-        "olyson",
-        "iangrooms"
-      ],
-      "diagnostics_url": null,
-      "created_at": "2026-02-20 18:50:28",
-      "updated_at": "2026-02-20 18:50:28",
-      "atm_in_path": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.315/CaseDocs/atm_in",
-      "issue_number": 298,
-      "issue_state": "open",
-      "issue_created_at": "2026-02-19T22:52:52Z",
-      "year_range": null,
-      "statistics": {},
-      "has_namelist": true
-    },
-    {
-      "id": 259,
-      "case_name": "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.314",
-      "compset": null,
-      "resolution": "e30_alpha08b",
-      "experiment_id": null,
-      "case_number": "314",
-      "issue_id": 259,
-      "purpose": "Adding the new changes from 311 to 308 and revert r_snw to 1. \n___",
-      "description": "Same as 308 (#290) except:\n- user_nl_cice\n```\nr_snw = 1.25 -> 1.0",
-      "case_directory": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.314",
-      "diagnostics_directory": null,
-      "has_diagnostics": 0,
-      "contacts": [
-        "fobryan3",
-        "cecilehannay",
-        "JulioTBacmeister",
-        "gunterl",
-        "tilmes",
-        "dabail10",
-        "dlawrenncar",
-        "duvivier",
-        "swrneale",
-        "adamrher",
-        "PeterHjortLauritzen",
-        "slevis-lmwg",
-        "gustavo-marques",
-        "klindsay28",
-        "wwieder",
-        "mbramberger",
-        "olyson",
-        "iangrooms"
-      ],
-      "diagnostics_url": null,
-      "created_at": "2026-02-20 18:50:28",
-      "updated_at": "2026-02-20 18:50:28",
-      "atm_in_path": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.314/CaseDocs/atm_in",
-      "issue_number": 297,
-      "issue_state": "open",
-      "issue_created_at": "2026-02-19T22:16:22Z",
-      "year_range": null,
-      "statistics": {},
-      "has_namelist": true
-    },
-    {
       "id": 1,
       "case_name": "coupled mpas configuration",
       "compset": null,
@@ -31893,8 +31893,8 @@
   ],
   "metadata": {
     "total_cases": 261,
-    "cases_with_diagnostics": 140,
-    "last_updated": "2026-02-20T15:42:37.205239",
-    "diagnostic_coverage_percent": 53.6
+    "cases_with_diagnostics": 138,
+    "last_updated": "2026-02-23T09:05:29.124100",
+    "diagnostic_coverage_percent": 52.9
   }
 }
