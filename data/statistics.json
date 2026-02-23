@@ -1,15 +1,15 @@
 {
   "by_compset": {
     "B1850C_LTso": {
-      "count": 151,
-      "with_diagnostics": 92
+      "count": 200,
+      "with_diagnostics": 117
     },
     "1850_CAM70%LT_CLM60%BGC-CROP_CICE_MOM6_MOSART_DGLC%NOEVOLVE_WW3_SESP": {
       "count": 17,
       "with_diagnostics": 14
     },
     "BHISTC_LTso": {
-      "count": 6,
+      "count": 7,
       "with_diagnostics": 0
     },
     "HISTC_CAM70%LT_CLM60%BGC-CROP_CICE_MOM6_MOSART_DGLC%NOEVOLVE_WW3_SESP": {
@@ -20,19 +20,23 @@
       "count": 4,
       "with_diagnostics": 2
     },
+    "B1850C_MTt4s": {
+      "count": 4,
+      "with_diagnostics": 0
+    },
     "BLT1850": {
       "count": 4,
       "with_diagnostics": 2
-    },
-    "B1850C_MTt4s": {
-      "count": 2,
-      "with_diagnostics": 0
     },
     "HIST_CAM70%LT_CLM60%BGC-CROP_CICE_MOM6_MOSART_DGLC%NOEVOLVE_WW3_SESP": {
       "count": 2,
       "with_diagnostics": 1
     },
     "MT": {
+      "count": 2,
+      "with_diagnostics": 0
+    },
+    "New": {
       "count": 2,
       "with_diagnostics": 0
     },
@@ -48,6 +52,10 @@
       "count": 1,
       "with_diagnostics": 0
     },
+    "Casename": {
+      "count": 1,
+      "with_diagnostics": 0
+    },
     "HIST_CAM60%WCSC_CLM50%BGC-CROP_CICE%PRES_DOCN%DOM_MOSART_CISM2%NOEVOLVE_SWAV_SIAC_SESP": {
       "count": 1,
       "with_diagnostics": 1
@@ -56,11 +64,19 @@
       "count": 1,
       "with_diagnostics": 1
     },
+    "Run": {
+      "count": 1,
+      "with_diagnostics": 0
+    },
     "SE": {
       "count": 1,
       "with_diagnostics": 0
     },
     "SMB": {
+      "count": 1,
+      "with_diagnostics": 0
+    },
+    "Vince": {
       "count": 1,
       "with_diagnostics": 0
     },
@@ -74,39 +90,35 @@
       "count": 181,
       "with_diagnostics": 111
     },
+    "ne30_t232_wgx3": {
+      "count": 46,
+      "with_diagnostics": 20
+    },
     "e30_alpha07c_cesm": {
-      "count": 21,
-      "with_diagnostics": 8
+      "count": 3,
+      "with_diagnostics": 1
     },
     "e30_alpha07g": {
-      "count": 16,
-      "with_diagnostics": 6
-    },
-    "ne30_t232_wgx3": {
-      "count": 6,
+      "count": 3,
       "with_diagnostics": 0
-    },
-    "e30_alpha06b": {
-      "count": 4,
-      "with_diagnostics": 2
-    },
-    "e30_alpha07b_dev": {
-      "count": 4,
-      "with_diagnostics": 3
-    },
-    "e30_beta06": {
-      "count": 4,
-      "with_diagnostics": 4
     },
     "e30_alpha08a": {
       "count": 2,
       "with_diagnostics": 1
+    },
+    "e30_beta06": {
+      "count": 2,
+      "with_diagnostics": 2
     },
     "ne30pg3_t232": {
       "count": 2,
       "with_diagnostics": 1
     },
     "alpha07g_qt3": {
+      "count": 1,
+      "with_diagnostics": 0
+    },
+    "e30_alpha06b": {
       "count": 1,
       "with_diagnostics": 0
     },
@@ -141,5 +153,5 @@
     "without_diagnostics": 121,
     "percentage": 53.6
   },
-  "last_updated": "2026-02-23T13:07:13.944764"
+  "last_updated": "2026-02-23T14:05:43.024099"
 }
