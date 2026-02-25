@@ -88,12 +88,18 @@ class NamelistDiffManager {
             btn.classList.toggle('active', btn.dataset.component === comp);
         });
 
-        // Hide any existing diff
-        const container = document.getElementById('namelistDiffContainer');
-        if (container) container.style.display = 'none';
-
         this.renderCaseList();
         this._updateControls();
+
+        // Auto-refresh diff if 2+ valid cases are already selected for this component
+        const validCount = Array.from(this.selectedCases)
+            .filter(n => this.index[n] && this.index[n][this.activeComponent] != null).length;
+        if (validCount >= 2) {
+            this.showDiff();
+        } else {
+            const container = document.getElementById('namelistDiffContainer');
+            if (container) container.style.display = 'none';
+        }
     }
 
     // ─── Case list ─────────────────────────────────────────────────────────
