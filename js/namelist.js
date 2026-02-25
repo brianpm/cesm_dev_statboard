@@ -81,7 +81,7 @@ class NamelistDiffManager {
     _selectComponent(comp) {
         if (this.componentCounts[comp] === 0) return;
         this.activeComponent = comp;
-        this.selectedCases.clear();
+        // selectedCases intentionally preserved — sticky across component switches
 
         // Update button states
         document.querySelectorAll('.namelist-comp-btn').forEach(btn => {
@@ -186,17 +186,30 @@ class NamelistDiffManager {
     }
 
     _updateControls() {
-        const count = this.selectedCases.size;
+        // Count only cases that have data for the currently active component
+        const validCount = Array.from(this.selectedCases)
+            .filter(n => this.index[n] && this.index[n][this.activeComponent] != null).length;
         const btn = document.getElementById('namelistDiffBtn');
         const counter = document.getElementById('namelistSelectedCount');
-        if (btn) btn.disabled = count < 2;
-        if (counter) counter.textContent = `${count} selected`;
+        if (btn) btn.disabled = validCount < 2;
+        if (counter) counter.textContent = `${this.selectedCases.size} selected`;
     }
 
     _wireEvents() {
         const btn = document.getElementById('namelistDiffBtn');
         if (btn) {
             btn.addEventListener('click', () => this.showDiff());
+        }
+
+        const clearBtn = document.getElementById('namelistClearBtn');
+        if (clearBtn) {
+            clearBtn.addEventListener('click', () => {
+                this.selectedCases.clear();
+                this.renderCaseList();
+                this._updateControls();
+                const c = document.getElementById('namelistDiffContainer');
+                if (c) c.style.display = 'none';
+            });
         }
     }
 
@@ -226,7 +239,9 @@ class NamelistDiffManager {
     // ─── Diff display ──────────────────────────────────────────────────────
 
     async showDiff() {
-        const selected = Array.from(this.selectedCases);
+        // Only diff cases that have data for the active component
+        const selected = Array.from(this.selectedCases)
+            .filter(n => this.index[n] && this.index[n][this.activeComponent] != null);
         if (selected.length < 2) return;
 
         await Promise.all(selected.map(n => this.fetchNamelist(n)));

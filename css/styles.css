@@ -840,6 +840,8 @@ a:hover {
 }
 
 .namelist-comp-btn {
+    appearance: none;
+    -webkit-appearance: none;
     padding: 0.35rem 1rem;
     border: 1px solid var(--primary-color);
     border-radius: 999px;
@@ -848,6 +850,14 @@ a:hover {
     font-size: 0.875rem;
     cursor: pointer;
     transition: background 0.15s, color 0.15s;
+}
+
+/* Override Firefox UA stylesheet which grays out disabled buttons aggressively */
+.namelist-comp-btn:not(:disabled):not(.unavailable) {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    background: #fff;
+    opacity: 1;
 }
 
 .namelist-comp-btn:hover:not(:disabled) {
