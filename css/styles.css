@@ -852,8 +852,9 @@ a:hover {
     transition: background 0.15s, color 0.15s;
 }
 
-/* Override Firefox UA stylesheet which grays out disabled buttons aggressively */
-.namelist-comp-btn:not(:disabled):not(.unavailable) {
+/* Override Firefox UA stylesheet which grays out disabled buttons aggressively.
+   :not(.active) prevents this rule from overriding the active fill state. */
+.namelist-comp-btn:not(:disabled):not(.unavailable):not(.active) {
     border-color: var(--primary-color);
     color: var(--primary-color);
     background: #fff;
@@ -1007,3 +1008,55 @@ a:hover {
 #namelistDiffContainer {
     overflow-x: auto;
 }
+
+/* ── Namelist selection summary panel ── */
+#namelistSelectionPanel {
+    margin: 0.75rem 0 0.5rem;
+    padding: 0.5rem 0.75rem;
+    background: var(--surface);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 0.8rem;
+}
+
+.nsp-header {
+    font-weight: 600;
+    color: var(--text-secondary);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.3rem;
+}
+
+.nsp-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.15rem 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.nsp-name {
+    font-family: monospace;
+    font-size: 0.78rem;
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.nsp-badges {
+    display: flex;
+    gap: 0.5rem;
+    flex-shrink: 0;
+}
+
+.nsp-badge {
+    font-size: 0.72rem;
+    white-space: nowrap;
+    font-family: monospace;
+}
+
+.nsp-avail   { color: #16a34a; }  /* green — data available */
+.nsp-unavail { color: #9ca3af; }  /* gray  — no data */

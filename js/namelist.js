@@ -199,6 +199,40 @@ class NamelistDiffManager {
         const counter = document.getElementById('namelistSelectedCount');
         if (btn) btn.disabled = validCount < 2;
         if (counter) counter.textContent = `${this.selectedCases.size} selected`;
+        this._renderSelectionPanel();
+    }
+
+    _renderSelectionPanel() {
+        const panel = document.getElementById('namelistSelectionPanel');
+        if (!panel) return;
+
+        if (this.selectedCases.size === 0) {
+            panel.style.display = 'none';
+            panel.innerHTML = '';
+            return;
+        }
+
+        const comps = ['atm', 'lnd', 'ice', 'ocn'];
+        const labels = { atm: 'Atmosphere', lnd: 'Land', ice: 'Ice', ocn: 'Ocean' };
+
+        let html = '<div class="nsp-header">Selected cases</div>';
+        Array.from(this.selectedCases).sort().forEach(name => {
+            const entry = this.index[name] || {};
+            const badges = comps.map(comp => {
+                const avail = entry[comp] != null;
+                const cls = avail ? 'nsp-badge nsp-avail' : 'nsp-badge nsp-unavail';
+                const icon = avail ? '\u2713' : '\u2717';
+                const tip = `${labels[comp]}: ${avail ? 'available' : 'no data'}`;
+                return `<span class="${cls}" title="${tip}">${comp}\u00a0${icon}</span>`;
+            }).join('');
+            html += `<div class="nsp-row">
+                <span class="nsp-name" title="${name}">${name}</span>
+                <span class="nsp-badges">${badges}</span>
+            </div>`;
+        });
+
+        panel.innerHTML = html;
+        panel.style.display = '';
     }
 
     _wireEvents() {
