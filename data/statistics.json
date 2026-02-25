@@ -1,8 +1,8 @@
 {
   "by_compset": {
     "B1850C_LTso": {
-      "count": 194,
-      "with_diagnostics": 117
+      "count": 202,
+      "with_diagnostics": 124
     },
     "1850_CAM70%LT_CLM60%BGC-CROP_CICE_MOM6_MOSART_DGLC%NOEVOLVE_WW3_SESP": {
       "count": 17,
@@ -87,12 +87,12 @@
   },
   "by_resolution": {
     "ne30pg3_t232_wg37": {
-      "count": 177,
-      "with_diagnostics": 111
+      "count": 183,
+      "with_diagnostics": 116
     },
     "ne30_t232_wgx3": {
-      "count": 44,
-      "with_diagnostics": 20
+      "count": 46,
+      "with_diagnostics": 22
     },
     "e30_alpha07c_cesm": {
       "count": 3,
@@ -148,10 +148,10 @@
     }
   },
   "diagnostic_coverage": {
-    "total_cases": 262,
+    "total_cases": 263,
     "with_diagnostics": 147,
-    "without_diagnostics": 115,
-    "percentage": 56.1
+    "without_diagnostics": 116,
+    "percentage": 55.9
   },
-  "last_updated": "2026-02-25T15:31:04.938891"
+  "last_updated": "2026-02-25T15:35:56.292154"
 }

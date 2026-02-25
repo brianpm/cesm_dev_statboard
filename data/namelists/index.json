@@ -1,18 +1,30 @@
 {
-  "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.314": {
-    "atm": "namelists/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.314_atm.json",
+  "b.e30_alpha08b.B1850C_MTso.ne30_t232_wgx3.308": {
+    "atm": "namelists/b.e30_alpha08b.B1850C_MTso.ne30_t232_wgx3.308_atm.json",
     "lnd": null,
     "ice": null,
     "ocn": null
   },
-  "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.313": {
-    "atm": "namelists/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.313_atm.json",
+  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.310": {
+    "atm": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.310_atm.json",
     "lnd": null,
     "ice": null,
     "ocn": null
   },
   "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.309": {
     "atm": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.309_atm.json",
+    "lnd": null,
+    "ice": null,
+    "ocn": null
+  },
+  "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.308": {
+    "atm": "namelists/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.308_atm.json",
+    "lnd": null,
+    "ice": null,
+    "ocn": null
+  },
+  "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.307": {
+    "atm": "namelists/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.307_atm.json",
     "lnd": null,
     "ice": null,
     "ocn": null
@@ -29,26 +41,14 @@
     "ice": null,
     "ocn": null
   },
-  "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.310": {
-    "atm": "namelists/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.310_atm.json",
+  "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.314": {
+    "atm": "namelists/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.314_atm.json",
     "lnd": null,
     "ice": null,
     "ocn": null
   },
-  "b.e30_alpha08b.B1850C_MTso.ne30_t232_wgx3.308": {
-    "atm": "namelists/b.e30_alpha08b.B1850C_MTso.ne30_t232_wgx3.308_atm.json",
-    "lnd": null,
-    "ice": null,
-    "ocn": null
-  },
-  "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.308": {
-    "atm": "namelists/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.308_atm.json",
-    "lnd": null,
-    "ice": null,
-    "ocn": null
-  },
-  "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.307": {
-    "atm": "namelists/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.307_atm.json",
+  "b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.313": {
+    "atm": "namelists/b.e30_alpha08b.B1850C_LTso.ne30_t232_wgx3.313_atm.json",
     "lnd": null,
     "ice": null,
     "ocn": null
