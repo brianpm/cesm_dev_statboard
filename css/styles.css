@@ -831,6 +831,68 @@ a:hover {
     cursor: not-allowed;
 }
 
+/* ── Namelist component selector ── */
+.namelist-component-selector {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.namelist-comp-btn {
+    padding: 0.35rem 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 999px;
+    background: #fff;
+    color: var(--primary-color);
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+}
+
+.namelist-comp-btn:hover:not(:disabled) {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.namelist-comp-btn.active {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.namelist-comp-btn:disabled,
+.namelist-comp-btn.unavailable {
+    border-color: #ccc;
+    color: #aaa;
+    cursor: not-allowed;
+    opacity: 0.55;
+}
+
+/* ── Ocean source section headers ── */
+.namelist-source-header td {
+    background: #e0edff;
+    color: #1a3a6b;
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 0.4rem 0.6rem;
+    letter-spacing: 0.03em;
+}
+
+/* ── MOM_input rows that are overridden by MOM_override ── */
+.namelist-overridden {
+    color: #888;
+    font-style: italic;
+}
+
+.namelist-override-badge {
+    display: inline-block;
+    margin-left: 0.3rem;
+    color: #e07000;
+    font-size: 0.75rem;
+    font-style: normal;
+    cursor: help;
+}
+
 .namelist-search-row {
     display: flex;
     align-items: center;

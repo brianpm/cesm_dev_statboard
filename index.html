@@ -234,8 +234,14 @@
         <!-- Namelist Diff Tab Content -->
         <div id="namelistTab" class="tab-content">
             <div class="controls-section">
-                <h3>Atmosphere Namelist (atm_in) Comparison</h3>
-                <p class="help-text">Select 2–4 cases to compare their namelist settings.</p>
+                <h3>Namelist Comparison</h3>
+                <p class="help-text">Select a component, then choose 2–4 cases to compare their namelist settings.</p>
+                <div id="namelistComponentSelector" class="namelist-component-selector">
+                    <button class="namelist-comp-btn active" data-component="atm">Atmosphere</button>
+                    <button class="namelist-comp-btn" data-component="lnd">Land</button>
+                    <button class="namelist-comp-btn" data-component="ocn">Ocean</button>
+                    <button class="namelist-comp-btn" data-component="ice">Sea Ice</button>
+                </div>
                 <div id="namelistCaseSelector"></div>
                 <div class="controls-row">
                     <button id="namelistDiffBtn" class="btn btn-primary" disabled>Show Diff</button>
