@@ -30,6 +30,15 @@ class NamelistDiffManager {
             return;
         }
 
+        // Normalise old single-component index format {case: {file: path}}
+        // to the new multi-component format {case: {atm: path, lnd: null, ...}}.
+        // Needed when the browser or CDN serves a cached pre-refactor index.json.
+        for (const [name, entry] of Object.entries(this.index)) {
+            if (entry && entry.file !== undefined && entry.atm === undefined) {
+                this.index[name] = { atm: entry.file, lnd: null, ice: null, ocn: null };
+            }
+        }
+
         this._computeComponentAvailability();
         this._renderComponentSelector();
         this.renderCaseList();
