@@ -9,7 +9,7 @@
       "with_diagnostics": 14
     },
     "B1850C_MTso": {
-      "count": 7,
+      "count": 8,
       "with_diagnostics": 2
     },
     "BHISTC_LTso": {
@@ -87,7 +87,7 @@
   },
   "by_resolution": {
     "ne30pg3_t232_wg37": {
-      "count": 197,
+      "count": 198,
       "with_diagnostics": 116
     },
     "ne30_t232_wgx3": {
@@ -152,10 +152,10 @@
     }
   },
   "diagnostic_coverage": {
-    "total_cases": 279,
+    "total_cases": 280,
     "with_diagnostics": 147,
-    "without_diagnostics": 132,
-    "percentage": 52.7
+    "without_diagnostics": 133,
+    "percentage": 52.5
   },
-  "last_updated": "2026-04-07T09:46:27.730224"
+  "last_updated": "2026-04-10T09:24:47.894573"
 }
