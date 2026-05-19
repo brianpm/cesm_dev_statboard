@@ -1,6 +1,803 @@
 {
   "cases": [
     {
+      "id": 60,
+      "case_name": "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.268",
+      "compset": "B1850C_LTso",
+      "resolution": "ne30pg3_t232_wg37",
+      "experiment_id": "b.e30_alpha07g",
+      "case_number": "268",
+      "issue_id": 60,
+      "purpose": "Add CAM tuning and revert GM into 265 (with 265 =  Leithy Backscatter)\n___",
+      "description": "Same as 265 (#227) except:",
+      "case_directory": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.268",
+      "diagnostics_directory": "/glade/derecho/scratch/hannay/ADF/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.268",
+      "has_diagnostics": 1,
+      "contacts": [
+        "iangrooms",
+        "swrneale",
+        "klindsay28",
+        "dlawrenncar",
+        "fobryan3",
+        "dabail10",
+        "duvivier",
+        "tilmes",
+        "PeterHjortLauritzen",
+        "gustavo-marques",
+        "dmleung",
+        "wwieder",
+        "mbramberger",
+        "cecilehannay",
+        "olyson",
+        "adamrher",
+        "slevis-lmwg",
+        "JulioTBacmeister"
+      ],
+      "diagnostics_url": null,
+      "created_at": "2026-02-17 19:41:04",
+      "updated_at": "2026-05-19 14:55:52",
+      "readme_create_newcase": "2025-12-10 10:50:51: ./create_newcase --compset B1850C_LTso --res ne30pg3_t232_wg37 --case /glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.268 --run-unsupported --project 93300722",
+      "issue_number": 232,
+      "issue_state": "open",
+      "issue_created_at": "2025-12-12T16:17:08Z",
+      "year_range": "yrs_2_21",
+      "statistics": {
+        "ANN": {
+          "AODVISdn": {
+            "bias": 0.0,
+            "global_mean": 0.126,
+            "sample_size": 20.0,
+            "std": 0.00102,
+            "std_error": 5.09e-05
+          },
+          "BURDENBC": {
+            "bias": -4e-10,
+            "global_mean": 6.31e-08,
+            "sample_size": 20.0,
+            "std": 7.86e-10,
+            "std_error": 3.93e-11
+          },
+          "BURDENDUST": {
+            "bias": -5e-07,
+            "global_mean": 2.81e-05,
+            "sample_size": 20.0,
+            "std": 1.42e-06,
+            "std_error": 7.11e-08
+          },
+          "BURDENPOM": {
+            "bias": -3e-09,
+            "global_mean": 6e-07,
+            "sample_size": 20.0,
+            "std": 8.16e-09,
+            "std_error": 4.08e-10
+          },
+          "BURDENSEASALT": {
+            "bias": 0.0,
+            "global_mean": 2.03e-05,
+            "sample_size": 20.0,
+            "std": 1.59e-07,
+            "std_error": 7.97e-09
+          },
+          "BURDENSO4": {
+            "bias": 1e-08,
+            "global_mean": 2.05e-06,
+            "sample_size": 20.0,
+            "std": 3.49e-08,
+            "std_error": 1.74e-09
+          },
+          "BURDENSOA": {
+            "bias": 0.0,
+            "global_mean": 1.07e-06,
+            "sample_size": 20.0,
+            "std": 4.96e-08,
+            "std_error": 2.48e-09
+          },
+          "CLDHGH": {
+            "bias": 0.001,
+            "global_mean": 0.468,
+            "sample_size": 20.0,
+            "std": 0.00202,
+            "std_error": 0.000101
+          },
+          "CLDLOW": {
+            "bias": -0.002,
+            "global_mean": 0.434,
+            "sample_size": 20.0,
+            "std": 0.00262,
+            "std_error": 0.000131
+          },
+          "CLDMED": {
+            "bias": 0.001,
+            "global_mean": 0.321,
+            "sample_size": 20.0,
+            "std": 0.000885,
+            "std_error": 4.43e-05
+          },
+          "CLDTOT": {
+            "bias": -0.001,
+            "global_mean": 0.72,
+            "sample_size": 20.0,
+            "std": 0.00187,
+            "std_error": 9.33e-05
+          },
+          "FLNS": {
+            "bias": -0.021,
+            "global_mean": 58.465,
+            "sample_size": 20.0,
+            "std": 0.263,
+            "std_error": 0.013
+          },
+          "FLNT": {
+            "bias": 0.087,
+            "global_mean": 240.42,
+            "sample_size": 20.0,
+            "std": 0.181,
+            "std_error": 0.009
+          },
+          "FLNTC": {
+            "bias": 0.079,
+            "global_mean": 263.163,
+            "sample_size": 20.0,
+            "std": 0.151,
+            "std_error": 0.008
+          },
+          "FSDS": {
+            "bias": 0.162,
+            "global_mean": 192.536,
+            "sample_size": 20.0,
+            "std": 0.438,
+            "std_error": 0.022
+          },
+          "FSDSC": {
+            "bias": -0.065,
+            "global_mean": 248.224,
+            "sample_size": 20.0,
+            "std": 0.108,
+            "std_error": 0.005
+          },
+          "FSNS": {
+            "bias": 0.246,
+            "global_mean": 167.534,
+            "sample_size": 20.0,
+            "std": 0.366,
+            "std_error": 0.018
+          },
+          "FSNSC": {
+            "bias": 0.035,
+            "global_mean": 217.509,
+            "sample_size": 20.0,
+            "std": 0.144,
+            "std_error": 0.007
+          },
+          "FSNT": {
+            "bias": 0.268,
+            "global_mean": 240.64,
+            "sample_size": 20.0,
+            "std": 0.301,
+            "std_error": 0.015
+          },
+          "FSNTC": {
+            "bias": 0.089,
+            "global_mean": 286.257,
+            "sample_size": 20.0,
+            "std": 0.15,
+            "std_error": 0.007
+          },
+          "ICEFRAC": {
+            "bias": -0.001,
+            "global_mean": 0.0416,
+            "sample_size": 20.0,
+            "std": 0.000944,
+            "std_error": 4.72e-05
+          },
+          "LANDFRAC": {
+            "bias": 0.0,
+            "global_mean": 0.292,
+            "sample_size": 20.0,
+            "std": 5.55e-17,
+            "std_error": 2.78e-18
+          },
+          "LHFLX": {
+            "bias": 0.206,
+            "global_mean": 88.891,
+            "sample_size": 20.0,
+            "std": 0.31,
+            "std_error": 0.015
+          },
+          "LWCF": {
+            "bias": -0.008,
+            "global_mean": 22.743,
+            "sample_size": 20.0,
+            "std": 0.082,
+            "std_error": 0.004
+          },
+          "OCNFRAC": {
+            "bias": 0.001,
+            "global_mean": 0.666,
+            "sample_size": 20.0,
+            "std": 0.000944,
+            "std_error": 4.72e-05
+          },
+          "OMEGA500": {
+            "bias": -2e-07,
+            "global_mean": -6.47e-05,
+            "sample_size": 20.0,
+            "std": 2.69e-06,
+            "std_error": 1.35e-07
+          },
+          "PBLH": {
+            "bias": 1.193,
+            "global_mean": 735.445,
+            "sample_size": 20.0,
+            "std": 1.345,
+            "std_error": 0.067
+          },
+          "PRECC": {
+            "bias": 1e-10,
+            "global_mean": 1.74e-08,
+            "sample_size": 20.0,
+            "std": 6.39e-11,
+            "std_error": 3.2e-12
+          },
+          "PRECL": {
+            "bias": 0.0,
+            "global_mean": 1.81e-08,
+            "sample_size": 20.0,
+            "std": 1.22e-10,
+            "std_error": 6.11e-12
+          },
+          "PRECSC": {
+            "bias": 8e-13,
+            "global_mean": 5.23e-11,
+            "sample_size": 20.0,
+            "std": 3.05e-12,
+            "std_error": 1.53e-13
+          },
+          "PRECSL": {
+            "bias": -2e-11,
+            "global_mean": 2.68e-09,
+            "sample_size": 20.0,
+            "std": 6.24e-11,
+            "std_error": 3.12e-12
+          },
+          "PRECT": {
+            "bias": 1e-10,
+            "global_mean": 3.55e-08,
+            "sample_size": 20.0,
+            "std": 1.28e-10,
+            "std_error": 6.39e-12
+          },
+          "PS": {
+            "bias": 1.016,
+            "global_mean": 98515.242,
+            "sample_size": 20.0,
+            "std": 1.669,
+            "std_error": 0.083
+          },
+          "PSL": {
+            "bias": 1.156,
+            "global_mean": 101101.824,
+            "sample_size": 20.0,
+            "std": 1.854,
+            "std_error": 0.093
+          },
+          "QFLX": {
+            "bias": 1e-07,
+            "global_mean": 3.55e-05,
+            "sample_size": 20.0,
+            "std": 1.24e-07,
+            "std_error": 6.19e-09
+          },
+          "RESTOM": {
+            "bias": 0.18,
+            "global_mean": 0.22,
+            "sample_size": 20.0,
+            "std": 0.352,
+            "std_error": 0.0176
+          },
+          "SHFLX": {
+            "bias": -0.11,
+            "global_mean": 19.022,
+            "sample_size": 20.0,
+            "std": 0.072,
+            "std_error": 0.004
+          },
+          "SST": {
+            "bias": 0.042,
+            "global_mean": 292.297,
+            "sample_size": 20.0,
+            "std": 0.064,
+            "std_error": 0.003
+          },
+          "SWCF": {
+            "bias": 0.179,
+            "global_mean": -45.606,
+            "sample_size": 20.0,
+            "std": 0.327,
+            "std_error": 0.016
+          },
+          "TAUX": {
+            "bias": 0.00013,
+            "global_mean": -0.00604,
+            "sample_size": 20.0,
+            "std": 0.00095,
+            "std_error": 4.75e-05
+          },
+          "TAUY": {
+            "bias": -6e-05,
+            "global_mean": -0.00188,
+            "sample_size": 20.0,
+            "std": 0.000597,
+            "std_error": 2.98e-05
+          },
+          "TGCLDIWP": {
+            "bias": 0.0,
+            "global_mean": 0.0137,
+            "sample_size": 20.0,
+            "std": 0.000151,
+            "std_error": 7.54e-06
+          },
+          "TGCLDLWP": {
+            "bias": -0.0002,
+            "global_mean": 0.0538,
+            "sample_size": 20.0,
+            "std": 0.000693,
+            "std_error": 3.46e-05
+          },
+          "TMQ": {
+            "bias": 0.105,
+            "global_mean": 23.083,
+            "sample_size": 20.0,
+            "std": 0.17,
+            "std_error": 0.008
+          },
+          "TREFHT": {
+            "bias": 0.065,
+            "global_mean": 286.687,
+            "sample_size": 20.0,
+            "std": 0.078,
+            "std_error": 0.004
+          },
+          "TS": {
+            "bias": 0.062,
+            "global_mean": 287.513,
+            "sample_size": 20.0,
+            "std": 0.077,
+            "std_error": 0.004
+          },
+          "U10": {
+            "bias": -0.002,
+            "global_mean": 6.723,
+            "sample_size": 20.0,
+            "std": 0.023,
+            "std_error": 0.001
+          }
+        }
+      },
+      "has_namelist_atm": true,
+      "has_namelist_lnd": true,
+      "has_namelist_ice": true,
+      "has_namelist_ocn": true,
+      "has_namelist": true
+    },
+    {
+      "id": 127,
+      "case_name": "b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.209",
+      "compset": "B1850C_LTso",
+      "resolution": "ne30pg3_t232_wg37",
+      "experiment_id": "b.e30_alpha07b_dev",
+      "case_number": "209",
+      "issue_id": 127,
+      "purpose": "Same as 202 but with using \"a quarter explicit diffusion\" \n___",
+      "description": "Same as 202 (#153) except:\n- add to user_nl_cam\n```\nclubb_l_do_expldiff_rtm_thlm = .true.",
+      "case_directory": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.209",
+      "diagnostics_directory": "/glade/derecho/scratch/hannay/ADF/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.209",
+      "has_diagnostics": 1,
+      "contacts": [
+        "iangrooms",
+        "swrneale",
+        "klindsay28",
+        "dlawrenncar",
+        "fobryan3",
+        "dabail10",
+        "duvivier",
+        "tilmes",
+        "PeterHjortLauritzen",
+        "gustavo-marques",
+        "wwieder",
+        "mbramberger",
+        "cecilehannay",
+        "olyson",
+        "adamrher",
+        "slevis-lmwg",
+        "JulioTBacmeister"
+      ],
+      "diagnostics_url": null,
+      "created_at": "2026-02-17 19:41:29",
+      "updated_at": "2026-05-19 14:55:52",
+      "readme_create_newcase": "2025-09-06 21:46:50: ./create_newcase --compset B1850C_LTso --res ne30pg3_t232_wg37 --case /glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.209 --run-unsupported --project 93300722",
+      "issue_number": 159,
+      "issue_state": "open",
+      "issue_created_at": "2025-09-08T15:13:10Z",
+      "year_range": "yrs_2_21",
+      "statistics": {
+        "ANN": {
+          "AODDUSTdn": {
+            "bias": 0.0013,
+            "global_mean": 0.014,
+            "sample_size": 20.0,
+            "std": 0.000752,
+            "std_error": 3.76e-05
+          },
+          "AODVISdn": {
+            "bias": 0.0069,
+            "global_mean": 0.1,
+            "sample_size": 20.0,
+            "std": 0.00196,
+            "std_error": 9.81e-05
+          },
+          "BURDENBC": {
+            "bias": -6e-10,
+            "global_mean": 6.7e-08,
+            "sample_size": 20.0,
+            "std": 1.03e-09,
+            "std_error": 5.14e-11
+          },
+          "BURDENDUST": {
+            "bias": 3e-06,
+            "global_mean": 3.05e-05,
+            "sample_size": 20.0,
+            "std": 1.61e-06,
+            "std_error": 8.03e-08
+          },
+          "BURDENPOM": {
+            "bias": -5e-09,
+            "global_mean": 6.4e-07,
+            "sample_size": 20.0,
+            "std": 9.74e-09,
+            "std_error": 4.87e-10
+          },
+          "BURDENSEASALT": {
+            "bias": 7e-07,
+            "global_mean": 1.52e-05,
+            "sample_size": 20.0,
+            "std": 2.22e-07,
+            "std_error": 1.11e-08
+          },
+          "BURDENSO4": {
+            "bias": -1.2e-07,
+            "global_mean": 1.91e-06,
+            "sample_size": 20.0,
+            "std": 5.19e-08,
+            "std_error": 2.59e-09
+          },
+          "BURDENSOA": {
+            "bias": -1.9e-08,
+            "global_mean": 9.81e-07,
+            "sample_size": 20.0,
+            "std": 5.08e-08,
+            "std_error": 2.54e-09
+          },
+          "CLDHGH": {
+            "bias": -0.002,
+            "global_mean": 0.486,
+            "sample_size": 20.0,
+            "std": 0.00334,
+            "std_error": 0.000167
+          },
+          "CLDLOW": {
+            "bias": -0.012,
+            "global_mean": 0.429,
+            "sample_size": 20.0,
+            "std": 0.00485,
+            "std_error": 0.000243
+          },
+          "CLDMED": {
+            "bias": 0.01,
+            "global_mean": 0.31,
+            "sample_size": 20.0,
+            "std": 0.00218,
+            "std_error": 0.000109
+          },
+          "CLDTOT": {
+            "bias": -0.007,
+            "global_mean": 0.729,
+            "sample_size": 20.0,
+            "std": 0.00257,
+            "std_error": 0.000128
+          },
+          "FLNS": {
+            "bias": 0.035,
+            "global_mean": 56.255,
+            "sample_size": 20.0,
+            "std": 0.459,
+            "std_error": 0.023
+          },
+          "FLNT": {
+            "bias": -0.545,
+            "global_mean": 239.303,
+            "sample_size": 20.0,
+            "std": 0.566,
+            "std_error": 0.028
+          },
+          "FLNTC": {
+            "bias": -0.261,
+            "global_mean": 265.245,
+            "sample_size": 20.0,
+            "std": 0.496,
+            "std_error": 0.025
+          },
+          "FSDS": {
+            "bias": 0.031,
+            "global_mean": 189.628,
+            "sample_size": 20.0,
+            "std": 0.484,
+            "std_error": 0.024
+          },
+          "FSDSC": {
+            "bias": -0.395,
+            "global_mean": 247.579,
+            "sample_size": 20.0,
+            "std": 0.387,
+            "std_error": 0.019
+          },
+          "FSNS": {
+            "bias": 0.036,
+            "global_mean": 165.029,
+            "sample_size": 20.0,
+            "std": 0.536,
+            "std_error": 0.027
+          },
+          "FSNSC": {
+            "bias": -0.435,
+            "global_mean": 217.24,
+            "sample_size": 20.0,
+            "std": 0.294,
+            "std_error": 0.015
+          },
+          "FSNT": {
+            "bias": -0.046,
+            "global_mean": 239.406,
+            "sample_size": 20.0,
+            "std": 0.544,
+            "std_error": 0.027
+          },
+          "FSNTC": {
+            "bias": -0.247,
+            "global_mean": 287.416,
+            "sample_size": 20.0,
+            "std": 0.149,
+            "std_error": 0.007
+          },
+          "ICEFRAC": {
+            "bias": 0.0007,
+            "global_mean": 0.0406,
+            "sample_size": 20.0,
+            "std": 0.00168,
+            "std_error": 8.4e-05
+          },
+          "LANDFRAC": {
+            "bias": 0.0,
+            "global_mean": 0.292,
+            "sample_size": 20.0,
+            "std": 5.55e-17,
+            "std_error": 2.78e-18
+          },
+          "LHFLX": {
+            "bias": 0.879,
+            "global_mean": 86.685,
+            "sample_size": 20.0,
+            "std": 0.739,
+            "std_error": 0.037
+          },
+          "LWCF": {
+            "bias": 0.285,
+            "global_mean": 25.943,
+            "sample_size": 20.0,
+            "std": 0.142,
+            "std_error": 0.007
+          },
+          "OCNFRAC": {
+            "bias": -0.001,
+            "global_mean": 0.667,
+            "sample_size": 20.0,
+            "std": 0.00168,
+            "std_error": 8.4e-05
+          },
+          "OMEGA500": {
+            "bias": 2.1e-06,
+            "global_mean": -4.66e-05,
+            "sample_size": 20.0,
+            "std": 3.1e-06,
+            "std_error": 1.55e-07
+          },
+          "PBLH": {
+            "bias": 3.806,
+            "global_mean": 699.445,
+            "sample_size": 20.0,
+            "std": 2.458,
+            "std_error": 0.123
+          },
+          "PRECC": {
+            "bias": -1.3e-09,
+            "global_mean": 1.53e-08,
+            "sample_size": 20.0,
+            "std": 1.47e-10,
+            "std_error": 7.33e-12
+          },
+          "PRECL": {
+            "bias": 1.6e-09,
+            "global_mean": 1.93e-08,
+            "sample_size": 20.0,
+            "std": 3.46e-10,
+            "std_error": 1.73e-11
+          },
+          "PRECSC": {
+            "bias": 5e-13,
+            "global_mean": 2.82e-11,
+            "sample_size": 20.0,
+            "std": 2.82e-12,
+            "std_error": 1.41e-13
+          },
+          "PRECSL": {
+            "bias": 0.0,
+            "global_mean": 2.64e-09,
+            "sample_size": 20.0,
+            "std": 7.08e-11,
+            "std_error": 3.54e-12
+          },
+          "PRECT": {
+            "bias": 3e-10,
+            "global_mean": 3.46e-08,
+            "sample_size": 20.0,
+            "std": 3.01e-10,
+            "std_error": 1.51e-11
+          },
+          "PS": {
+            "bias": 1.611,
+            "global_mean": 98540.635,
+            "sample_size": 20.0,
+            "std": 5.794,
+            "std_error": 0.29
+          },
+          "PSL": {
+            "bias": 0.967,
+            "global_mean": 101119.662,
+            "sample_size": 20.0,
+            "std": 4.836,
+            "std_error": 0.242
+          },
+          "QFLX": {
+            "bias": 3e-07,
+            "global_mean": 3.46e-05,
+            "sample_size": 20.0,
+            "std": 2.96e-07,
+            "std_error": 1.48e-08
+          },
+          "RESTOM": {
+            "bias": 0.499,
+            "global_mean": 0.103,
+            "sample_size": 20.0,
+            "std": 0.629,
+            "std_error": 0.0315
+          },
+          "SHFLX": {
+            "bias": -1.366,
+            "global_mean": 21.066,
+            "sample_size": 20.0,
+            "std": 0.138,
+            "std_error": 0.007
+          },
+          "SST": {
+            "bias": -0.015,
+            "global_mean": 293.209,
+            "sample_size": 20.0,
+            "std": 0.195,
+            "std_error": 0.01
+          },
+          "SWCF": {
+            "bias": 0.201,
+            "global_mean": -47.999,
+            "sample_size": 20.0,
+            "std": 0.448,
+            "std_error": 0.022
+          },
+          "TAUX": {
+            "bias": 0.00054,
+            "global_mean": -0.00777,
+            "sample_size": 20.0,
+            "std": 0.000535,
+            "std_error": 2.67e-05
+          },
+          "TAUY": {
+            "bias": -8e-05,
+            "global_mean": -0.00165,
+            "sample_size": 20.0,
+            "std": 0.000816,
+            "std_error": 4.08e-05
+          },
+          "TGCLDIWP": {
+            "bias": 0.0,
+            "global_mean": 0.0171,
+            "sample_size": 20.0,
+            "std": 0.000252,
+            "std_error": 1.26e-05
+          },
+          "TGCLDLWP": {
+            "bias": -0.0011,
+            "global_mean": 0.0528,
+            "sample_size": 20.0,
+            "std": 0.000705,
+            "std_error": 3.53e-05
+          },
+          "TMQ": {
+            "bias": 0.154,
+            "global_mean": 25.659,
+            "sample_size": 20.0,
+            "std": 0.591,
+            "std_error": 0.03
+          },
+          "TREFHT": {
+            "bias": 0.008,
+            "global_mean": 287.75,
+            "sample_size": 20.0,
+            "std": 0.256,
+            "std_error": 0.013
+          },
+          "TS": {
+            "bias": -0.084,
+            "global_mean": 288.71,
+            "sample_size": 20.0,
+            "std": 0.252,
+            "std_error": 0.013
+          },
+          "U10": {
+            "bias": 0.023,
+            "global_mean": 6.708,
+            "sample_size": 20.0,
+            "std": 0.032,
+            "std_error": 0.002
+          }
+        }
+      },
+      "has_namelist_atm": true,
+      "has_namelist_lnd": true,
+      "has_namelist_ice": true,
+      "has_namelist_ocn": true,
+      "has_namelist": true
+    },
+    {
+      "id": 736,
+      "case_name": "bg.e30_beta08.B1850C_MTso.ne30_t232_wgx3.334.gris2way_init_CLMicase_GLCspinup/",
+      "compset": "1850C_CAM70%MT_CLM60%BGC-CROP_CICE_MOM6_MOSART_CISM2%GRIS-EVOLVE_WW3",
+      "resolution": "ne30pg3_t232_wg37_gris4",
+      "experiment_id": null,
+      "case_number": null,
+      "issue_id": 727,
+      "purpose": "This simulation is testing the CESM with a fully dynamically evolving Greenland ice sheet.",
+      "description": "This is a hybrid run branching from year 73 of [run# 334](https://github.com/NCAR/cesm_dev/issues/320). Prior to running the model, the Greenland ice sheet (GrIS) was initialized following the workflow:\n1. Run an I compset using data atmosphere from run 334 between years 60 and 88.\n2. Spin-up the GrIS for 10,000 years with CISM standalone using coupler history files from the I compset for SMB and temperature.\n3. Use the last time slice of the CISM spinup as CISM input file for this run.",
+      "case_directory": "/glade/campaign/cesm/development/liwg/leguy/CESM3/cases/bg.e30_beta08.B1850C_MTso.ne30_t232_wgx3.334.gris2way_init_CLMicase_GLCspinup/",
+      "diagnostics_directory": null,
+      "has_diagnostics": 0,
+      "contacts": [
+        "gunterl"
+      ],
+      "diagnostics_url": null,
+      "created_at": "2026-05-15 16:21:14",
+      "updated_at": "2026-05-19 14:55:52",
+      "readme_create_newcase": "2026-04-27 12:45:09: ./create_newcase --compset 1850C_CAM70%MT_CLM60%BGC-CROP_CICE_MOM6_MOSART_CISM2%GRIS-EVOLVE_WW3 --res ne30pg3_t232_wg37_gris4 --case /glade/campaign/cesm/development/liwg/leguy/CESM3/cases/bg.e30_beta08.B1850C_MTso.ne30_t232_wgx3.334.gris2way_init_CLMicase_GLCspinup --run-unsupported --project 93300301",
+      "issue_number": 338,
+      "issue_state": "open",
+      "issue_created_at": "2026-05-15T04:28:18Z",
+      "year_range": null,
+      "statistics": {},
+      "has_namelist_atm": true,
+      "has_namelist_lnd": true,
+      "has_namelist_ice": true,
+      "has_namelist_ocn": true,
+      "has_namelist": true
+    },
+    {
       "id": 737,
       "case_name": "b.e30_alpha08o.B1850C_MTso.ne30_t232_wgx3.345",
       "compset": "B1850C_MTso",
@@ -14,29 +811,29 @@
       "diagnostics_directory": null,
       "has_diagnostics": 0,
       "contacts": [
-        "wwieder",
         "klindsay28",
-        "adamrher",
-        "JulioTBacmeister",
+        "github",
+        "wwieder",
+        "cecilehannay",
+        "slevis-lmwg",
+        "gustavo-marques",
+        "olyson",
+        "swrneale",
+        "dlawrenncar",
         "fobryan3",
         "duvivier",
-        "olyson",
-        "gunterl",
-        "cecilehannay",
-        "PeterHjortLauritzen",
-        "swrneale",
-        "mbramberger",
-        "gustavo-marques",
+        "adamrher",
+        "iangrooms",
+        "JulioTBacmeister",
         "dabail10",
-        "slevis-lmwg",
-        "dlawrenncar",
         "tilmes",
-        "github",
-        "iangrooms"
+        "PeterHjortLauritzen",
+        "gunterl",
+        "mbramberger"
       ],
       "diagnostics_url": null,
       "created_at": "2026-05-15 16:21:15",
-      "updated_at": "2026-05-15 16:21:15",
+      "updated_at": "2026-05-19 14:55:52",
       "readme_create_newcase": "2026-05-14 00:36:31: ./create_newcase --compset B1850C_MTso --res ne30pg3_t232_wg37 --case /glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha08o.B1850C_MTso.ne30_t232_wgx3.345 --run-unsupported --project 93300722",
       "issue_number": 337,
       "issue_state": "open",
@@ -63,28 +860,28 @@
       "diagnostics_directory": null,
       "has_diagnostics": 0,
       "contacts": [
-        "JulioTBacmeister",
-        "slevis-lmwg",
-        "olyson",
+        "iangrooms",
+        "swrneale",
+        "klindsay28",
         "dlawrenncar",
         "fobryan3",
-        "iangrooms",
-        "wwieder",
+        "dabail10",
         "duvivier",
-        "mbramberger",
-        "gunterl",
         "tilmes",
-        "klindsay28",
-        "adamrher",
-        "cecilehannay",
         "PeterHjortLauritzen",
-        "swrneale",
         "gustavo-marques",
-        "dabail10"
+        "gunterl",
+        "wwieder",
+        "mbramberger",
+        "cecilehannay",
+        "olyson",
+        "adamrher",
+        "slevis-lmwg",
+        "JulioTBacmeister"
       ],
       "diagnostics_url": null,
       "created_at": "2026-05-15 16:21:15",
-      "updated_at": "2026-05-15 16:21:15",
+      "updated_at": "2026-05-19 14:55:52",
       "readme_create_newcase": "2026-05-07 15:27:06: ./create_newcase --compset B1850C_MTso --res ne30pg3_t232_wg37 --case /glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha08o.B1850C_MTso.ne30_t232_wgx3.344 --run-unsupported --project 93300722",
       "issue_number": 336,
       "issue_state": "open",
@@ -111,28 +908,28 @@
       "diagnostics_directory": null,
       "has_diagnostics": 0,
       "contacts": [
-        "JulioTBacmeister",
-        "slevis-lmwg",
-        "olyson",
+        "iangrooms",
+        "swrneale",
+        "klindsay28",
         "dlawrenncar",
         "fobryan3",
-        "iangrooms",
-        "wwieder",
+        "dabail10",
         "duvivier",
-        "mbramberger",
-        "gunterl",
         "tilmes",
-        "klindsay28",
-        "adamrher",
-        "cecilehannay",
         "PeterHjortLauritzen",
-        "swrneale",
         "gustavo-marques",
-        "dabail10"
+        "gunterl",
+        "wwieder",
+        "mbramberger",
+        "cecilehannay",
+        "olyson",
+        "adamrher",
+        "slevis-lmwg",
+        "JulioTBacmeister"
       ],
       "diagnostics_url": null,
       "created_at": "2026-05-15 16:21:15",
-      "updated_at": "2026-05-15 16:21:15",
+      "updated_at": "2026-05-19 14:55:52",
       "readme_create_newcase": "2026-05-07 13:42:18: ./create_newcase --compset B1850C_MTso --res ne30pg3_t232_wg37 --case /glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha08o.B1850C_MTso.ne30_t232_wgx3.343 --run-unsupported --project 93300722",
       "issue_number": 335,
       "issue_state": "open",
@@ -146,28 +943,109 @@
       "has_namelist": true
     },
     {
-      "id": 736,
-      "case_name": "bg.e30_beta08.B1850C_MTso.ne30_t232_wgx3.334.gris2way_init_CLMicase_GLCspinup/",
-      "compset": "1850C_CAM70%MT_CLM60%BGC-CROP_CICE_MOM6_MOSART_CISM2%GRIS-EVOLVE_WW3",
-      "resolution": "ne30pg3_t232_wg37_gris4",
+      "id": 743,
+      "case_name": "b.e30_alpha08b.BHISTC_LTso.ne30_t232_wgx3.316e",
+      "compset": "BHISTC_LTso",
+      "resolution": "e30_alpha08b",
       "experiment_id": null,
       "case_number": null,
-      "issue_id": 727,
-      "purpose": "This simulation is testing the CESM with a fully dynamically evolving Greenland ice sheet.",
-      "description": "This is a hybrid run branching from year 73 of [run# 334](https://github.com/NCAR/cesm_dev/issues/320). Prior to running the model, the Greenland ice sheet (GrIS) was initialized following the workflow:\n1. Run an I compset using data atmosphere from run 334 between years 60 and 88.\n2. Spin-up the GrIS for 10,000 years with CISM standalone using coupler history files from the I compset for SMB and temperature.\n3. Use the last time slice of the CISM spinup as CISM input file for this run.",
-      "case_directory": "/glade/campaign/cesm/development/liwg/leguy/CESM3/cases/bg.e30_beta08.B1850C_MTso.ne30_t232_wgx3.334.gris2way_init_CLMicase_GLCspinup/",
+      "issue_id": 734,
+      "purpose": "Hybrid run from 316 with r_snw = 0.75, seasalt_emis_scale = 1.60, and pertlim = 1.0d-14\n___",
+      "description": "___",
+      "case_directory": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha08b.BHISTC_LTso.ne30_t232_wgx3.316e",
       "diagnostics_directory": null,
       "has_diagnostics": 0,
       "contacts": [
-        "gunterl"
+        "dabail10"
       ],
       "diagnostics_url": null,
-      "created_at": "2026-05-15 16:21:14",
-      "updated_at": "2026-05-15 16:21:14",
-      "readme_create_newcase": "2026-04-27 12:45:09: ./create_newcase --compset 1850C_CAM70%MT_CLM60%BGC-CROP_CICE_MOM6_MOSART_CISM2%GRIS-EVOLVE_WW3 --res ne30pg3_t232_wg37_gris4 --case /glade/campaign/cesm/development/liwg/leguy/CESM3/cases/bg.e30_beta08.B1850C_MTso.ne30_t232_wgx3.334.gris2way_init_CLMicase_GLCspinup --run-unsupported --project 93300301",
-      "issue_number": 338,
+      "created_at": "2026-05-19 14:55:52",
+      "updated_at": "2026-05-19 14:55:52",
+      "readme_create_newcase": "2026-05-04 11:10:44: ./create_clone --clone /glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha08b.BHISTC_LTso.ne30_t232_wgx3.316d --case /glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha08b.BHISTC_LTso.ne30_t232_wgx3.316e",
+      "issue_number": 334,
       "issue_state": "open",
-      "issue_created_at": "2026-05-15T04:28:18Z",
+      "issue_created_at": "2026-05-06T18:57:47Z",
+      "year_range": null,
+      "statistics": {},
+      "has_namelist_atm": true,
+      "has_namelist_lnd": true,
+      "has_namelist_ice": true,
+      "has_namelist_ocn": true,
+      "has_namelist": true
+    },
+    {
+      "id": 740,
+      "case_name": "b.e30_alpha09a.B1850C_MTso.ne30_t233_wgx3.347",
+      "compset": "B1850C_MTso",
+      "resolution": "ne30_t233_wgx3",
+      "experiment_id": "b.e30_alpha09a",
+      "case_number": "347",
+      "issue_id": 731,
+      "purpose": "Test the impact of new clubb version, performance enhancements & bug fixes.\n___",
+      "description": "Same as 346 (https://github.com/NCAR/cesm_dev/issues/339) but with an updated cam tag (cam6_4_161 -> cam6_4_166) and CAM namelists:",
+      "case_directory": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha09a.B1850C_MTso.ne30_t233_wgx3.347",
+      "diagnostics_directory": null,
+      "has_diagnostics": 0,
+      "contacts": [
+        "PeterHjortLauritzen",
+        "cecilehannay"
+      ],
+      "diagnostics_url": null,
+      "created_at": "2026-05-19 14:55:51",
+      "updated_at": "2026-05-19 14:55:51",
+      "readme_create_newcase": "2026-05-15 13:53:36: /glade/campaign/cgd/amp/aherring/src/cesm3_0_alpha09a.newclubb//cime/scripts/create_clone --clone /glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha09a.B1850C_MTso.ne30_t233_wgx3.346 --case /glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha09a.B1850C_MTso.ne30_t233_wgx3.347 --cime-output-root /glade/derecho/scratch/aherring --project CESM0019",
+      "issue_number": 340,
+      "issue_state": "open",
+      "issue_created_at": "2026-05-15T21:14:03Z",
+      "year_range": null,
+      "statistics": {},
+      "has_namelist_atm": true,
+      "has_namelist_lnd": true,
+      "has_namelist_ice": true,
+      "has_namelist_ocn": true,
+      "has_namelist": true
+    },
+    {
+      "id": 741,
+      "case_name": "b.e30_alpha09a.B1850C_MTso.ne30_t233_wgx3.346",
+      "compset": "B1850C_MTso",
+      "resolution": "ne30pg3_t233_wg37",
+      "experiment_id": "b.e30_alpha09a",
+      "case_number": "346",
+      "issue_id": 732,
+      "purpose": "Evaluate the new CESM tag (alpha09a) in conjunction with the deep convection (ZM) bug fix.\n___",
+      "description": "Same as 345 (#337), but using alpha09a.",
+      "case_directory": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha09a.B1850C_MTso.ne30_t233_wgx3.346",
+      "diagnostics_directory": null,
+      "has_diagnostics": 0,
+      "contacts": [
+        "klindsay28",
+        "github",
+        "wwieder",
+        "cecilehannay",
+        "slevis-lmwg",
+        "gustavo-marques",
+        "olyson",
+        "swrneale",
+        "dlawrenncar",
+        "fobryan3",
+        "duvivier",
+        "adamrher",
+        "iangrooms",
+        "JulioTBacmeister",
+        "dabail10",
+        "tilmes",
+        "PeterHjortLauritzen",
+        "gunterl",
+        "mbramberger"
+      ],
+      "diagnostics_url": null,
+      "created_at": "2026-05-19 14:55:51",
+      "updated_at": "2026-05-19 14:55:51",
+      "readme_create_newcase": "2026-05-15 07:50:19: /glade/work/gmarques/cesm.sandboxes/cesm3_0_alpha09a/cime/scripts/create_newcase --compset B1850C_MTso --res ne30pg3_t233_wg37 --case b.e30_alpha09a.B1850C_MTso.ne30_t233_wgx3.346 --run-unsupported --project cesm0023",
+      "issue_number": 339,
+      "issue_state": "open",
+      "issue_created_at": "2026-05-15T17:26:11Z",
       "year_range": null,
       "statistics": {},
       "has_namelist_atm": true,
@@ -17055,392 +17933,6 @@
       "has_namelist": true
     },
     {
-      "id": 127,
-      "case_name": "b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.209",
-      "compset": "B1850C_LTso",
-      "resolution": "ne30pg3_t232_wg37",
-      "experiment_id": null,
-      "case_number": "209",
-      "issue_id": 127,
-      "purpose": "Same as 202 but with using \"half explicit diffusion\" \n___",
-      "description": "Same as 202 (#153) except:\n- add to user_nl_cam\n```\nclubb_l_do_expldiff_rtm_thlm = .true.",
-      "case_directory": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.209",
-      "diagnostics_directory": "/glade/derecho/scratch/hannay/ADF/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.209",
-      "has_diagnostics": 1,
-      "contacts": [
-        "fobryan3",
-        "cecilehannay",
-        "JulioTBacmeister",
-        "tilmes",
-        "dabail10",
-        "dlawrenncar",
-        "duvivier",
-        "swrneale",
-        "adamrher",
-        "PeterHjortLauritzen",
-        "slevis-lmwg",
-        "gustavo-marques",
-        "klindsay28",
-        "wwieder",
-        "mbramberger",
-        "olyson",
-        "iangrooms"
-      ],
-      "diagnostics_url": null,
-      "created_at": "2026-02-17 19:41:29",
-      "updated_at": "2026-02-20 18:51:31",
-      "readme_create_newcase": "2025-09-06 21:46:50: ./create_newcase --compset B1850C_LTso --res ne30pg3_t232_wg37 --case /glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha07b_dev.B1850C_LTso.ne30_t232_wgx3.209 --run-unsupported --project 93300722",
-      "issue_number": 159,
-      "issue_state": "open",
-      "issue_created_at": "2025-09-08T15:13:10Z",
-      "year_range": "yrs_2_21",
-      "statistics": {
-        "ANN": {
-          "AODDUSTdn": {
-            "bias": 0.0013,
-            "global_mean": 0.014,
-            "sample_size": 20.0,
-            "std": 0.000752,
-            "std_error": 3.76e-05
-          },
-          "AODVISdn": {
-            "bias": 0.0069,
-            "global_mean": 0.1,
-            "sample_size": 20.0,
-            "std": 0.00196,
-            "std_error": 9.81e-05
-          },
-          "BURDENBC": {
-            "bias": -6e-10,
-            "global_mean": 6.7e-08,
-            "sample_size": 20.0,
-            "std": 1.03e-09,
-            "std_error": 5.14e-11
-          },
-          "BURDENDUST": {
-            "bias": 3e-06,
-            "global_mean": 3.05e-05,
-            "sample_size": 20.0,
-            "std": 1.61e-06,
-            "std_error": 8.03e-08
-          },
-          "BURDENPOM": {
-            "bias": -5e-09,
-            "global_mean": 6.4e-07,
-            "sample_size": 20.0,
-            "std": 9.74e-09,
-            "std_error": 4.87e-10
-          },
-          "BURDENSEASALT": {
-            "bias": 7e-07,
-            "global_mean": 1.52e-05,
-            "sample_size": 20.0,
-            "std": 2.22e-07,
-            "std_error": 1.11e-08
-          },
-          "BURDENSO4": {
-            "bias": -1.2e-07,
-            "global_mean": 1.91e-06,
-            "sample_size": 20.0,
-            "std": 5.19e-08,
-            "std_error": 2.59e-09
-          },
-          "BURDENSOA": {
-            "bias": -1.9e-08,
-            "global_mean": 9.81e-07,
-            "sample_size": 20.0,
-            "std": 5.08e-08,
-            "std_error": 2.54e-09
-          },
-          "CLDHGH": {
-            "bias": -0.002,
-            "global_mean": 0.486,
-            "sample_size": 20.0,
-            "std": 0.00334,
-            "std_error": 0.000167
-          },
-          "CLDLOW": {
-            "bias": -0.012,
-            "global_mean": 0.429,
-            "sample_size": 20.0,
-            "std": 0.00485,
-            "std_error": 0.000243
-          },
-          "CLDMED": {
-            "bias": 0.01,
-            "global_mean": 0.31,
-            "sample_size": 20.0,
-            "std": 0.00218,
-            "std_error": 0.000109
-          },
-          "CLDTOT": {
-            "bias": -0.007,
-            "global_mean": 0.729,
-            "sample_size": 20.0,
-            "std": 0.00257,
-            "std_error": 0.000128
-          },
-          "FLNS": {
-            "bias": 0.035,
-            "global_mean": 56.255,
-            "sample_size": 20.0,
-            "std": 0.459,
-            "std_error": 0.023
-          },
-          "FLNT": {
-            "bias": -0.545,
-            "global_mean": 239.303,
-            "sample_size": 20.0,
-            "std": 0.566,
-            "std_error": 0.028
-          },
-          "FLNTC": {
-            "bias": -0.261,
-            "global_mean": 265.245,
-            "sample_size": 20.0,
-            "std": 0.496,
-            "std_error": 0.025
-          },
-          "FSDS": {
-            "bias": 0.031,
-            "global_mean": 189.628,
-            "sample_size": 20.0,
-            "std": 0.484,
-            "std_error": 0.024
-          },
-          "FSDSC": {
-            "bias": -0.395,
-            "global_mean": 247.579,
-            "sample_size": 20.0,
-            "std": 0.387,
-            "std_error": 0.019
-          },
-          "FSNS": {
-            "bias": 0.036,
-            "global_mean": 165.029,
-            "sample_size": 20.0,
-            "std": 0.536,
-            "std_error": 0.027
-          },
-          "FSNSC": {
-            "bias": -0.435,
-            "global_mean": 217.24,
-            "sample_size": 20.0,
-            "std": 0.294,
-            "std_error": 0.015
-          },
-          "FSNT": {
-            "bias": -0.046,
-            "global_mean": 239.406,
-            "sample_size": 20.0,
-            "std": 0.544,
-            "std_error": 0.027
-          },
-          "FSNTC": {
-            "bias": -0.247,
-            "global_mean": 287.416,
-            "sample_size": 20.0,
-            "std": 0.149,
-            "std_error": 0.007
-          },
-          "ICEFRAC": {
-            "bias": 0.0007,
-            "global_mean": 0.0406,
-            "sample_size": 20.0,
-            "std": 0.00168,
-            "std_error": 8.4e-05
-          },
-          "LANDFRAC": {
-            "bias": 0.0,
-            "global_mean": 0.292,
-            "sample_size": 20.0,
-            "std": 5.55e-17,
-            "std_error": 2.78e-18
-          },
-          "LHFLX": {
-            "bias": 0.879,
-            "global_mean": 86.685,
-            "sample_size": 20.0,
-            "std": 0.739,
-            "std_error": 0.037
-          },
-          "LWCF": {
-            "bias": 0.285,
-            "global_mean": 25.943,
-            "sample_size": 20.0,
-            "std": 0.142,
-            "std_error": 0.007
-          },
-          "OCNFRAC": {
-            "bias": -0.001,
-            "global_mean": 0.667,
-            "sample_size": 20.0,
-            "std": 0.00168,
-            "std_error": 8.4e-05
-          },
-          "OMEGA500": {
-            "bias": 2.1e-06,
-            "global_mean": -4.66e-05,
-            "sample_size": 20.0,
-            "std": 3.1e-06,
-            "std_error": 1.55e-07
-          },
-          "PBLH": {
-            "bias": 3.806,
-            "global_mean": 699.445,
-            "sample_size": 20.0,
-            "std": 2.458,
-            "std_error": 0.123
-          },
-          "PRECC": {
-            "bias": -1.3e-09,
-            "global_mean": 1.53e-08,
-            "sample_size": 20.0,
-            "std": 1.47e-10,
-            "std_error": 7.33e-12
-          },
-          "PRECL": {
-            "bias": 1.6e-09,
-            "global_mean": 1.93e-08,
-            "sample_size": 20.0,
-            "std": 3.46e-10,
-            "std_error": 1.73e-11
-          },
-          "PRECSC": {
-            "bias": 5e-13,
-            "global_mean": 2.82e-11,
-            "sample_size": 20.0,
-            "std": 2.82e-12,
-            "std_error": 1.41e-13
-          },
-          "PRECSL": {
-            "bias": 0.0,
-            "global_mean": 2.64e-09,
-            "sample_size": 20.0,
-            "std": 7.08e-11,
-            "std_error": 3.54e-12
-          },
-          "PRECT": {
-            "bias": 3e-10,
-            "global_mean": 3.46e-08,
-            "sample_size": 20.0,
-            "std": 3.01e-10,
-            "std_error": 1.51e-11
-          },
-          "PS": {
-            "bias": 1.611,
-            "global_mean": 98540.635,
-            "sample_size": 20.0,
-            "std": 5.794,
-            "std_error": 0.29
-          },
-          "PSL": {
-            "bias": 0.967,
-            "global_mean": 101119.662,
-            "sample_size": 20.0,
-            "std": 4.836,
-            "std_error": 0.242
-          },
-          "QFLX": {
-            "bias": 3e-07,
-            "global_mean": 3.46e-05,
-            "sample_size": 20.0,
-            "std": 2.96e-07,
-            "std_error": 1.48e-08
-          },
-          "RESTOM": {
-            "bias": 0.499,
-            "global_mean": 0.103,
-            "sample_size": 20.0,
-            "std": 0.629,
-            "std_error": 0.0315
-          },
-          "SHFLX": {
-            "bias": -1.366,
-            "global_mean": 21.066,
-            "sample_size": 20.0,
-            "std": 0.138,
-            "std_error": 0.007
-          },
-          "SST": {
-            "bias": -0.015,
-            "global_mean": 293.209,
-            "sample_size": 20.0,
-            "std": 0.195,
-            "std_error": 0.01
-          },
-          "SWCF": {
-            "bias": 0.201,
-            "global_mean": -47.999,
-            "sample_size": 20.0,
-            "std": 0.448,
-            "std_error": 0.022
-          },
-          "TAUX": {
-            "bias": 0.00054,
-            "global_mean": -0.00777,
-            "sample_size": 20.0,
-            "std": 0.000535,
-            "std_error": 2.67e-05
-          },
-          "TAUY": {
-            "bias": -8e-05,
-            "global_mean": -0.00165,
-            "sample_size": 20.0,
-            "std": 0.000816,
-            "std_error": 4.08e-05
-          },
-          "TGCLDIWP": {
-            "bias": 0.0,
-            "global_mean": 0.0171,
-            "sample_size": 20.0,
-            "std": 0.000252,
-            "std_error": 1.26e-05
-          },
-          "TGCLDLWP": {
-            "bias": -0.0011,
-            "global_mean": 0.0528,
-            "sample_size": 20.0,
-            "std": 0.000705,
-            "std_error": 3.53e-05
-          },
-          "TMQ": {
-            "bias": 0.154,
-            "global_mean": 25.659,
-            "sample_size": 20.0,
-            "std": 0.591,
-            "std_error": 0.03
-          },
-          "TREFHT": {
-            "bias": 0.008,
-            "global_mean": 287.75,
-            "sample_size": 20.0,
-            "std": 0.256,
-            "std_error": 0.013
-          },
-          "TS": {
-            "bias": -0.084,
-            "global_mean": 288.71,
-            "sample_size": 20.0,
-            "std": 0.252,
-            "std_error": 0.013
-          },
-          "U10": {
-            "bias": 0.023,
-            "global_mean": 6.708,
-            "sample_size": 20.0,
-            "std": 0.032,
-            "std_error": 0.002
-          }
-        }
-      },
-      "has_namelist_atm": true,
-      "has_namelist_lnd": true,
-      "has_namelist_ice": true,
-      "has_namelist_ocn": true,
-      "has_namelist": true
-    },
-    {
       "id": 123,
       "case_name": "b.e30_beta06.BHISTC_LTso.ne30_t232_wgx3_fixed_emission.200",
       "compset": "HISTC_CAM70%LT_CLM60%BGC-CROP_CICE_MOM6_MOSART_DGLC%NOEVOLVE_WW3_SESP",
@@ -27897,386 +28389,6 @@
       "has_namelist": true
     },
     {
-      "id": 60,
-      "case_name": "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.268",
-      "compset": "B1850C_LTso",
-      "resolution": "ne30pg3_t232_wg37",
-      "experiment_id": null,
-      "case_number": "268",
-      "issue_id": 60,
-      "purpose": "Add CAM tuning and revert GM into 265 (with 265 =  Leithy Backscatter)\n___",
-      "description": "Same as 265 (#227) except:",
-      "case_directory": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.268",
-      "diagnostics_directory": "/glade/derecho/scratch/hannay/ADF/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.268",
-      "has_diagnostics": 1,
-      "contacts": [
-        "fobryan3",
-        "cecilehannay",
-        "JulioTBacmeister",
-        "tilmes",
-        "dmleung",
-        "dabail10",
-        "dlawrenncar",
-        "duvivier",
-        "swrneale",
-        "adamrher",
-        "PeterHjortLauritzen",
-        "slevis-lmwg",
-        "gustavo-marques",
-        "klindsay28",
-        "wwieder",
-        "mbramberger",
-        "olyson",
-        "iangrooms"
-      ],
-      "diagnostics_url": null,
-      "created_at": "2026-02-17 19:41:04",
-      "updated_at": "2026-02-20 18:51:00",
-      "readme_create_newcase": "2025-12-10 10:50:51: ./create_newcase --compset B1850C_LTso --res ne30pg3_t232_wg37 --case /glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.268 --run-unsupported --project 93300722",
-      "issue_number": 232,
-      "issue_state": "open",
-      "issue_created_at": "2025-12-12T16:17:08Z",
-      "year_range": "yrs_2_21",
-      "statistics": {
-        "ANN": {
-          "AODVISdn": {
-            "bias": 0.0,
-            "global_mean": 0.126,
-            "sample_size": 20.0,
-            "std": 0.00102,
-            "std_error": 5.09e-05
-          },
-          "BURDENBC": {
-            "bias": -4e-10,
-            "global_mean": 6.31e-08,
-            "sample_size": 20.0,
-            "std": 7.86e-10,
-            "std_error": 3.93e-11
-          },
-          "BURDENDUST": {
-            "bias": -5e-07,
-            "global_mean": 2.81e-05,
-            "sample_size": 20.0,
-            "std": 1.42e-06,
-            "std_error": 7.11e-08
-          },
-          "BURDENPOM": {
-            "bias": -3e-09,
-            "global_mean": 6e-07,
-            "sample_size": 20.0,
-            "std": 8.16e-09,
-            "std_error": 4.08e-10
-          },
-          "BURDENSEASALT": {
-            "bias": 0.0,
-            "global_mean": 2.03e-05,
-            "sample_size": 20.0,
-            "std": 1.59e-07,
-            "std_error": 7.97e-09
-          },
-          "BURDENSO4": {
-            "bias": 1e-08,
-            "global_mean": 2.05e-06,
-            "sample_size": 20.0,
-            "std": 3.49e-08,
-            "std_error": 1.74e-09
-          },
-          "BURDENSOA": {
-            "bias": 0.0,
-            "global_mean": 1.07e-06,
-            "sample_size": 20.0,
-            "std": 4.96e-08,
-            "std_error": 2.48e-09
-          },
-          "CLDHGH": {
-            "bias": 0.001,
-            "global_mean": 0.468,
-            "sample_size": 20.0,
-            "std": 0.00202,
-            "std_error": 0.000101
-          },
-          "CLDLOW": {
-            "bias": -0.002,
-            "global_mean": 0.434,
-            "sample_size": 20.0,
-            "std": 0.00262,
-            "std_error": 0.000131
-          },
-          "CLDMED": {
-            "bias": 0.001,
-            "global_mean": 0.321,
-            "sample_size": 20.0,
-            "std": 0.000885,
-            "std_error": 4.43e-05
-          },
-          "CLDTOT": {
-            "bias": -0.001,
-            "global_mean": 0.72,
-            "sample_size": 20.0,
-            "std": 0.00187,
-            "std_error": 9.33e-05
-          },
-          "FLNS": {
-            "bias": -0.021,
-            "global_mean": 58.465,
-            "sample_size": 20.0,
-            "std": 0.263,
-            "std_error": 0.013
-          },
-          "FLNT": {
-            "bias": 0.087,
-            "global_mean": 240.42,
-            "sample_size": 20.0,
-            "std": 0.181,
-            "std_error": 0.009
-          },
-          "FLNTC": {
-            "bias": 0.079,
-            "global_mean": 263.163,
-            "sample_size": 20.0,
-            "std": 0.151,
-            "std_error": 0.008
-          },
-          "FSDS": {
-            "bias": 0.162,
-            "global_mean": 192.536,
-            "sample_size": 20.0,
-            "std": 0.438,
-            "std_error": 0.022
-          },
-          "FSDSC": {
-            "bias": -0.065,
-            "global_mean": 248.224,
-            "sample_size": 20.0,
-            "std": 0.108,
-            "std_error": 0.005
-          },
-          "FSNS": {
-            "bias": 0.246,
-            "global_mean": 167.534,
-            "sample_size": 20.0,
-            "std": 0.366,
-            "std_error": 0.018
-          },
-          "FSNSC": {
-            "bias": 0.035,
-            "global_mean": 217.509,
-            "sample_size": 20.0,
-            "std": 0.144,
-            "std_error": 0.007
-          },
-          "FSNT": {
-            "bias": 0.268,
-            "global_mean": 240.64,
-            "sample_size": 20.0,
-            "std": 0.301,
-            "std_error": 0.015
-          },
-          "FSNTC": {
-            "bias": 0.089,
-            "global_mean": 286.257,
-            "sample_size": 20.0,
-            "std": 0.15,
-            "std_error": 0.007
-          },
-          "ICEFRAC": {
-            "bias": -0.001,
-            "global_mean": 0.0416,
-            "sample_size": 20.0,
-            "std": 0.000944,
-            "std_error": 4.72e-05
-          },
-          "LANDFRAC": {
-            "bias": 0.0,
-            "global_mean": 0.292,
-            "sample_size": 20.0,
-            "std": 5.55e-17,
-            "std_error": 2.78e-18
-          },
-          "LHFLX": {
-            "bias": 0.206,
-            "global_mean": 88.891,
-            "sample_size": 20.0,
-            "std": 0.31,
-            "std_error": 0.015
-          },
-          "LWCF": {
-            "bias": -0.008,
-            "global_mean": 22.743,
-            "sample_size": 20.0,
-            "std": 0.082,
-            "std_error": 0.004
-          },
-          "OCNFRAC": {
-            "bias": 0.001,
-            "global_mean": 0.666,
-            "sample_size": 20.0,
-            "std": 0.000944,
-            "std_error": 4.72e-05
-          },
-          "OMEGA500": {
-            "bias": -2e-07,
-            "global_mean": -6.47e-05,
-            "sample_size": 20.0,
-            "std": 2.69e-06,
-            "std_error": 1.35e-07
-          },
-          "PBLH": {
-            "bias": 1.193,
-            "global_mean": 735.445,
-            "sample_size": 20.0,
-            "std": 1.345,
-            "std_error": 0.067
-          },
-          "PRECC": {
-            "bias": 1e-10,
-            "global_mean": 1.74e-08,
-            "sample_size": 20.0,
-            "std": 6.39e-11,
-            "std_error": 3.2e-12
-          },
-          "PRECL": {
-            "bias": 0.0,
-            "global_mean": 1.81e-08,
-            "sample_size": 20.0,
-            "std": 1.22e-10,
-            "std_error": 6.11e-12
-          },
-          "PRECSC": {
-            "bias": 8e-13,
-            "global_mean": 5.23e-11,
-            "sample_size": 20.0,
-            "std": 3.05e-12,
-            "std_error": 1.53e-13
-          },
-          "PRECSL": {
-            "bias": -2e-11,
-            "global_mean": 2.68e-09,
-            "sample_size": 20.0,
-            "std": 6.24e-11,
-            "std_error": 3.12e-12
-          },
-          "PRECT": {
-            "bias": 1e-10,
-            "global_mean": 3.55e-08,
-            "sample_size": 20.0,
-            "std": 1.28e-10,
-            "std_error": 6.39e-12
-          },
-          "PS": {
-            "bias": 1.016,
-            "global_mean": 98515.242,
-            "sample_size": 20.0,
-            "std": 1.669,
-            "std_error": 0.083
-          },
-          "PSL": {
-            "bias": 1.156,
-            "global_mean": 101101.824,
-            "sample_size": 20.0,
-            "std": 1.854,
-            "std_error": 0.093
-          },
-          "QFLX": {
-            "bias": 1e-07,
-            "global_mean": 3.55e-05,
-            "sample_size": 20.0,
-            "std": 1.24e-07,
-            "std_error": 6.19e-09
-          },
-          "RESTOM": {
-            "bias": 0.18,
-            "global_mean": 0.22,
-            "sample_size": 20.0,
-            "std": 0.352,
-            "std_error": 0.0176
-          },
-          "SHFLX": {
-            "bias": -0.11,
-            "global_mean": 19.022,
-            "sample_size": 20.0,
-            "std": 0.072,
-            "std_error": 0.004
-          },
-          "SST": {
-            "bias": 0.042,
-            "global_mean": 292.297,
-            "sample_size": 20.0,
-            "std": 0.064,
-            "std_error": 0.003
-          },
-          "SWCF": {
-            "bias": 0.179,
-            "global_mean": -45.606,
-            "sample_size": 20.0,
-            "std": 0.327,
-            "std_error": 0.016
-          },
-          "TAUX": {
-            "bias": 0.00013,
-            "global_mean": -0.00604,
-            "sample_size": 20.0,
-            "std": 0.00095,
-            "std_error": 4.75e-05
-          },
-          "TAUY": {
-            "bias": -6e-05,
-            "global_mean": -0.00188,
-            "sample_size": 20.0,
-            "std": 0.000597,
-            "std_error": 2.98e-05
-          },
-          "TGCLDIWP": {
-            "bias": 0.0,
-            "global_mean": 0.0137,
-            "sample_size": 20.0,
-            "std": 0.000151,
-            "std_error": 7.54e-06
-          },
-          "TGCLDLWP": {
-            "bias": -0.0002,
-            "global_mean": 0.0538,
-            "sample_size": 20.0,
-            "std": 0.000693,
-            "std_error": 3.46e-05
-          },
-          "TMQ": {
-            "bias": 0.105,
-            "global_mean": 23.083,
-            "sample_size": 20.0,
-            "std": 0.17,
-            "std_error": 0.008
-          },
-          "TREFHT": {
-            "bias": 0.065,
-            "global_mean": 286.687,
-            "sample_size": 20.0,
-            "std": 0.078,
-            "std_error": 0.004
-          },
-          "TS": {
-            "bias": 0.062,
-            "global_mean": 287.513,
-            "sample_size": 20.0,
-            "std": 0.077,
-            "std_error": 0.004
-          },
-          "U10": {
-            "bias": -0.002,
-            "global_mean": 6.723,
-            "sample_size": 20.0,
-            "std": 0.023,
-            "std_error": 0.001
-          }
-        }
-      },
-      "has_namelist_atm": true,
-      "has_namelist_lnd": true,
-      "has_namelist_ice": true,
-      "has_namelist_ocn": true,
-      "has_namelist": true
-    },
-    {
       "id": 58,
       "case_name": "b.e30_alpha07g.B1850C_LTso.ne30_t232_wgx3.270",
       "compset": "B1850C_LTso",
@@ -36510,9 +36622,9 @@
     }
   ],
   "metadata": {
-    "total_cases": 296,
+    "total_cases": 299,
     "cases_with_diagnostics": 147,
-    "last_updated": "2026-05-15T10:21:19.359759",
-    "diagnostic_coverage_percent": 49.7
+    "last_updated": "2026-05-19T08:55:55.913219",
+    "diagnostic_coverage_percent": 49.2
   }
 }

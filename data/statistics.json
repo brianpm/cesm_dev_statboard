@@ -5,7 +5,7 @@
       "with_diagnostics": 124
     },
     "B1850C_MTso": {
-      "count": 20,
+      "count": 22,
       "with_diagnostics": 2
     },
     "1850_CAM70%LT_CLM60%BGC-CROP_CICE_MOM6_MOSART_DGLC%NOEVOLVE_WW3_SESP": {
@@ -13,7 +13,7 @@
       "with_diagnostics": 14
     },
     "BHISTC_LTso": {
-      "count": 7,
+      "count": 8,
       "with_diagnostics": 0
     },
     "B1850C_MTt4s": {
@@ -110,13 +110,13 @@
       "count": 3,
       "with_diagnostics": 0
     },
+    "e30_alpha08b": {
+      "count": 3,
+      "with_diagnostics": 0
+    },
     "e30_alpha08a": {
       "count": 2,
       "with_diagnostics": 1
-    },
-    "e30_alpha08b": {
-      "count": 2,
-      "with_diagnostics": 0
     },
     "e30_beta06": {
       "count": 2,
@@ -154,9 +154,17 @@
       "count": 1,
       "with_diagnostics": 1
     },
+    "ne30_t233_wgx3": {
+      "count": 1,
+      "with_diagnostics": 0
+    },
     "ne30pg3_ne30pg3_mg17": {
       "count": 1,
       "with_diagnostics": 1
+    },
+    "ne30pg3_t233_wg37": {
+      "count": 1,
+      "with_diagnostics": 0
     },
     "seasalt_emis_scale": {
       "count": 1,
@@ -164,10 +172,10 @@
     }
   },
   "diagnostic_coverage": {
-    "total_cases": 296,
+    "total_cases": 299,
     "with_diagnostics": 147,
-    "without_diagnostics": 149,
-    "percentage": 49.7
+    "without_diagnostics": 152,
+    "percentage": 49.2
   },
-  "last_updated": "2026-05-15T10:21:19.381100"
+  "last_updated": "2026-05-19T08:55:55.932163"
 }
