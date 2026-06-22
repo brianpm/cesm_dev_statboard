@@ -5,7 +5,7 @@
       "with_diagnostics": 124
     },
     "B1850C_MTso": {
-      "count": 29,
+      "count": 34,
       "with_diagnostics": 2
     },
     "1850_CAM70%LT_CLM60%BGC-CROP_CICE_MOM6_MOSART_DGLC%NOEVOLVE_WW3_SESP": {
@@ -24,13 +24,13 @@
       "count": 5,
       "with_diagnostics": 2
     },
+    "1850C_CAM70%MT_CLM60%BGC-CROP_CICE_MOM6_MOSART_CISM2%GRIS-EVOLVE_WW3": {
+      "count": 4,
+      "with_diagnostics": 0
+    },
     "BLT1850": {
       "count": 4,
       "with_diagnostics": 2
-    },
-    "1850C_CAM70%MT_CLM60%BGC-CROP_CICE_MOM6_MOSART_CISM2%GRIS-EVOLVE_WW3": {
-      "count": 2,
-      "with_diagnostics": 0
     },
     "HIST_CAM70%LT_CLM60%BGC-CROP_CICE_MOM6_MOSART_DGLC%NOEVOLVE_WW3_SESP": {
       "count": 2,
@@ -103,6 +103,10 @@
       "with_diagnostics": 22
     },
     "ne30pg3_t233_wg37": {
+      "count": 7,
+      "with_diagnostics": 0
+    },
+    "ne30_t233_wgx3": {
       "count": 4,
       "with_diagnostics": 0
     },
@@ -134,13 +138,13 @@
       "count": 2,
       "with_diagnostics": 2
     },
-    "ne30_t233_wgx3": {
-      "count": 2,
-      "with_diagnostics": 0
-    },
     "ne30pg3_t232": {
       "count": 2,
       "with_diagnostics": 1
+    },
+    "ne30pg3_t233_wg37_gris4": {
+      "count": 2,
+      "with_diagnostics": 0
     },
     "alpha07g_qt3": {
       "count": 1,
@@ -180,10 +184,10 @@
     }
   },
   "diagnostic_coverage": {
-    "total_cases": 307,
+    "total_cases": 314,
     "with_diagnostics": 147,
-    "without_diagnostics": 160,
-    "percentage": 47.9
+    "without_diagnostics": 167,
+    "percentage": 46.8
   },
-  "last_updated": "2026-06-08T09:57:21.304616"
+  "last_updated": "2026-06-22T13:07:09.616639"
 }
