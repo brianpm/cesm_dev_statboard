@@ -5,7 +5,7 @@
       "with_diagnostics": 124
     },
     "B1850C_MTso": {
-      "count": 34,
+      "count": 37,
       "with_diagnostics": 2
     },
     "1850_CAM70%LT_CLM60%BGC-CROP_CICE_MOM6_MOSART_DGLC%NOEVOLVE_WW3_SESP": {
@@ -103,7 +103,7 @@
       "with_diagnostics": 22
     },
     "ne30pg3_t233_wg37": {
-      "count": 7,
+      "count": 10,
       "with_diagnostics": 0
     },
     "ne30_t233_wgx3": {
@@ -184,10 +184,10 @@
     }
   },
   "diagnostic_coverage": {
-    "total_cases": 314,
+    "total_cases": 317,
     "with_diagnostics": 147,
-    "without_diagnostics": 167,
-    "percentage": 46.8
+    "without_diagnostics": 170,
+    "percentage": 46.4
   },
-  "last_updated": "2026-06-22T13:07:09.616639"
+  "last_updated": "2026-06-25T10:24:12.660224"
 }
