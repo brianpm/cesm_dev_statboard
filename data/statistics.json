@@ -1,11 +1,11 @@
 {
   "by_compset": {
     "B1850C_LTso": {
-      "count": 215,
+      "count": 206,
       "with_diagnostics": 124
     },
     "B1850C_MTso": {
-      "count": 37,
+      "count": 23,
       "with_diagnostics": 2
     },
     "1850_CAM70%LT_CLM60%BGC-CROP_CICE_MOM6_MOSART_DGLC%NOEVOLVE_WW3_SESP": {
@@ -16,17 +16,17 @@
       "count": 8,
       "with_diagnostics": 0
     },
+    "1850C_CAM70%MT_CLM60%BGC-CROP_CICE_MOM6_MOSART_CISM2%GRIS-EVOLVE_WW3": {
+      "count": 5,
+      "with_diagnostics": 0
+    },
     "B1850C_MTt4s": {
-      "count": 6,
+      "count": 5,
       "with_diagnostics": 0
     },
     "HISTC_CAM70%LT_CLM60%BGC-CROP_CICE_MOM6_MOSART_DGLC%NOEVOLVE_WW3_SESP": {
       "count": 5,
       "with_diagnostics": 2
-    },
-    "1850C_CAM70%MT_CLM60%BGC-CROP_CICE_MOM6_MOSART_CISM2%GRIS-EVOLVE_WW3": {
-      "count": 4,
-      "with_diagnostics": 0
     },
     "BLT1850": {
       "count": 4,
@@ -49,10 +49,6 @@
       "with_diagnostics": 0
     },
     "ACC": {
-      "count": 1,
-      "with_diagnostics": 0
-    },
-    "BHISTC_MTt4s": {
       "count": 1,
       "with_diagnostics": 0
     },
@@ -95,7 +91,7 @@
   },
   "by_resolution": {
     "ne30pg3_t232_wg37": {
-      "count": 212,
+      "count": 191,
       "with_diagnostics": 116
     },
     "ne30_t232_wgx3": {
@@ -103,7 +99,7 @@
       "with_diagnostics": 22
     },
     "ne30pg3_t233_wg37": {
-      "count": 10,
+      "count": 8,
       "with_diagnostics": 0
     },
     "ne30_t233_wgx3": {
@@ -118,11 +114,11 @@
       "count": 3,
       "with_diagnostics": 0
     },
-    "e30_alpha08b": {
+    "ne30pg3_t232_wg37_gris4": {
       "count": 3,
       "with_diagnostics": 0
     },
-    "ne30pg3_t232_wg37_gris4": {
+    "ne30pg3_t233_wg37_gris4": {
       "count": 3,
       "with_diagnostics": 0
     },
@@ -142,10 +138,6 @@
       "count": 2,
       "with_diagnostics": 1
     },
-    "ne30pg3_t233_wg37_gris4": {
-      "count": 2,
-      "with_diagnostics": 0
-    },
     "alpha07g_qt3": {
       "count": 1,
       "with_diagnostics": 0
@@ -157,6 +149,10 @@
     "e30_alpha06e": {
       "count": 1,
       "with_diagnostics": 1
+    },
+    "e30_alpha08b": {
+      "count": 1,
+      "with_diagnostics": 0
     },
     "e30_alpha08o": {
       "count": 1,
@@ -184,10 +180,10 @@
     }
   },
   "diagnostic_coverage": {
-    "total_cases": 317,
-    "with_diagnostics": 147,
-    "without_diagnostics": 170,
-    "percentage": 46.4
+    "total_cases": 318,
+    "with_diagnostics": 172,
+    "without_diagnostics": 146,
+    "percentage": 54.1
   },
-  "last_updated": "2026-06-26T09:14:20.264703"
+  "last_updated": "2026-06-30T10:36:03.877956"
 }
