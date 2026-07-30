@@ -28,13 +28,13 @@
       "count": 5,
       "with_diagnostics": 2
     },
+    "1850C_CAM70%MT_CLM60%BGC-CROP_CICE_MOM6%MARBL-BIO_MOSART_CISM2%GRIS-EVOLVE_WW3_SESP": {
+      "count": 4,
+      "with_diagnostics": 0
+    },
     "BLT1850": {
       "count": 4,
       "with_diagnostics": 2
-    },
-    "1850C_CAM70%MT_CLM60%BGC-CROP_CICE_MOM6%MARBL-BIO_MOSART_CISM2%GRIS-EVOLVE_WW3_SESP": {
-      "count": 2,
-      "with_diagnostics": 0
     },
     "HIST_CAM70%LT_CLM60%BGC-CROP_CICE_MOM6_MOSART_DGLC%NOEVOLVE_WW3_SESP": {
       "count": 2,
@@ -102,11 +102,11 @@
       "count": 46,
       "with_diagnostics": 22
     },
-    "ne30pg3_t233_wg37": {
-      "count": 10,
+    "ne30pg3_t233_wg37_gris4": {
+      "count": 12,
       "with_diagnostics": 0
     },
-    "ne30pg3_t233_wg37_gris4": {
+    "ne30pg3_t233_wg37": {
       "count": 10,
       "with_diagnostics": 0
     },
@@ -184,10 +184,10 @@
     }
   },
   "diagnostic_coverage": {
-    "total_cases": 328,
+    "total_cases": 330,
     "with_diagnostics": 172,
-    "without_diagnostics": 156,
-    "percentage": 52.4
+    "without_diagnostics": 158,
+    "percentage": 52.1
   },
-  "last_updated": "2026-07-21T02:07:43.283007"
+  "last_updated": "2026-07-30T17:13:08.590636"
 }
