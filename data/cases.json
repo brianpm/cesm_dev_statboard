@@ -1,6 +1,55 @@
 {
   "cases": [
     {
+      "id": 873,
+      "case_name": "b.e30_alpha09d_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.374",
+      "compset": "1850C_CAM70%MT_CLM60%BGC-CROP_CICE_MOM6%MARBL-BIO_MOSART_CISM2%GRIS-EVOLVE_WW3_SESP",
+      "resolution": "ne30pg3_t233_wg37_gris4",
+      "experiment_id": "b.e30_alpha09d_m",
+      "case_number": "374",
+      "issue_id": 839,
+      "purpose": "Same as 373 but with tuning of backscatter \n___",
+      "description": "Same as 373 except\n- add to user_nl_mom\n```\nLEITH_BI_CONST = 80 \n```",
+      "case_directory": "/glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha09d_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.374",
+      "diagnostics_directory": null,
+      "has_diagnostics": 0,
+      "contacts": [
+        "adamrher",
+        "dabail10",
+        "fobryan3",
+        "cecilehannay",
+        "gunterl",
+        "klindsay28",
+        "slevis-lmwg",
+        "github",
+        "olyson",
+        "wwieder",
+        "mbramberger",
+        "duvivier",
+        "iangrooms",
+        "swrneale",
+        "dlawrenncar",
+        "tilmes",
+        "PeterHjortLauritzen",
+        "gustavo-marques",
+        "JulioTBacmeister"
+      ],
+      "diagnostics_url": null,
+      "created_at": "2026-08-04 16:13:26",
+      "updated_at": "2026-08-04 16:13:26",
+      "readme_create_newcase": "2026-07-24 16:27:46: ./create_newcase --compset 1850C_CAM70%MT_CLM60%BGC-CROP_CICE_MOM6%MARBL-BIO_MOSART_CISM2%GRIS-EVOLVE_WW3_SESP --res ne30pg3_t233_wg37_gris4 --case /glade/campaign/cesm/cesmdata/cseg/runs/cesm2_0/b.e30_alpha09d_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.374 --run-unsupported --project 93300722",
+      "issue_number": 379,
+      "issue_state": "open",
+      "issue_created_at": "2026-08-03T20:39:06Z",
+      "year_range": null,
+      "statistics": {},
+      "has_namelist_atm": true,
+      "has_namelist_lnd": true,
+      "has_namelist_ice": true,
+      "has_namelist_ocn": true,
+      "has_namelist": true
+    },
+    {
       "id": 858,
       "case_name": "b.e30_alpha09b.B1850C_MTso_Gris.ne30_t233_wgx3.366",
       "compset": "1850C_CAM70%MT_CLM60%BGC-CROP_CICE_MOM6_MOSART_CISM2%GRIS-EVOLVE_WW3",
@@ -44602,9 +44651,9 @@
     }
   ],
   "metadata": {
-    "total_cases": 330,
+    "total_cases": 331,
     "cases_with_diagnostics": 172,
-    "last_updated": "2026-07-31T15:34:43.589650",
-    "diagnostic_coverage_percent": 52.1
+    "last_updated": "2026-08-04T10:14:45.444492",
+    "diagnostic_coverage_percent": 52.0
   }
 }
