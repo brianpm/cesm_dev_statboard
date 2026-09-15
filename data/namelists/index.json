@@ -17,6 +17,30 @@
     "ice": "namelists/b.e30_alpha09e_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.392_ice.json",
     "ocn": "namelists/b.e30_alpha09e_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.392_ocn.json"
   },
+  "b.e30_alpha09e_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.396": {
+    "atm": "namelists/b.e30_alpha09e_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.396_atm.json",
+    "lnd": "namelists/b.e30_alpha09e_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.396_lnd.json",
+    "ice": "namelists/b.e30_alpha09e_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.396_ice.json",
+    "ocn": "namelists/b.e30_alpha09e_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.396_ocn.json"
+  },
+  "b.e30_alpha09d_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.394": {
+    "atm": "namelists/b.e30_alpha09d_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.394_atm.json",
+    "lnd": "namelists/b.e30_alpha09d_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.394_lnd.json",
+    "ice": "namelists/b.e30_alpha09d_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.394_ice.json",
+    "ocn": "namelists/b.e30_alpha09d_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.394_ocn.json"
+  },
+  "b.e30_alpha09d_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.385": {
+    "atm": "namelists/b.e30_alpha09d_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.385_atm.json",
+    "lnd": "namelists/b.e30_alpha09d_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.385_lnd.json",
+    "ice": "namelists/b.e30_alpha09d_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.385_ice.json",
+    "ocn": "namelists/b.e30_alpha09d_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.385_ocn.json"
+  },
+  "b.e30_alpha09d_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.377cc": {
+    "atm": "namelists/b.e30_alpha09d_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.377cc_atm.json",
+    "lnd": "namelists/b.e30_alpha09d_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.377cc_lnd.json",
+    "ice": "namelists/b.e30_alpha09d_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.377cc_ice.json",
+    "ocn": "namelists/b.e30_alpha09d_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.377cc_ocn.json"
+  },
   "b.e30_alpha09e_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.391": {
     "atm": "namelists/b.e30_alpha09e_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.391_atm.json",
     "lnd": "namelists/b.e30_alpha09e_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.391_lnd.json",
