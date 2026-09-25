@@ -1,4 +1,34 @@
 {
+  "b.e30_alpha09e_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.396": {
+    "atm": "namelists/b.e30_alpha09e_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.396_atm.json",
+    "lnd": "namelists/b.e30_alpha09e_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.396_lnd.json",
+    "ice": "namelists/b.e30_alpha09e_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.396_ice.json",
+    "ocn": "namelists/b.e30_alpha09e_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.396_ocn.json"
+  },
+  "b.e30_alpha09e_m.BHISTC_MTso_Gris_Marbl.ne30_t233_wgx3.397": {
+    "atm": "namelists/b.e30_alpha09e_m.BHISTC_MTso_Gris_Marbl.ne30_t233_wgx3.397_atm.json",
+    "lnd": "namelists/b.e30_alpha09e_m.BHISTC_MTso_Gris_Marbl.ne30_t233_wgx3.397_lnd.json",
+    "ice": "namelists/b.e30_alpha09e_m.BHISTC_MTso_Gris_Marbl.ne30_t233_wgx3.397_ice.json",
+    "ocn": "namelists/b.e30_alpha09e_m.BHISTC_MTso_Gris_Marbl.ne30_t233_wgx3.397_ocn.json"
+  },
+  "b.e30_alpha09e_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.397": {
+    "atm": "namelists/b.e30_alpha09e_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.397_atm.json",
+    "lnd": "namelists/b.e30_alpha09e_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.397_lnd.json",
+    "ice": "namelists/b.e30_alpha09e_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.397_ice.json",
+    "ocn": "namelists/b.e30_alpha09e_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.397_ocn.json"
+  },
+  "b.e30_alpha10c.B1850C_MTso.ne30_t233_wgx3.398": {
+    "atm": "namelists/b.e30_alpha10c.B1850C_MTso.ne30_t233_wgx3.398_atm.json",
+    "lnd": "namelists/b.e30_alpha10c.B1850C_MTso.ne30_t233_wgx3.398_lnd.json",
+    "ice": "namelists/b.e30_alpha10c.B1850C_MTso.ne30_t233_wgx3.398_ice.json",
+    "ocn": "namelists/b.e30_alpha10c.B1850C_MTso.ne30_t233_wgx3.398_ocn.json"
+  },
+  "b.e30_alpha09e_m.BHISTC_MTso_Gris_Marbl.ne30_t233_wgx3.396": {
+    "atm": "namelists/b.e30_alpha09e_m.BHISTC_MTso_Gris_Marbl.ne30_t233_wgx3.396_atm.json",
+    "lnd": "namelists/b.e30_alpha09e_m.BHISTC_MTso_Gris_Marbl.ne30_t233_wgx3.396_lnd.json",
+    "ice": "namelists/b.e30_alpha09e_m.BHISTC_MTso_Gris_Marbl.ne30_t233_wgx3.396_ice.json",
+    "ocn": "namelists/b.e30_alpha09e_m.BHISTC_MTso_Gris_Marbl.ne30_t233_wgx3.396_ocn.json"
+  },
   "b.e30_alpha09d_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.377": {
     "atm": "namelists/b.e30_alpha09d_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.377_atm.json",
     "lnd": "namelists/b.e30_alpha09d_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.377_lnd.json",
@@ -16,12 +46,6 @@
     "lnd": "namelists/b.e30_alpha09e_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.392_lnd.json",
     "ice": "namelists/b.e30_alpha09e_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.392_ice.json",
     "ocn": "namelists/b.e30_alpha09e_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.392_ocn.json"
-  },
-  "b.e30_alpha09e_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.396": {
-    "atm": "namelists/b.e30_alpha09e_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.396_atm.json",
-    "lnd": "namelists/b.e30_alpha09e_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.396_lnd.json",
-    "ice": "namelists/b.e30_alpha09e_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.396_ice.json",
-    "ocn": "namelists/b.e30_alpha09e_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.396_ocn.json"
   },
   "b.e30_alpha09d_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.394": {
     "atm": "namelists/b.e30_alpha09d_m.B1850C_MTso_Gris_Marbl.ne30_t233_wgx3.394_atm.json",
